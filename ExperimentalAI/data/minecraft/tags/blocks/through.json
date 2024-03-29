@@ -1,0 +1,16 @@
+{
+"replace": false,
+"values": [
+"minecraft:air",
+"minecraft:cave_air",
+"#minecraft:banners",
+"#minecraft:buttons",
+"#minecraft:flowers",
+"#minecraft:rails",
+"#minecraft:signs",
+"#minecraft:small_flowers",
+"#minecraft:standing_signs",
+"#minecraft:tall_flowers"
+
+]
+}

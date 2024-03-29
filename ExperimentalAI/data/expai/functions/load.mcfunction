@@ -1,0 +1,2 @@
+scoreboard objectives add expai.behaviour_level dummy
+function expai:behaviours
