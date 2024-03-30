@@ -1,1 +1,0 @@
-execute as @e[type=#undead,type=!#skeletons,nbt={OnGround:true}] at @s if entity @a[distance=0..25,gamemode=!creative,gamemode=!spectator] positioned 0 0 0 run function expai:sprint_jump_process
