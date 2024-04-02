@@ -1,1 +1,1 @@
-execute if entity @s[nbt={OnGround:true}] at @s if entity @a[distance=0..25,gamemode=!creative,gamemode=!spectator] positioned 0 0 0 run function expai:ai_actions/sprint_jump/sprint_jump_process
+execute if entity @s[nbt={OnGround:true}] if entity @a[distance=0..25,gamemode=!creative,gamemode=!spectator] run function expai:ai_actions/sprint_jump/sprint_jump_process

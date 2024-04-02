@@ -1,11 +1,27 @@
-execute at @s unless block ^ ^ ^ #expai:non_solids unless block ^ ^1 ^ #expai:non_solids unless block ^ ^2 ^ #expai:non_solids run function expai:raycast/jump/gap_determiner_detect
+execute at @s run function expai:raycast/jump/gap_determiner_find_gap_length_get_info
+execute at @s unless block ^ ^3 ^ #expai:non_solids run scoreboard players operation @s expai.jump_gap_roof_most_amount = @s expai.jump_gap_length
+execute at @s unless block ^ ^3 ^ #expai:non_solids unless score @s expai.jump_gap_roof_least_amount matches 0.. run scoreboard players operation @s expai.jump_gap_roof_least_amount = @s expai.
+execute at @s unless block ^ ^1 ^ #expai:non_solids if block ^ ^2 ^ #expai:non_solids if block ^ ^3 ^ #expai:non_solids run scoreboard players set @s expai.jump_block_above 1
+execute at @s unless block ^ ^-1 ^ #expai:non_solids if block ^ ^ ^ #expai:non_solids if block ^ ^1 ^ #expai:non_solids if block ^ ^ ^-1 #expai:non_solids run scoreboard players set @s expai.jump_block_below 1
+
+tellraw @a ["",{"score":{"name": "@s","objective": "expai.jump_gap_roof_least_amount"},"color": "red"},{"score":{"name": "@s","objective": "expai.jump_gap_roof_most_amount"},"color": "blue"},{"score":{"name": "@s","objective": "expai.jump_gap_length"},"color": "gold"},{"score":{"name": "@s","objective": "expai.jump_block_above"},"color": "white"},{"score":{"name": "@s","objective": "expai.jump_block_below"},"color": "gray"}]
+
+# Above Jump
+execute at @s unless block ^ ^1 ^ #expai:non_solids if block ^ ^2 ^ #expai:non_solids if block ^ ^3 ^ #expai:non_solids run function expai:raycast/jump/gap_determiner_detect
+#Below Jump
+#execute at @s unless block ^ ^-1 ^ #expai:non_solids if block ^ ^ ^ #expai:non_solids if block ^ ^1 ^ #expai:non_solids if block ^ ^ ^-1 #expai:non_solids run function expai:raycast/jump/gap_determiner_detect
+# Same Level Jump
+execute at @s unless block ^ ^ ^ #expai:non_solids if block ^ ^1 ^ #expai:non_solids if block ^ ^2 ^ #expai:non_solids run function expai:raycast/jump/gap_determiner_detect
+
+##Kill self if block in way
+#execute at @s unless block ^ ^2 ^ #expai:non_solids run tag @s add expai.invalid
 
 ##Move
-tp @s ^ ^ ^0.5 ~ 0
-#particle dust 1 0 0 1 ~ ~ ~ 0 0 0 0 1 force
+tp @s ^ ^ ^0.5
+particle dust 1 0 0 1 ~ ~ ~ 0 0 0 0 1 force
 
 #Tick down
 scoreboard players remove @s expai.raycast_steps 1
 scoreboard players add @s expai.jump_gap_length 1
 #Loop
-execute if entity @s[tag=!expai.cast_found_gap_length,scores={expai.raycast_steps=1..}] at @s rotated ~ 0 run function expai:raycast/jump/gap_determiner_find_gap_length
+execute if entity @s[tag=!expai.cast_found_gap_length,scores={expai.raycast_steps=1..}] unless entity @s[tag=expai.invalid] at @s run function expai:raycast/jump/gap_determiner_find_gap_length

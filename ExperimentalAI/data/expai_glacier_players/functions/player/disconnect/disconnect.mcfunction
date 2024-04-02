@@ -1,0 +1,1 @@
+tellraw @a ["",{"text": "Alf-Coe left the game","color": "yellow"}]
