@@ -1,4 +1,5 @@
-#=tag @s add expai.cast_found_gap_length
+tag @s add expai.cast_found_gap_length
+execute store result score @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] expai.jump_gap_length run scoreboard players get @s expai.jump_gap_length
 execute store result score @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] expai.jump_gap_roof_least_amount run scoreboard players get @s expai.jump_gap_roof_least_amount
 execute store result score @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] expai.jump_gap_roof_most_amount run scoreboard players get @s expai.jump_gap_roof_most_amount
 execute store result score @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] expai.jump_block_above run scoreboard players get @s expai.jump_block_above
@@ -11,11 +12,5 @@ function expai:raycast/jump/detection_results/sort/sprint_jump_up
 function expai:raycast/jump/detection_results/sort/jump_down
 function expai:raycast/jump/detection_results/sort/roofed/jump_roofed
 
-execute unless block ^ ^3 ^ #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.jump_roofed
-
-execute store result score @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] expai.jump_gap_length run scoreboard players get @s expai.jump_gap_length
-
 #Remove Tag
 tag @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] remove expai.gap_closer_activated
-
-#execute unless block ^ ^2.5 ^ #expai:non_solids if block ^ ^1.5 ^1 #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.jump_roofed

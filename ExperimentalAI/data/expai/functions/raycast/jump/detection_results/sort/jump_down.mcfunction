@@ -1,1 +1,3 @@
-execute unless block ^ ^-1 ^1 #expai:non_solids if block ^ ^ ^1 #expai:non_solids if block ^ ^1 ^1 #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run say expai.jump_down
+execute unless block ^ ^-1 ^1 #expai:non_solids if block ^ ^ ^-1 #expai:non_solids if block ^ ^ ^-1 #expai:non_solids if score @s expai.jump_gap_length matches 1..4 as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run say expai.jump_down
+execute unless block ^ ^-1 ^1 #expai:non_solids if block ^ ^ ^-1 #expai:non_solids if block ^ ^ ^-1 #expai:non_solids if score @s expai.jump_gap_length matches 5..6 as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run say expai.sprint_jump_down
+
