@@ -1,1 +1,2 @@
-tellraw @a ["",{"text": "Alf-Coe left the game","color": "yellow"}]
+$tellraw @a ["",{"text":$(disconnecting_name),"color": "yellow"},{"text": " left the game","color": "yellow"}]
+kill @s
