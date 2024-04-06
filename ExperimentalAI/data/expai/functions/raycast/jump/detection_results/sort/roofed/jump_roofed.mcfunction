@@ -1,1 +1,4 @@
-execute unless block ^ ^3 ^ #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.jump_roofed
+#execute unless block ^ ^3 ^ #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.jump_roofed
+execute unless block ^ ^3 ^ #expai:non_solids if block ^ ^2 ^ #expai:non_solids if block ^ ^1 ^ #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run say expai.jump_roofed 2
+execute unless block ^ ^3 ^1 #expai:non_solids if block ^ ^2 ^1 #expai:non_solids if block ^ ^1 ^1 #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run say expai.jump_roofed 3
+execute unless block ^ ^3 ^-1 #expai:non_solids if block ^ ^2 ^-1 #expai:non_solids if block ^ ^1 ^-1 #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run say expai.jump_roofed 1

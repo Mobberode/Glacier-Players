@@ -7,10 +7,10 @@ execute store result score @e[tag=expai.gap_closer_activated,limit=1,sort=neares
 
 execute as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.can_jump
 
+function expai:raycast/jump/detection_results/sort/roofed/jump_roofed
+function expai:raycast/jump/detection_results/sort/jump_down
 function expai:raycast/jump/detection_results/sort/jump_up
 function expai:raycast/jump/detection_results/sort/sprint_jump_up
-function expai:raycast/jump/detection_results/sort/jump_down
-function expai:raycast/jump/detection_results/sort/roofed/jump_roofed
 
 #Remove Tag
 tag @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] remove expai.gap_closer_activated

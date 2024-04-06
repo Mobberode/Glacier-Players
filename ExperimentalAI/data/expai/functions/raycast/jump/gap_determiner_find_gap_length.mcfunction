@@ -14,7 +14,7 @@ execute at @s unless block ^ ^3 ^ #expai:non_solids if block ^ ^2 ^ #expai:non_s
 # Above Jump
 execute at @s unless block ^ ^1 ^ #expai:non_solids if block ^ ^2 ^ #expai:non_solids if block ^ ^3 ^ #expai:non_solids run function expai:raycast/jump/gap_determiner_detect
 # Below Jump
-execute at @s unless block ^ ^-1 ^ #expai:non_solids if block ^ ^ ^ #expai:non_solids if block ^ ^1 ^ #expai:non_solids if block ^ ^ ^-1 #expai:non_solids run function expai:raycast/jump/gap_determiner_detect
+execute at @s unless block ^ ^-1 ^ #expai:non_solids if block ^ ^ ^ #expai:non_solids if block ^ ^1 ^ #expai:non_solids if block ^ ^-1 ^-1 #expai:non_solids run function expai:raycast/jump/gap_determiner_detect
 # Same Level Jump
 execute at @s unless block ^ ^ ^ #expai:non_solids if block ^ ^1 ^ #expai:non_solids if block ^ ^2 ^ #expai:non_solids run function expai:raycast/jump/gap_determiner_detect
 

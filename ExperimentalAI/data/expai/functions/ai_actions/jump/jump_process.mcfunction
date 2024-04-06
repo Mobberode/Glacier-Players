@@ -9,4 +9,4 @@ execute at @s run function expai:ai_actions/jump/jump_gaps_tag
 #Remove Later
 kill @e[tag=Jump_Direction]
 
-execute if entity @s[tag=expai.can_jump] run function expai:ai_actions/jump/jump
+execute if entity @s[tag=expai.can_jump] unless entity @s[tag=expai.can_jump_invalid] run function expai:ai_actions/jump/jump
