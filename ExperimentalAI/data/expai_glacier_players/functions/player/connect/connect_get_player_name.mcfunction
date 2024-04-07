@@ -72,7 +72,7 @@ execute if score #Connecting expai_glacier_players.name_id matches 69 run data m
 execute if score #Connecting expai_glacier_players.name_id matches 70 run data modify storage expai_glacier_players.macro connecting_name set value "0tekk"
 execute if score #Connecting expai_glacier_players.name_id matches 71 run data modify storage expai_glacier_players.macro connecting_name set value "ThroatClogger"
 execute if score #Connecting expai_glacier_players.name_id matches 72 run data modify storage expai_glacier_players.macro connecting_name set value "moistmeatmissle"
-execute if score #Connecting expai_glacier_players.name_id matches 73 run data modify storage expai_glacier_players.macro connecting_name set value "Massive Parra Duke the Fat Bitch"
+execute if score #Connecting expai_glacier_players.name_id matches 73 run data modify storage expai_glacier_players.macro connecting_name set value "Massive_Parra_Duke_the_Fat_Bitch"
 execute if score #Connecting expai_glacier_players.name_id matches 74 run data modify storage expai_glacier_players.macro connecting_name set value "(not).Source_Engine"
 execute if score #Connecting expai_glacier_players.name_id matches 75 run data modify storage expai_glacier_players.macro connecting_name set value "Annabwastaken"
 execute if score #Connecting expai_glacier_players.name_id matches 76 run data modify storage expai_glacier_players.macro connecting_name set value "DTPPwastaken"

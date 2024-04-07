@@ -5,6 +5,7 @@ tag @s remove expai.jump_roofed
 tag @s remove expai.sprint_jump_up
 tag @s remove expai.jump_up
 tag @s remove expai.can_jump
+tag @s remove expai.can_jump_invalid
 tag @s add expai.gap_closer_activated
 ##Summon
 summon area_effect_cloud ^ ^ ^ {Tags:[GapRay]}

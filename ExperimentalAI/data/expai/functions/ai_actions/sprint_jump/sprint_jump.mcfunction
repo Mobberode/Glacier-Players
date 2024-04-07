@@ -4,8 +4,6 @@ execute if entity @s[nbt={IsBaby:true}] run summon marker ~ ~ ~ {Tags:["Sprint_D
 execute if block ^ ^2.2 ^ #expai:non_solids as @e[tag=Sprint_Direction,limit=1,sort=nearest] positioned 0.0 0.0 0.0 run function expai:motion/get_motion_sprint_jump
 execute if block ^ ^1.1 ^ #expai:non_solids as @e[tag=Sprint_Direction_Baby,limit=1,sort=nearest] positioned 0.0 0.0 0.0 run function expai:motion/get_motion_sprint_jump_baby
 
-execute if block ^ ^2.2 ^ #expai:non_solids as @e[tag=Sprint_Direction,limit=1,sort=nearest] positioned 0.0 0.0 0.0 run say t
-
 execute unless block ^ ^2.2 ^ #expai:non_solids as @e[tag=Sprint_Direction,limit=1,sort=nearest] positioned 0.0 0.0 0.0 run function expai:motion/get_motion_sprint_jump_roofed
 execute unless block ^ ^1.1 ^ #expai:non_solids as @e[tag=Sprint_Direction_Baby,limit=1,sort=nearest] positioned 0.0 0.0 0.0 run function expai:motion/get_motion_sprint_jump_baby_roofed
 

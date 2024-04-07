@@ -1,0 +1,1 @@
+execute at @s rotated ~ 0 run function expai_glacier_players:player/brain/thinker

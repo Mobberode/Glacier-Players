@@ -1,4 +1,5 @@
-#execute unless block ^ ^3 ^ #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.jump_roofed
-execute unless block ^ ^3 ^ #expai:non_solids if block ^ ^2 ^ #expai:non_solids if block ^ ^1 ^ #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run say expai.jump_roofed 2
-execute unless block ^ ^3 ^1 #expai:non_solids if block ^ ^2 ^1 #expai:non_solids if block ^ ^1 ^1 #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run say expai.jump_roofed 3
-execute unless block ^ ^3 ^-1 #expai:non_solids if block ^ ^2 ^-1 #expai:non_solids if block ^ ^1 ^-1 #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run say expai.jump_roofed 1
+execute if score @s expai.jump_gap_roof_least_amount matches 0..2 if score @s expai.jump_gap_roof_most_amount matches 0..2 if score @s expai.jump_gap_length matches 1..3 as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.jump_roofed
+execute if score @s expai.jump_gap_roof_least_amount matches 4 if score @s expai.jump_gap_roof_most_amount matches 4 if score @s expai.jump_gap_length matches 4 as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.jump_roofed
+execute if score @s expai.jump_gap_roof_least_amount matches 6 if score @s expai.jump_gap_roof_most_amount matches 5..6 if score @s expai.jump_gap_length matches 5..6 as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.jump_roofed
+
+execute if score @s expai.jump_gap_roof_least_amount matches 0.. if score @s expai.jump_gap_roof_most_amount matches 2.. if score @s expai.jump_gap_length matches 4.. unless score @s expai.jump_gap_roof_least_amount = @s expai.jump_gap_roof_most_amount as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run say expai.jump_roofed impossible
