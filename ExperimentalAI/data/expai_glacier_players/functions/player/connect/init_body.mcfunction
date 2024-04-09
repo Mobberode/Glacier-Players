@@ -1,0 +1,1 @@
+$summon villager ~ ~ ~ {Attributes:[{Name:"generic.scale",Base:1.15},{Name:"generic.max_health",Base:20}],NoAI:true,Silent:true,Tags:["$(pid_num)","GlacierPlayers.Alias"],PersistenceRequired:true,Health:20}

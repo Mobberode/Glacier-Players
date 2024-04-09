@@ -1,3 +1,3 @@
 ##Loop
-execute as @r[tag=!ice_pid.processed_id] run function ice_pid:pid/begin_id_assign
-schedule function ice_pid:pid/loop 1t
+execute as @r[tag=!expai_glacier_players.processed_id] run function expai_glacier_players:player/pid/begin_id_assign
+schedule function expai_glacier_players:player/pid/loop 1t

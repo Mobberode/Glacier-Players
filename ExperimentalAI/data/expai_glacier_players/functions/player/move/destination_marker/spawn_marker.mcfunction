@@ -1,0 +1,2 @@
+scoreboard players set @s expai_glacier_players.ticks_till_force_destory_dmarker 0
+$execute positioned $(destination_marker_xpos) $(destination_marker_ypos) $(destination_marker_zpos) if block ~ ~ ~ #expai_glacier_players:non_solids run function expai_glacier_players:player/move/destination_marker/spawn_marker_final with storage expai_glacier_players.macro

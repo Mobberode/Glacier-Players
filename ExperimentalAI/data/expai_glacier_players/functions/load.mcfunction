@@ -4,4 +4,14 @@ scoreboard objectives add expai_glacier_players.move_pause_timer dummy
 scoreboard objectives add expai_glacier_players.talk_delay dummy
 scoreboard objectives add expai_glacier_players.speech_type dummy
 scoreboard objectives add expai_glacier_players.pid dummy
+scoreboard objectives add expai_glacier_players.health dummy
+scoreboard objectives add expai_glacier_players.previous_health dummy
+scoreboard objectives add expai_glacier_players.x_pos dummy
+scoreboard objectives add expai_glacier_players.y_pos dummy
+scoreboard objectives add expai_glacier_players.z_pos dummy
+scoreboard objectives add expai_glacier_players.ticks_till_force_destory_dmarker dummy
+team add GlacierPlayersTeam
+team modify GlacierPlayersTeam collisionRule never
+team modify GlacierPlayersTeam seeFriendlyInvisibles false
+team modify GlacierPlayersTeam friendlyFire false
 execute unless score #Amount expai_glacier_players.name_id matches 0.. run scoreboard players set #Amount expai_glacier_players.name_id 101

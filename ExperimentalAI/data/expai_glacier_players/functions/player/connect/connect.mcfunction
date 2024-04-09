@@ -1,4 +1,3 @@
-$summon armor_stand ~ ~ ~ {CustomName:"$(connecting_name)",CustomNameVisible:true,PersistenceRequired:true,Tags:[GlacierPlayer],Attributes:[{Name:"generic.max_health",Base:20},{Name:"generic.attack_damage",Base:1}],Health:20,active_effects:[{hidden_effect:{id:"regeneration",amplifier:255}}],Silent:true,DeathLootTable:"none"}
-$tellraw @a ["",{"text": "$(connecting_name) joined the game","color": "yellow"}]
+$summon armor_stand ~ ~ ~ {CustomName:"$(connecting_name)",CustomNameVisible:true,PersistenceRequired:true,Tags:["GlacierPlayer","GP.Connecting"],Attributes:[{Name:"generic.max_health",Base:20},{Name:"generic.attack_damage",Base:1}],Health:20,Silent:true,Invulnerable:true}
 
-$execute as @e[name=$(connecting_name)] run function expai_glacier_players:player/connect/connect_speak
+execute as @e[tag=GP.Connecting] run function expai_glacier_players:player/connect/init with storage expai_glacier_players.macro

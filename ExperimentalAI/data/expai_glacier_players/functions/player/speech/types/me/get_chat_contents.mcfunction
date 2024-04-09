@@ -1,4 +1,5 @@
-execute store result score #ChatContentType expai_glacier_players.rng run random value 0..10
+data modify storage expai_glacier_players.macro chat_content_target set value ""
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..30
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "had now decided he wanted to die"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "thought he could be him to find out he was not really him"
@@ -6,9 +7,29 @@ execute if score #ChatContentType expai_glacier_players.rng matches 3 run data m
 execute if score #ChatContentType expai_glacier_players.rng matches 4 run data modify storage expai_glacier_players.macro chat_contents set value "inserts his stick in a dude for some reason"
 execute if score #ChatContentType expai_glacier_players.rng matches 5 run data modify storage expai_glacier_players.macro chat_contents set value "has decided its enough and began glaciering"
 execute if score #ChatContentType expai_glacier_players.rng matches 6 run data modify storage expai_glacier_players.macro chat_contents set value "dies from cringemaxxing"
-execute if score #ChatContentType expai_glacier_players.rng matches 7 run data modify storage expai_glacier_players.macro chat_contents set value "byes byes and showcases the glory mewing being done"
+execute if score #ChatContentType expai_glacier_players.rng matches 7 run data modify storage expai_glacier_players.macro chat_contents set value "byes byes and showcases the glorious mewing being done"
 execute if score #ChatContentType expai_glacier_players.rng matches 8 run data modify storage expai_glacier_players.macro chat_contents set value "turns into a slug"
 execute if score #ChatContentType expai_glacier_players.rng matches 9 run data modify storage expai_glacier_players.macro chat_contents set value "played terraria and became addicted to it"
 execute if score #ChatContentType expai_glacier_players.rng matches 10 run data modify storage expai_glacier_players.macro chat_contents set value "buckshot roulettes"
+execute if score #ChatContentType expai_glacier_players.rng matches 11 run data modify storage expai_glacier_players.macro chat_contents set value "didnt think of what happened"
+execute if score #ChatContentType expai_glacier_players.rng matches 12 run data modify storage expai_glacier_players.macro chat_contents set value "went on to then start a family"
+execute if score #ChatContentType expai_glacier_players.rng matches 13 run data modify storage expai_glacier_players.macro chat_contents set value "killed everyone becuz he epic"
+execute if score #ChatContentType expai_glacier_players.rng matches 14 run data modify storage expai_glacier_players.macro chat_contents set value "is locked and loaded"
+execute if score #ChatContentType expai_glacier_players.rng matches 15 run data modify storage expai_glacier_players.macro chat_contents set value "reccomends atleast 8-24 hours on the pc!"
+execute if score #ChatContentType expai_glacier_players.rng matches 16 run data modify storage expai_glacier_players.macro chat_contents set value "smells like ass today"
+execute if score #ChatContentType expai_glacier_players.rng matches 17 run data modify storage expai_glacier_players.macro chat_contents set value "got scammed"
+execute if score #ChatContentType expai_glacier_players.rng matches 18 run data modify storage expai_glacier_players.macro chat_contents set value "turns into a furry"
+execute if score #ChatContentType expai_glacier_players.rng matches 19 run data modify storage expai_glacier_players.macro chat_contents set value "Fucked your mom"
+execute if score #ChatContentType expai_glacier_players.rng matches 20 run data modify storage expai_glacier_players.macro chat_contents set value "didnt like that"
+execute if score #ChatContentType expai_glacier_players.rng matches 21 run data modify storage expai_glacier_players.macro chat_contents set value "got smashed"
+execute if score #ChatContentType expai_glacier_players.rng matches 22 run data modify storage expai_glacier_players.macro chat_contents set value "is having a schizophrenic attack!"
+execute if score #ChatContentType expai_glacier_players.rng matches 23 run data modify storage expai_glacier_players.macro chat_contents set value "transformed into a femboy because why not"
+execute if score #ChatContentType expai_glacier_players.rng matches 24 run data modify storage expai_glacier_players.macro chat_contents set value "raged and shattered the pc screen"
+execute if score #ChatContentType expai_glacier_players.rng matches 25 run data modify storage expai_glacier_players.macro chat_contents set value "will remember that"
+execute if score #ChatContentType expai_glacier_players.rng matches 26 run data modify storage expai_glacier_players.macro chat_contents set value "is now your enemy"
+execute if score #ChatContentType expai_glacier_players.rng matches 27 run data modify storage expai_glacier_players.macro chat_contents set value "is now your friend"
+execute if score #ChatContentType expai_glacier_players.rng matches 28 run data modify storage expai_glacier_players.macro chat_contents set value "got held back by 7 grades and has to do grade 4"
+execute if score #ChatContentType expai_glacier_players.rng matches 29 run data modify storage expai_glacier_players.macro chat_contents set value "Interacted with a Glacier Player and became self aware"
+execute if score #ChatContentType expai_glacier_players.rng matches 30 run data modify storage expai_glacier_players.macro chat_contents set value "adverts a /raid on yall bases"
 
 function expai_glacier_players:player/speech/speak_me with storage minecraft:expai_glacier_players.macro

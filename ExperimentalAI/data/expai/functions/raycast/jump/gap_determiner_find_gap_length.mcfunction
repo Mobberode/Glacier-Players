@@ -4,7 +4,7 @@ execute at @s unless block ^ ^3 ^ #expai:non_solids unless score @s expai.jump_g
 execute at @s unless block ^ ^1 ^ #expai:non_solids if block ^ ^2 ^ #expai:non_solids if block ^ ^3 ^ #expai:non_solids run scoreboard players set @s expai.jump_block_above 1
 execute at @s unless block ^ ^-1 ^ #expai:non_solids if block ^ ^ ^ #expai:non_solids if block ^ ^1 ^ #expai:non_solids if block ^ ^ ^-1 #expai:non_solids run scoreboard players set @s expai.jump_block_below 1
 
-tellraw @a ["",{"score":{"name": "@s","objective": "expai.jump_gap_roof_least_amount"},"color": "red"},{"score":{"name": "@s","objective": "expai.jump_gap_roof_most_amount"},"color": "blue"},{"score":{"name": "@s","objective": "expai.jump_gap_length"},"color": "gold"},{"score":{"name": "@s","objective": "expai.jump_block_above"},"color": "white"},{"score":{"name": "@s","objective": "expai.jump_block_below"},"color": "gray"}]
+#tellraw @a ["",{"score":{"name": "@s","objective": "expai.jump_gap_roof_least_amount"},"color": "red"},{"score":{"name": "@s","objective": "expai.jump_gap_roof_most_amount"},"color": "blue"},{"score":{"name": "@s","objective": "expai.jump_gap_length"},"color": "gold"},{"score":{"name": "@s","objective": "expai.jump_block_above"},"color": "white"},{"score":{"name": "@s","objective": "expai.jump_block_below"},"color": "gray"}]
 
 ##Kill self if block in way
 execute at @s unless block ^ ^1 ^ #expai:non_solids unless block ^ ^2 ^ #expai:non_solids run tag @s add expai.invalid

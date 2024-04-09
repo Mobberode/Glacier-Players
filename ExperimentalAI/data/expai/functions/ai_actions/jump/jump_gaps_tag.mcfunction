@@ -9,8 +9,6 @@ execute if score @s[tag=!expai.jump_roofed] expai.jump_gap_length matches 7..8 a
 execute if score @s[tag=!expai.jump_roofed,tag=expai.jump_up,scores={expai.jump_block_above=1..}] expai.jump_gap_length matches 1..2 as @e[tag=Jump_Direction,limit=1,sort=nearest] run tag @s add expai.jump_above_gap
 execute if score @s[tag=!expai.jump_roofed,tag=expai.jump_up,scores={expai.jump_block_above=1..}] expai.jump_gap_length matches 3..4 as @e[tag=Jump_Direction,limit=1,sort=nearest] run tag @s add expai.sprint_jump_above_gap
 ##Roofed
-execute if score @s expai.jump_gap_roof_least_amount matches 5..6 if score @s expai.jump_gap_roof_most_amount matches 5..6 if score @s expai.jump_gap_length matches 5..6 as @e[tag=Jump_Direction,limit=1,sort=nearest] run say m
-
 execute if score @s expai.jump_gap_roof_least_amount matches 0..4 if score @s expai.jump_gap_roof_most_amount matches 0..4 if score @s expai.jump_gap_length matches 1..4 as @e[tag=Jump_Direction,limit=1,sort=nearest] run tag @s add expai.jump_gap_roofed
 execute if score @s expai.jump_gap_roof_least_amount matches 5..6 if score @s expai.jump_gap_roof_most_amount matches 5..6 if score @s expai.jump_gap_length matches 5..6 as @e[tag=Jump_Direction,limit=1,sort=nearest] run tag @s add expai.sprint_jump_gap_roofed
 

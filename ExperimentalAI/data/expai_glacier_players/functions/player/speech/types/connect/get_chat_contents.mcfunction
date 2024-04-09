@@ -1,4 +1,5 @@
-execute store result score #ChatContentType expai_glacier_players.rng run random value 0..16
+data modify storage expai_glacier_players.macro chat_content_target set value ""
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..16
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "hi"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "hello"
