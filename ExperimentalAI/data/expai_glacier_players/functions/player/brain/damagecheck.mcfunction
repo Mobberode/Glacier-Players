@@ -7,3 +7,5 @@ execute at @s if score @s expai_glacier_players.previous_health > @s expai_glaci
 
 ##Die and Respawn if Health = 0<
 execute if score @s expai_glacier_players.health matches ..0 run function expai_glacier_players:player/death/die_init
+#Failsafe
+$execute unless entity @e[tag=$(pid_num)] run function expai_glacier_players:player/death/die_init

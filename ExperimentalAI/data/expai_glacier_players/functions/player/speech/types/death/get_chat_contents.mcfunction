@@ -1,5 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..25
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..26
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "god fucking damn it"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "wtf happened"
@@ -27,5 +27,6 @@ execute if score #ChatContentType expai_glacier_players.rng matches 22 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 23 run data modify storage expai_glacier_players.macro chat_contents set value "How did I die there"
 execute if score #ChatContentType expai_glacier_players.rng matches 24 run data modify storage expai_glacier_players.macro chat_contents set value "YES IM FINALLY OUT"
 execute if score #ChatContentType expai_glacier_players.rng matches 25 run data modify storage expai_glacier_players.macro chat_contents set value "its a shame"
+execute if score #ChatContentType expai_glacier_players.rng matches 26 run data modify storage expai_glacier_players.macro chat_contents set value "go touch grass"
 
 function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro

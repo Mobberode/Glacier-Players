@@ -17,6 +17,6 @@ execute if score #ChatContentType expai_glacier_players.rng matches 13 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 14 run data modify storage expai_glacier_players.macro chat_contents set value "i am the one who disconnects"
 execute if score #ChatContentType expai_glacier_players.rng matches 15 run data modify storage expai_glacier_players.macro chat_contents set value "its good seeing you all but i gotta depart"
 execute if score #ChatContentType expai_glacier_players.rng matches 16 run data modify storage expai_glacier_players.macro chat_content_target set value "@e[scores={expai_glacier_players.pid=1..},limit=1,sort=random]"
-execute if score #ChatContentType expai_glacier_players.rng matches 16 run data modify storage expai_glacier_players.macro chat_contents set value "yo lets go to another server"
+execute if score #ChatContentType expai_glacier_players.rng matches 16 run data modify storage expai_glacier_players.macro chat_contents set value " yo lets go to another server"
 
 function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro

@@ -10,6 +10,11 @@ scoreboard objectives add expai_glacier_players.x_pos dummy
 scoreboard objectives add expai_glacier_players.y_pos dummy
 scoreboard objectives add expai_glacier_players.z_pos dummy
 scoreboard objectives add expai_glacier_players.ticks_till_force_destory_dmarker dummy
+scoreboard objectives add expai_glacier_players.mode dummy
+scoreboard objectives add expai_glacier_players.mode_time dummy
+scoreboard objectives add expai_glacier_players.gamemode dummy
+scoreboard objectives add expai_glacier_players.sprint_jump_delay dummy
+scoreboard objectives add expai_glacier_players.poll_decision trigger
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never
 team modify GlacierPlayersTeam seeFriendlyInvisibles false

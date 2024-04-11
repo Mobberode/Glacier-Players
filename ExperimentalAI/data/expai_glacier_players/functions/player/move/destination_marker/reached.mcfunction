@@ -1,2 +1,2 @@
 kill @s
-tag @e[distance=0..1,limit=1] remove expai_glacier_players.summoned_dmarker
+$tag @e[type=armor_stand,tag=gp.pid$(marker_destinations_id),limit=1] remove expai_glacier_players.summoned_dmarker

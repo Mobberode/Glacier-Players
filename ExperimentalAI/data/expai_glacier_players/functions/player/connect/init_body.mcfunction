@@ -1,1 +1,1 @@
-$summon villager ~ ~ ~ {Attributes:[{Name:"generic.scale",Base:1.15},{Name:"generic.max_health",Base:20}],NoAI:true,Silent:true,Tags:["$(pid_num)","GlacierPlayers.Alias"],PersistenceRequired:true,Health:20}
+$summon piglin_brute ~ ~ ~ {Attributes:[{Name:"generic.scale",Base:1.025},{Name:"generic.max_health",Base:20}],NoAI:true,Silent:true,Tags:["$(pid_num)","GlacierPlayers.Alias"],PersistenceRequired:true,Health:20,IsImmuneToZombification:true}

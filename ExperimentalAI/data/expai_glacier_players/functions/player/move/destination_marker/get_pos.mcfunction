@@ -5,4 +5,7 @@ execute store result score @s expai_glacier_players.y_pos store result score #Ma
 execute store result score @s expai_glacier_players.z_pos store result score #Marker_Point expai_glacier_players.z_pos store result storage expai_glacier_players.macro GlacierPlayer.ZPOS int 1 run data get entity @s Pos[2]
 
 ##Run if no dmarker
-execute unless entity @s[tag=expai_glacier_players.summoned_dmarker] run function expai_glacier_players:player/move/destination_marker/set_demarker
+#Not in Liquid
+execute unless entity @s[tag=expai_glacier_players.summoned_dmarker] at @s unless block ^ ^.5 ^ #expai_glacier_players:liquids run function expai_glacier_players:player/move/destination_marker/set_demarker
+#In Liquid
+execute unless entity @s[tag=expai_glacier_players.summoned_dmarker] at @s if block ^ ^.5 ^ #expai_glacier_players:liquids run function expai_glacier_players:player/move/destination_marker/set_demarker_in_liquid

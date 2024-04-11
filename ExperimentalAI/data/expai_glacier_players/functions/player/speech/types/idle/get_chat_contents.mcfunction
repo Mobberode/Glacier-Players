@@ -1,5 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..100
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..110
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "Did anyone watch this night's footys?"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "first thing i see when i venture out is a dirt hut"
@@ -101,5 +101,15 @@ execute if score #ChatContentType expai_glacier_players.rng matches 97 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 98 run data modify storage expai_glacier_players.macro chat_contents set value "Hosting BUILDCON the best building comp ever in minecraft history being hosted in this server!"
 execute if score #ChatContentType expai_glacier_players.rng matches 99 run data modify storage expai_glacier_players.macro chat_contents set value "JOIN join.glacierplayers.bot NOW! NEW EXPERIENCES TO BE MADE! NEW FRIENDS TO MAKE AND THE MOST ENJOYFUL EXPERIENCE YOU WILL EVER HAVE ON MINECRAFT EVER! JOIN NOW!"
 execute if score #ChatContentType expai_glacier_players.rng matches 100 run data modify storage expai_glacier_players.macro chat_contents set value "these graphics wow"
+execute if score #ChatContentType expai_glacier_players.rng matches 101 run data modify storage expai_glacier_players.macro chat_contents set value "can i have netherite armor and tools please"
+execute if score #ChatContentType expai_glacier_players.rng matches 102 run data modify storage expai_glacier_players.macro chat_contents set value "I'll have two number 9s, a number 9 large, a number 6 with extra dip, a number 7, two number 45s, one with cheese, and a large soda."
+execute if score #ChatContentType expai_glacier_players.rng matches 103 run data modify storage expai_glacier_players.macro chat_contents set value "fuck i have to cover this creeper explosion again"
+execute if score #ChatContentType expai_glacier_players.rng matches 104 run data modify storage expai_glacier_players.macro chat_contents set value "no matter how hard i try. i always fall down"
+execute if score #ChatContentType expai_glacier_players.rng matches 105 run data modify storage expai_glacier_players.macro chat_contents set value "oops i fell"
+execute if score #ChatContentType expai_glacier_players.rng matches 106 run data modify storage expai_glacier_players.macro chat_contents set value "thats a deep pit"
+execute if score #ChatContentType expai_glacier_players.rng matches 107 run data modify storage expai_glacier_players.macro chat_contents set value "I just found a zombie with white leather armour guys"
+execute if score #ChatContentType expai_glacier_players.rng matches 108 run data modify storage expai_glacier_players.macro chat_contents set value "Would anyone like to play my minigame?"
+execute if score #ChatContentType expai_glacier_players.rng matches 109 run data modify storage expai_glacier_players.macro chat_contents set value "1827 -3661"
+execute if score #ChatContentType expai_glacier_players.rng matches 110 run data modify storage expai_glacier_players.macro chat_contents set value "-7344 -1829"
 
 function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro

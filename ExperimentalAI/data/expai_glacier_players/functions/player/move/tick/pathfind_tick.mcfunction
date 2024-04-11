@@ -1,2 +1,2 @@
-execute if score @s expai_glacier_players.ticks_till_force_destory_dmarker matches 200.. run function expai_glacier_players:player/move/tick/tick_finished
+execute if score @s expai_glacier_players.ticks_till_force_destory_dmarker matches 100.. run function expai_glacier_players:player/move/tick/tick_finished
 scoreboard players add @s expai_glacier_players.ticks_till_force_destory_dmarker 1
