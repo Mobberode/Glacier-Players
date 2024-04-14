@@ -1,5 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..110
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..111
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "Did anyone watch this night's footys?"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "first thing i see when i venture out is a dirt hut"
@@ -111,5 +111,6 @@ execute if score #ChatContentType expai_glacier_players.rng matches 107 run data
 execute if score #ChatContentType expai_glacier_players.rng matches 108 run data modify storage expai_glacier_players.macro chat_contents set value "Would anyone like to play my minigame?"
 execute if score #ChatContentType expai_glacier_players.rng matches 109 run data modify storage expai_glacier_players.macro chat_contents set value "1827 -3661"
 execute if score #ChatContentType expai_glacier_players.rng matches 110 run data modify storage expai_glacier_players.macro chat_contents set value "-7344 -1829"
+execute if score #ChatContentType expai_glacier_players.rng matches 111 run data modify storage expai_glacier_players.macro chat_contents set value "OK so I was watching space jam 2 and I got RANDOMLY horny. I didn't wanna exit the movie so I just waited till the Lola scene came up. It came. I started JACKING the SHIT out my pecker. And then.. I ACCIDENTLY NUTTED TO LEBRON😭😭😭😭😭😭😭😭😭😭😭😭😭😭"
 
 function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro

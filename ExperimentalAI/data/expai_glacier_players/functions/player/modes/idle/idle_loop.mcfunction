@@ -1,2 +1,2 @@
 ##Loop
-execute as @e[scores={expai_glacier_players.mode=1}] run function expai_glacier_players:player/modes/idle/idle
+execute as @e[scores={expai_glacier_players.mode=1}] unless entity @s[tag=expai_glacier_players.knockbacked] if score @s expai_glacier_players.mode_time matches 1.. run function expai_glacier_players:player/modes/idle/idle

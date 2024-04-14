@@ -1,5 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..16
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..24
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "hi"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "hello"
@@ -17,5 +17,13 @@ execute if score #ChatContentType expai_glacier_players.rng matches 13 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 14 run data modify storage expai_glacier_players.macro chat_contents set value "i am the one who connects"
 execute if score #ChatContentType expai_glacier_players.rng matches 15 run data modify storage expai_glacier_players.macro chat_contents set value "I CANNOT BE RID OF!"
 execute if score #ChatContentType expai_glacier_players.rng matches 16 run data modify storage expai_glacier_players.macro chat_contents set value "serverrrr raiddddd!!!!"
+execute if score #ChatContentType expai_glacier_players.rng matches 17 run data modify storage expai_glacier_players.macro chat_contents set value "yay im unbanned"
+execute if score #ChatContentType expai_glacier_players.rng matches 18 run data modify storage expai_glacier_players.macro chat_contents set value "wtf is this"
+execute if score #ChatContentType expai_glacier_players.rng matches 19 run data modify storage expai_glacier_players.macro chat_contents set value "wth did i just join to"
+execute if score #ChatContentType expai_glacier_players.rng matches 20 run data modify storage expai_glacier_players.macro chat_contents set value "spawn lookin a bit questionable"
+execute if score #ChatContentType expai_glacier_players.rng matches 21 run data modify storage expai_glacier_players.macro chat_contents set value "ayoooo pause why is there dicks at spawn"
+execute if score #ChatContentType expai_glacier_players.rng matches 22 run data modify storage expai_glacier_players.macro chat_contents set value "We have come to grief your bases"
+execute if score #ChatContentType expai_glacier_players.rng matches 23 run data modify storage expai_glacier_players.macro chat_contents set value "####"
+execute if score #ChatContentType expai_glacier_players.rng matches 24 run data modify storage expai_glacier_players.macro chat_contents set value "Hereeeees Johnny!"
 
 function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro
