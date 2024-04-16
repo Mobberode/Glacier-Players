@@ -16,6 +16,10 @@ scoreboard objectives add expai_glacier_players.gamemode dummy
 scoreboard objectives add expai_glacier_players.sprint_jump_delay dummy
 scoreboard objectives add expai_glacier_players.poll_decision trigger
 scoreboard objectives add expai_glacier_players.config dummy
+scoreboard objectives add expai_glacier_players.inventory_slot_count dummy
+scoreboard objectives add expai_glacier_players.inventory_slot_slot dummy
+scoreboard objectives add expai_glacier_players.inventory_slot_comparing_count dummy
+scoreboard objectives add expai_glacier_players.inventory_slot_comparing_slot dummy
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never
 team modify GlacierPlayersTeam seeFriendlyInvisibles false

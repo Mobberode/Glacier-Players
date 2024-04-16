@@ -1,0 +1,1 @@
+$tp @e[tag=GP_Inv.$(pid_num)] @s

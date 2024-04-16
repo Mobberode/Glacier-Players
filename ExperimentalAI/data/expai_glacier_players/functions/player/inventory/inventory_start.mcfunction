@@ -1,0 +1,2 @@
+function expai_glacier_players:player/inventory/inventory_tp with storage expai_glacier_players.macro
+function expai_glacier_players:player/inventory/inventory_gather with storage expai_glacier_players.macro
