@@ -1,0 +1,9 @@
+function expai_glacier_players:player/inventory/item/check/hotbar/1
+function expai_glacier_players:player/inventory/item/check/hotbar/2
+function expai_glacier_players:player/inventory/item/check/hotbar/3
+function expai_glacier_players:player/inventory/item/check/hotbar/4
+function expai_glacier_players:player/inventory/item/check/hotbar/5
+function expai_glacier_players:player/inventory/item/check/hotbar/6
+function expai_glacier_players:player/inventory/item/check/hotbar/7
+function expai_glacier_players:player/inventory/item/check/hotbar/8
+function expai_glacier_players:player/inventory/item/check/hotbar/9

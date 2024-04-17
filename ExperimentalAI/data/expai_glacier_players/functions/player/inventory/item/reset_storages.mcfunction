@@ -1,0 +1,8 @@
+data modify storage expai_glacier_players.inventory_macro item.id set value ""
+data modify storage expai_glacier_players.inventory_macro item.slot set value ""
+data modify storage expai_glacier_players.inventory_macro item.count set value ""
+data modify storage expai_glacier_players.inventory_macro item.components set value ""
+data modify storage expai_glacier_players.inventory_macro picked_item set value ""
+data modify storage expai_glacier_players.inventory_macro picked_item.id set value ""
+data modify storage expai_glacier_players.inventory_macro picked_item.count set value ""
+data modify storage expai_glacier_players.inventory_macro picked_item.components set value ""

@@ -20,6 +20,9 @@ scoreboard objectives add expai_glacier_players.inventory_slot_count dummy
 scoreboard objectives add expai_glacier_players.inventory_slot_slot dummy
 scoreboard objectives add expai_glacier_players.inventory_slot_comparing_count dummy
 scoreboard objectives add expai_glacier_players.inventory_slot_comparing_slot dummy
+scoreboard objectives add expai_glacier_players.inventory_slot_combined_count dummy
+scoreboard objectives add expai_glacier_players.inventory_slot_combined_slot dummy
+
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never
 team modify GlacierPlayersTeam seeFriendlyInvisibles false
