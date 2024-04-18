@@ -1,3 +1,3 @@
-$summon armor_stand ~ ~ ~ {CustomName:"$(connecting_name)",CustomNameVisible:true,PersistenceRequired:true,Tags:["GlacierPlayer","GP.Connecting"],Attributes:[{Name:"generic.max_health",Base:20},{Name:"generic.attack_damage",Base:1}],Health:20,Silent:true,Invulnerable:true,ShowArms:true}
+$summon armor_stand ~ ~ ~ {CustomName:'{"text":"$(connecting_name)"}',CustomNameVisible:true,PersistenceRequired:true,Tags:["GlacierPlayer","GP.Connecting"],Silent:true,Invulnerable:true,ShowArms:true}
 
 execute as @e[tag=GP.Connecting] run function expai_glacier_players:player/connect/init with storage expai_glacier_players.macro
