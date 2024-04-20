@@ -14,3 +14,4 @@ execute if entity @s[tag=expai_glacier_players.knockbacked] run function expai_g
 
 #Failsafe
 $execute unless entity @e[tag=$(pid_num)] run scoreboard players set @s expai_glacier_players.health -1
+execute if score @s expai_glacier_players.y_pos matches ..-63 run function expai_glacier_players:player/death/die_init
