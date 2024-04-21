@@ -1,1 +1,0 @@
-execute if entity @e[type=minecraft:donkey,limit=1,nbt={Items:[{count: 1, Slot: 0b, id: "minecraft:debug_stick"}]}]

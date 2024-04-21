@@ -1,1 +1,1 @@
-execute at @s if entity @e[type=item,distance=0..1] run function expai_glacier_players:player/inventory/inventory_gathered
+execute at @s if entity @e[type=item,distance=0..2] run function expai_glacier_players:player/inventory/inventory_gathered
