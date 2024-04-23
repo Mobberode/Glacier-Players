@@ -3,7 +3,7 @@ data modify storage expai_glacier_players.macro chat_contents_poll_decision_1 se
 data modify storage expai_glacier_players.macro chat_contents_poll_decision_2 set value ""
 data modify storage expai_glacier_players.macro chat_contents_poll_decision_3 set value ""
 data modify storage expai_glacier_players.macro chat_contents_poll_decision_4 set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..8
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..12
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run scoreboard players set #PollDecisions expai_glacier_players.poll_decision 3
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents_poll set value "Which one of the minigames is the best? Battle, Tumble or Glide"
@@ -43,7 +43,7 @@ execute if score #ChatContentType expai_glacier_players.rng matches 6 run data m
 execute if score #ChatContentType expai_glacier_players.rng matches 6 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_4 set value "[12h+]"
 
 execute if score #ChatContentType expai_glacier_players.rng matches 7 run scoreboard players set #PollDecisions expai_glacier_players.poll_decision 3
-execute if score #ChatContentType expai_glacier_players.rng matches 7 run data modify storage expai_glacier_players.macro chat_contents_poll set value "What song does the lyrics belong to: Everything that I went through Made me everything that I am They say life is what happens When you've been busy Making other plans I just learned who I was Through doin' all that I done Livin' off what I live for And I live for what I love, yeah"
+execute if score #ChatContentType expai_glacier_players.rng matches 7 run data modify storage expai_glacier_players.macro chat_contents_poll set value "What song does the lyrics belong to: Everything that I went through Made me everything that I am They msg @a[tag=expai.debug] life is what happens When you've been busy Making other plans I just learned who I was Through doin' all that I done Livin' off what I live for And I live for what I love, yeah"
 execute if score #ChatContentType expai_glacier_players.rng matches 7 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_1 set value "[Exposed (feat. Roze) by Abstract, RoZe]"
 execute if score #ChatContentType expai_glacier_players.rng matches 7 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_2 set value "[Wait Another Day by Mike Williams, Mesto]"
 execute if score #ChatContentType expai_glacier_players.rng matches 7 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_3 set value "[Ongoing Thing by 20syl, Oddisee]"
@@ -52,5 +52,28 @@ execute if score #ChatContentType expai_glacier_players.rng matches 8 run scoreb
 execute if score #ChatContentType expai_glacier_players.rng matches 8 run data modify storage expai_glacier_players.macro chat_contents_poll set value "i am the best pvper there is in the world"
 execute if score #ChatContentType expai_glacier_players.rng matches 8 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_1 set value "[PRAISE THE PVP GOD!!!]"
 execute if score #ChatContentType expai_glacier_players.rng matches 8 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_2 set value "[no]"
+
+execute if score #ChatContentType expai_glacier_players.rng matches 9 run scoreboard players set #PollDecisions expai_glacier_players.poll_decision 2
+execute if score #ChatContentType expai_glacier_players.rng matches 9 run data modify storage expai_glacier_players.macro chat_contents_poll set value "4 or J?"
+execute if score #ChatContentType expai_glacier_players.rng matches 9 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_1 set value "[4]"
+execute if score #ChatContentType expai_glacier_players.rng matches 9 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_2 set value "[J]"
+
+execute if score #ChatContentType expai_glacier_players.rng matches 10 run scoreboard players set #PollDecisions expai_glacier_players.poll_decision 3
+execute if score #ChatContentType expai_glacier_players.rng matches 10 run data modify storage expai_glacier_players.macro chat_contents_poll set value "Spotify or Soundcloud or Bandcamp?"
+execute if score #ChatContentType expai_glacier_players.rng matches 10 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_1 set value "[Spotify]"
+execute if score #ChatContentType expai_glacier_players.rng matches 10 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_2 set value "[Soundcloud]"
+execute if score #ChatContentType expai_glacier_players.rng matches 10 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_3 set value "[Bandcamp]"
+
+execute if score #ChatContentType expai_glacier_players.rng matches 11 run scoreboard players set #PollDecisions expai_glacier_players.poll_decision 3
+execute if score #ChatContentType expai_glacier_players.rng matches 11 run data modify storage expai_glacier_players.macro chat_contents_poll set value "whats 1+2?"
+execute if score #ChatContentType expai_glacier_players.rng matches 11 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_1 set value "[3]"
+execute if score #ChatContentType expai_glacier_players.rng matches 11 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_2 set value "[2]"
+execute if score #ChatContentType expai_glacier_players.rng matches 11 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_3 set value "[idk]"
+
+execute if score #ChatContentType expai_glacier_players.rng matches 12 run scoreboard players set #PollDecisions expai_glacier_players.poll_decision 3
+execute if score #ChatContentType expai_glacier_players.rng matches 12 run data modify storage expai_glacier_players.macro chat_contents_poll set value "------ Freeman"
+execute if score #ChatContentType expai_glacier_players.rng matches 12 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_1 set value "[Gordon Freeman]"
+execute if score #ChatContentType expai_glacier_players.rng matches 12 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_2 set value "[Gorgeous Freeman]"
+execute if score #ChatContentType expai_glacier_players.rng matches 12 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_3 set value "[Gigantic Freeman]"
 
 function expai_glacier_players:player/speech/poll with storage minecraft:expai_glacier_players.macro

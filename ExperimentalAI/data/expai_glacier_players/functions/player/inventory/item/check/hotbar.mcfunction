@@ -1,5 +1,5 @@
 ##Check Item
-$say $(player_inv_slot)
+$msg @a[tag=expai.debug] $(player_inv_slot)
 
 #Check if current slot has same item
 $execute as @e[tag=GP.$(player_inv_id).InvSection1,limit=1] if items entity @s horse.$(player_inv_slot) $(picked_item_id) run function expai_glacier_players:player/inventory/item/check/hotbar/same_item with storage expai_glacier_players.inventory_macro

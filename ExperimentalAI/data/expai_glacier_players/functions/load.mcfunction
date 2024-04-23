@@ -29,6 +29,7 @@ scoreboard objectives add expai_glacier_players.inventory_slot_comparing_count d
 scoreboard objectives add expai_glacier_players.inventory_slot_comparing_slot dummy
 scoreboard objectives add expai_glacier_players.inventory_slot_slot_number dummy
 scoreboard objectives add expai_glacier_players.inventory_item_max_stack_size dummy
+scoreboard objectives add expai_glacier_players.inventory_player_hand dummy
 
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never

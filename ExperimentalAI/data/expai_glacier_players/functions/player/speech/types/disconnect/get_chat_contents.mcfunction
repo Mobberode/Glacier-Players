@@ -1,5 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..16
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..20
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "gtg"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "bye"
@@ -18,5 +18,9 @@ execute if score #ChatContentType expai_glacier_players.rng matches 14 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 15 run data modify storage expai_glacier_players.macro chat_contents set value "its good seeing you all but i gotta depart"
 execute if score #ChatContentType expai_glacier_players.rng matches 16 run data modify storage expai_glacier_players.macro chat_content_target set value "@e[scores={expai_glacier_players.pid=1..},limit=1,sort=random]"
 execute if score #ChatContentType expai_glacier_players.rng matches 16 run data modify storage expai_glacier_players.macro chat_contents set value " yo lets go to another server"
+execute if score #ChatContentType expai_glacier_players.rng matches 17 run data modify storage expai_glacier_players.macro chat_contents set value "gotta take a break now see yall"
+execute if score #ChatContentType expai_glacier_players.rng matches 18 run data modify storage expai_glacier_players.macro chat_contents set value "thats it im moving servers"
+execute if score #ChatContentType expai_glacier_players.rng matches 19 run data modify storage expai_glacier_players.macro chat_contents set value "departure time"
+execute if score #ChatContentType expai_glacier_players.rng matches 20 run data modify storage expai_glacier_players.macro chat_contents set value "adios"
 
 function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro

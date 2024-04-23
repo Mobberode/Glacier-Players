@@ -1,6 +1,6 @@
 tellraw @a ["",{"selector":"@s"},{"text": " was killed"}]
 
-$say $(respawning_id)
+$msg @a[tag=expai.debug] $(respawning_id)
 
 $kill @e[tag=GP_Inv.$(respawning_id)]
 $kill @e[tag=$(respawning_id)]

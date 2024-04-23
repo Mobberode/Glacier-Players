@@ -1,5 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..27
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..40
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "god fucking damn it"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "wtf happened"
@@ -30,5 +30,18 @@ execute if score #ChatContentType expai_glacier_players.rng matches 25 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 26 run data modify storage expai_glacier_players.macro chat_contents set value "go touch grass"
 execute if score #ChatContentType expai_glacier_players.rng matches 27 run data modify storage expai_glacier_players.macro chat_content_target set value "@e[scores={expai_glacier_players.pid=1..},limit=1,sort=random]"
 execute if score #ChatContentType expai_glacier_players.rng matches 27 run data modify storage expai_glacier_players.macro chat_contents set value " 192.168.1.1 https://tenor.com/en-AU/view/sonic-the-hedgehog-cry-about-it-dance-gif-23128148"
+execute if score #ChatContentType expai_glacier_players.rng matches 28 run data modify storage expai_glacier_players.macro chat_contents set value "shit"
+execute if score #ChatContentType expai_glacier_players.rng matches 29 run data modify storage expai_glacier_players.macro chat_contents set value "damn"
+execute if score #ChatContentType expai_glacier_players.rng matches 30 run data modify storage expai_glacier_players.macro chat_contents set value "How low?"
+execute if score #ChatContentType expai_glacier_players.rng matches 31 run data modify storage expai_glacier_players.macro chat_contents set value "oh golly my god this guy"
+execute if score #ChatContentType expai_glacier_players.rng matches 32 run data modify storage expai_glacier_players.macro chat_contents set value "are you joking right now?"
+execute if score #ChatContentType expai_glacier_players.rng matches 33 run data modify storage expai_glacier_players.macro chat_contents set value "mate dont make me pull out the hacks"
+execute if score #ChatContentType expai_glacier_players.rng matches 34 run data modify storage expai_glacier_players.macro chat_contents set value "camper"
+execute if score #ChatContentType expai_glacier_players.rng matches 35 run data modify storage expai_glacier_players.macro chat_contents set value "WOW, REALLY PAYING TO KILL ME HUH? P2W"
+execute if score #ChatContentType expai_glacier_players.rng matches 36 run data modify storage expai_glacier_players.macro chat_contents set value "mfer bouta get reported for hacking"
+execute if score #ChatContentType expai_glacier_players.rng matches 37 run data modify storage expai_glacier_players.macro chat_contents set value "i dont the most stupidest thing i have ever done how"
+execute if score #ChatContentType expai_glacier_players.rng matches 38 run data modify storage expai_glacier_players.macro chat_contents set value "i have no words to describe what happened"
+execute if score #ChatContentType expai_glacier_players.rng matches 39 run data modify storage expai_glacier_players.macro chat_contents set value "time to lock in"
+execute if score #ChatContentType expai_glacier_players.rng matches 40 run data modify storage expai_glacier_players.macro chat_contents set value "you are on thin ice buddy"
 
 function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro
