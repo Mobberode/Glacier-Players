@@ -1,3 +1,4 @@
+##Damage
 execute at @s run playsound entity.player.hurt player @a ^ ^ ^
 execute rotated ~ 0 run particle damage_indicator ^ ^1.5 ^
 #Give tag to self for no movements

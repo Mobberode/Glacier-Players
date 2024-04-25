@@ -12,4 +12,4 @@ execute if score #Type expai_glacier_players.y_pos matches 2 store result storag
 execute if score #Type expai_glacier_players.z_pos matches 2 store result storage expai_glacier_players.macro destination_marker_zpos int 1 run scoreboard players operation #Marker_Point expai_glacier_players.z_pos -= #Z_Score expai_glacier_players.z_pos
 
 ##Run the Spawn function
-function expai_glacier_players:player/move/destination_marker/spawn_marker with storage expai_glacier_players.macro
+function expai_glacier_players:player/move/destination_marker/spawn_marker

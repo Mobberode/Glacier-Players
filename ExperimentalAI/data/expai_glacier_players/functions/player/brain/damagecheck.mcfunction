@@ -6,12 +6,10 @@ $execute if entity @s[nbt={Fire:160s}] run data modify entity @e[tag=$(pid_num),
 
 ##Previous Health > Health
 execute at @s if score @s expai_glacier_players.previous_health > @s expai_glacier_players.health run function expai_glacier_players:player/brain/damage_indicator
-
-##Die and Respawn if Health = 0<
-execute if score @s expai_glacier_players.health matches ..0 run function expai_glacier_players:player/death/die_init
-#Knockback
+#Apply Knockback
 execute if entity @s[tag=expai_glacier_players.knockbacked] run function expai_glacier_players:player/move/damaged/receive_knockback with storage expai_glacier_players.macro
 
-#Failsafe
-$execute unless entity @e[tag=$(pid_num)] run scoreboard players set @s expai_glacier_players.health -1
+##Die and Respawn
+execute if score @s expai_glacier_players.health matches ..0 run function expai_glacier_players:player/death/die_init
+#Void Death
 execute if score @s expai_glacier_players.y_pos matches ..-63 run function expai_glacier_players:player/death/die_init

@@ -1,0 +1,2 @@
+advancement revoke @s only expai_glacier_players:disconnecter/used_gp.disconnect_nearest
+execute at @s as @e[tag=GlacierPlayer,limit=1,sort=nearest] run function expai_glacier_players:player/disconnect/disconnect_start

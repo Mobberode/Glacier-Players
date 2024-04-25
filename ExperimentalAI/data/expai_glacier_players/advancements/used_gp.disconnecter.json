@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "trigger": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": {"gp.disconnecter":true}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {"function": "expai_glacier_players:tools/actions/disconnecter/give_toolset"}
+  }
+  

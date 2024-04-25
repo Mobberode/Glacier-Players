@@ -17,11 +17,13 @@ scoreboard objectives add expai_glacier_players.z_pos dummy
 
 scoreboard objectives add expai_glacier_players.ticks_till_force_destory_dmarker dummy
 scoreboard objectives add expai_glacier_players.mode dummy
+scoreboard objectives add expai_glacier_players.sub_mode dummy
 scoreboard objectives add expai_glacier_players.mode_time dummy
 scoreboard objectives add expai_glacier_players.gamemode dummy
 scoreboard objectives add expai_glacier_players.sprint_jump_delay dummy
 scoreboard objectives add expai_glacier_players.poll_decision trigger
 scoreboard objectives add expai_glacier_players.config dummy
+scoreboard objectives add expai_glacier_players.config_backed dummy
 
 scoreboard objectives add expai_glacier_players.inventory_slot_count dummy
 scoreboard objectives add expai_glacier_players.inventory_slot_slot dummy

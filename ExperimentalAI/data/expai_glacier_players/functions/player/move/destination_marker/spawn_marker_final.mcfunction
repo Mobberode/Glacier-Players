@@ -1,2 +1,3 @@
-$summon marker ~ ~ ~ {Tags:[dmid$(marker_destinations_id),"GP.DMarker"]}
-$execute facing entity @e[tag=dmid$(marker_destinations_id)] eyes run tag @s add expai_glacier_players.summoned_dmarker
+tag @s remove GP.DMarker_Process
+$tp @s $(destination_marker_xpos) $(destination_marker_ypos) $(destination_marker_zpos)
+$tag @s add dmid$(marker_destinations_id)

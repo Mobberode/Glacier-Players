@@ -211,3 +211,4 @@ execute if score #Connecting expai_glacier_players.name_id matches 207 run data 
 execute if score #Connecting expai_glacier_players.name_id matches 208 run data modify storage expai_glacier_players.macro connecting_name set value "NakaourPVP"
 execute if score #Connecting expai_glacier_players.name_id matches 209 run data modify storage expai_glacier_players.macro connecting_name set value "Vamapirstic"
 execute if score #Connecting expai_glacier_players.name_id matches 210 run data modify storage expai_glacier_players.macro connecting_name set value "Kwu~"
+execute if score #Connecting expai_glacier_players.name_id matches 211 run data modify storage expai_glacier_players.macro connecting_name set value "Gideon"

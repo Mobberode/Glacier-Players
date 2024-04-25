@@ -15,6 +15,6 @@ scoreboard players remove @s expai_glacier_players.inventory_slot_count 1
 execute if score @s expai_glacier_players.inventory_slot_count matches ..0 run function expai_glacier_players:player/inventory/item/check/hotbar/same_item/store_processed_item with storage expai_glacier_players.inventory_macro
 
 msg @a[tag=expai.debug] ran stored same item
-tellraw @a ["",{"score":{"name": "@s","objective": "expai_glacier_players.inventory_slot_count"}},{"score":{"name": "@s","objective": "expai_glacier_players.inventory_slot_comparing_count"},"color": "gray"}]
+tellraw @a[tag=expai.debug] ["",{"score":{"name": "@s","objective": "expai_glacier_players.inventory_slot_count"}},{"score":{"name": "@s","objective": "expai_glacier_players.inventory_slot_comparing_count"},"color": "gray"}]
 ##Run Function on loop
 execute unless score @s expai_glacier_players.inventory_slot_count matches ..0 run function expai_glacier_players:player/inventory/item/check/hotbar/same_item/store_item with storage expai_glacier_players.inventory_macro

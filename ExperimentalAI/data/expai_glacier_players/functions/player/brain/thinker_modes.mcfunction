@@ -1,5 +1,5 @@
 ##Randomise
-execute store result score @s expai_glacier_players.mode run random value 1..5
+execute store result score @s expai_glacier_players.mode run random value 1..2
 
 ##Idle/Talkative Mode
 execute if score @s expai_glacier_players.mode matches 1 run function expai_glacier_players:player/modes/idle/set_mode_time

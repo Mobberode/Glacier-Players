@@ -1,1 +1,0 @@
-$kill @e[type=marker,tag=dmid$(disconnecting_id)]

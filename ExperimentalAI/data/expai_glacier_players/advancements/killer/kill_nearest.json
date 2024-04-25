@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "trigger": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": {"gp.kill_nearest":true}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {"function": "expai_glacier_players:tools/kill_gp_nearest"}
+  }
+  

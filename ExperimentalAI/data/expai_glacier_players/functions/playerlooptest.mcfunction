@@ -1,4 +1,4 @@
-execute as @e[type=marker] at @s run particle angry_villager ~ ~ ~
+execute as @e[type=marker] at @s run particle angry_villager ~ ~ ~ 0 0 0 0 1 force @a[tag=expai.debug]
 execute as @e[tag=GlacierPlayers.Alias] run function expai_glacier_players:body_alias/loop
 
 execute as @e[type=tnt,nbt={fuse:1s}] at @s run function expai_glacier_players:world/convert_tnt

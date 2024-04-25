@@ -1,2 +1,9 @@
-tag @e[tag=GlacierPlayer,limit=1] add expai_glacier_players.dissconnecting
-execute as @e[tag=expai_glacier_players.dissconnecting] run function expai_glacier_players:player/disconnect/disconnect_get_player_name with storage expai_glacier_players.macro
+##Get Info
+data modify storage minecraft:expai_glacier_players.macro disconnecting_name set from entity @s CustomName
+execute store result storage expai_glacier_players.macro disconnecting_id int 1 run scoreboard players get @s expai_glacier_players.pid
+
+##Chat
+function expai_glacier_players:player/disconnect/disconnect_speak
+
+##Disconnect
+function expai_glacier_players:player/disconnect/disconnect with storage expai_glacier_players.macro

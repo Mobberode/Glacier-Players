@@ -10,3 +10,4 @@ scoreboard objectives add expai.jump_block_below dummy
 scoreboard objectives add expai.sprint_delay dummy
 scoreboard objectives add expai.creeper_fuse dummy
 function expai:behaviours
+schedule function expai:notify 1s
