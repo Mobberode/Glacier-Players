@@ -1,0 +1,1 @@
+$spreadplayers ~ ~ 0 $(spawnradius) false @s
