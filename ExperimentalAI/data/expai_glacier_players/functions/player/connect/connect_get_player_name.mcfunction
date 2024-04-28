@@ -212,3 +212,7 @@ execute if score #Connecting expai_glacier_players.name_id matches 208 run data 
 execute if score #Connecting expai_glacier_players.name_id matches 209 run data modify storage expai_glacier_players.macro connecting_name set value "Vamapirstic"
 execute if score #Connecting expai_glacier_players.name_id matches 210 run data modify storage expai_glacier_players.macro connecting_name set value "Kwu~"
 execute if score #Connecting expai_glacier_players.name_id matches 211 run data modify storage expai_glacier_players.macro connecting_name set value "Gideon"
+execute if score #Connecting expai_glacier_players.name_id matches 212 run data modify storage expai_glacier_players.macro connecting_name set value "Emminator"
+execute if score #Connecting expai_glacier_players.name_id matches 213 run data modify storage expai_glacier_players.macro connecting_name set value "XOF PRODUCTIONS"
+execute if score #Connecting expai_glacier_players.name_id matches 214 run data modify storage expai_glacier_players.macro connecting_name set value "Vi"
+execute if score #Connecting expai_glacier_players.name_id matches 215 run data modify storage expai_glacier_players.macro connecting_name set value "Elden Lord"

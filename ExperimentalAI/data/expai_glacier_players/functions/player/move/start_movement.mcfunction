@@ -4,7 +4,8 @@ $execute rotated ~ ~ run tp @e[tag=$(pid_num),limit=1] @s
 ##Tick Pathfind
 function expai_glacier_players:player/move/tick/pathfind_tick
 
-##Summon some markers for it to move to
+##Pathfind
+#execute at @s[tag=!expai_glacier_players.summoned_dmarker] run function expai_glacier_players:player/pathfind/initalize
 execute at @s run function expai_glacier_players:player/move/destination_marker/get_pos
 
 ##Set Sub Mode

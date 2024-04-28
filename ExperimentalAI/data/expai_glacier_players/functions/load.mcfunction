@@ -26,6 +26,9 @@ scoreboard objectives add expai_glacier_players.poll_decision trigger
 scoreboard objectives add expai_glacier_players.config dummy
 scoreboard objectives add expai_glacier_players.config_backed dummy
 
+scoreboard objectives add expai_glacier_players.pathfind_ray_steps dummy
+
+
 scoreboard objectives add expai_glacier_players.inventory_slot_count dummy
 scoreboard objectives add expai_glacier_players.inventory_slot_slot dummy
 scoreboard objectives add expai_glacier_players.inventory_slot_comparing_count dummy

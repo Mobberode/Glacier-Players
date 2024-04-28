@@ -2,7 +2,7 @@
 execute store result storage expai_glacier_players.macro pid_num int 1 store result storage expai_glacier_players.inventory_macro pid_num int 1 run scoreboard players get @s expai_glacier_players.pid
 
 ##Get Pos
-function expai_glacier_players:player/position/get
+function expai_glacier_players:player/recurring_functions/get_pos
 
 ##Modes
 function expai_glacier_players:player/brain/thinker_modes_init_check
