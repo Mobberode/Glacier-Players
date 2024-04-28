@@ -17,4 +17,4 @@ execute if score @s expai_glacier_players.inventory_slot_comparing_count >= @s e
 execute if score @s expai_glacier_players.inventory_slot_comparing_count >= @s expai_glacier_players.inventory_item_max_stack_size run msg @a[tag=expai.debug] stack limit reached!
 
 ##Run the store function
-execute unless entity @s[tag=GlacierPlayer.Inv_Next_Item] if entity @s[tag=GlacierPlayer.Inv_Booked] run function expai_glacier_players:player/inventory/item/check/hotbar/same_item/books_store with storage expai_glacier_players.inventory_macro
+execute unless entity @s[tag=GlacierPlayer.Inv_Next_Item] run function expai_glacier_players:player/inventory/item/check/hotbar/same_item/store_item with storage expai_glacier_players.inventory_macro

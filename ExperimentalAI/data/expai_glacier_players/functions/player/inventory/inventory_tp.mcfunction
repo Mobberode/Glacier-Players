@@ -1,1 +1,1 @@
-$tp @e[tag=GP_Inv.$(pid_num)] @s
+tp @e[tag=GlacierPlayer.Inventory_Selected] @s

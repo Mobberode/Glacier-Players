@@ -1,3 +1,3 @@
 ##Kill
-$kill @e[type=marker,tag=dmid$(force_kill_marker_destinations_id)]
+kill @e[type=marker,tag=GlacierPlayer.DMarker_Selected]
 tag @s remove expai_glacier_players.summoned_dmarker

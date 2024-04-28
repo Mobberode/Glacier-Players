@@ -1,2 +1,2 @@
-$execute unless items entity @e[tag=GP.$(player_inv_id).InvSection1,limit=1] horse.$(item_select_hand) minecraft:debug_stick run data modify entity @s HandItems[1] set from entity @e[tag=GP.$(player_inv_id).InvSection1,limit=1] Items[$(item_select_hand)]
+$execute unless items entity @e[tag=GP.Inventory_Selected.InvSection1,limit=1] horse.$(item_select_hand) minecraft:debug_stick run data modify entity @s HandItems[1] set from entity @e[tag=GP.Inventory_Selected.InvSection1,limit=1] Items[$(item_select_hand)]
 msg @a[tag=expai.debug] off hand select

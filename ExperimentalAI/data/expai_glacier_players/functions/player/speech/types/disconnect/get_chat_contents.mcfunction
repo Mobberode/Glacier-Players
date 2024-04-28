@@ -1,5 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..20
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..30
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "gtg"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "bye"
@@ -22,5 +22,16 @@ execute if score #ChatContentType expai_glacier_players.rng matches 17 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 18 run data modify storage expai_glacier_players.macro chat_contents set value "thats it im moving servers"
 execute if score #ChatContentType expai_glacier_players.rng matches 19 run data modify storage expai_glacier_players.macro chat_contents set value "departure time"
 execute if score #ChatContentType expai_glacier_players.rng matches 20 run data modify storage expai_glacier_players.macro chat_contents set value "adios"
+execute if score #ChatContentType expai_glacier_players.rng matches 21 run data modify storage expai_glacier_players.macro chat_contents set value "man this shit is too much"
+execute if score #ChatContentType expai_glacier_players.rng matches 22 run data modify storage expai_glacier_players.macro chat_contents set value "TO HELL WITH YA!"
+execute if score #ChatContentType expai_glacier_players.rng matches 23 run data modify storage expai_glacier_players.macro chat_content_target set value "@e[scores={expai_glacier_players.pid=1..},limit=1,sort=random]"
+execute if score #ChatContentType expai_glacier_players.rng matches 23 run data modify storage expai_glacier_players.macro chat_contents set value " Gonna go sleep with your mother right now"
+execute if score #ChatContentType expai_glacier_players.rng matches 24 run data modify storage expai_glacier_players.macro chat_contents set value "Need to make my gf some coffee gtg"
+execute if score #ChatContentType expai_glacier_players.rng matches 25 run data modify storage expai_glacier_players.macro chat_contents set value "I have to attend a funeral guys bye"
+execute if score #ChatContentType expai_glacier_players.rng matches 26 run data modify storage expai_glacier_players.macro chat_contents set value "god damn you guys sweaty as hell im leaving this hellhole"
+execute if score #ChatContentType expai_glacier_players.rng matches 27 run data modify storage expai_glacier_players.macro chat_contents set value "better watch out lil bro"
+execute if score #ChatContentType expai_glacier_players.rng matches 28 run data modify storage expai_glacier_players.macro chat_contents set value "i have to go now"
+execute if score #ChatContentType expai_glacier_players.rng matches 29 run data modify storage expai_glacier_players.macro chat_contents set value "wait for me"
+execute if score #ChatContentType expai_glacier_players.rng matches 30 run data modify storage expai_glacier_players.macro chat_contents set value "smell yall later"
 
 function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro

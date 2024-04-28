@@ -1,0 +1,2 @@
+function expai_glacier_players:player/recurring_functions/remove_macro_tags
+function expai_glacier_players:player/recurring_functions/get_macros

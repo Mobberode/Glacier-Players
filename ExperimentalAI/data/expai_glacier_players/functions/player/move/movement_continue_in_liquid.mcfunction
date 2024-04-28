@@ -1,2 +1,3 @@
-execute if score @s expai_glacier_players.sub_mode matches 5 run function expai_glacier_players:player/move/water/swim with storage minecraft:expai_glacier_players.macro
-execute if score @s expai_glacier_players.sub_mode matches 6 run function expai_glacier_players:player/move/water/swim_sprint with storage minecraft:expai_glacier_players.macro
+tp @s ~ ~ ~ facing entity @e[tag=GlacierPlayer.DMarker_Selected,limit=1]
+execute if score @s expai_glacier_players.sub_mode matches 5 run function expai_glacier_players:player/move/water/swim
+execute if score @s expai_glacier_players.sub_mode matches 6 run function expai_glacier_players:player/move/water/swim_sprint

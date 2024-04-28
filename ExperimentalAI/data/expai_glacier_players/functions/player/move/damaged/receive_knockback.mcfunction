@@ -1,1 +1,1 @@
-$execute at @e[tag=$(pid_num),limit=1] rotated ~ ~ run tp @s ~ ~ ~
+execute at @e[tag=GlacierPlayer.Alias_Selected,limit=1] rotated ~ ~ run tp @s ~ ~ ~

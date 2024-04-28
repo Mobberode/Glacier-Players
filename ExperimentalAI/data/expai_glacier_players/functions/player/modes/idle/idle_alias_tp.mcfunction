@@ -1,1 +1,1 @@
-$tp @e[tag=$(pid_num),limit=1] @s
+tp @e[tag=GlacierPlayer.Alias_Selected,limit=1] @s
