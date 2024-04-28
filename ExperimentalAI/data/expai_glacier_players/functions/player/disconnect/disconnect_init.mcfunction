@@ -1,0 +1,2 @@
+execute store result score @s expai_glacier_players.rng run random value 0..10000
+execute if score @s expai_glacier_players.rng matches 10000 run function expai_glacier_players:player/disconnect/disconnect_start

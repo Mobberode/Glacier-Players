@@ -9,6 +9,7 @@ scoreboard objectives add expai_glacier_players.previous_health dummy
 
 scoreboard objectives add expai_glacier_players.hunger dummy
 scoreboard objectives add expai_glacier_players.hunger_exhaustion dummy
+scoreboard objectives add expai_glacier_players.hunger_tick dummy
 scoreboard objectives add expai_glacier_players.saturation dummy
 
 scoreboard objectives add expai_glacier_players.x_pos dummy
@@ -32,6 +33,8 @@ scoreboard objectives add expai_glacier_players.inventory_slot_comparing_slot du
 scoreboard objectives add expai_glacier_players.inventory_slot_slot_number dummy
 scoreboard objectives add expai_glacier_players.inventory_item_max_stack_size dummy
 scoreboard objectives add expai_glacier_players.inventory_player_hand dummy
+
+scoreboard objectives add expai_glacier_players.difficulty dummy
 
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never

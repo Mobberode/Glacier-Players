@@ -7,6 +7,9 @@ function expai_glacier_players:player/position/get
 ##Modes
 function expai_glacier_players:player/brain/thinker_modes_init_check
 
+##Hunger
+function expai_glacier_players:player/hunger/temp
+
 ##Inventory
 execute rotated ~ 0 run function expai_glacier_players:player/inventory/inventory_start
 
@@ -14,5 +17,4 @@ execute rotated ~ 0 run function expai_glacier_players:player/inventory/inventor
 function expai_glacier_players:player/brain/damagecheck with storage minecraft:expai_glacier_players.macro
 
 ##Disconnect
-execute store result score @s expai_glacier_players.rng run random value 0..10000
-execute if score @s expai_glacier_players.rng matches 10000 run function expai_glacier_players:player/disconnect/disconnect_start
+execute unless score #AutomaticDisconnect expai_glacier_players.config matches 1 run function expai_glacier_players:player/disconnect/disconnect_init

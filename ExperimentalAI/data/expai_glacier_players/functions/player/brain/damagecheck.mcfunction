@@ -9,7 +9,7 @@ execute at @s if score @s expai_glacier_players.previous_health > @s expai_glaci
 #Apply Knockback
 execute if entity @s[tag=expai_glacier_players.knockbacked] run function expai_glacier_players:player/move/damaged/receive_knockback with storage expai_glacier_players.macro
 
+#Void Death
+#execute if score @s expai_glacier_players.y_pos matches ..-63 run function expai_glacier_players:player/death/die_init
 ##Die and Respawn
 execute if score @s expai_glacier_players.health matches ..0 run function expai_glacier_players:player/death/die_init
-#Void Death
-execute if score @s expai_glacier_players.y_pos matches ..-63 run function expai_glacier_players:player/death/die_init

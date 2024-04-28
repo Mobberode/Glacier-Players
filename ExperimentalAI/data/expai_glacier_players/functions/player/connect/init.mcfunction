@@ -5,5 +5,7 @@ execute unless score @s expai_glacier_players.pid matches 1.. run function expai
 
 function expai_glacier_players:player/connect/connect_speak
 
+function expai_glacier_players:player/recurring_functions/set_hunger
+
 execute store result storage expai_glacier_players.macro pid_num int 1 run scoreboard players get @s expai_glacier_players.pid
 function expai_glacier_players:player/connect/init_body with storage expai_glacier_players.macro

@@ -14,3 +14,5 @@ execute unless entity @s[tag=GlacierPlayer.Inv_Sorted_Item] run function expai_g
 
 execute store result storage expai_glacier_players.inventory_macro player_inv_slot int 1 run scoreboard players set @s expai_glacier_players.inventory_slot_slot_number 0
 execute unless entity @s[tag=GlacierPlayer.Inv_Sorted_Item] run function expai_glacier_players:player/inventory/item/check/inventory_2 with storage expai_glacier_players.inventory_macro
+
+execute unless entity @s[tag=GlacierPlayer.Inv_Sorted_Item] run function expai_glacier_players:player/inventory/item/check/no_space with storage expai_glacier_players.inventory_macro
