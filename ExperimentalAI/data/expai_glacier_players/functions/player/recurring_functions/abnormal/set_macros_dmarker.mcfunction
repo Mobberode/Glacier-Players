@@ -1,1 +1,0 @@
-tag @s add GlacierPlayer.Abnormal_Selected

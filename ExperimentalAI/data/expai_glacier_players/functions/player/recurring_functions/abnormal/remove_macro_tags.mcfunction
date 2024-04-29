@@ -1,0 +1,1 @@
+tag @e[tag=GlacierPlayer.Abnormal_Selected] remove GlacierPlayer.Abnormal_Selected
