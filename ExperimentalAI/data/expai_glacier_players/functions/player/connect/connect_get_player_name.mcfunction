@@ -1,4 +1,4 @@
-execute store result score #Connecting expai_glacier_players.name_id run random value 1..217
+execute store result score #Connecting expai_glacier_players.name_id run random value 1..219
 
 execute if score #Connecting expai_glacier_players.name_id matches 1 run data modify storage expai_glacier_players.macro connecting_name set value "Alf-Coe"
 execute if score #Connecting expai_glacier_players.name_id matches 2 run data modify storage expai_glacier_players.macro connecting_name set value "jaydent2015"
@@ -218,3 +218,5 @@ execute if score #Connecting expai_glacier_players.name_id matches 214 run data 
 execute if score #Connecting expai_glacier_players.name_id matches 215 run data modify storage expai_glacier_players.macro connecting_name set value "Elden Lord"
 execute if score #Connecting expai_glacier_players.name_id matches 216 run data modify storage expai_glacier_players.macro connecting_name set value "amateurpainter32"
 execute if score #Connecting expai_glacier_players.name_id matches 217 run data modify storage expai_glacier_players.macro connecting_name set value "LegendTheRobot"
+execute if score #Connecting expai_glacier_players.name_id matches 218 run data modify storage expai_glacier_players.macro connecting_name set value "traincrisis"
+execute if score #Connecting expai_glacier_players.name_id matches 219 run data modify storage expai_glacier_players.macro connecting_name set value "SwagRum76_"

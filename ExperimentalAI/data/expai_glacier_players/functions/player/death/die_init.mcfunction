@@ -1,8 +1,7 @@
 #If Force Killed
-function expai_glacier_players:player/recurring_functions/dual_macros
+function expai_glacier_players:player/recurring_functions/dual_macros_all with storage expai_glacier_players.macro
 
 ##Get Fake Player Info
-execute store result storage expai_glacier_players.macro respawning_id int 1 store result score #StoredDeathID expai_glacier_players.pid run scoreboard players get @s expai_glacier_players.pid
 data modify storage expai_glacier_players.macro respawning_name set from entity @s CustomName
 
 ##Die

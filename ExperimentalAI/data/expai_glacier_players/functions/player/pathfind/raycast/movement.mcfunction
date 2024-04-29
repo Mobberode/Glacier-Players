@@ -1,7 +1,7 @@
 ##Move
 tp @s ^ ^ ^0.5
 execute at @s run function expai_glacier_players:player/pathfind/raycast/movement_checks
-particle dust{color:[1,0,0],scale:1} ~ ~ ~ 0 0 0 0 1 force @a[tag=expai.debug]
+#particle dust{color:[1,0,0],scale:1} ~ ~ ~ 0 0 0 0 1 force @a[tag=expai.debug]
 execute at @s run function expai_glacier_players:player/pathfind/raycast/block_detection
 
 #Tick down

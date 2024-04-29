@@ -6,6 +6,6 @@ playsound block.amethyst_block.step player @a
 ##Schedule Poll Timer
 schedule function expai_glacier_players:player/speech/poll/poll_duration 1t
 
-##Ack
+##Ask
 scoreboard players set @e[scores={expai_glacier_players.poll_decision=0..}] expai_glacier_players.poll_decision -1
 schedule function expai_glacier_players:player/speech/poll/acknowledge_loop 1s

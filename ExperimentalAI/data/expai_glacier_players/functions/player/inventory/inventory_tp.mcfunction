@@ -1,1 +1,1 @@
-tp @e[tag=GlacierPlayer.Inventory_Selected] @s
+tp @e[tag=GlacierPlayer.Inventory_Selected,limit=1] @s

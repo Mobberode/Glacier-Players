@@ -8,7 +8,7 @@ tag @s remove expai.can_jump
 tag @s remove expai.can_jump_invalid
 tag @s add expai.gap_closer_activated
 ##Summon
-summon area_effect_cloud ^ ^ ^ {Tags:[GapRay]}
+summon marker ^ ^ ^ {Tags:[GapRay]}
 #TP
 execute rotated ~ 0 run tp @e[tag=GapRay,sort=nearest,limit=1] ^ ^-0.5 ^0.75 ~ 0
 ##Process

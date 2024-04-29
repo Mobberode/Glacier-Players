@@ -1,1 +1,1 @@
-execute at @e[tag=GlacierPlayer.Alias_Selected,limit=1] rotated ~ ~ run tp @s ~ ~ ~
+tp @s ~ ~ ~ ~ ~

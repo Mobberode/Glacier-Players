@@ -39,6 +39,8 @@ scoreboard objectives add expai_glacier_players.inventory_player_hand dummy
 
 scoreboard objectives add expai_glacier_players.difficulty dummy
 
+scoreboard objectives add expai_glacier_players.tnt_fuse_timer dummy
+
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never
 team modify GlacierPlayersTeam seeFriendlyInvisibles false

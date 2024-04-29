@@ -1,6 +1,7 @@
 ##Logic Thinker
-#Set Macros before hand if any is applicable
+#Recurring Functions
 function expai_glacier_players:player/recurring_functions/dual_macros
+function expai_glacier_players:body_alias/loop
 
 ##Get Pos
 function expai_glacier_players:player/recurring_functions/get_pos
@@ -9,10 +10,9 @@ function expai_glacier_players:player/recurring_functions/get_pos
 function expai_glacier_players:player/brain/thinker_modes_init_check
 
 ##Hunger
-function expai_glacier_players:player/hunger/temp
+#function expai_glacier_players:player/hunger/temp
 
 ##Inventory
-#(Note: Optimize ms per tick by not spawning inventory1 & 2 till needed. inventory 0 shall be always needed)
 execute rotated ~ 0 run function expai_glacier_players:player/inventory/inventory_start
 
 ##Damage Check

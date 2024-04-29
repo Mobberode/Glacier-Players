@@ -1,7 +1,7 @@
 ##Tag Self
 tag @s add expai.wall_detector_activated
 ##Summon
-summon area_effect_cloud ~ ~ ~ {Tags:[WallDetectRay]}
+summon marker ~ ~ ~ {Tags:[WallDetectRay]}
 #TP
 execute anchored eyes rotated as @s run tp @e[tag=WallDetectRay,sort=nearest,limit=1] ^ ^-0.85 ^ ~ ~
 ##Process

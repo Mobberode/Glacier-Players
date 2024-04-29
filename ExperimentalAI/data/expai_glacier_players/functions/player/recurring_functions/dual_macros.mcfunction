@@ -1,2 +1,3 @@
+execute store result storage expai_glacier_players.macro pid_num int 1 run scoreboard players get @s expai_glacier_players.pid
 function expai_glacier_players:player/recurring_functions/remove_macro_tags
-function expai_glacier_players:player/recurring_functions/get_macros
+function expai_glacier_players:player/recurring_functions/set_macros with storage expai_glacier_players.macro

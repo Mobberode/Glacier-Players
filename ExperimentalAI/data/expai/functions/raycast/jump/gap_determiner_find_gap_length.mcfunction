@@ -18,7 +18,7 @@ execute at @s unless block ^ ^ ^ #expai:non_solids if block ^ ^1 ^ #expai:non_so
 
 ##Move
 tp @s ^ ^ ^0.5
-particle dust{color:[1,0,0],scale:1} ~ ~ ~ 0 0 0 0 1 force @a[tag=expai.debug]
+#particle dust{color:[1,0,0],scale:1} ~ ~ ~ 0 0 0 0 1 force @a[tag=expai.debug]
 
 #Tick down
 scoreboard players remove @s expai.raycast_steps 1

@@ -1,1 +1,1 @@
-tag @e remove GlacierPlayer.Pickup_Delayed
+tag @e[tag=GlacierPlayer.Pickup_Delayed,limit=1] remove GlacierPlayer.Pickup_Delayed

@@ -6,7 +6,6 @@ tag @s remove GlacierPlayer.Inv_Sorted_Item
 tag @s remove GlacierPlayer.Inv_Booked
 
 ##Spawn more inventory entites if needed
-say hhi
 execute unless entity @s[tag=GlacierPlayer.Full_Inventory_Summoned] run function expai_glacier_players:player/inventory/entites/summon
 
 execute store result storage expai_glacier_players.inventory_macro player_inv_slot int 1 run scoreboard players set @s expai_glacier_players.inventory_slot_slot_number 0
