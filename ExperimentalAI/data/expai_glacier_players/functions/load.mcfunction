@@ -21,9 +21,9 @@ scoreboard objectives add expai_glacier_players.mode dummy
 scoreboard objectives add expai_glacier_players.sub_mode dummy
 scoreboard objectives add expai_glacier_players.mode_time dummy
 scoreboard objectives add expai_glacier_players.gamemode dummy
-scoreboard objectives add expai_glacier_players.sprint_jump_delay dummy
 scoreboard objectives add expai_glacier_players.poll_decision trigger
 scoreboard objectives add expai_glacier_players.config dummy
+scoreboard objectives add expai_glacier_players.quality_level dummy
 scoreboard objectives add expai_glacier_players.config_backed dummy
 
 scoreboard objectives add expai_glacier_players.pathfind_ray_steps dummy
@@ -41,6 +41,7 @@ scoreboard objectives add expai_glacier_players.difficulty dummy
 
 scoreboard objectives add expai_glacier_players.tnt_fuse_timer dummy
 
+team add GlacierPlayers.DMCanidates
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never
 team modify GlacierPlayersTeam seeFriendlyInvisibles false

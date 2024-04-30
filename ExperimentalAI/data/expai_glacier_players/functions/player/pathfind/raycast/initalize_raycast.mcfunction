@@ -1,4 +1,5 @@
 ##
+execute store result score #Distance expai_glacier_players.pathfind_ray_steps run random value 11..20
 summon marker ~ ~ ~ {Tags:["GlacierPlayer.Pathfind_Ray"]}
-execute rotated as @s run tp @e[tag=GlacierPlayer.Pathfind_Ray,limit=1] ~ ~ ~ ~ 0
-execute as @e[tag=GlacierPlayer.Pathfind_Ray,limit=1] run function expai_glacier_players:player/pathfind/raycast/process
+execute rotated as @s run tp @e[limit=1,tag=GlacierPlayer.Pathfind_Ray] ~ ~ ~ ~ 0
+execute as @e[limit=1,tag=GlacierPlayer.Pathfind_Ray] run function expai_glacier_players:player/pathfind/raycast/process
