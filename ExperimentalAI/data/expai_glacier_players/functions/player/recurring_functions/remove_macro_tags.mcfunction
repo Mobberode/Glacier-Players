@@ -1,1 +1,0 @@
-execute as @e[tag=GlacierPlayer.Selected] run function expai_glacier_players:player/recurring_functions/remove_macro_tags_do

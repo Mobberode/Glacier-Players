@@ -1,4 +1,3 @@
-data modify storage minecraft:expai_glacier_players.macro chatter_name set from entity @s CustomName
 execute store result score @s expai_glacier_players.speech_type run random value 1..100
 ##Neutral (1)
 execute if score @s expai_glacier_players.speech_type matches 1..96 run function expai_glacier_players:player/speech/types/idle/get_chat_contents

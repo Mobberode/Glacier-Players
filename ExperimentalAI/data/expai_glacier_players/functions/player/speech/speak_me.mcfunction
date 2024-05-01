@@ -1,1 +1,1 @@
-$tellraw @a ["",{"text":"* "},{"text":$(chatter_name)},{"text":" "},{"text":"$(chat_contents)"}]
+$tellraw @a ["",{"text":"* "},{"selector":"@s"},{"text":" "},{"text":"$(chat_contents)"}]
