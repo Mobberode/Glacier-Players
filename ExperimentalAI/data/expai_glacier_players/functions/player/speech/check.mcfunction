@@ -1,0 +1,2 @@
+execute unless score #Voices expai_glacier_players.config matches 1 run function expai_glacier_players:player/speech/start_speak
+execute if score #Voices expai_glacier_players.config matches 1 run function expai_glacier_players:player/speech/start_speak_b

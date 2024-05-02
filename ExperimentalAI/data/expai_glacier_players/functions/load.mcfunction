@@ -1,8 +1,15 @@
 scoreboard objectives add expai_glacier_players.name_id dummy
+
 scoreboard objectives add expai_glacier_players.rng dummy
+
 scoreboard objectives add expai_glacier_players.move_pause_timer dummy
-scoreboard objectives add expai_glacier_players.talk_delay dummy
+
+scoreboard objectives add expai_glacier_players.communication_type dummy
 scoreboard objectives add expai_glacier_players.speech_type dummy
+scoreboard objectives add expai_glacier_players.talk_delay dummy
+scoreboard objectives add expai_glacier_players.voice_timer dummy
+
+scoreboard objectives add expai_glacier_players.personality dummy
 scoreboard objectives add expai_glacier_players.pid dummy
 scoreboard objectives add expai_glacier_players.health dummy
 scoreboard objectives add expai_glacier_players.previous_health dummy

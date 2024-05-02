@@ -1,5 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..150
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..165
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "Did anyone watch this night's footys?"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "first thing i see when i venture out is a dirt hut"
@@ -151,5 +151,22 @@ execute if score #ChatContentType expai_glacier_players.rng matches 147 run data
 execute if score #ChatContentType expai_glacier_players.rng matches 148 run data modify storage expai_glacier_players.macro chat_contents set value "/claim oh wait the command doesnt exist"
 execute if score #ChatContentType expai_glacier_players.rng matches 149 run data modify storage expai_glacier_players.macro chat_contents set value "me if i was written by vivziepop: FUCK FUCK FUCK SHIT SHIT SEX GAY LESIBAN HOT SEX I FEEL THE NEED TO FUCK ALL NIGHT SHIT PUSSY IM SUCKING COCK"
 execute if score #ChatContentType expai_glacier_players.rng matches 150 run data modify storage expai_glacier_players.macro chat_contents set value "im on lsd and fent and i think im seeing things"
+#These should be in somewhere else but here for now
+execute if score #ChatContentType expai_glacier_players.rng matches 151 run data modify storage expai_glacier_players.macro chat_contents set value "hello 911 i would like to report this abosulte filth of a human being"
+execute if score #ChatContentType expai_glacier_players.rng matches 152 run data modify storage expai_glacier_players.macro chat_contents set value "whats wrong with you people"
+execute if score #ChatContentType expai_glacier_players.rng matches 153 run data modify storage expai_glacier_players.macro chat_contents set value "you say that when in reality, even a kid with down syndrome is smarter than you"
+execute if score #ChatContentType expai_glacier_players.rng matches 154 run data modify storage expai_glacier_players.macro chat_contents set value "you being dumb should be a crime"
+execute if score #ChatContentType expai_glacier_players.rng matches 155 run data modify storage expai_glacier_players.macro chat_contents set value "not when you yourself is losing 3-0"
+execute if score #ChatContentType expai_glacier_players.rng matches 156 run data modify storage expai_glacier_players.macro chat_contents set value "u sure u wanna do that?"
+execute if score #ChatContentType expai_glacier_players.rng matches 157 run data modify storage expai_glacier_players.macro chat_contents set value "go ahead"
+execute if score #ChatContentType expai_glacier_players.rng matches 158 run data modify storage expai_glacier_players.macro chat_contents set value "bro stop harassing me"
+execute if score #ChatContentType expai_glacier_players.rng matches 159 run data modify storage expai_glacier_players.macro chat_contents set value "im the sunshine and you are not escaping my gaze"
+execute if score #ChatContentType expai_glacier_players.rng matches 160 run data modify storage expai_glacier_players.macro chat_contents set value "oh hey its mister loser"
+#
+execute if score #ChatContentType expai_glacier_players.rng matches 161 run data modify storage expai_glacier_players.macro chat_contents set value "We need to find Whuka"
+execute if score #ChatContentType expai_glacier_players.rng matches 162 run data modify storage expai_glacier_players.macro chat_contents set value "epic embed fail"
+execute if score #ChatContentType expai_glacier_players.rng matches 163 run data modify storage expai_glacier_players.macro chat_contents set value "Ain't no way"
+execute if score #ChatContentType expai_glacier_players.rng matches 164 run data modify storage expai_glacier_players.macro chat_contents set value "Impossible"
+execute if score #ChatContentType expai_glacier_players.rng matches 165 run data modify storage expai_glacier_players.macro chat_contents set value "https://tenor.com/en-AU/view/hello-there-hi-there-greetings-gif-9442662"
 
 function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro

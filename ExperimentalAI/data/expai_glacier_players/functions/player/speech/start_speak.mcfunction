@@ -5,12 +5,6 @@ execute if score @s expai_glacier_players.speech_type matches 1..96 run function
 execute if score @s expai_glacier_players.speech_type matches 500 run function expai_glacier_players:player/speech/start_speak
 ##Died (3)
 
-##Happy (4)
-
-##Memey (5)
-
-##Degenerate (6)
-
 ##/me
 execute if score @s expai_glacier_players.speech_type matches 97..99 run function expai_glacier_players:player/speech/types/me/get_chat_contents
 
