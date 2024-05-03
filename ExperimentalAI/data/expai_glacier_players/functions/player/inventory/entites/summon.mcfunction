@@ -1,3 +1,2 @@
-say optimization summoner inv function ran
 execute unless entity @s[tag=GlacierPlayer.Second_Inventory_Summoned] as @e[limit=1,tag=GP.Inventory_Selected.InvSection1] unless items entity @s horse.7 debug_stick run function expai_glacier_players:player/inventory/entites/summon_second with storage expai_glacier_players.macro
 execute unless entity @s[tag=GlacierPlayer.Third_Inventory_Summoned] as @e[limit=1,tag=GP.Inventory_Selected.InvSection2] unless items entity @s horse.12 debug_stick run function expai_glacier_players:player/inventory/entites/summon_third with storage expai_glacier_players.macro

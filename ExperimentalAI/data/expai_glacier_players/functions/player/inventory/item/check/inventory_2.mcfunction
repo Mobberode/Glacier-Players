@@ -1,6 +1,6 @@
 msg @a[tag=expai.debug] ran inv check 2
 ##Check Item
-$msg @a[tag=expai.debug] $(player_inv_slot)
+tellraw @a[tag=expai.debug] ["",{"score":{"name": "@s","objective": "expai_glacier_players.inventory_slot_slot_number"}}]
 
 #Check if current slot has same item
 $execute as @e[limit=1,tag=GP.Inventory_Selected.InvSection3] if items entity @s horse.$(player_inv_slot) $(picked_item_id) run function expai_glacier_players:player/inventory/item/check/hotbar/same_item with storage expai_glacier_players.inventory_macro

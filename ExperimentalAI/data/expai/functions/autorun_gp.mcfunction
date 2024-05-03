@@ -1,3 +1,0 @@
-function expai_glacier_players:tools/give_toolset
-function expai_glacier_players:load
-function expai_glacier_players:playerlooptest

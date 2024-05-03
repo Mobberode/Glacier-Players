@@ -53,4 +53,3 @@ team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never
 team modify GlacierPlayersTeam seeFriendlyInvisibles false
 team modify GlacierPlayersTeam friendlyFire false
-execute unless score #Amount expai_glacier_players.name_id matches 0.. run scoreboard players set #Amount expai_glacier_players.name_id 101

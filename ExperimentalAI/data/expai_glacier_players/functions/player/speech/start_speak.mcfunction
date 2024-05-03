@@ -10,4 +10,3 @@ execute if score @s expai_glacier_players.speech_type matches 97..99 run functio
 
 ##Poll
 execute if score @s expai_glacier_players.speech_type matches 100 unless score #Timer expai_glacier_players.poll_decision matches 1.. run function expai_glacier_players:player/speech/types/polls/get_chat_contents
-
