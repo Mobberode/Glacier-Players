@@ -1,5 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..40
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..50
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "had now decided he wanted to die"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "thought he could be him to find out he was not really him"
@@ -41,5 +41,15 @@ execute if score #ChatContentType expai_glacier_players.rng matches 37 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 38 run data modify storage expai_glacier_players.macro chat_contents set value "has gotten +rep!"
 execute if score #ChatContentType expai_glacier_players.rng matches 39 run data modify storage expai_glacier_players.macro chat_contents set value "has gotten -rep!"
 execute if score #ChatContentType expai_glacier_players.rng matches 40 run data modify storage expai_glacier_players.macro chat_contents set value "swag meters are off the charts"
+execute if score #ChatContentType expai_glacier_players.rng matches 41 run data modify storage expai_glacier_players.macro chat_contents set value "has obtained the pass!"
+execute if score #ChatContentType expai_glacier_players.rng matches 42 run data modify storage expai_glacier_players.macro chat_contents set value "is a spy!"
+execute if score #ChatContentType expai_glacier_players.rng matches 43 run data modify storage expai_glacier_players.macro chat_contents set value "shouts for a medic"
+execute if score #ChatContentType expai_glacier_players.rng matches 44 run data modify storage expai_glacier_players.macro chat_contents set value "snores cutely"
+execute if score #ChatContentType expai_glacier_players.rng matches 45 run data modify storage expai_glacier_players.macro chat_contents set value "jabroni brawls"
+execute if score #ChatContentType expai_glacier_players.rng matches 46 run data modify storage expai_glacier_players.macro chat_contents set value "rapped like a rap god"
+execute if score #ChatContentType expai_glacier_players.rng matches 47 run data modify storage expai_glacier_players.macro chat_contents set value "thinks of your opinion as invalid"
+execute if score #ChatContentType expai_glacier_players.rng matches 48 run data modify storage expai_glacier_players.macro chat_contents set value "doesnt like it when you come."
+execute if score #ChatContentType expai_glacier_players.rng matches 49 run data modify storage expai_glacier_players.macro chat_contents set value "is just gonna ignore that"
+execute if score #ChatContentType expai_glacier_players.rng matches 50 run data modify storage expai_glacier_players.macro chat_contents set value "thinks this game is a rhtyhm game when its not"
 
 function expai_glacier_players:player/speech/speak_me with storage minecraft:expai_glacier_players.macro

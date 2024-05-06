@@ -1,5 +1,3 @@
-#Visuals for Voices
-
 execute store result score @s expai_glacier_players.speech_type run random value 1..100
 ##Neutral (1)
 execute if score @s expai_glacier_players.speech_type matches 1..85 run function expai_glacier_players:player/speech/types/idle/get_chat_contents

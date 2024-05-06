@@ -1,5 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..40
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..51
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "god fucking damn it"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "wtf happened"
@@ -43,5 +43,16 @@ execute if score #ChatContentType expai_glacier_players.rng matches 37 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 38 run data modify storage expai_glacier_players.macro chat_contents set value "i have no words to describe what happened"
 execute if score #ChatContentType expai_glacier_players.rng matches 39 run data modify storage expai_glacier_players.macro chat_contents set value "time to lock in"
 execute if score #ChatContentType expai_glacier_players.rng matches 40 run data modify storage expai_glacier_players.macro chat_contents set value "you are on thin ice buddy"
+execute if score #ChatContentType expai_glacier_players.rng matches 41 run data modify storage expai_glacier_players.macro chat_contents set value "DANG THAT DAMAGE"
+execute if score #ChatContentType expai_glacier_players.rng matches 42 run data modify storage expai_glacier_players.macro chat_contents set value "wtf how"
+execute if score #ChatContentType expai_glacier_players.rng matches 43 run data modify storage expai_glacier_players.macro chat_contents set value "can we nerf this guy please"
+execute if score #ChatContentType expai_glacier_players.rng matches 44 run data modify storage expai_glacier_players.macro chat_contents set value "how you get those hits man"
+execute if score #ChatContentType expai_glacier_players.rng matches 45 run data modify storage expai_glacier_players.macro chat_contents set value "reported"
+execute if score #ChatContentType expai_glacier_players.rng matches 46 run data modify storage expai_glacier_players.macro chat_contents set value "haxs"
+execute if score #ChatContentType expai_glacier_players.rng matches 47 run data modify storage expai_glacier_players.macro chat_contents set value "IM ABOUT TUI FUAKD HUHAWHA"
+execute if score #ChatContentType expai_glacier_players.rng matches 48 run data modify storage expai_glacier_players.macro chat_contents set value "i wish i could pressure crush you with cars taped together like a crusher"
+execute if score #ChatContentType expai_glacier_players.rng matches 49 run data modify storage expai_glacier_players.macro chat_contents set value "not him"
+execute if score #ChatContentType expai_glacier_players.rng matches 50 run data modify storage expai_glacier_players.macro chat_contents set value "you are not that guy"
+execute if score #ChatContentType expai_glacier_players.rng matches 51 run data modify storage expai_glacier_players.macro chat_contents set value "this guy bro"
 
 function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro

@@ -48,6 +48,12 @@ scoreboard objectives add expai_glacier_players.difficulty dummy
 
 scoreboard objectives add expai_glacier_players.tnt_fuse_timer dummy
 
+scoreboard objectives add expai_glacier_players.experience_max_amount dummy
+scoreboard objectives add expai_glacier_players.experience_current_amount dummy
+scoreboard objectives add expai_glacier_players.experience_level dummy
+
+#/data get entity @e[type=minecraft:experience_orb,limit=1] Value
+
 team add GlacierPlayers.DMCanidates
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never

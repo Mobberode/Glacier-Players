@@ -1,5 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..30
+execute store result score #ChatContentType expai_glacier_players.rng run random value 1..35
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "gtg"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "bye"
@@ -33,5 +33,10 @@ execute if score #ChatContentType expai_glacier_players.rng matches 27 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 28 run data modify storage expai_glacier_players.macro chat_contents set value "i have to go now"
 execute if score #ChatContentType expai_glacier_players.rng matches 29 run data modify storage expai_glacier_players.macro chat_contents set value "wait for me"
 execute if score #ChatContentType expai_glacier_players.rng matches 30 run data modify storage expai_glacier_players.macro chat_contents set value "smell yall later"
+execute if score #ChatContentType expai_glacier_players.rng matches 31 run data modify storage expai_glacier_players.macro chat_contents set value "eat my dick"
+execute if score #ChatContentType expai_glacier_players.rng matches 32 run data modify storage expai_glacier_players.macro chat_contents set value "I... will get revenge someday"
+execute if score #ChatContentType expai_glacier_players.rng matches 33 run data modify storage expai_glacier_players.macro chat_contents set value "im now on my villian arc. see you soon"
+execute if score #ChatContentType expai_glacier_players.rng matches 34 run data modify storage expai_glacier_players.macro chat_contents set value "alright gotta say goodbye"
+execute if score #ChatContentType expai_glacier_players.rng matches 35 run data modify storage expai_glacier_players.macro chat_contents set value "i got work to do so ima dip"
 
 function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro
