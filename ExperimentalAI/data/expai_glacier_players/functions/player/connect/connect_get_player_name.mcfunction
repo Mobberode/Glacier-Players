@@ -1,4 +1,4 @@
-execute store result score #Connecting expai_glacier_players.name_id run random value 1..300
+execute store result score #Connecting expai_glacier_players.name_id run random value 1..325
 
 execute if score #Connecting expai_glacier_players.name_id matches 1 run data modify storage expai_glacier_players.macro connecting_name set value "Alf-Coe"
 execute if score #Connecting expai_glacier_players.name_id matches 2 run data modify storage expai_glacier_players.macro connecting_name set value "jaydent2015"
@@ -301,13 +301,28 @@ execute if score #Connecting expai_glacier_players.name_id matches 297 run data 
 execute if score #Connecting expai_glacier_players.name_id matches 298 run data modify storage expai_glacier_players.macro connecting_name set value "PIXELBoy"
 execute if score #Connecting expai_glacier_players.name_id matches 299 run data modify storage expai_glacier_players.macro connecting_name set value "0nyx"
 execute if score #Connecting expai_glacier_players.name_id matches 300 run data modify storage expai_glacier_players.macro connecting_name set value "Ultimate_Lifeform"
-
-
-
-
-
-
-
-
-
-
+execute if score #Connecting expai_glacier_players.name_id matches 301 run data modify storage expai_glacier_players.macro connecting_name set value "Wallet Inspector"
+execute if score #Connecting expai_glacier_players.name_id matches 302 run data modify storage expai_glacier_players.macro connecting_name set value "[Bot]Player"
+execute if score #Connecting expai_glacier_players.name_id matches 303 run data modify storage expai_glacier_players.macro connecting_name set value "Dreams"
+execute if score #Connecting expai_glacier_players.name_id matches 304 run data modify storage expai_glacier_players.macro connecting_name set value "Nightmares"
+execute if score #Connecting expai_glacier_players.name_id matches 305 run data modify storage expai_glacier_players.macro connecting_name set value "berns"
+execute if score #Connecting expai_glacier_players.name_id matches 306 run data modify storage expai_glacier_players.macro connecting_name set value "Zimmy"
+execute if score #Connecting expai_glacier_players.name_id matches 307 run data modify storage expai_glacier_players.macro connecting_name set value "Pyro"
+execute if score #Connecting expai_glacier_players.name_id matches 308 run data modify storage expai_glacier_players.macro connecting_name set value "Rick"
+execute if score #Connecting expai_glacier_players.name_id matches 309 run data modify storage expai_glacier_players.macro connecting_name set value "expai_glacier_players:dexterious"
+execute if score #Connecting expai_glacier_players.name_id matches 310 run data modify storage expai_glacier_players.macro connecting_name set value "Dirtybukk"
+execute if score #Connecting expai_glacier_players.name_id matches 311 run data modify storage expai_glacier_players.macro connecting_name set value "Goatss"
+execute if score #Connecting expai_glacier_players.name_id matches 312 run data modify storage expai_glacier_players.macro connecting_name set value "Energy"
+execute if score #Connecting expai_glacier_players.name_id matches 313 run data modify storage expai_glacier_players.macro connecting_name set value "Mike Tyson"
+execute if score #Connecting expai_glacier_players.name_id matches 314 run data modify storage expai_glacier_players.macro connecting_name set value "ehur_"
+execute if score #Connecting expai_glacier_players.name_id matches 315 run data modify storage expai_glacier_players.macro connecting_name set value "AdvoidMyTargets"
+execute if score #Connecting expai_glacier_players.name_id matches 316 run data modify storage expai_glacier_players.macro connecting_name set value "slackerpun"
+execute if score #Connecting expai_glacier_players.name_id matches 317 run data modify storage expai_glacier_players.macro connecting_name set value ".AthleticHedgeog70"
+execute if score #Connecting expai_glacier_players.name_id matches 318 run data modify storage expai_glacier_players.macro connecting_name set value ".JonnD"
+execute if score #Connecting expai_glacier_players.name_id matches 319 run data modify storage expai_glacier_players.macro connecting_name set value ""
+execute if score #Connecting expai_glacier_players.name_id matches 320 run data modify storage expai_glacier_players.macro connecting_name set value "parascoialx"
+execute if score #Connecting expai_glacier_players.name_id matches 321 run data modify storage expai_glacier_players.macro connecting_name set value "thegreens"
+execute if score #Connecting expai_glacier_players.name_id matches 322 run data modify storage expai_glacier_players.macro connecting_name set value "Libertalia"
+execute if score #Connecting expai_glacier_players.name_id matches 323 run data modify storage expai_glacier_players.macro connecting_name set value "Cove"
+execute if score #Connecting expai_glacier_players.name_id matches 324 run data modify storage expai_glacier_players.macro connecting_name set value "Castle"
+execute if score #Connecting expai_glacier_players.name_id matches 325 run data modify storage expai_glacier_players.macro connecting_name set value "Frontier"

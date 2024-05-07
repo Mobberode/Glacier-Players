@@ -33,7 +33,7 @@ scoreboard objectives add expai_glacier_players.config dummy
 scoreboard objectives add expai_glacier_players.quality_level dummy
 scoreboard objectives add expai_glacier_players.config_backed dummy
 
-scoreboard objectives add expai_glacier_players.pathfind_ray_steps dummy
+scoreboard objectives add expai_glacier_players.cast_steps dummy
 
 
 scoreboard objectives add expai_glacier_players.inventory_slot_count dummy
