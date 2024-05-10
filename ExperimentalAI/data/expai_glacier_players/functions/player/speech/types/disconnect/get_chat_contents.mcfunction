@@ -1,4 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
+scoreboard players set @s expai_glacier_players.speech_advanced_mode 0
 execute store result score #ChatContentType expai_glacier_players.rng run random value 1..35
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "gtg"
@@ -39,4 +40,5 @@ execute if score #ChatContentType expai_glacier_players.rng matches 33 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 34 run data modify storage expai_glacier_players.macro chat_contents set value "alright gotta say goodbye"
 execute if score #ChatContentType expai_glacier_players.rng matches 35 run data modify storage expai_glacier_players.macro chat_contents set value "i got work to do so ima dip"
 
-function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro
+execute unless score @s expai_glacier_players.speech_advanced_mode matches 1 run function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro
+execute if score @s expai_glacier_players.speech_advanced_mode matches 1 run function expai_glacier_players:player/speech/speak_advanced with storage minecraft:expai_glacier_players.macro

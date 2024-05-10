@@ -6,6 +6,7 @@ scoreboard objectives add expai_glacier_players.move_pause_timer dummy
 
 scoreboard objectives add expai_glacier_players.communication_type dummy
 scoreboard objectives add expai_glacier_players.speech_type dummy
+scoreboard objectives add expai_glacier_players.speech_advanced_mode dummy
 scoreboard objectives add expai_glacier_players.talk_delay dummy
 scoreboard objectives add expai_glacier_players.voice_timer dummy
 
@@ -52,10 +53,18 @@ scoreboard objectives add expai_glacier_players.experience_max_amount dummy
 scoreboard objectives add expai_glacier_players.experience_current_amount dummy
 scoreboard objectives add expai_glacier_players.experience_level dummy
 
+scoreboard objectives add expai_glacier_players.extensions dummy
+
 #/data get entity @e[type=minecraft:experience_orb,limit=1] Value
 
 team add GlacierPlayers.DMCanidates
+
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never
 team modify GlacierPlayersTeam seeFriendlyInvisibles false
 team modify GlacierPlayersTeam friendlyFire false
+
+##Extensions
+scoreboard players set #Loaded expai_glacier_players.extensions 0
+function #expai_glacier_players:extensions/load/load
+tellraw @a ["",{"text": "[Glacier Players] Extensions Loaded: ","color": "aqua"},{"score":{"name": "#Loaded","objective": "expai_glacier_players.extensions"},"color": "green"}]
