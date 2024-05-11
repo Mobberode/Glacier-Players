@@ -1,0 +1,1 @@
+$tellraw @a ["",$(extension_visuals)]

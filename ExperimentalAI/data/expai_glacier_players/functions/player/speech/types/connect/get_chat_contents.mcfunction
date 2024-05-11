@@ -1,6 +1,6 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
 scoreboard players set @s expai_glacier_players.speech_advanced_mode 0
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..38
+$execute store result score #ChatContentType expai_glacier_players.rng run random value 1..$(ext_connect_lines_count)
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "hi"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "hello"
@@ -40,6 +40,9 @@ execute if score #ChatContentType expai_glacier_players.rng matches 35 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 36 run data modify storage expai_glacier_players.macro chat_contents set value "Back again"
 execute if score #ChatContentType expai_glacier_players.rng matches 37 run data modify storage expai_glacier_players.macro chat_contents set value "sorry my internet cut out"
 execute if score #ChatContentType expai_glacier_players.rng matches 38 run data modify storage expai_glacier_players.macro chat_contents set value "im back to get my 20 dollars back"
+
+scoreboard players remove #ChatContentType expai_glacier_players.rng 38
+function #expai_glacier_players:extensions/speech/text/get_connect_contents
 
 execute unless score @s expai_glacier_players.speech_advanced_mode matches 1 run function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro
 execute if score @s expai_glacier_players.speech_advanced_mode matches 1 run function expai_glacier_players:player/speech/speak_advanced with storage minecraft:expai_glacier_players.macro

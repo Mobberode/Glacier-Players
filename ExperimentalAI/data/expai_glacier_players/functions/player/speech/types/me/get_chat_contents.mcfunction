@@ -1,5 +1,5 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..50
+$execute store result score #ChatContentType expai_glacier_players.rng run random value 1..$(ext_me_lines_count)
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "had now decided he wanted to die"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "thought he could be him to find out he was not really him"
@@ -51,5 +51,8 @@ execute if score #ChatContentType expai_glacier_players.rng matches 47 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 48 run data modify storage expai_glacier_players.macro chat_contents set value "doesnt like it when you come."
 execute if score #ChatContentType expai_glacier_players.rng matches 49 run data modify storage expai_glacier_players.macro chat_contents set value "is just gonna ignore that"
 execute if score #ChatContentType expai_glacier_players.rng matches 50 run data modify storage expai_glacier_players.macro chat_contents set value "thinks this game is a rhtyhm game when its not"
+
+scoreboard players remove #ChatContentType expai_glacier_players.rng 50
+function #expai_glacier_players:extensions/speech/text/get_me_contents
 
 function expai_glacier_players:player/speech/speak_me with storage minecraft:expai_glacier_players.macro

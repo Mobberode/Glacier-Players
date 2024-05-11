@@ -1,6 +1,6 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
 scoreboard players set @s expai_glacier_players.speech_advanced_mode 0
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..51
+$execute store result score #ChatContentType expai_glacier_players.rng run random value 1..$(ext_death_lines_count)
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "god fucking damn it"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "wtf happened"
@@ -55,6 +55,9 @@ execute if score #ChatContentType expai_glacier_players.rng matches 48 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 49 run data modify storage expai_glacier_players.macro chat_contents set value "not him"
 execute if score #ChatContentType expai_glacier_players.rng matches 50 run data modify storage expai_glacier_players.macro chat_contents set value "you are not that guy"
 execute if score #ChatContentType expai_glacier_players.rng matches 51 run data modify storage expai_glacier_players.macro chat_contents set value "this guy bro"
+
+scoreboard players remove #ChatContentType expai_glacier_players.rng 51
+function #expai_glacier_players:extensions/speech/text/get_death_contents
 
 execute unless score @s expai_glacier_players.speech_advanced_mode matches 1 run function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro
 execute if score @s expai_glacier_players.speech_advanced_mode matches 1 run function expai_glacier_players:player/speech/speak_advanced with storage minecraft:expai_glacier_players.macro

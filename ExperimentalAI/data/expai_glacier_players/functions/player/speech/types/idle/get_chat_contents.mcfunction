@@ -1,6 +1,6 @@
 data modify storage expai_glacier_players.macro chat_content_target set value ""
 scoreboard players set @s expai_glacier_players.speech_advanced_mode 0
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..165
+$execute store result score #ChatContentType expai_glacier_players.rng run random value 1..$(ext_idle_lines_count)
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents set value "Did anyone watch this night's footys?"
 execute if score #ChatContentType expai_glacier_players.rng matches 2 run data modify storage expai_glacier_players.macro chat_contents set value "first thing i see when i venture out is a dirt hut"
@@ -170,7 +170,10 @@ execute if score #ChatContentType expai_glacier_players.rng matches 163 run data
 execute if score #ChatContentType expai_glacier_players.rng matches 164 run data modify storage expai_glacier_players.macro chat_contents set value "Impossible"
 execute if score #ChatContentType expai_glacier_players.rng matches 165 run data modify storage expai_glacier_players.macro chat_contents set value "https://tenor.com/en-AU/view/hello-there-hi-there-greetings-gif-9442662"
 execute if score #ChatContentType expai_glacier_players.rng matches 166 run scoreboard players set @s expai_glacier_players.speech_advanced_mode 1
-execute if score #ChatContentType expai_glacier_players.rng matches 166 run data modify storage expai_glacier_players.macro chat_raw_json set value '{"text":"<"},{"selector":"@s"},{"text":">"},{"text":" Red!!!","color":"red"}'
+execute if score #ChatContentType expai_glacier_players.rng matches 166 run data modify storage expai_glacier_players.macro chat_raw_json set value '{"text":"<"},{"selector":"@s"},{"text":"> "},{"text":"Red!!!","color":"red"}'
+
+scoreboard players remove #ChatContentType expai_glacier_players.rng 166
+function #expai_glacier_players:extensions/speech/text/get_idle_contents
 
 execute unless score @s expai_glacier_players.speech_advanced_mode matches 1 run function expai_glacier_players:player/speech/speak with storage minecraft:expai_glacier_players.macro
 execute if score @s expai_glacier_players.speech_advanced_mode matches 1 run function expai_glacier_players:player/speech/speak_advanced with storage minecraft:expai_glacier_players.macro

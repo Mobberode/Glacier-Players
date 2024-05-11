@@ -1,5 +1,5 @@
-execute if score #Loaded expai_glacier_players.extensions matches 1.. store result score #Names expai_glacier_players.extensions run random value 0..1
-execute store result score #Connecting expai_glacier_players.name_id run random value 1..325
+#execute if score #Loaded expai_glacier_players.extensions matches 1.. store result score #Names expai_glacier_players.extensions run random value 0..1
+$execute store result score #Connecting expai_glacier_players.name_id run random value 1..$(ext_names_count)
 
 execute if score #Connecting expai_glacier_players.name_id matches 1 run data modify storage expai_glacier_players.macro connecting_name set value "Alf-Coe"
 execute if score #Connecting expai_glacier_players.name_id matches 2 run data modify storage expai_glacier_players.macro connecting_name set value "jaydent2015"
@@ -328,4 +328,5 @@ execute if score #Connecting expai_glacier_players.name_id matches 323 run data 
 execute if score #Connecting expai_glacier_players.name_id matches 324 run data modify storage expai_glacier_players.macro connecting_name set value "Castle"
 execute if score #Connecting expai_glacier_players.name_id matches 325 run data modify storage expai_glacier_players.macro connecting_name set value "Frontier"
 
-execute if score #Names expai_glacier_players.extensions matches 1 run function #expai_glacier_players:extensions/names/get_names
+scoreboard players remove #Connecting expai_glacier_players.name_id 325
+function #expai_glacier_players:extensions/names/get_names

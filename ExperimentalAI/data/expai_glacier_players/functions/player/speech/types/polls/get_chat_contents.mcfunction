@@ -3,7 +3,7 @@ data modify storage expai_glacier_players.macro chat_contents_poll_decision_1 se
 data modify storage expai_glacier_players.macro chat_contents_poll_decision_2 set value ""
 data modify storage expai_glacier_players.macro chat_contents_poll_decision_3 set value ""
 data modify storage expai_glacier_players.macro chat_contents_poll_decision_4 set value ""
-execute store result score #ChatContentType expai_glacier_players.rng run random value 1..12
+$execute store result score #ChatContentType expai_glacier_players.rng run random value 1..$(ext_poll_lines_count)
 
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run scoreboard players set #PollDecisions expai_glacier_players.poll_decision 3
 execute if score #ChatContentType expai_glacier_players.rng matches 1 run data modify storage expai_glacier_players.macro chat_contents_poll set value "Which one of the minigames is the best? Battle, Tumble or Glide"
@@ -75,5 +75,8 @@ execute if score #ChatContentType expai_glacier_players.rng matches 12 run data 
 execute if score #ChatContentType expai_glacier_players.rng matches 12 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_1 set value "[Gordon Freeman]"
 execute if score #ChatContentType expai_glacier_players.rng matches 12 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_2 set value "[Gorgeous Freeman]"
 execute if score #ChatContentType expai_glacier_players.rng matches 12 run data modify storage expai_glacier_players.macro chat_contents_poll_decision_3 set value "[Gigantic Freeman]"
+
+scoreboard players remove #ChatContentType expai_glacier_players.rng 12
+function #expai_glacier_players:extensions/speech/text/get_poll_contents
 
 function expai_glacier_players:player/speech/poll with storage minecraft:expai_glacier_players.macro

@@ -64,7 +64,5 @@ team modify GlacierPlayersTeam collisionRule never
 team modify GlacierPlayersTeam seeFriendlyInvisibles false
 team modify GlacierPlayersTeam friendlyFire false
 
-##Extensions
-scoreboard players set #Loaded expai_glacier_players.extensions 0
-function #expai_glacier_players:extensions/load/load
-tellraw @a ["",{"text": "[Glacier Players] Extensions Loaded: ","color": "aqua"},{"score":{"name": "#Loaded","objective": "expai_glacier_players.extensions"},"color": "green"}]
+function expai_glacier_players:extensions/start
+tellraw @a ["",{"text": "[Glacier Players Extension Loader] Extensions Loaded: ","color": "aqua"},{"score":{"name": "#Loaded","objective": "expai_glacier_players.extensions"},"color": "green"}]
