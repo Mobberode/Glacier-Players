@@ -3,7 +3,7 @@
 execute store result storage expai_glacier_players.extensions ext_names_count int 1 run scoreboard players operation #Names expai_glacier_players.extensions += #ExtNames expai_glacier_players.extensions
 #Connect Lines
 execute store result storage expai_glacier_players.extensions ext_connect_lines_count int 1 run scoreboard players operation #ConnectLines expai_glacier_players.extensions += #ExtConnectLines expai_glacier_players.extensions
-#Connect Lines
+#Disconnect Lines
 execute store result storage expai_glacier_players.extensions ext_disconnect_lines_count int 1 run scoreboard players operation #DisconnectLines expai_glacier_players.extensions += #ExtDisconnectLines expai_glacier_players.extensions
 #Idle Lines
 execute store result storage expai_glacier_players.extensions ext_idle_lines_count int 1 run scoreboard players operation #IdleLines expai_glacier_players.extensions += #ExtIdleLines expai_glacier_players.extensions
@@ -18,6 +18,6 @@ execute store result storage expai_glacier_players.extensions ext_voice_lines_co
 
 ##Visuals on extension load (a pair of ' must be included at both start and end!)
 #Based on JSON text
-data modify storage expai_glacier_players.extensions extension_visuals set value '{"text": "[ext_template] I am the one who loads","color": "green"}'
+data modify storage expai_glacier_players.extensions extension_visuals set value '{"text": "[ext_template] I am the one who loads again","color": "green"}'
 
 function expai_glacier_players:extensions/loader/extensions_startup_visuals with storage expai_glacier_players.extensions
