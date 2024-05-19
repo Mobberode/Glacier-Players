@@ -1,0 +1,2 @@
+scoreboard players operation @s expai_glacier_players.experience_amount += #Temp expai_glacier_players.experience_amount
+function expai_glacier_players:player/experience/level/level_up_check
