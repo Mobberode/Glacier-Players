@@ -55,8 +55,6 @@ scoreboard objectives add expai_glacier_players.experience_level dummy
 
 scoreboard objectives add expai_glacier_players.extensions dummy
 
-#/data get entity @e[type=minecraft:experience_orb,limit=1] Value
-
 team add GlacierPlayers.DMCanidates
 
 team add GlacierPlayersTeam
