@@ -1,3 +1,2 @@
 scoreboard players operation @s expai_glacier_players.pid = #StoredDeathID expai_glacier_players.pid
-function expai_glacier_players:player/recurring_functions/set_hunger
-function expai_glacier_players:player/recurring_functions/no_set_spawn with storage expai_glacier_players.macro
+function expai_glacier_players:player/recurring_functions/set_player
