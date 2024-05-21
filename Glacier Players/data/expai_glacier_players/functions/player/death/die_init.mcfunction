@@ -6,6 +6,9 @@ function expai_glacier_players:player/recurring_functions/dual_macros_all with s
 execute store result score #StoredDeathID expai_glacier_players.pid run scoreboard players get @s expai_glacier_players.pid
 data modify storage expai_glacier_players.macro respawning_name set from entity @s CustomName
 
+##Get Experience
+function expai_glacier_players:player/death/experience_get
+
 ##Die
 function expai_glacier_players:player/death/die with storage expai_glacier_players.macro
 

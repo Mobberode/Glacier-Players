@@ -1,0 +1,1 @@
+$summon experience_orb ~ ~ ~ {Value:$(experience_amount_drop)}
