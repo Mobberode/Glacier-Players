@@ -1,2 +1,0 @@
-execute if block ^ ^1 ^ #expai:non_solids unless block ^ ^1 ^ #expai:non_solids unless block ^ ^3 ^ #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run tag @s add expai.sprint_jump_up
-#execute if block ^ ^1 ^ #expai:non_solids unless block ^ ^1 ^ #expai:non_solids unless block ^ ^3 ^ #expai:non_solids as @e[tag=expai.gap_closer_activated,limit=1,sort=nearest] run msg @a[tag=expai.debug] expai.sprint_jump_up

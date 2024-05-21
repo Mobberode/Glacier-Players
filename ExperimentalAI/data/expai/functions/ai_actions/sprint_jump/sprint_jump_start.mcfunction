@@ -1,1 +1,0 @@
-execute at @s unless block ^ ^-.1 ^ #expai:non_solids if entity @a[distance=0..25,gamemode=!creative,gamemode=!spectator] positioned 0 0 0 run function expai:ai_actions/sprint_jump/sprint_jump_process
