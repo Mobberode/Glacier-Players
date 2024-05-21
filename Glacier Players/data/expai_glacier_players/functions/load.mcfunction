@@ -65,4 +65,4 @@ team modify GlacierPlayersTeam friendlyFire false
 
 function expai_glacier_players:extensions/start
 tellraw @a ["",{"text": "[Glacier Players Extension Loader] Extensions Loaded: ","color": "aqua"},{"score":{"name": "#Loaded","objective": "expai_glacier_players.extensions"},"color": "green"}]
-function #expai_glacier_players:initalize
+execute as @a run function #expai_glacier_players:initalize

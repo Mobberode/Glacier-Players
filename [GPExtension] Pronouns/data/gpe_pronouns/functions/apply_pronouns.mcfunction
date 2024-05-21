@@ -1,0 +1,1 @@
+$data merge entity @s {CustomName:'["",{"text":$(gpe_pronouns_name)},{"text":" "},{"text":"($(gpe_pronouns_pronouns))","color": "gray"}]'}
