@@ -1,2 +1,2 @@
 execute store result entity @e[tag=GlacierPlayer.Alias_Selected,limit=1] Health int 1 run scoreboard players add #Selected expai_glacier_players.health 1
-scoreboard players add @s expai_glacier_players.hunger_exhaustion 60000
+scoreboard players add @s expai_glacier_players.hunger_exhaustion 6000

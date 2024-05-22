@@ -1,0 +1,56 @@
+{
+    "values":[
+        "minecraft:stone",
+        "minecraft:granite",
+        "minecraft:polished_granite",
+        "minecraft:diorite",
+        "minecraft:polished_diorite",
+        "minecraft:andesite",
+        "minecraft:polished_andesite",
+        "minecraft:calcite",
+        "minecraft:tuff",
+        "minecraft:dripstone_block",
+        "minecraft:grass_block",
+        "minecraft:dirt",
+        "minecraft:coarse_dirt",
+        "minecraft:podzol",
+        "minecraft:rooted_dirt",
+        "minecraft:mud",
+        "minecraft:crimson_nylium",
+        "minecraft:warped_nylium",
+
+
+
+
+        "chest",
+        "barrel",
+        "chiseled_bookshelf",
+        "furnace",
+        "jukebox",
+        "decorated_pot",
+        "note_block",
+        "composter",
+        "redstone_lamp",
+
+
+
+
+        "shulker_box",
+        "white_shulker_box",
+        "light_gray_shulker_box",
+        "gray_shulker_box",
+        "black_shulker_box",
+        "brown_shulker_box",
+        "red_shulker_box",
+        "orange_shulker_box",
+        "yellow_shulker_box",
+        "lime_shulker_box",
+        "green_shulker_box",
+        "cyan_shulker_box",
+        "light_blue_shulker_box",
+        "blue_shulker_box",
+        "purple_shulker_box",
+        "magenta_shulker_box",
+        "pink_shulker_box"
+    ]
+}

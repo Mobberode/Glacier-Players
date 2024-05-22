@@ -6,6 +6,8 @@ execute if predicate expai_glacier_players:fire_detect run data merge entity @e[
 
 ##Previous Health > Health
 execute if score @s expai_glacier_players.previous_health > @s expai_glacier_players.health run function expai_glacier_players:player/brain/damage_indicator
+#Knockback
+execute if entity @s[tag=expai_glacier_players.knockbacked] run function expai_glacier_players:player/move/damaged/knockback_tick
 
 #Void Death
 execute if score @s expai_glacier_players.y_pos matches ..-63 run function expai_glacier_players:player/death/die_init
