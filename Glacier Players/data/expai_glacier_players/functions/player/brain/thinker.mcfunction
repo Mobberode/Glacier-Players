@@ -7,7 +7,7 @@ function expai_glacier_players:body_alias/loop
 execute if predicate expai_glacier_players:2_tick_period run function expai_glacier_players:player/recurring_functions/get_pos
 
 ##Hunger (Undecided)
-#function expai_glacier_players:player/hunger/temp
+execute at @s run function expai_glacier_players:player/hunger/process
 
 ##Experience Emulation
 execute at @s if entity @e[distance=0..3,type=experience_orb] run function expai_glacier_players:player/experience/init
@@ -26,3 +26,7 @@ function expai_glacier_players:player/brain/thinker_modes_init_check
 
 ##Disconnect (Minial Performance Cost!)
 execute unless score #AutomaticDisconnect expai_glacier_players.config matches 1 run function expai_glacier_players:player/disconnect/disconnect_init
+
+##Debug
+data modify storage expai_glacier_players.macro debug_info_name set from entity @s CustomName
+function expai_glacier_players:tools/debug/name_info with storage expai_glacier_players.macro
