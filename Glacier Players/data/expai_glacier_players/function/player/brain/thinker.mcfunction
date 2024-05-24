@@ -28,5 +28,5 @@ function expai_glacier_players:player/brain/thinker_modes_init_check
 execute unless score #AutomaticDisconnect expai_glacier_players.config matches 1 run function expai_glacier_players:player/disconnect/disconnect_init
 
 ##Debug (Large Performance Cost!)
-#data modify storage expai_glacier_players.macro debug_info_name set from entity @s CustomName
-#function expai_glacier_players:tools/debug/name_info with storage expai_glacier_players.macro
+data modify storage expai_glacier_players.macro debug_info_name set from entity @s CustomName
+function expai_glacier_players:tools/debug/name_info with storage expai_glacier_players.macro

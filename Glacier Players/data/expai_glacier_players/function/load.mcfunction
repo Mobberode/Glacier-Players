@@ -17,7 +17,9 @@ scoreboard objectives add expai_glacier_players.previous_health dummy
 
 scoreboard objectives add expai_glacier_players.hunger dummy
 scoreboard objectives add expai_glacier_players.hunger_exhaustion dummy
-scoreboard objectives add expai_glacier_players.hunger_tick dummy
+scoreboard objectives add expai_glacier_players.hunger_eat_tick dummy
+scoreboard objectives add expai_glacier_players.hunger_eat_amount dummy
+scoreboard objectives add expai_glacier_players.hunger_eat_saturation dummy
 scoreboard objectives add expai_glacier_players.saturation dummy
 
 scoreboard objectives add expai_glacier_players.x_pos dummy
@@ -35,7 +37,6 @@ scoreboard objectives add expai_glacier_players.quality_level dummy
 scoreboard objectives add expai_glacier_players.config_backed dummy
 
 scoreboard objectives add expai_glacier_players.cast_steps dummy
-
 
 scoreboard objectives add expai_glacier_players.inventory_slot_count dummy
 scoreboard objectives add expai_glacier_players.inventory_slot_slot dummy
