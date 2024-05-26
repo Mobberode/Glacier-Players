@@ -15,11 +15,11 @@ scoreboard objectives add expai_glacier_players.pid dummy
 scoreboard objectives add expai_glacier_players.health dummy
 scoreboard objectives add expai_glacier_players.previous_health dummy
 
-scoreboard objectives add expai_glacier_players.hunger dummy
-scoreboard objectives add expai_glacier_players.hunger_exhaustion dummy
-scoreboard objectives add expai_glacier_players.hunger_eat_tick dummy
-scoreboard objectives add expai_glacier_players.hunger_eat_amount dummy
-scoreboard objectives add expai_glacier_players.hunger_eat_saturation dummy
+scoreboard objectives add expai_glacier_players.nutrition dummy
+scoreboard objectives add expai_glacier_players.exhaustion dummy
+scoreboard objectives add expai_glacier_players.food_eat_time dummy
+scoreboard objectives add expai_glacier_players.food_eat_nutrition dummy
+scoreboard objectives add expai_glacier_players.food_eat_saturation dummy
 scoreboard objectives add expai_glacier_players.saturation dummy
 
 scoreboard objectives add expai_glacier_players.x_pos dummy

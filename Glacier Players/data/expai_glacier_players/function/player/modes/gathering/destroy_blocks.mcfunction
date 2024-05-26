@@ -4,4 +4,4 @@ execute if score @s expai_glacier_players.rng matches 1 at @s unless block ^ ^ ^
 execute if score @s expai_glacier_players.rng matches 2 at @s unless block ^ ^1 ^1 #expai_glacier_players:liquids run setblock ^ ^1 ^1 air destroy
 execute if score @s expai_glacier_players.rng matches 3 at @s unless block ^ ^-1 ^1 #expai_glacier_players:liquids run setblock ^ ^-1 ^1 air destroy
 
-scoreboard players add @s expai_glacier_players.hunger_exhaustion 5
+scoreboard players add @s expai_glacier_players.exhaustion 5
