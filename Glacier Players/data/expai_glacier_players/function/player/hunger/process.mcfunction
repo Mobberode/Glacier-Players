@@ -6,6 +6,6 @@ execute if score @s expai_glacier_players.exhaustion matches 4000.. run function
 function expai_glacier_players:player/hunger/heal_test
 
 ##Eat Check
-function expai_glacier_players:player/hunger/eat/rng/roll
+execute unless entity @s[tag=GlacierPlayer.Eating_Food] run function expai_glacier_players:player/hunger/eat/rng/roll
 #If the food inv check found a food source
 execute if entity @s[tag=GlacierPlayer.Eating_Food] run function expai_glacier_players:player/hunger/eat/consume/consume_tick

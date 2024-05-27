@@ -21,6 +21,8 @@ scoreboard objectives add expai_glacier_players.food_eat_time dummy
 scoreboard objectives add expai_glacier_players.food_eat_nutrition dummy
 scoreboard objectives add expai_glacier_players.food_eat_saturation dummy
 scoreboard objectives add expai_glacier_players.saturation dummy
+scoreboard objectives add expai_glacier_players.food_inventory_saved_slot dummy
+scoreboard objectives add expai_glacier_players.food_inventory_saved_partition dummy
 
 scoreboard objectives add expai_glacier_players.x_pos dummy
 scoreboard objectives add expai_glacier_players.y_pos dummy
