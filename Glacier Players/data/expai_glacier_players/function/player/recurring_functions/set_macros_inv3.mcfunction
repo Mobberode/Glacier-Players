@@ -1,1 +1,0 @@
-tag @s add GP.Inventory_Selected.InvSection3
