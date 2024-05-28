@@ -9,9 +9,12 @@ scoreboard players set @s[scores={expai_glacier_players.saturation=21..}] expai_
 ##Indicator
 execute at @s run playsound entity.player.burp player @a ~ ~ ~
 
-##Remove Tag
+##Remove Tags
 tag @s remove GlacierPlayer.Eating_Food
 tag @s remove GlacierPlayer.Eating_Food_Components
 tag @s remove GlacierPlayer.Eating_Food_Non_Components
+
+##Run special code for special foods
+function expai_glacier_players:player/hunger/eat/food_inventory/success/get/foods/properties/check_tags
 
 ##Remove 1 of the eaten item from the Glacier's inventory
