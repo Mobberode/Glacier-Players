@@ -1,3 +1,4 @@
+$scoreboard players set @e[tag=GlacierPlayer.Player_Selected,limit=1] expai_glacier_players.inventory_saved_slot $(player_inv_slot)
 ##Remove Tag
 tag @s remove GlacierPlayer.Inv_Next_Item
 

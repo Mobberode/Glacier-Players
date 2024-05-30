@@ -1,3 +1,4 @@
+$scoreboard players set @e[tag=GlacierPlayer.Player_Selected,limit=1] expai_glacier_players.inventory_saved_slot $(player_inv_slot)
 ##Store Item into the Hotbar
 msg @a[tag=expai.debug] empty slot overidden
 

@@ -3,7 +3,7 @@ execute if predicate expai_glacier_players:has_hunger_effect run function expai_
 
 ##Normal
 execute if score @s expai_glacier_players.exhaustion matches 4000.. run function expai_glacier_players:player/hunger/exhaustion/reached_threshold
-function expai_glacier_players:player/hunger/heal_test
+function expai_glacier_players:player/hunger/health_relationship
 
 ##Eat Check
 execute unless entity @s[tag=GlacierPlayer.Eating_Food] run function expai_glacier_players:player/hunger/eat/rng/roll

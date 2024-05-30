@@ -1,3 +1,4 @@
+scoreboard players set @s expai_glacier_players.inventory_saved_partition 1
 ##Check Item
 tellraw @a[tag=expai.debug] ["",{"score":{"name": "@s","objective": "expai_glacier_players.inventory_slot_slot_number"}}]
 

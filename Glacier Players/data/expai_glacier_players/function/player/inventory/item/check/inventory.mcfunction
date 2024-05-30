@@ -1,4 +1,4 @@
-msg @a[tag=expai.debug] ran inv check
+scoreboard players set @s expai_glacier_players.inventory_saved_partition 2
 ##Check Item
 tellraw @a[tag=expai.debug] ["",{"score":{"name": "@s","objective": "expai_glacier_players.inventory_slot_slot_number"}}]
 

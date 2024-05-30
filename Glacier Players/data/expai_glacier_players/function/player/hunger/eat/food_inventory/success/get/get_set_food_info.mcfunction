@@ -1,5 +1,4 @@
 ##Add Tag
-say woh
 execute as @e[tag=GlacierPlayer.Player_Selected] run function expai_glacier_players:player/hunger/eat/food_inventory/success/give_tags_set
 
 ##Find specified food item
@@ -42,3 +41,5 @@ $execute if items entity @s horse.$(player_inv_slot) cooked_beef as @e[tag=Glaci
 $execute if items entity @s horse.$(player_inv_slot) suspicious_stew as @e[tag=GlacierPlayer.Player_Selected] run function expai_glacier_players:player/hunger/eat/food_inventory/success/get/foods/suspicious_stew
 $execute if items entity @s horse.$(player_inv_slot) sweet_berries as @e[tag=GlacierPlayer.Player_Selected] run function expai_glacier_players:player/hunger/eat/food_inventory/success/get/foods/sweet_berries
 $execute if items entity @s horse.$(player_inv_slot) tropical_fish as @e[tag=GlacierPlayer.Player_Selected] run function expai_glacier_players:player/hunger/eat/food_inventory/success/get/foods/tropical_fish
+
+$execute if items entity @s horse.$(player_inv_slot) potion as @e[tag=GlacierPlayer.Player_Selected] run function expai_glacier_players:player/hunger/eat/food_inventory/success/get/potions/potion_get

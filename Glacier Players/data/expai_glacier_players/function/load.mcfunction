@@ -52,6 +52,8 @@ scoreboard objectives add expai_glacier_players.difficulty dummy
 
 scoreboard objectives add expai_glacier_players.tnt_fuse_timer dummy
 
+scoreboard objectives add expai_glacier_players.number dummy
+
 scoreboard objectives add expai_glacier_players.extensions dummy
 
 #team add GlacierPlayers.DMCanidates
