@@ -1,7 +1,7 @@
 ##Extensions
 tellraw @a ["",{"text": "[Glacier Players Extension Loader] Prepare for Extension loading","color": "aqua"}]
 scoreboard players set #Loaded expai_glacier_players.extensions 0
-execute store result storage expai_glacier_players.extensions ext_names_count int 1 run scoreboard players set #Names expai_glacier_players.extensions 325
+execute store result storage expai_glacier_players.extensions ext_names_count int 1 run scoreboard players set #Names expai_glacier_players.extensions 350
 execute store result storage expai_glacier_players.extensions ext_connect_lines_count int 1 run scoreboard players set #ConnectLines expai_glacier_players.extensions 38
 execute store result storage expai_glacier_players.extensions ext_disconnect_lines_count int 1 run scoreboard players set #DisconnectLines expai_glacier_players.extensions 35
 execute store result storage expai_glacier_players.extensions ext_idle_lines_count int 1 run scoreboard players set #IdleLines expai_glacier_players.extensions 166

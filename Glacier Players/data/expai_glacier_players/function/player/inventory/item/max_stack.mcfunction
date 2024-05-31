@@ -98,4 +98,4 @@ $execute if items entity @s horse.$(player_inv_slot) *[minecraft:max_stack_size=
 $execute if items entity @s horse.$(player_inv_slot) *[minecraft:max_stack_size=97] run scoreboard players set @s expai_glacier_players.inventory_item_max_stack_size 97
 $execute if items entity @s horse.$(player_inv_slot) *[minecraft:max_stack_size=98] run scoreboard players set @s expai_glacier_players.inventory_item_max_stack_size 98
 $execute if items entity @s horse.$(player_inv_slot) *[minecraft:max_stack_size=99] run scoreboard players set @s expai_glacier_players.inventory_item_max_stack_size 99
-tellraw @a[tag=expai.debug] ["",{"text":"Max Size Slots: "},{"score":{"name": "@s","objective": "expai_glacier_players.inventory_item_max_stack_size"}}]
+#tellraw @a[tag=expai.debug] ["",{"text":"Max Size Slots: "},{"score":{"name": "@s","objective": "expai_glacier_players.inventory_item_max_stack_size"}}]

@@ -43,3 +43,6 @@ $execute if items entity @s horse.$(player_inv_slot) sweet_berries as @e[tag=Gla
 $execute if items entity @s horse.$(player_inv_slot) tropical_fish as @e[tag=GlacierPlayer.Player_Selected] run function expai_glacier_players:player/hunger/eat/food_inventory/success/get/foods/tropical_fish
 
 $execute if items entity @s horse.$(player_inv_slot) potion as @e[tag=GlacierPlayer.Player_Selected] run function expai_glacier_players:player/hunger/eat/food_inventory/success/get/potions/potion_get
+
+##Addons
+function #expai_glacier_players:extensions/inventory/foods
