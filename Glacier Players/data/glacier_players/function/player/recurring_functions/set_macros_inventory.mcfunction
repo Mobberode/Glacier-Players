@@ -1,0 +1,1 @@
+$execute as @e[limit=1,tag=GP.$(pid_num).InvSection1] run function glacier_players:player/recurring_functions/set_macros_inv1 with storage glacier_players.macro

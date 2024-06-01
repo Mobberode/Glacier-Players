@@ -1,0 +1,2 @@
+execute if block ~ ~-1 ~ #glacier_players:non_solids unless block ~ ~1 ~ #glacier_players:non_solids unless block ~ ~ ~ #glacier_players:non_solids run tp @s ~ ~-1 ~
+execute unless block ^ ^ ^ #glacier_players:non_solids if block ^ ^.75 ^ #glacier_players:non_solids run tp @s ~ ~1 ~

@@ -1,1 +1,0 @@
-execute if entity @n[type=item,distance=0..2] run function expai_glacier_players:player/inventory/inventory_gather

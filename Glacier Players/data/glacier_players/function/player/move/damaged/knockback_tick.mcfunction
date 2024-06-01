@@ -1,0 +1,1 @@
+execute if predicate glacier_players:20_tick_period run function glacier_players:player/move/damaged/receive_knockback_delay_remove

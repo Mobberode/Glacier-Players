@@ -1,2 +1,0 @@
-tag @e[tag=GlacierPlayer.Abnormal_Selected] remove GlacierPlayer.Abnormal_Selected
-function expai_glacier_players:player/recurring_functions/abnormal/set_macros with storage expai_glacier_players.macro

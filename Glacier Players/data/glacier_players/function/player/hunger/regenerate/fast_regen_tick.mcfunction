@@ -1,0 +1,1 @@
+execute if predicate glacier_players:10_tick_period run function glacier_players:player/hunger/regenerate/regenerate_health

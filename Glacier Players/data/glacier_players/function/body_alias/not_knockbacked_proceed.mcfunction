@@ -1,0 +1,1 @@
+execute at @s as @n[type=piglin_brute,tag=GlacierPlayer.Alias_Selected] run function glacier_players:body_alias/not_knockbacked

@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "trigger": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": {"gp.debug_on":true}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {"function": "glacier_players:tools/debug/disable"}
+  }
+  

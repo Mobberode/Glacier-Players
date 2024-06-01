@@ -1,0 +1,1 @@
+tag @e[tag=glacier_players.knockbacked] remove glacier_players.knockbacked

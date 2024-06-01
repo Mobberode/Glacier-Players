@@ -1,1 +1,0 @@
-scoreboard players remove @s[scores={expai_glacier_players.nutrition=1..}] expai_glacier_players.nutrition 1

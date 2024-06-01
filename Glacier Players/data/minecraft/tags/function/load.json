@@ -1,6 +1,6 @@
 {
     "replace":false,
 "values": [
-    "expai_glacier_players:load"
+    "glacier_players:load"
   ]
 }

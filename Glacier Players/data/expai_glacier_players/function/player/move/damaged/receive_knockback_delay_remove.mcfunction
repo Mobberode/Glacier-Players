@@ -1,1 +1,0 @@
-tag @e[tag=expai_glacier_players.knockbacked] remove expai_glacier_players.knockbacked
