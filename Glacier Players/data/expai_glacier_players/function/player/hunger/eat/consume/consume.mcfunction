@@ -22,5 +22,6 @@ execute store result storage expai_glacier_players.inventory_macro saved_slot in
 
 ##Run special code for special foods
 function expai_glacier_players:player/hunger/eat/food_inventory/success/get/foods/properties/check_tags
+data modify entity @n[type=piglin_brute,tag=GlacierPlayer.Alias_Selected] active_effects set from entity @s active_effects
 
 ##Remove 1 of the eaten item from the Glacier's inventory

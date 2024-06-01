@@ -1,0 +1,1 @@
+effect give @s jump_boost 480 0

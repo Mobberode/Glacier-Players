@@ -10,7 +10,7 @@ execute if predicate expai_glacier_players:2_tick_period run function expai_glac
 function expai_glacier_players:player/hunger/process
 
 ##Experience Emulation (Minimal Performance Cost!)
-execute at @s if entity @e[distance=0..3,type=experience_orb,limit=1] run function expai_glacier_players:player/experience/init
+execute at @s if entity @n[type=experience_orb,distance=0..3] run function expai_glacier_players:player/experience/init
 
 ##Inventory (Small Performance Cost!)
 execute if predicate expai_glacier_players:2_tick_period rotated ~ 0 run function expai_glacier_players:player/inventory/inventory_start

@@ -10,7 +10,7 @@ scoreboard players reset #Seconds expai_glacier_players.number
 function expai_glacier_players:player/hunger/eat/food_inventory/maths/convert_ticks_to_seconds_stew with storage expai_glacier_players.inventory_macro
 
 ##Give Effects
-execute as @e[tag=GlacierPlayer.Player_Selected,limit=1] run function expai_glacier_players:player/hunger/eat/consume/properties/suspicious_stew/effect with storage expai_glacier_players.inventory_macro
+execute as @n[tag=GlacierPlayer.Player_Selected] run function expai_glacier_players:player/hunger/eat/consume/properties/suspicious_stew/effect with storage expai_glacier_players.inventory_macro
 
 #Tick up
 execute store result storage expai_glacier_players.inventory_macro susstewnum int 1 run scoreboard players add #ProcessedStewEffects expai_glacier_players.number 1

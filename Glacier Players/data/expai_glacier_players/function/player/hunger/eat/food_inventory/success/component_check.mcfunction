@@ -1,4 +1,4 @@
-$scoreboard players set @e[tag=GlacierPlayer.Player_Selected,limit=1] expai_glacier_players.inventory_saved_slot $(player_inv_slot)
+$scoreboard players set @n[tag=GlacierPlayer.Player_Selected] expai_glacier_players.inventory_saved_slot $(player_inv_slot)
 ##Check
 $execute store success score #Components expai_glacier_players.rng run data get entity @s Items[$(player_inv_slot)].components.minecraft:food
 

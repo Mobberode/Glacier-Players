@@ -1,1 +1,1 @@
-data modify entity @e[type=interaction,sort=nearest,limit=1] interaction.player set from entity @s UUID
+data modify entity @n[type=interaction] interaction.player set from entity @s UUID

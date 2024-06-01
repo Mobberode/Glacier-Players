@@ -4,5 +4,5 @@ $summon armor_stand ~ ~ ~ {CustomName:'{"text":$(respawning_name)}',CustomNameVi
 $summon donkey ~ ~ ~ {Invulnerable:true,Silent:true,Tags:["GP.$(abnormal_pid_num).InvSection1","GP_Inv.$(abnormal_pid_num)","GP.$(abnormal_pid_num)","expai_ai_changes_disabled","GP.Invs","GP.Invs_Fill","GP.InvSection1"],NoAI:true,ChestedHorse:true,attributes:[{id:"generic.scale",base:0.1}],DeathLootTable:"minecraft:empty",PersistenceRequired:true}
 
 execute as @e[tag=GP.Invs_Fill] run function expai_glacier_players:player/inventory/inventory_initalize
-execute as @e[tag=GP.DeathProcess] run function expai_glacier_players:player/death/set_self with storage expai_glacier_players.macro
+execute as @n[tag=GP.DeathProcess] run function expai_glacier_players:player/death/set_self with storage expai_glacier_players.macro
 

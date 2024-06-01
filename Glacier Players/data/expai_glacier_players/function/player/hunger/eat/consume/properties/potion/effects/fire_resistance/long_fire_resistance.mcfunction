@@ -1,0 +1,1 @@
+effect give @s fire_resistance 480 0

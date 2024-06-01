@@ -1,1 +1,1 @@
-execute at @s as @e[tag=GlacierPlayer.Alias_Selected] run function expai_glacier_players:body_alias/not_knockbacked
+execute at @s as @n[type=piglin_brute,tag=GlacierPlayer.Alias_Selected] run function expai_glacier_players:body_alias/not_knockbacked

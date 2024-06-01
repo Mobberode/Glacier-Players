@@ -1,6 +1,4 @@
 execute store result score @s expai_glacier_players.rng run random value 0..100
-execute if score @s expai_glacier_players.rng matches 20.. run effect give @e[tag=GlacierPlayer.Player_Selected] hunger 30 0
-
-data modify entity @e[tag=GlacierPlayer.Alias_Selected,limit=1] active_effects set from entity @s active_effects 
+execute if score @s expai_glacier_players.rng matches 20.. run effect give @e[limit=1,tag=GlacierPlayer.Player_Selected] hunger 30 0
 
 tag @s remove GlacierPlayer.Ate_Rotten_Flesh

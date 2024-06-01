@@ -9,3 +9,6 @@ function expai_glacier_players:player/hunger/health_relationship
 execute unless entity @s[tag=GlacierPlayer.Eating_Food] run function expai_glacier_players:player/hunger/eat/rng/roll
 #If the food inv check found a food source
 execute if entity @s[tag=GlacierPlayer.Eating_Food] run function expai_glacier_players:player/hunger/eat/consume/consume_tick
+
+##Store effects
+data modify storage expai_glacier_players.macro glacier_active_effects set from entity @s active_effects
