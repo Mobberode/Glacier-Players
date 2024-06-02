@@ -4,9 +4,11 @@ scoreboard objectives add glacier_players.communication_type dummy
 scoreboard objectives add glacier_players.speech_type dummy
 scoreboard objectives add glacier_players.speech_advanced_mode dummy
 scoreboard objectives add glacier_players.voice_timer dummy
+scoreboard objectives add glacier_players.poll_decision trigger
 
 #scoreboard objectives add glacier_players.personality dummy
 scoreboard objectives add glacier_players.pid dummy
+
 scoreboard objectives add glacier_players.health dummy
 scoreboard objectives add glacier_players.previous_health dummy
 
@@ -15,14 +17,14 @@ scoreboard objectives add glacier_players.y_pos dummy
 scoreboard objectives add glacier_players.z_pos dummy
 
 scoreboard objectives add glacier_players.ticks_till_force_destory_dmarker dummy
-scoreboard objectives add glacier_players.mode dummy
-scoreboard objectives add glacier_players.sub_mode dummy
-scoreboard objectives add glacier_players.mode_time dummy
 #scoreboard objectives add glacier_players.gamemode dummy
-scoreboard objectives add glacier_players.poll_decision trigger
 scoreboard objectives add glacier_players.config dummy
 #scoreboard objectives add glacier_players.quality_level dummy
 scoreboard objectives add glacier_players.config_backed dummy
+
+scoreboard objectives add glacier_players.mode dummy
+scoreboard objectives add glacier_players.sub_mode dummy
+scoreboard objectives add glacier_players.mode_time dummy
 
 scoreboard objectives add glacier_players.cast_steps dummy
 

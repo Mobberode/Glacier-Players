@@ -1,0 +1,1 @@
+effect give @s oozing 180 0

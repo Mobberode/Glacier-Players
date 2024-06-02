@@ -20,8 +20,6 @@
         "minecraft:warped_nylium",
 
 
-
-
         "chest",
         "barrel",
         "chiseled_bookshelf",
@@ -33,8 +31,6 @@
         "redstone_lamp",
         "bell",
         "armor_stand",
-
-
 
 
         "shulker_box",
@@ -53,6 +49,57 @@
         "blue_shulker_box",
         "purple_shulker_box",
         "magenta_shulker_box",
-        "pink_shulker_box"
+        "pink_shulker_box",
+
+        "minecraft:white_banner",
+        "minecraft:orange_banner",
+        "minecraft:magenta_banner",
+        "minecraft:light_blue_banner",
+        "minecraft:yellow_banner",
+        "minecraft:lime_banner",
+        "minecraft:pink_banner",
+        "minecraft:gray_banner",
+        "minecraft:light_gray_banner",
+        "minecraft:cyan_banner",
+        "minecraft:purple_banner",
+        "minecraft:blue_banner",
+        "minecraft:brown_banner",
+        "minecraft:green_banner",
+        "minecraft:red_banner",
+        "minecraft:black_banner",
+        "minecraft:candle",
+        "minecraft:white_candle",
+        "minecraft:orange_candle",
+        "minecraft:magenta_candle",
+        "minecraft:light_blue_candle",
+        "minecraft:yellow_candle",
+        "minecraft:lime_candle",
+        "minecraft:pink_candle",
+        "minecraft:gray_candle",
+        "minecraft:light_gray_candle",
+        "minecraft:cyan_candle",
+        "minecraft:purple_candle",
+        "minecraft:blue_candle",
+        "minecraft:brown_candle",
+        "minecraft:green_candle",
+        "minecraft:red_candle",
+        "minecraft:black_candle",
+
+        "minecraft:white_wool",
+        "minecraft:orange_wool",
+        "minecraft:magenta_wool",
+        "minecraft:light_blue_wool",
+        "minecraft:yellow_wool",
+        "minecraft:lime_wool",
+        "minecraft:pink_wool",
+        "minecraft:gray_wool",
+        "minecraft:light_gray_wool",
+        "minecraft:cyan_wool",
+        "minecraft:purple_wool",
+        "minecraft:blue_wool",
+        "minecraft:brown_wool",
+        "minecraft:green_wool",
+        "minecraft:red_wool",
+        "minecraft:black_wool"
     ]
 }

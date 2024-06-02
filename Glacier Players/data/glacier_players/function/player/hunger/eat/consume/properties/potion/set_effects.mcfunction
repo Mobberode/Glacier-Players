@@ -33,3 +33,36 @@ execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:
 execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:harming"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/harming/harming
 execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:strong_harming"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/harming/strong_harming
 #
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:harming"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/harming/harming
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:strong_harming"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/harming/strong_harming
+#
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:poison"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/poison/poison
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:long_poison"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/poison/long_poison
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:strong_poison"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/poison/strong_poison
+#
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:regeneration"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/regeneration/regeneration
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:long_regeneration"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/regeneration/long_regeneration
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:strong_regeneration"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/regeneration/strong_regeneration
+#
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:strength"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/strength/strength
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:long_strength"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/strength/long_strength
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:strong_strength"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/strength/strong_strength
+#
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:weakness"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/weakness/weakness
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:long_weakness"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/weakness/long_weakness
+#
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:luck"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/luck/luck
+#
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:slow_falling"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/slow_falling/slow_falling
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:long_slow_falling"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/slow_falling/long_slow_falling
+#
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:wind_charged"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/wind_charging/wind_charging
+#
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:weaving"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/weaving/weaving
+#
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:oozing"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/oozing/oozing
+#
+execute if data storage minecraft:glacier_players.inventory_macro {potioneffect:"minecraft:infested"} run function glacier_players:player/hunger/eat/consume/properties/potion/effects/infestation/infestation
+
+##Extensions
+function #glacier_players:extensions/inventory/drinks

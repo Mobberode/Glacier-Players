@@ -1,0 +1,1 @@
+effect give @s infested 180 0

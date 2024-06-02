@@ -42,7 +42,7 @@ $execute if items entity @s horse.$(player_inv_slot) suspicious_stew as @e[limit
 $execute if items entity @s horse.$(player_inv_slot) sweet_berries as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/sweet_berries
 $execute if items entity @s horse.$(player_inv_slot) tropical_fish as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/tropical_fish
 
-$execute if items entity @s horse.$(player_inv_slot) potion as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/potions/potion_get
+$execute if items entity @s horse.$(player_inv_slot) potion as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/potions/get/potion_get
 
 ##Addons
-function #glacier_players:extensions/inventory/foods
+function #glacier_players:extensions/inventory/foods with storage expai_glacier_players.inventory_macro

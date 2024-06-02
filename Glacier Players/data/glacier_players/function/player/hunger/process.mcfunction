@@ -11,4 +11,4 @@ execute unless entity @s[tag=GlacierPlayer.Eating_Food] run function glacier_pla
 execute if entity @s[tag=GlacierPlayer.Eating_Food] run function glacier_players:player/hunger/eat/consume/consume_tick
 
 ##Store effects
-data modify storage glacier_players.macro glacier_active_effects set from entity @s active_effects
+#data modify storage glacier_players.macro glacier_active_effects set from entity @s active_effects

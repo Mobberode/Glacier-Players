@@ -1,0 +1,1 @@
+effect give @s regeneration 22 1

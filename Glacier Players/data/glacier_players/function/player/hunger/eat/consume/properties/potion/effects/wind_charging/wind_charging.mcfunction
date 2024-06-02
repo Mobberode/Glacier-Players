@@ -1,0 +1,1 @@
+effect give @s wind_charged 180 0

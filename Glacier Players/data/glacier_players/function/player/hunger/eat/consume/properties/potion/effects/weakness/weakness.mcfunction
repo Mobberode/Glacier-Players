@@ -1,0 +1,1 @@
+effect give @s weakness 90 0

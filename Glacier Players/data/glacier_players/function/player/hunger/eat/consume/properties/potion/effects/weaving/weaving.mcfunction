@@ -1,0 +1,1 @@
+effect give @s weaving 180 0

@@ -1,3 +1,6 @@
+##Give Tag to self for future references
+tag @s add GlacierPlayer.Inventory_SelectedFood
+
 $scoreboard players set @n[tag=GlacierPlayer.Player_Selected] glacier_players.inventory_saved_slot $(player_inv_slot)
 ##Check
 $execute store success score #Components glacier_players.rng run data get entity @s Items[$(player_inv_slot)].components.minecraft:food
