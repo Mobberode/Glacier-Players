@@ -6,17 +6,17 @@ function glacier_players:body_alias/loop
 ##Get Pos (Minial Performance Cost!)
 execute if predicate glacier_players:2_tick_period run function glacier_players:player/recurring_functions/get_pos
 
+##Damage Check (Small Performance Cost!)
+function glacier_players:player/brain/damagecheck with storage minecraft:glacier_players.macro
+
 ##Hunger (Small Performance Cost!)
 function glacier_players:player/hunger/process
 
-##Experience Emulation (Minimal Performance Cost!)
-execute at @s if entity @n[type=experience_orb,distance=0..3] run function glacier_players:player/experience/init
+##Experience Emulation (Small Performance Cost!)
+execute if entity @n[type=experience_orb,distance=0..3] run function glacier_players:player/experience/init
 
 ##Inventory (Small Performance Cost!)
 execute if predicate glacier_players:2_tick_period rotated ~ 0 run function glacier_players:player/inventory/inventory_start
-
-##Damage Check (Small Performance Cost!)
-function glacier_players:player/brain/damagecheck with storage minecraft:glacier_players.macro
 
 ##Modes (Big Performance Cost!)
 function glacier_players:player/brain/thinker_modes_init_check

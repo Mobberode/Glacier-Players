@@ -1,6 +1,9 @@
 ##Remove Tag
 tag @s remove GlacierPlayer.Inventory_SelectedFood
 
+##Find if food can transition into something (stew -> bowl)
+
+
 ##Get count and remove by 1.
 $execute store result score #Stored expai_glacier_players.inventory_slot_count run data get entity @s Items[$(saved_slot)].count
 scoreboard players remove #Stored expai_glacier_players.inventory_slot_count 1

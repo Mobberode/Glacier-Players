@@ -4,7 +4,7 @@
 execute rotated as @s if block ^ ^.05 ^ #glacier_players:liquids run function glacier_players:player/move/movement_continue_in_liquid
 #Not in Liquid/On Ground
 execute if predicate glacier_players:ground_detect run function glacier_players:player/move/movement_continue_normal
-execute if entity @n[type=marker,tag=GlacierPlayer.DMarker_Selected,distance=0..2] run function glacier_players:player/move/destination_marker/reached
+execute if entity @n[tag=GlacierPlayer.DMarker_Selected,distance=0..2] run function glacier_players:player/move/destination_marker/reached
 
 ##This here for now to start a new path if in contact with wall.
 #Though this will be changed once building is finished so like a player can build up a wall.

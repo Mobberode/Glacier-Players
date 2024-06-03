@@ -1,5 +1,5 @@
 ##Nor
-function glacier_players:player/inventory/inventory_tp
+#function glacier_players:player/inventory/inventory_tp
 execute at @s[tag=!GlacierPlayer.Pickup_Delayed] run function glacier_players:player/inventory/inventory_gather_search
 ##Switch HandItems
 execute store result score @s glacier_players.rng run random value 0..10000

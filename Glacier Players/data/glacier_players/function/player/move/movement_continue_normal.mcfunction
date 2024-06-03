@@ -1,5 +1,5 @@
-tp @s ~ ~ ~ facing entity @n[type=marker,tag=GlacierPlayer.DMarker_Selected]
-execute rotated ~ 0 if score @s glacier_players.sub_mode matches 1 run function glacier_players:player/move/walk
+tp @s ~ ~ ~ facing entity @e[limit=1,type=marker,tag=GlacierPlayer.DMarker_Selected]
+execute if score @s glacier_players.sub_mode matches 1 run function glacier_players:player/move/walk
 execute if score @s glacier_players.sub_mode matches 2 run function glacier_players:player/move/sprint
 execute if score @s glacier_players.sub_mode matches 3 run function glacier_players:player/move/sprint_jump
 
