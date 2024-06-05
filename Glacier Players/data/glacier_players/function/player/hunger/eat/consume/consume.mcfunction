@@ -25,4 +25,4 @@ function glacier_players:player/hunger/eat/food_inventory/success/get/foods/prop
 data modify entity @e[type=piglin_brute,limit=1,tag=GlacierPlayer.Alias_Selected] active_effects set from entity @s active_effects
 
 ##Remove 1 of the eaten item from the Glacier's inventory
-execute as @e[type=donkey,limit=1,tag=GlacierPlayer.Inventory_SelectedFood] run function glacier_players:player/hunger/eat/consume/consume_remove_item with storage expai_glacier_players.inventory_macro
+execute as @e[type=donkey,limit=1,tag=GlacierPlayer.Inventory_SelectedFood] run function glacier_players:player/hunger/eat/consume/consume_remove_item with storage glacier_players.inventory_macro

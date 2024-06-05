@@ -1,7 +1,6 @@
 ##Logic Thinker
 #Recurring Functions (Mega Performance Cost!)
 function glacier_players:player/recurring_functions/dual_macros
-function glacier_players:body_alias/loop
 
 ##Get Pos (Minial Performance Cost!)
 execute if predicate glacier_players:2_tick_period run function glacier_players:player/recurring_functions/get_pos
@@ -23,6 +22,8 @@ function glacier_players:player/brain/thinker_modes_init_check
 
 ##Interaction Test
 #execute at @s run function glacier_players:player/interactions/right_click
+
+function glacier_players:body_alias/loop
 
 ##Disconnect (Minial Performance Cost!)
 execute unless score #AutomaticDisconnect glacier_players.config matches 1 run function glacier_players:player/disconnect/disconnect_init

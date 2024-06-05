@@ -1,6 +1,6 @@
 scoreboard players set @s glacier_players.inventory_saved_partition 2
 ##Check Item
-#tellraw @a[tag=expai.debug] ["",{"score":{"name": "@s","objective": "glacier_players.inventory_slot_slot_number"}}]
+#tellraw @a[tag=gp.debug] ["",{"score":{"name": "@s","objective": "glacier_players.inventory_slot_slot_number"}}]
 
 #Check if current slot has same item
 $execute as @n[tag=GP.Inventory_Selected.InvSection2] if items entity @s horse.$(player_inv_slot) *[food|potion_contents] run function glacier_players:player/hunger/eat/food_inventory/success/component_check with storage glacier_players.inventory_macro

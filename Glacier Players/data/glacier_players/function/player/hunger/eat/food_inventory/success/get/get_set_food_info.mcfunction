@@ -1,48 +1,49 @@
 ##Add Tag
-execute as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/give_tags_set
+function glacier_players:player/hunger/eat/food_inventory/success/give_tags_set
 
 ##Find specified food item
-$execute if items entity @s horse.$(player_inv_slot) apple as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/apple
-$execute if items entity @s horse.$(player_inv_slot) baked_potato as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/baked_potato
-$execute if items entity @s horse.$(player_inv_slot) beetroot_soup as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/beetroot_soup
-$execute if items entity @s horse.$(player_inv_slot) beetroot as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/beetroot
-$execute if items entity @s horse.$(player_inv_slot) bread as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/bread
-$execute if items entity @s horse.$(player_inv_slot) carrot as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/carrot
-$execute if items entity @s horse.$(player_inv_slot) chorus_fruit as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/chorus_fruit
-$execute if items entity @s horse.$(player_inv_slot) cooked_chicken as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_chicken
-$execute if items entity @s horse.$(player_inv_slot) cooked_cod as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_cod
-$execute if items entity @s horse.$(player_inv_slot) cooked_mutton as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_mutton
-$execute if items entity @s horse.$(player_inv_slot) cooked_porkchop as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_porkchop
-$execute if items entity @s horse.$(player_inv_slot) cooked_rabbit as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_rabbit
-$execute if items entity @s horse.$(player_inv_slot) cooked_salmon as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_salmon
-$execute if items entity @s horse.$(player_inv_slot) cookie as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cookie
-$execute if items entity @s horse.$(player_inv_slot) dried_kelp as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/dried_kelp
-$execute if items entity @s horse.$(player_inv_slot) enchanted_golden_apple as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/enchanted_golden_apple
-$execute if items entity @s horse.$(player_inv_slot) glow_berries as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/glow_berries
-$execute if items entity @s horse.$(player_inv_slot) golden_apple as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/golden_apple
-$execute if items entity @s horse.$(player_inv_slot) golden_carrot as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/golden_carrot
-$execute if items entity @s horse.$(player_inv_slot) honey_bottle as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/honey_bottle
-$execute if items entity @s horse.$(player_inv_slot) melon_slice as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/melon_slice
-$execute if items entity @s horse.$(player_inv_slot) poisonous_potato as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/poisonous_potato
-$execute if items entity @s horse.$(player_inv_slot) potato as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/potato
-$execute if items entity @s horse.$(player_inv_slot) pufferfish as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/pufferfish
-$execute if items entity @s horse.$(player_inv_slot) pumpkin_pie as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/pumpkin_pie
-$execute if items entity @s horse.$(player_inv_slot) rabbit_stew as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/rabbit_stew
-$execute if items entity @s horse.$(player_inv_slot) beef as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/beef
-$execute if items entity @s horse.$(player_inv_slot) chicken as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/chicken
-$execute if items entity @s horse.$(player_inv_slot) cod as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cod
-$execute if items entity @s horse.$(player_inv_slot) mutton as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/mutton
-$execute if items entity @s horse.$(player_inv_slot) porkchop as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/porkchop
-$execute if items entity @s horse.$(player_inv_slot) rabbit as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/rabbit
-$execute if items entity @s horse.$(player_inv_slot) salmon as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/salmon
-$execute if items entity @s horse.$(player_inv_slot) rotten_flesh as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/rotten_flesh
-$execute if items entity @s horse.$(player_inv_slot) spider_eye as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/spider_eye
-$execute if items entity @s horse.$(player_inv_slot) cooked_beef as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_beef
-$execute if items entity @s horse.$(player_inv_slot) suspicious_stew as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/suspicious_stew
-$execute if items entity @s horse.$(player_inv_slot) sweet_berries as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/sweet_berries
-$execute if items entity @s horse.$(player_inv_slot) tropical_fish as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/tropical_fish
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:apple"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/apple
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:baked_potato"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/baked_potato
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:beetroot_soup"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/beetroot_soup
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:beetroot"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/beetroot
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:bread"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/bread
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:carrot"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/carrot
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:chorus_fruit"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/chorus_fruit
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:cooked_chicken"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_chicken
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:cooked_cod"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_cod
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:cooked_mutton"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_mutton
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:cooked_porkchop"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_porkchop
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:cooked_rabbit"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_rabbit
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:cooked_salmon"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_salmon
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:cookie"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cookie
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:dried_kelp"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/dried_kelp
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:enchanted_golden_apple"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/enchanted_golden_apple
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:glow_berries"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/glow_berries
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:golden_apple"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/golden_apple
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:golden_carrot"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/golden_carrot
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:honey_bottle"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/honey_bottle
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:melon_slice"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/melon_slice
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:poisonous_potato"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/poisonous_potato
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:potato"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/potato
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:pufferfish"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/pufferfish
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:pumpkin_pie"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/pumpkin_pie
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:rabbit_stew"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/rabbit_stew
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:beef"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/beef
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:chicken"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/chicken
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:cod"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cod
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:mutton"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/mutton
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:porkchop"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/porkchop
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:rabbit"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/rabbit
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:salmon"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/salmon
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:rotten_flesh"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/rotten_flesh
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:spider_eye"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/spider_eye
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:cooked_beef"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/cooked_beef
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:suspicious_stew"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/suspicious_stew
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:sweet_berries"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/sweet_berries
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:tropical_fish"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/tropical_fish
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:mushroom_stew"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/mushroom_stew
 
-$execute if items entity @s horse.$(player_inv_slot) potion as @e[limit=1,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/potions/get/potion_get
+execute if data storage glacier_players.inventory_macro {saved_item_id:"minecraft:potion"} run function glacier_players:player/hunger/eat/food_inventory/success/get/foods/potions/get/potion_get
 
-##Addons
-function #glacier_players:extensions/inventory/foods with storage expai_glacier_players.inventory_macro
+##Extensions
+function #glacier_players:extensions/inventory/foods with storage glacier_players.inventory_macro
