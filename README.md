@@ -1,4 +1,4 @@
-# MC-Experimental-AI-Mobberode
+# Glacier Players
 ## INSTALLATION ON GITHUB (Latest Commit)
 1. Press the green code button on the repo
 2. Download ZIP
