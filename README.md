@@ -1,3 +1,4 @@
+![Last Commit](https://img.shields.io/github/last-commit/Mobberode/Glacier-Players?style=plastic&logo=github&label=Last%20Commit&color=aqua)
 # Glacier Players
 ## INSTALLATION ON GITHUB (Latest Commit)
 1. Press the green code button on the repo
