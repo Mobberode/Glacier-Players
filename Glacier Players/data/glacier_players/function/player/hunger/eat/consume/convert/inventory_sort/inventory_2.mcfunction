@@ -1,4 +1,4 @@
-scoreboard players set @s glacier_players.inventory_saved_partition 3
+scoreboard players set @s glacier_players.inventory_saved_partition 2
 ##Check Item
 #tellraw @a[tag=gp.debug] ["",{"score":{"name": "@s","objective": "glacier_players.inventory_slot_number"}}]
 

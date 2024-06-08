@@ -10,5 +10,5 @@ function glacier_players:player/brain/damagecheck with storage minecraft:glacier
 function glacier_players:body_alias/loop
 
 ##Debug (Small Performance Cost!)
-execute if predicate glacier_players:20_tick_period run data modify storage glacier_players.macro debug_info_name set from entity @s CustomName
-execute if predicate glacier_players:20_tick_period run function glacier_players:tools/debug/name_info with storage glacier_players.macro
+#execute if predicate glacier_players:20_tick_period run data modify storage glacier_players.macro debug_info_name set from entity @s CustomName
+#execute if predicate glacier_players:20_tick_period run function glacier_players:tools/debug/name_info with storage glacier_players.macro
