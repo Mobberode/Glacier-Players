@@ -1,0 +1,1 @@
+$data modify entity @s Items[$(item_convert_slot)].id set from storage glacier_players.inventory_macro item_convert_id

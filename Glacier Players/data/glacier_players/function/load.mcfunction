@@ -39,7 +39,7 @@ scoreboard objectives add glacier_players.inventory_slot_count dummy
 scoreboard objectives add glacier_players.inventory_slot_slot dummy
 scoreboard objectives add glacier_players.inventory_slot_comparing_count dummy
 scoreboard objectives add glacier_players.inventory_slot_comparing_slot dummy
-scoreboard objectives add glacier_players.inventory_slot_slot_number dummy
+scoreboard objectives add glacier_players.inventory_slot_number dummy
 scoreboard objectives add glacier_players.inventory_item_max_stack_size dummy
 scoreboard objectives add glacier_players.inventory_player_hand dummy
 scoreboard objectives add glacier_players.inventory_saved_slot dummy
