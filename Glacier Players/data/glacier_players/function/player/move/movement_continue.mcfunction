@@ -8,4 +8,4 @@ execute if entity @n[tag=GlacierPlayer.DMarker_Selected,distance=0..2] run funct
 
 ##This here for now to start a new path if in contact with wall.
 #Though this will be changed once building is finished so like a player can build up a wall.
-execute if predicate glacier_players:2_tick_period rotated ~ 0 unless block ^ ^ ^0.5 #glacier_players:non_solids unless block ^ ^1 ^0.5 #glacier_players:non_solids run function glacier_players:player/move/destination_marker/reached
+execute if predicate glacier_players:2_tick_period rotated ~ 0 unless block ^ ^ ^0.75 #glacier_players:non_solids unless block ^ ^1 ^0.75 #glacier_players:non_solids run function glacier_players:player/move/destination_marker/reached
