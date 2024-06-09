@@ -171,9 +171,44 @@ execute if score #ChatContentType glacier_players.rng matches 164 run data modif
 execute if score #ChatContentType glacier_players.rng matches 165 run data modify storage glacier_players.macro chat_contents set value "https://tenor.com/en-AU/view/hello-there-hi-there-greetings-gif-9442662"
 execute if score #ChatContentType glacier_players.rng matches 166 run scoreboard players set @s glacier_players.speech_advanced_mode 1
 execute if score #ChatContentType glacier_players.rng matches 166 run data modify storage glacier_players.macro chat_raw_json set value '{"text":"<"},{"selector":"@s"},{"text":"> "},{"text":"Red!!!","color":"red"}'
+execute if score #ChatContentType glacier_players.rng matches 167 run data modify storage glacier_players.macro chat_contents set value "What the hellllllllll"
+execute if score #ChatContentType glacier_players.rng matches 168 run data modify storage glacier_players.macro chat_contents set value "Have we all found it?"
+execute if score #ChatContentType glacier_players.rng matches 169 run data modify storage glacier_players.macro chat_contents set value "no wonder why this dont work bro im stupid"
+execute if score #ChatContentType glacier_players.rng matches 170 run data modify storage glacier_players.macro chat_contents set value "this guy a menance bro"
+execute if score #ChatContentType glacier_players.rng matches 171 run data modify storage glacier_players.macro chat_contents set value "where am i"
+execute if score #ChatContentType glacier_players.rng matches 172 run data modify storage glacier_players.macro chat_contents set value "Anyone know what biome this is?"
+execute if score #ChatContentType glacier_players.rng matches 173 run data modify storage glacier_players.macro chat_contents set value "oh god"
+execute if score #ChatContentType glacier_players.rng matches 174 run data modify storage glacier_players.macro chat_contents set value "I pray on god that I didn't do it"
+execute if score #ChatContentType glacier_players.rng matches 175 run data modify storage glacier_players.macro chat_contents set value "This just in. A wild man is going across the minecraft world, griefing everybody. It is advised you start hiding your bases."
+execute if score #ChatContentType glacier_players.rng matches 176 run data modify storage glacier_players.macro chat_contents set value "Great! We do Good! I came, "
+execute if score #ChatContentType glacier_players.rng matches 176 run data modify storage glacier_players.macro chat_content_target set value "@e[limit=1,scores={glacier_players.pid=1..},sort=random]"
+execute if score #ChatContentType glacier_players.rng matches 177 run data modify storage glacier_players.macro chat_contents set value "Man shut yo goofy ahh up"
+execute if score #ChatContentType glacier_players.rng matches 178 run data modify storage glacier_players.macro chat_contents set value "i heard there been some buildings around here"
+execute if score #ChatContentType glacier_players.rng matches 179 run data modify storage glacier_players.macro chat_contents set value "This is MINECRAFT!"
+execute if score #ChatContentType glacier_players.rng matches 180 run data modify storage glacier_players.macro chat_contents set value "guh guh guh"
+execute if score #ChatContentType glacier_players.rng matches 181 run data modify storage glacier_players.macro chat_contents set value "Eat my ****"
+execute if score #ChatContentType glacier_players.rng matches 182 run data modify storage glacier_players.macro chat_contents set value "got some trims YESSSS!"
+execute if score #ChatContentType glacier_players.rng matches 183 run data modify storage glacier_players.macro chat_contents set value "Minecrap"
+execute if score #ChatContentType glacier_players.rng matches 184 run data modify storage glacier_players.macro chat_contents set value "never thought that would be there"
+execute if score #ChatContentType glacier_players.rng matches 185 run data modify storage glacier_players.macro chat_contents set value "what kind of sick joke am i seeing?"
+execute if score #ChatContentType glacier_players.rng matches 186 run data modify storage glacier_players.macro chat_contents set value "alright guys dont let any suspicious lookin neighbours in the village. We dont know what could happen!"
+execute if score #ChatContentType glacier_players.rng matches 187 run data modify storage glacier_players.macro chat_contents set value "hey, anyone up for an expedition to the end? could use some company."
+execute if score #ChatContentType glacier_players.rng matches 188 run data modify storage glacier_players.macro chat_contents set value "just made a cake, but it's all for me. no sharing, sorry not sorry!"
+execute if score #ChatContentType glacier_players.rng matches 189 run data modify storage glacier_players.macro chat_contents set value "pro tip: never trust a creeper. they're not hugging material."
+execute if score #ChatContentType glacier_players.rng matches 190 run data modify storage glacier_players.macro chat_contents set value "i think my chicken coop is haunted. keeps making weird noises at night."
+execute if score #ChatContentType glacier_players.rng matches 191 run data modify storage glacier_players.macro chat_contents set value "lost in the nether, send help... or just send pizza, either works."
+execute if score #ChatContentType glacier_players.rng matches 192 run data modify storage glacier_players.macro chat_contents set value "who knew farming carrots could be so relaxing? zen garden vibes."
+execute if score #ChatContentType glacier_players.rng matches 193 run data modify storage glacier_players.macro chat_contents set value "if you see a witch, tell her I want my broom back. she borrowed it last week."
+execute if score #ChatContentType glacier_players.rng matches 194 run data modify storage glacier_players.macro chat_contents set value "building a skyscraper out of dirt. because why not? it's eco-friendly!"
+execute if score #ChatContentType glacier_players.rng matches 195 run data modify storage glacier_players.macro chat_contents set value "zombie pigmen are chill until you accidentally hit one. then it's party time."
+execute if score #ChatContentType glacier_players.rng matches 196 run data modify storage glacier_players.macro chat_contents set value "anyone else think endermen are just misunderstood? they just wanna teleport!"
+execute if score #ChatContentType glacier_players.rng matches 197 run data modify storage glacier_players.macro chat_contents set value "i've got a pet slime. named him squishy. he's my squishy."
+execute if score #ChatContentType glacier_players.rng matches 198 run data modify storage glacier_players.macro chat_contents set value "To whoever stole my diamonds, jokes on you, they were fake. got 'em!"
+execute if score #ChatContentType glacier_players.rng matches 199 run data modify storage glacier_players.macro chat_contents set value "ha ha im so smart that i know that in fact, players cant get that oh yeah, how about you shut the fuck up"
+execute if score #ChatContentType glacier_players.rng matches 200 run data modify storage glacier_players.macro chat_contents set value "boy i know your dreads look hideous irl. dont even think about saying anything"
 
-scoreboard players remove #ChatContentType glacier_players.rng 166
+scoreboard players remove #ChatContentType glacier_players.rng 200
 function #glacier_players:extensions/speech/text/get_idle_contents
 
-execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage minecraft:glacier_players.macro
-execute if score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak_advanced with storage minecraft:glacier_players.macro
+execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.macro
+execute if score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak_advanced with storage glacier_players.macro

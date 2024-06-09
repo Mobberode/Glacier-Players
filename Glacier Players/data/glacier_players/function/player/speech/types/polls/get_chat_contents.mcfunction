@@ -79,4 +79,4 @@ execute if score #ChatContentType glacier_players.rng matches 12 run data modify
 scoreboard players remove #ChatContentType glacier_players.rng 12
 function #glacier_players:extensions/speech/text/get_poll_contents
 
-function glacier_players:player/speech/poll with storage minecraft:glacier_players.macro
+function glacier_players:player/speech/poll with storage glacier_players.macro

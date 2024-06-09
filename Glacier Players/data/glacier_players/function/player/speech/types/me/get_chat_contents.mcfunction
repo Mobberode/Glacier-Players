@@ -55,4 +55,4 @@ execute if score #ChatContentType glacier_players.rng matches 50 run data modify
 scoreboard players remove #ChatContentType glacier_players.rng 50
 function #glacier_players:extensions/speech/text/get_me_contents
 
-function glacier_players:player/speech/speak_me with storage minecraft:glacier_players.macro
+function glacier_players:player/speech/speak_me with storage glacier_players.macro

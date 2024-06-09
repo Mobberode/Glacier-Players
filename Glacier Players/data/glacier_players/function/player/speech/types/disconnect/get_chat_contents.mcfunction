@@ -43,5 +43,5 @@ execute if score #ChatContentType glacier_players.rng matches 35 run data modify
 scoreboard players remove #ChatContentType glacier_players.rng 35
 function #glacier_players:extensions/speech/text/get_disconnect_contents
 
-execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage minecraft:glacier_players.macro
-execute if score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak_advanced with storage minecraft:glacier_players.macro
+execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.macro
+execute if score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak_advanced with storage glacier_players.macro

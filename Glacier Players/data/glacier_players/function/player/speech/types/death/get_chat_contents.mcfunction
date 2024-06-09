@@ -55,9 +55,20 @@ execute if score #ChatContentType glacier_players.rng matches 48 run data modify
 execute if score #ChatContentType glacier_players.rng matches 49 run data modify storage glacier_players.macro chat_contents set value "not him"
 execute if score #ChatContentType glacier_players.rng matches 50 run data modify storage glacier_players.macro chat_contents set value "you are not that guy"
 execute if score #ChatContentType glacier_players.rng matches 51 run data modify storage glacier_players.macro chat_contents set value "this guy bro"
+execute if score #ChatContentType glacier_players.rng matches 52 run data modify storage glacier_players.macro chat_contents set value "Im gonna need to get some galvanised steel and eco friendly wood veneers to fix my heart after that one"
+execute if score #ChatContentType glacier_players.rng matches 53 run data modify storage glacier_players.macro chat_contents set value "da,m"
+execute if score #ChatContentType glacier_players.rng matches 54 run data modify storage glacier_players.macro chat_contents set value "no how what"
+execute if score #ChatContentType glacier_players.rng matches 55 run data modify storage glacier_players.macro chat_contents set value "cheater"
+execute if score #ChatContentType glacier_players.rng matches 56 run data modify storage glacier_players.macro chat_contents set value "i have revenge now"
+execute if score #ChatContentType glacier_players.rng matches 57 run data modify storage glacier_players.macro chat_contents set value "I HATE U"
+execute if score #ChatContentType glacier_players.rng matches 58 run data modify storage glacier_players.macro chat_contents set value "my trap failed me"
+execute if score #ChatContentType glacier_players.rng matches 59 run data modify storage glacier_players.macro chat_contents set value "please do not clip that"
+execute if score #ChatContentType glacier_players.rng matches 60 run data modify storage glacier_players.macro chat_contents set value "my brain ouch"
+execute if score #ChatContentType glacier_players.rng matches 61 run data modify storage glacier_players.macro chat_contents set value "smart play!"
+execute if score #ChatContentType glacier_players.rng matches 62 run data modify storage glacier_players.macro chat_contents set value "oh is this real chat"
 
-scoreboard players remove #ChatContentType glacier_players.rng 51
+scoreboard players remove #ChatContentType glacier_players.rng 62
 function #glacier_players:extensions/speech/text/get_death_contents
 
-execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage minecraft:glacier_players.macro
-execute if score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak_advanced with storage minecraft:glacier_players.macro
+execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.macro
+execute if score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak_advanced with storage glacier_players.macro

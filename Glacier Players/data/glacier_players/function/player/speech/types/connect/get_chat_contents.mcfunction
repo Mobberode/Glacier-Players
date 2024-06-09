@@ -40,9 +40,16 @@ execute if score #ChatContentType glacier_players.rng matches 35 run data modify
 execute if score #ChatContentType glacier_players.rng matches 36 run data modify storage glacier_players.macro chat_contents set value "Back again"
 execute if score #ChatContentType glacier_players.rng matches 37 run data modify storage glacier_players.macro chat_contents set value "sorry my internet cut out"
 execute if score #ChatContentType glacier_players.rng matches 38 run data modify storage glacier_players.macro chat_contents set value "im back to get my 20 dollars back"
+execute if score #ChatContentType glacier_players.rng matches 39 run data modify storage glacier_players.macro chat_contents set value "Hello guys!!!"
+execute if score #ChatContentType glacier_players.rng matches 40 run data modify storage glacier_players.macro chat_contents set value "guess whos back again"
+execute if score #ChatContentType glacier_players.rng matches 41 run data modify storage glacier_players.macro chat_contents set value "Dramatic entrance"
+execute if score #ChatContentType glacier_players.rng matches 42 run data modify storage glacier_players.macro chat_contents set value "where can i find yall"
+execute if score #ChatContentType glacier_players.rng matches 43 run data modify storage glacier_players.macro chat_contents set value "Im only playing for a bit because i got something in like a copule of minutes"
+execute if score #ChatContentType glacier_players.rng matches 44 run data modify storage glacier_players.macro chat_contents set value "just testing something"
+execute if score #ChatContentType glacier_players.rng matches 45 run data modify storage glacier_players.macro chat_contents set value "has there been a server reset?"
 
-scoreboard players remove #ChatContentType glacier_players.rng 38
+scoreboard players remove #ChatContentType glacier_players.rng 45
 function #glacier_players:extensions/speech/text/get_connect_contents
 
-execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage minecraft:glacier_players.macro
-execute if score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak_advanced with storage minecraft:glacier_players.macro
+execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.macro
+execute if score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak_advanced with storage glacier_players.macro
