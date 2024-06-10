@@ -39,8 +39,13 @@ execute if score #ChatContentType glacier_players.rng matches 32 run data modify
 execute if score #ChatContentType glacier_players.rng matches 33 run data modify storage glacier_players.macro chat_contents set value "im now on my villian arc. see you soon"
 execute if score #ChatContentType glacier_players.rng matches 34 run data modify storage glacier_players.macro chat_contents set value "alright gotta say goodbye"
 execute if score #ChatContentType glacier_players.rng matches 35 run data modify storage glacier_players.macro chat_contents set value "i got work to do so ima dip"
+execute if score #ChatContentType glacier_players.rng matches 36 run data modify storage glacier_players.macro chat_contents set value "ohh wowwwww im leaving"
+execute if score #ChatContentType glacier_players.rng matches 37 run data modify storage glacier_players.macro chat_contents set value "NI-"
+execute if score #ChatContentType glacier_players.rng matches 38 run data modify storage glacier_players.macro chat_contents set value "thats it im going to a parallel universe"
+execute if score #ChatContentType glacier_players.rng matches 39 run data modify storage glacier_players.macro chat_contents set value "just like a star. im gone when its day, bye"
+execute if score #ChatContentType glacier_players.rng matches 40 run data modify storage glacier_players.macro chat_contents set value "Good luck yall"
 
-scoreboard players remove #ChatContentType glacier_players.rng 35
+scoreboard players remove #ChatContentType glacier_players.rng 40
 function #glacier_players:extensions/speech/text/get_disconnect_contents
 
 execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.macro

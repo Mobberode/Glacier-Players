@@ -76,7 +76,29 @@ execute if score #ChatContentType glacier_players.rng matches 12 run data modify
 execute if score #ChatContentType glacier_players.rng matches 12 run data modify storage glacier_players.macro chat_contents_poll_decision_2 set value "[Gorgeous Freeman]"
 execute if score #ChatContentType glacier_players.rng matches 12 run data modify storage glacier_players.macro chat_contents_poll_decision_3 set value "[Gigantic Freeman]"
 
-scoreboard players remove #ChatContentType glacier_players.rng 12
+execute if score #ChatContentType glacier_players.rng matches 13 run scoreboard players set #PollDecisions glacier_players.poll_decision 2
+execute if score #ChatContentType glacier_players.rng matches 13 run data modify storage glacier_players.macro chat_contents_poll set value "Are yall getting Call of Duty: Black Ops 6?"
+execute if score #ChatContentType glacier_players.rng matches 13 run data modify storage glacier_players.macro chat_contents_poll_decision_1 set value "[Hell yeah!]"
+execute if score #ChatContentType glacier_players.rng matches 13 run data modify storage glacier_players.macro chat_contents_poll_decision_2 set value "[Nope]"
+
+execute if score #ChatContentType glacier_players.rng matches 14 run scoreboard players set #PollDecisions glacier_players.poll_decision 1
+execute if score #ChatContentType glacier_players.rng matches 14 run data modify storage glacier_players.macro chat_contents_poll set value "Who do you think you are?"
+execute if score #ChatContentType glacier_players.rng matches 14 run data modify storage glacier_players.macro chat_contents_poll_decision_1 set value "[a nobody]"
+
+execute if score #ChatContentType glacier_players.rng matches 15 run scoreboard players set #PollDecisions glacier_players.poll_decision 3
+execute if score #ChatContentType glacier_players.rng matches 15 run data modify storage glacier_players.macro chat_contents_poll set value "breakfast or no?"
+execute if score #ChatContentType glacier_players.rng matches 15 run data modify storage glacier_players.macro chat_contents_poll_decision_1 set value "[I eat breakfast]"
+execute if score #ChatContentType glacier_players.rng matches 15 run data modify storage glacier_players.macro chat_contents_poll_decision_2 set value "[I do not eat breakfast]"
+execute if score #ChatContentType glacier_players.rng matches 15 run data modify storage glacier_players.macro chat_contents_poll_decision_3 set value "[i sometimes eat breakfast]"
+
+execute if score #ChatContentType glacier_players.rng matches 16 run scoreboard players set #PollDecisions glacier_players.poll_decision 4
+execute if score #ChatContentType glacier_players.rng matches 16 run data modify storage glacier_players.macro chat_contents_poll set value "my nuts smell"
+execute if score #ChatContentType glacier_players.rng matches 16 run data modify storage glacier_players.macro chat_contents_poll_decision_1 set value "[.]"
+execute if score #ChatContentType glacier_players.rng matches 16 run data modify storage glacier_players.macro chat_contents_poll_decision_2 set value "[..]"
+execute if score #ChatContentType glacier_players.rng matches 16 run data modify storage glacier_players.macro chat_contents_poll_decision_3 set value "[...]"
+execute if score #ChatContentType glacier_players.rng matches 16 run data modify storage glacier_players.macro chat_contents_poll_decision_4 set value "[....]"
+
+scoreboard players remove #ChatContentType glacier_players.rng 16
 function #glacier_players:extensions/speech/text/get_poll_contents
 
 function glacier_players:player/speech/poll with storage glacier_players.macro

@@ -51,8 +51,18 @@ execute if score #ChatContentType glacier_players.rng matches 47 run data modify
 execute if score #ChatContentType glacier_players.rng matches 48 run data modify storage glacier_players.macro chat_contents set value "doesnt like it when you come."
 execute if score #ChatContentType glacier_players.rng matches 49 run data modify storage glacier_players.macro chat_contents set value "is just gonna ignore that"
 execute if score #ChatContentType glacier_players.rng matches 50 run data modify storage glacier_players.macro chat_contents set value "thinks this game is a rhtyhm game when its not"
+execute if score #ChatContentType glacier_players.rng matches 51 run data modify storage glacier_players.macro chat_contents set value "Game Overed!"
+execute if score #ChatContentType glacier_players.rng matches 52 run data modify storage glacier_players.macro chat_contents set value "is now depressed"
+execute if score #ChatContentType glacier_players.rng matches 53 run data modify storage glacier_players.macro chat_contents set value "couldn't comprehend the true answer of 0 divided by 0"
+execute if score #ChatContentType glacier_players.rng matches 54 run data modify storage glacier_players.macro chat_contents set value "is feeling quite greenish as of late"
+execute if score #ChatContentType glacier_players.rng matches 55 run data modify storage glacier_players.macro chat_contents set value "Juked his way out"
+execute if score #ChatContentType glacier_players.rng matches 56 run data modify storage glacier_players.macro chat_contents set value "fell into a sink hole"
+execute if score #ChatContentType glacier_players.rng matches 57 run data modify storage glacier_players.macro chat_contents set value "ran the red light"
+execute if score #ChatContentType glacier_players.rng matches 58 run data modify storage glacier_players.macro chat_contents set value "activated a bunch of tnt"
+execute if score #ChatContentType glacier_players.rng matches 59 run data modify storage glacier_players.macro chat_contents set value "d1 crashed out"
+execute if score #ChatContentType glacier_players.rng matches 60 run data modify storage glacier_players.macro chat_contents set value "Became freaky"
 
-scoreboard players remove #ChatContentType glacier_players.rng 50
+scoreboard players remove #ChatContentType glacier_players.rng 60
 function #glacier_players:extensions/speech/text/get_me_contents
 
 function glacier_players:player/speech/speak_me with storage glacier_players.macro
