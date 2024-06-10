@@ -1,6 +1,5 @@
 ##Convert
-execute if score #ProcessEatTime glacier_players.number matches 20.. run scoreboard players add #Seconds glacier_players.number 1
-scoreboard players remove #ProcessEatTime glacier_players.number 20
-
-execute if score #ProcessEatTime glacier_players.number matches ..19 run execute store result storage glacier_players.inventory_macro 1 int 1 run scoreboard players get #Seconds glacier_players.number
-execute if score #ProcessEatTime glacier_players.number matches 20.. run function glacier_players:player/hunger/eat/food_inventory/maths/convert_ticks_to_seconds with storage glacier_players.inventory_macro
+#Get Number of ticks per second
+execute store result score #TempTicks glacier_players.number run scoreboard players get #Ticks glacier_players.number
+#Convert
+execute store result score @s glacier_players.food_eat_time run scoreboard players operation #ProcessEatTime glacier_players.number /= #TempTicks glacier_players.number

@@ -1,3 +1,0 @@
-scoreboard players set @s glacier_players.food_eat_time 32
-scoreboard players set #ProcessEatTime glacier_players.number 0
-tellraw @a ["",{"text": "[Glacier Players]: Value for eat_seconds cannot be set above '9999999' otherwise 'CSTT' will fallback [EXECUTOR]-->","color": "red"},{"selector":"@s","color": "yellow"},{"text": " ID: ","color": "red"},{"score":{"name": "@s","objective": "glacier_players.pid"},"color": "yellow"}]

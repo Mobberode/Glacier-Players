@@ -58,6 +58,9 @@ scoreboard objectives add glacier_players.number dummy
 
 scoreboard objectives add glacier_players.extensions dummy
 
+scoreboard players set #Ticks glacier_players.number 20
+scoreboard players set #Second glacier_players.number 1
+
 #team add GlacierPlayers.DMCanidates
 
 team add GlacierPlayersTeam

@@ -1,8 +1,5 @@
 ##Convert
-execute if score #ProcessEatTime glacier_players.number matches 1.. run scoreboard players add @s glacier_players.food_eat_time 20
-scoreboard players remove #ProcessEatTime glacier_players.number 1
-
-#Fallback if number is too high
-execute if score #ProcessEatTime glacier_players.number matches 9999999.. run function glacier_players:player/hunger/eat/food_inventory/maths/cstt_overflow
-
-execute if score #ProcessEatTime glacier_players.number matches 1.. run function glacier_players:player/hunger/eat/food_inventory/maths/convert_seconds_to_ticks
+#Get Number of ticks per second
+execute store result score #TempTicks glacier_players.number run scoreboard players get #Ticks glacier_players.number
+#Convert
+execute store result score @s glacier_players.food_eat_time run scoreboard players operation #TempTicks glacier_players.number *= #ProcessEatTime glacier_players.number
