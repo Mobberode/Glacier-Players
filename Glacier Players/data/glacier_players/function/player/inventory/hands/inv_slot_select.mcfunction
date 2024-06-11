@@ -1,5 +1,3 @@
-function glacier_players:player/recurring_functions/set_macros_inventory with storage glacier_players.macro
-
 execute store result score @s glacier_players.inventory_player_hand run random value 1..2
 execute store result score @s glacier_players.rng run random value 1..3
 

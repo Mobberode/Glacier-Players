@@ -6,4 +6,4 @@ function glacier_players:player/recurring_functions/dual_macros_all with storage
 function glacier_players:player/disconnect/disconnect_speak
 
 ##Disconnect
-function glacier_players:player/disconnect/disconnect with storage glacier_players.macro
+function glacier_players:player/disconnect/disconnect

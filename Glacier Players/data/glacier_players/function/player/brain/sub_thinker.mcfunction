@@ -5,7 +5,7 @@ execute at @s run function glacier_players:player/recurring_functions/dual_macro
 execute if predicate glacier_players:2_tick_period run function glacier_players:player/recurring_functions/get_pos
 
 ##Damage Check (Small Performance Cost!)
-function glacier_players:player/brain/damagecheck with storage minecraft:glacier_players.macro
+function glacier_players:player/brain/damagecheck
 
 function glacier_players:body_alias/loop
 
