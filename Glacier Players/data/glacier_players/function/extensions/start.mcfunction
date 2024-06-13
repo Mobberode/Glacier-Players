@@ -1,5 +1,5 @@
 ##Extensions
-tellraw @a ["",{"text": "[Glacier Players Extension Loader] Prepare for Extension loading","color": "aqua"}]
+tellraw @a ["",{"text": "[GPE Loader] Prepare extensions for load","color": "aqua"}]
 scoreboard players set #Loaded glacier_players.extensions 0
 execute store result storage glacier_players.extensions ext_names_count int 1 run scoreboard players set #Names glacier_players.extensions 400
 execute store result storage glacier_players.extensions ext_connect_lines_count int 1 run scoreboard players set #ConnectLines glacier_players.extensions 45
