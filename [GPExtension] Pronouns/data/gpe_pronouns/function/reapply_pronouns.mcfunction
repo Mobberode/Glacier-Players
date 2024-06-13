@@ -1,1 +1,1 @@
-data modify entity @s CustomName set from storage glacier_players.macro respawning_name
+data modify entity @s CustomName set from storage glacier_players.visual_macro respawning_name
