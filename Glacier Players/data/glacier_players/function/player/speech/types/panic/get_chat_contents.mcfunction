@@ -21,8 +21,9 @@ execute if score #ChatContentType glacier_players.rng matches 17 run data modify
 execute if score #ChatContentType glacier_players.rng matches 18 run data modify storage glacier_players.visual_macro chat_contents set value "guess im dying"
 execute if score #ChatContentType glacier_players.rng matches 19 run data modify storage glacier_players.visual_macro chat_contents set value "Hell no im dying with all this one me"
 execute if score #ChatContentType glacier_players.rng matches 20 run data modify storage glacier_players.visual_macro chat_contents set value "im cooked"
+execute if score #ChatContentType glacier_players.rng matches 21 run data modify storage glacier_players.visual_macro chat_contents set value "im fighting demons right now"
 
-scoreboard players remove #ChatContentType glacier_players.rng 20
+scoreboard players remove #ChatContentType glacier_players.rng 21
 function #glacier_players:extensions/speech/text/get_panic_contents
 
 execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.visual_macro

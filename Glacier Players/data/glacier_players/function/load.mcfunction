@@ -11,6 +11,8 @@ scoreboard objectives add glacier_players.pid dummy
 
 scoreboard objectives add glacier_players.health dummy
 scoreboard objectives add glacier_players.previous_health dummy
+scoreboard objectives add glacier_players.absorption dummy
+scoreboard objectives add glacier_players.previous_absorption dummy
 
 scoreboard objectives add glacier_players.x_pos dummy
 scoreboard objectives add glacier_players.y_pos dummy

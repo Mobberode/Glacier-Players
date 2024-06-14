@@ -4,7 +4,7 @@ execute unless score @s glacier_players.pid matches 1.. run function glacier_pla
 
 function glacier_players:player/recurring_functions/set_player
 
-execute store result storage glacier_players.macro pid_num int 1 store result score #CurrentPlayerID glacier_players.pid run scoreboard players get @s glacier_players.pid
+execute store result storage glacier_players.macro pid_num int 1 run scoreboard players get @s glacier_players.pid
 function glacier_players:player/connect/init_body with storage glacier_players.macro
 
 function #glacier_players:extensions/behaviour/player_init/connect
