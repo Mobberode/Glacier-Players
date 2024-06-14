@@ -11,7 +11,7 @@ execute if predicate glacier_players:2_tick_period rotated ~ 0 run function glac
 function glacier_players:player/brain/thinker_modes_init_check
 
 ##Interaction Test
-#execute at @s run function glacier_players:player/interactions/right_click
+function glacier_players:player/interactions/right_click
 
 ##Disconnect (Minial Performance Cost!)
 execute unless score #AutomaticDisconnect glacier_players.config matches 1 run function glacier_players:player/disconnect/disconnect_init

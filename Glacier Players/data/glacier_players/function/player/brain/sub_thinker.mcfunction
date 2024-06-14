@@ -1,3 +1,6 @@
+##Conditions
+execute store result score #Fire glacier_player.condition if predicate glacier_players:fire_detect
+
 #Recurring Functions (Mega Performance Cost!)
 execute at @s run function glacier_players:player/recurring_functions/dual_macros
 

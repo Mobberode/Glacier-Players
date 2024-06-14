@@ -57,6 +57,7 @@ scoreboard objectives add glacier_players.difficulty dummy
 scoreboard objectives add glacier_players.tnt_fuse_timer dummy
 
 scoreboard objectives add glacier_players.number dummy
+scoreboard objectives add glacier_players.condition dummy
 
 scoreboard objectives add glacier_players.extensions dummy
 
