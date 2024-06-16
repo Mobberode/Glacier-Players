@@ -7,5 +7,5 @@ playsound block.amethyst_block.step player @a
 schedule function glacier_players:player/speech/poll/poll_duration 1t
 
 ##Ask
-scoreboard players set @e[scores={glacier_players.poll_decision=0..}] glacier_players.poll_decision -1
+execute as @e[scores={glacier_players.poll_decision=0..}] run function glacier_players:player/speech/poll/player_set
 schedule function glacier_players:player/speech/poll/acknowledge_loop 1s

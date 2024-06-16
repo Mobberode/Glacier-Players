@@ -5,6 +5,7 @@ scoreboard objectives add glacier_players.speech_type dummy
 scoreboard objectives add glacier_players.speech_advanced_mode dummy
 scoreboard objectives add glacier_players.voice_timer dummy
 scoreboard objectives add glacier_players.poll_decision trigger
+scoreboard objectives add glacier_players.poll_response_delay trigger
 
 #scoreboard objectives add glacier_players.personality dummy
 scoreboard objectives add glacier_players.pid dummy
