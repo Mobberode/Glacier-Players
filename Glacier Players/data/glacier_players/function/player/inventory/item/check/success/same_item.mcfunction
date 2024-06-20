@@ -6,7 +6,9 @@ tag @s remove GlacierPlayer.Inv_Next_Item
 function glacier_players:player/recurring_functions/inventory/items/get_max_stack with storage glacier_players.inventory_macro
 
 ##Check if its a writable/signed book
-function glacier_players:player/inventory/item/books with storage glacier_players.inventory_macro
+function glacier_players:player/inventory/item/books/books with storage glacier_players.inventory_macro
+##Check if its a tipped arrow
+function glacier_players:player/inventory/item/tipped_arrows/tipped_arrows with storage glacier_players.inventory_macro
 
 ##Get Scores
 execute store result score @s glacier_players.inventory_slot_count run data get storage glacier_players.inventory_macro picked_item_count

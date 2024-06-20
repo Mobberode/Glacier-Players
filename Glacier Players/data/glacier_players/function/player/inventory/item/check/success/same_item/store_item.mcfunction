@@ -6,8 +6,6 @@ execute store result storage glacier_players.inventory_macro combined_item_count
 execute if score @s glacier_players.inventory_slot_comparing_count >= @s glacier_players.inventory_item_max_stack_size run tag @s add GlacierPlayer.Inv_Next_Item
 #execute if score @s glacier_players.inventory_slot_comparing_count >= @s glacier_players.inventory_item_max_stack_size run msg @a[tag=gp.debug] stack limit reached!
 
-execute if entity @s[tag=GlacierPlayer.Inv_Book_Writable] run function glacier_players:player/inventory/item/books_content with storage glacier_players.inventory_macro
-
 ##Remove 1 from the picked count
 scoreboard players remove @s glacier_players.inventory_slot_count 1
 

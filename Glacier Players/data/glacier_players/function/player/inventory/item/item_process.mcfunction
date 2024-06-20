@@ -4,4 +4,5 @@ data modify storage glacier_players.inventory_macro picked_item_count set from e
 data modify storage glacier_players.inventory_macro picked_item_components set from entity @s Item.components
 data modify storage glacier_players.inventory_macro picked_item_book_contents set from entity @s Item.components.minecraft:writable_book_content.pages
 data modify storage glacier_players.inventory_macro picked_item_book_contents set from entity @s Item.components.minecraft:written_book_content.pages
+data modify storage glacier_players.inventory_macro picked_potioneffect set from entity @s Item.components.minecraft:potion_contents.potion
 kill @s
