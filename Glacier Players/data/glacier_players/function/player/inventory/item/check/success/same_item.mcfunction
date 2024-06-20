@@ -18,4 +18,4 @@ execute if score @s glacier_players.inventory_slot_comparing_count >= @s glacier
 #execute if score @s glacier_players.inventory_slot_comparing_count >= @s glacier_players.inventory_item_max_stack_size run msg @a[tag=gp.debug] stack limit reached!
 
 ##Run the store function
-execute unless entity @s[tag=GlacierPlayer.Inv_Next_Item] run function glacier_players:player/inventory/item/check/hotbar/same_item/store_item with storage glacier_players.inventory_macro
+execute unless entity @s[tag=GlacierPlayer.Inv_Next_Item] run function glacier_players:player/inventory/item/check/success/same_item/store_item with storage glacier_players.inventory_macro

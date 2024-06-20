@@ -1,9 +1,6 @@
 ##Check
-$execute if items entity @s horse.$(player_inv_slot) writable_book run tag @s add GlacierPlayer.Inv_Booked
-$execute if items entity @s horse.$(player_inv_slot) written_book run tag @s add GlacierPlayer.Inv_Booked
+$execute if items entity @s horse.$(player_inv_slot) writable_book run function glacier_players:player/inventory/item/book_writable with storage glacier_players.inventory_macro
+$execute if items entity @s horse.$(player_inv_slot) written_book run function glacier_players:player/inventory/item/book_written with storage glacier_players.inventory_macro
 
-$execute if items entity @s horse.$(player_inv_slot) writable_book run data modify storage minecraft:glacier_players.inventory_macro item_book_contents set from entity @s Items[$(player_inv_slot)].components.minecraft:writable_book_content.pages
-$execute if items entity @s horse.$(player_inv_slot) written_book run data modify storage minecraft:glacier_players.inventory_macro item_book_contents set from entity @s Items[$(player_inv_slot)].components.minecraft:written_book_content.pages
-
-#msg @a[tag=gp.debug] ran book check
+msg @a[tag=gp.debug] ran book check
 execute if entity @s[tag=GlacierPlayer.Inv_Booked] run function glacier_players:player/inventory/item/books_content with storage glacier_players.inventory_macro

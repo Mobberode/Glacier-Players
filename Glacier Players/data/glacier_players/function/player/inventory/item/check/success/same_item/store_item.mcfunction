@@ -12,9 +12,9 @@ execute if entity @s[tag=GlacierPlayer.Inv_Book_Writable] run function glacier_p
 scoreboard players remove @s glacier_players.inventory_slot_count 1
 
 ##If the picked up item's count is now 0
-execute if score @s glacier_players.inventory_slot_count matches ..0 run function glacier_players:player/inventory/item/check/hotbar/same_item/store_processed_item with storage glacier_players.inventory_macro
+execute if score @s glacier_players.inventory_slot_count matches ..0 run function glacier_players:player/inventory/item/check/success/same_item/store_processed_item with storage glacier_players.inventory_macro
 
-#msg @a[tag=gp.debug] ran stored same item
+msg @a[tag=gp.debug] ran stored same item
 #tellraw @a[tag=gp.debug] ["",{"score":{"name": "@s","objective": "glacier_players.inventory_slot_count"}},{"score":{"name": "@s","objective": "glacier_players.inventory_slot_comparing_count"},"color": "gray"}]
 ##Run Function on loop
-execute unless score @s glacier_players.inventory_slot_count matches ..0 run function glacier_players:player/inventory/item/check/hotbar/same_item/store_item with storage glacier_players.inventory_macro
+execute unless score @s glacier_players.inventory_slot_count matches ..0 run function glacier_players:player/inventory/item/check/success/same_item/store_item with storage glacier_players.inventory_macro
