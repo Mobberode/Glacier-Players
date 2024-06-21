@@ -5,4 +5,4 @@ $data modify storage glacier_players.inventory_macro potioneffect set from entit
 $execute unless data storage glacier_players.inventory_macro {potioneffect:'$(picked_potioneffect)'} run tag @s add GlacierPlayer.Inv_Next_Item
 
 #Debug
-msg @a[tag=gp.debug] ran tipped arrow chedck
+msg @a[tag=gp.debug] ran tipped arrow check
