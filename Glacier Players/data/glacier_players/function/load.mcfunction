@@ -61,6 +61,8 @@ scoreboard objectives add glacier_players.number dummy
 scoreboard objectives add glacier_players.condition dummy
 
 scoreboard objectives add glacier_players.extensions dummy
+scoreboard objectives add glacier_players.extensions_toolset dummy
+scoreboard players set @a glacier_players.extensions_toolset 0
 
 scoreboard players set #Ticks glacier_players.number 20
 scoreboard players set #Second glacier_players.number 1
