@@ -16,7 +16,7 @@ $execute store result score @s glacier_players.inventory_slot_comparing_count ru
 #tellraw @a[tag=gp.debug] ["",{"score":{"name": "@s","objective": "glacier_players.inventory_slot_count"},"color": "gold"},{"score":{"name": "@s","objective": "glacier_players.inventory_slot_comparing_count"},"color": "yellow"}]
 
 ##Check if the item's Max Stack Size limit is reached beforehand
-execute if score @s glacier_players.inventory_slot_comparing_count >= @s glacier_players.inventory_item_max_stack_size run tag @s add GlacierPlayer.Inv_Next_Item
+execute if score @s glacier_players.inventory_slot_comparing_count >= @s glacier_players.inventory_item_max_stack_size run return fail
 #execute if score @s glacier_players.inventory_slot_comparing_count >= @s glacier_players.inventory_item_max_stack_size run msg @a[tag=gp.debug] stack limit reached!
 
 ##Run the store function
