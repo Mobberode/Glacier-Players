@@ -3,7 +3,7 @@ execute store result score #Fire glacier_player.condition if predicate glacier_p
 
 #Recurring Functions (Mega Performance Cost!)
 execute at @s run function glacier_players:player/recurring_functions/dual_macros
-function glacier_players:player/recurring_functions/player/update_visual_equipment
+#function glacier_players:player/recurring_functions/player/update_visual_equipment
 
 ##Get Pos (Minial Performance Cost!)
 execute if predicate glacier_players:2_tick_period run function glacier_players:player/recurring_functions/get_pos

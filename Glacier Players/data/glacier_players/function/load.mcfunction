@@ -73,5 +73,4 @@ team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never
 team modify GlacierPlayersTeam seeFriendlyInvisibles false
 team modify GlacierPlayersTeam friendlyFire false
-
 schedule function glacier_players:start 1s

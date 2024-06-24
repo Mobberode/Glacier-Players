@@ -10,3 +10,6 @@ execute if entity @s[tag=GlacierPlayer.Ate_Suspicious_Stew] run function glacier
 execute if entity @s[tag=GlacierPlayer.Drank_Bottled_Honey] run function glacier_players:player/hunger/eat/consume/properties/honey_bottle
 
 execute if entity @s[tag=GlacierPlayer.Drank_Potion] run function glacier_players:player/hunger/eat/consume/properties/potion/get_components_info
+
+##Extensions
+function #glacier_players:extensions/inventory/food_properties with storage glacier_players.inventory_macro
