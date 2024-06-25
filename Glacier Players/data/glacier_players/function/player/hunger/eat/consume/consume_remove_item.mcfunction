@@ -13,4 +13,4 @@ $execute store result entity @s Items[$(saved_slot)].count int 1 run scoreboard 
 function glacier_players:player/hunger/eat/consume/convert/food_tree with storage glacier_players.inventory_macro
 
 ##If amount is 0 or less. Replace the item with a debug stick
-$execute if score #Stored glacier_players.inventory_slot_count matches ..0 run data modify entity @s Items[$(saved_slot)].id set value "minecraft:debug_stick"
+execute if score #Stored glacier_players.inventory_slot_count matches ..0 run function glacier_players:player/hunger/eat/consume/remove with storage glacier_players.inventory_macro

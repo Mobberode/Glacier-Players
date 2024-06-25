@@ -1,1 +1,1 @@
-execute as @e[type=piglin_brute,limit=1,tag=GlacierPlayer.Alias_Selected] run function glacier_players:body_alias/not_knockbacked
+execute as @e[sort=nearest,type=piglin_brute,limit=1,tag=GlacierPlayer.Alias_Selected] run function glacier_players:body_alias/not_knockbacked
