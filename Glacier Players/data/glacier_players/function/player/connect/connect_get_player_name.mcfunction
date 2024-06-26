@@ -401,6 +401,16 @@ execute if score #Connecting glacier_players.rng matches 397 run return run data
 execute if score #Connecting glacier_players.rng matches 398 run return run data modify storage glacier_players.visual_macro connecting_name set value "NuTTa-Nut"
 execute if score #Connecting glacier_players.rng matches 399 run return run data modify storage glacier_players.visual_macro connecting_name set value "Toadda"
 execute if score #Connecting glacier_players.rng matches 400 run return run data modify storage glacier_players.visual_macro connecting_name set value "armor_stand ~ ~ ~ {Tags:['Mauer']}]"
+execute if score #Connecting glacier_players.rng matches 401 run return run data modify storage glacier_players.visual_macro connecting_name set value "Sunnexo"
+execute if score #Connecting glacier_players.rng matches 402 run return run data modify storage glacier_players.visual_macro connecting_name set value "Tanger"
+execute if score #Connecting glacier_players.rng matches 403 run return run data modify storage glacier_players.visual_macro connecting_name set value "Frizk"
+execute if score #Connecting glacier_players.rng matches 404 run return run data modify storage glacier_players.visual_macro connecting_name set value "Kendrick Lamar"
+execute if score #Connecting glacier_players.rng matches 405 run return run data modify storage glacier_players.visual_macro connecting_name set value "Byte"
+execute if score #Connecting glacier_players.rng matches 406 run return run data modify storage glacier_players.visual_macro connecting_name set value "Kilobyte"
+execute if score #Connecting glacier_players.rng matches 407 run return run data modify storage glacier_players.visual_macro connecting_name set value "Megabyte"
+execute if score #Connecting glacier_players.rng matches 408 run return run data modify storage glacier_players.visual_macro connecting_name set value "Gigabyte"
+execute if score #Connecting glacier_players.rng matches 409 run return run data modify storage glacier_players.visual_macro connecting_name set value "Terabyte"
+execute if score #Connecting glacier_players.rng matches 410 run return run data modify storage glacier_players.visual_macro connecting_name set value "Petabyte"
 
-scoreboard players remove #Connecting glacier_players.rng 400
+scoreboard players remove #Connecting glacier_players.rng 410
 function #glacier_players:extensions/names/get_names

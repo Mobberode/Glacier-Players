@@ -7,7 +7,7 @@ function glacier_players:extensions/loader/remove/previously_loaded
 tellraw @a ["",{"text": "[GPE Loader] Prepare extensions for load","color": "aqua"}]
 #Visuals
 scoreboard players set #Loaded glacier_players.extensions 0
-execute store result storage glacier_players.extensions ext_names_count int 1 run scoreboard players set #Names glacier_players.extensions 400
+execute store result storage glacier_players.extensions ext_names_count int 1 run scoreboard players set #Names glacier_players.extensions 410
 execute store result storage glacier_players.extensions ext_connect_lines_count int 1 run scoreboard players set #ConnectLines glacier_players.extensions 45
 execute store result storage glacier_players.extensions ext_disconnect_lines_count int 1 run scoreboard players set #DisconnectLines glacier_players.extensions 40
 execute store result storage glacier_players.extensions ext_idle_lines_count int 1 run scoreboard players set #IdleLines glacier_players.extensions 200
