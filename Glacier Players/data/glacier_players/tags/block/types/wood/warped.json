@@ -1,0 +1,16 @@
+{
+    "values": [
+"warped_stem",
+"warped_hyphae",
+"stripped_warped_stem",
+"stripped_warped_hyphae",
+"warped_planks",
+"warped_stairs",
+"warped_slab",
+"warped_fence",
+"warped_fence_gate",
+"warped_door",
+"warped_trapdoor",
+"warped_pressure_plate",
+"warped_button"    ]
+}

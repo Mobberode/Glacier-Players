@@ -1,0 +1,13 @@
+{
+    "values": [
+        "copper_block",
+        "chiseled_copper",
+        "copper_grate",
+        "cut_copper",
+        "cut_copper_stairs",
+        "cut_copper_slab",
+        "copper_door",
+        "copper_trapdoor",
+        "copper_bulb"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "values": [
+        "iron_block",
+        "iron_ore",
+        "deepslate_iron_ore",
+        "iron_bars",
+        "iron_door",
+        "iron_trapdoor",
+        "heavy_weighted_pressure_plate",
+        "chain"
+    ]
+}

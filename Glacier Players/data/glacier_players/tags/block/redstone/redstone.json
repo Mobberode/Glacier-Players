@@ -1,7 +1,6 @@
 {
     "values":
     [
-        "redstone",
         "redstone_torch",
         "redstone_block",
         "repeater",
@@ -22,12 +21,11 @@
         "calibrated_sculk_sensor",
         "sculk_shrieker",
         "amethyst_block",
-        "white_wool",
         "tripwire_hook",
 
 
         "daylight_detector",
-        "lighting_rod",
+        "lightning_rod",
         "piston",
         "sticky_piston",
         "slime_block",
