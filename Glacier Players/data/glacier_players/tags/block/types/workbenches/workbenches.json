@@ -1,0 +1,20 @@
+{
+    "values": [
+        "crafting_table",
+        "stonecutter",
+        "cartography_table",
+        "fletching_table",
+        "smithing_table",
+        "grindstone",
+        "loom",
+        "furnace",
+        "smoker",
+        "blast_furnace",
+        "anvil",
+        "chipped_anvil",
+        "damaged_anvil",
+        "enchanting_table",
+        "brewing_stand",
+        "crafter"
+    ]
+}
