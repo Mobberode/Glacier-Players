@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "trigger": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": {"gp.config.max_glacier_count.toggle":true}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {"function": "glacier_players:tools/configs/max_glacier_count/toggle"}
+  }
