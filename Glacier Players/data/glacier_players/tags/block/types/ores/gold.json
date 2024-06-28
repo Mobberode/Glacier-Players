@@ -3,6 +3,8 @@
         "gold_block",
         "light_weighted_pressure_plate",
         "gold_ore",
-        "deepslate_gold_ore"
+        "deepslate_gold_ore",
+        "nether_gold_ore",
+        "raw_gold_block"
     ]
 }

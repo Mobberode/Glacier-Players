@@ -2,6 +2,7 @@
     "values": [
         "copper_ore",
         "deepslate_copper_ore",
+        "raw_copper_block",
         "lightning_rod"
     ]
 }
