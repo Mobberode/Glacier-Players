@@ -6,6 +6,7 @@ scoreboard objectives add glacier_players.speech_advanced_mode dummy
 scoreboard objectives add glacier_players.voice_timer dummy
 scoreboard objectives add glacier_players.poll_decision trigger
 scoreboard objectives add glacier_players.poll_response_delay trigger
+scoreboard objectives add glacier_players.speech_response dummy
 
 #scoreboard objectives add glacier_players.personality dummy
 scoreboard objectives add glacier_players.pid dummy
@@ -38,6 +39,10 @@ scoreboard objectives add glacier_players.food_eat_nutrition dummy
 scoreboard objectives add glacier_players.food_eat_saturation dummy
 scoreboard objectives add glacier_players.saturation dummy
 
+scoreboard objectives add glacier_players.armour dummy
+scoreboard objectives add glacier_players.armour_toughness dummy
+scoreboard objectives add glacier_players.knockback_resistance dummy
+
 scoreboard objectives add glacier_players.inventory_slot_count dummy
 scoreboard objectives add glacier_players.inventory_slot_slot dummy
 scoreboard objectives add glacier_players.inventory_slot_comparing_count dummy
@@ -52,6 +57,12 @@ scoreboard objectives add glacier_players.experience_requirement dummy
 scoreboard objectives add glacier_players.experience_amount dummy
 scoreboard objectives add glacier_players.experience_level dummy
 scoreboard players set #DeathMultiplier glacier_players.experience_amount 7
+
+#scoreboard objectives add glacier_players.attackers_id dummy
+#scoreboard objectives add glacier_players.attacking_id dummy
+#scoreboard objectives add glacier_players.fight_time dummy
+
+#scoreboard objectives add glacier_players.block_destroy_timer dummy
 
 scoreboard objectives add glacier_players.difficulty dummy
 

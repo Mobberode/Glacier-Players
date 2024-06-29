@@ -1,6 +1,6 @@
 tp @s ~ ~ ~ facing entity @e[limit=1,type=marker,tag=GlacierPlayer.DMarker_Selected]
 
-execute unless block ^ ^.2 ^0.5 #glacier_players:non_solids if block ^ ^1.2 ^0.5 #glacier_players:non_solids if block ^ ^2.2 ^0.5 #glacier_players:non_solids run return run tp @s ^ ^1 ^0.01
+execute unless block ^ ^.2 ^0.5 #glacier_players:non_solids if block ^ ^1.2 ^0.5 #glacier_players:non_solids if block ^ ^2.2 ^0.5 #glacier_players:non_solids run return run tp @s ^ ^1 ^0.00001
 
 ##This here for now to start a new path if in contact with wall.
 #Though this will be changed once building is finished so like a player can build up a wall.
