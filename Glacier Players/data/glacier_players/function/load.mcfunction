@@ -53,6 +53,18 @@ scoreboard objectives add glacier_players.inventory_player_hand dummy
 scoreboard objectives add glacier_players.inventory_saved_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_partition dummy
 
+scoreboard objectives add glacier_players.inventory_saved_block_slot dummy
+scoreboard objectives add glacier_players.inventory_saved_block_partition dummy
+scoreboard objectives add glacier_players.inventory_saved_weapon_slot dummy
+scoreboard objectives add glacier_players.inventory_saved_weapon_partition dummy
+scoreboard objectives add glacier_players.inventory_saved_pickaxe_slot dummy
+scoreboard objectives add glacier_players.inventory_saved_pickaxe_partition dummy
+scoreboard objectives add glacier_players.inventory_saved_shovel_slot dummy
+scoreboard objectives add glacier_players.inventory_saved_shovel_partition dummy
+scoreboard objectives add glacier_players.inventory_saved_hoe_slot dummy
+scoreboard objectives add glacier_players.inventory_saved_hoe_partition dummy
+
+
 scoreboard objectives add glacier_players.experience_requirement dummy
 scoreboard objectives add glacier_players.experience_amount dummy
 scoreboard objectives add glacier_players.experience_level dummy

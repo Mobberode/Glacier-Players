@@ -4,6 +4,10 @@ data modify entity @s HandItems[0] set from storage glacier_players.inventory_ma
 ##Attempt to Transfer the item to the self's inventory by checking each slot
 tag @s remove GlacierPlayer.Inv_Sorted_Item
 
+##Detect Equipment
+function glacier_players:player/inventory/equipment/check
+execute if entity @s[tag=GlacierPlayer.Inv_Sorted_Item] run return fail
+
 ##Spawn more inventory entites if needed
 execute unless entity @s[tag=GlacierPlayer.Third_Inventory_Summoned] run function glacier_players:player/inventory/entites/summon
 
