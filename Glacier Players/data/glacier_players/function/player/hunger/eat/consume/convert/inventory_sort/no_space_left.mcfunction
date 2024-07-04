@@ -1,5 +1,5 @@
 tag @s add GlacierPlayer.Pickup_Delayed
-schedule function glacier_players:player/recurring_functions/remove_pickdelay_tag 1s
+schedule function glacier_players:recurring_functions/remove_pickdelay_tag 1s
 
 $summon item ~ ~1.5 ~0.5 {Item:{id:"$(item_convert_id)"},Tags:[gp.item_motion]}
 summon marker ~ ~ ~ {Tags:[gp.marker_motion]}

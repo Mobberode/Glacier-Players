@@ -1,6 +1,6 @@
 #If Force Killed
 execute store result storage minecraft:glacier_players.abnormal_macro abnormal_pid_num int 1 run scoreboard players get @s glacier_players.pid
-function glacier_players:player/recurring_functions/dual_macros_all with storage glacier_players.abnormal_macro
+function glacier_players:recurring_functions/dual_macros_all with storage glacier_players.abnormal_macro
 
 ##Get Fake Player Info
 scoreboard players operation #StoredDeathID glacier_players.pid = @s glacier_players.pid

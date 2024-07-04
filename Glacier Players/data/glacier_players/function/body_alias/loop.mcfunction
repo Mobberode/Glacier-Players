@@ -1,2 +1,0 @@
-execute at @s[tag=!glacier_players.knockbacked] run return run function glacier_players:body_alias/not_knockbacked_proceed
-execute if entity @s[tag=glacier_players.knockbacked] run function glacier_players:body_alias/knockbacked_proceed

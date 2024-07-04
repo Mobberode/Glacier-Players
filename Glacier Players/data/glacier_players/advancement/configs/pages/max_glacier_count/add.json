@@ -11,5 +11,5 @@
         }
       }
     },
-    "rewards": {"function": "glacier_players:tools/configs/max_glacier_count/add"}
+    "rewards": {"function": "glacier_players:technical/tools/configs/max_glacier_count/add"}
   }

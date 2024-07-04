@@ -1,0 +1,2 @@
+$data modify storage glacier_players.extensions current_plr_ext_toolset set from storage glacier_players.extensions ext_namespace[$(plr_ts)].toolset_function
+function glacier_players:technical/tools/extensions/run_toolset_function with storage glacier_players.extensions

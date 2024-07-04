@@ -3,7 +3,7 @@ $scoreboard players set @e[limit=1,tag=GlacierPlayer.Player_Selected] glacier_pl
 tag @s remove GlacierPlayer.Inv_Next_Item
 
 ##Get the Max Stack Limit
-function glacier_players:player/recurring_functions/inventory/items/get_max_stack with storage glacier_players.inventory_macro
+function glacier_players:recurring_functions/inventory/items/get_max_stack with storage glacier_players.inventory_macro
 
 ##Check if it's mutliple set items
 function glacier_players:player/inventory/item/specfic/check

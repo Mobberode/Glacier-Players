@@ -11,6 +11,6 @@
         }
       }
     },
-    "rewards": {"function": "glacier_players:tools/disconnect_gp_all"}
+    "rewards": {"function": "glacier_players:technical/tools/disconnect_gp_all"}
   }
   

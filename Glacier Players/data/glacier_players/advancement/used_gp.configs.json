@@ -11,6 +11,6 @@
         }
       }
     },
-    "rewards": {"function": "glacier_players:tools/configs/give_toolset"}
+    "rewards": {"function": "glacier_players:technical/tools/configs/give_toolset"}
   }
   

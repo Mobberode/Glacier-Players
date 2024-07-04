@@ -26,4 +26,4 @@ execute if score #ExtToolsEnabled glacier_players.extensions matches 1 run funct
 #Based on JSON text
 data modify storage glacier_players.extensions extension_visuals set value '{"text": "[ext_template] I am the one who loads again","color": "green"}'
 
-function glacier_players:extensions/loader/extensions_startup_visuals with storage glacier_players.extensions
+function glacier_players:technical/extensions/loader/extensions_startup_visuals with storage glacier_players.extensions

@@ -1,5 +1,0 @@
-function glacier_players:player/recurring_functions/set_hunger
-function glacier_players:player/recurring_functions/set_player_attributes
-function glacier_players:player/recurring_functions/set_experience
-
-function glacier_players:player/recurring_functions/no_set_spawn with storage glacier_players.macro

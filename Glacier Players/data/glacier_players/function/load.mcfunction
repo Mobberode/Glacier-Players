@@ -64,6 +64,9 @@ scoreboard objectives add glacier_players.inventory_saved_shovel_partition dummy
 scoreboard objectives add glacier_players.inventory_saved_hoe_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_hoe_partition dummy
 
+#14142 = diag, 10000 = straight
+scoreboard objectives add glacier_players.pathfinding_g_cost dummy
+scoreboard objectives add glacier_players.pathfinding_node dummy
 
 scoreboard objectives add glacier_players.experience_requirement dummy
 scoreboard objectives add glacier_players.experience_amount dummy

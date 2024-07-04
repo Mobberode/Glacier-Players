@@ -11,6 +11,6 @@
         }
       }
     },
-    "rewards": {"function": "glacier_players:tools/kill_gp_nearest"}
+    "rewards": {"function": "glacier_players:technical/tools/kill_gp_nearest"}
   }
   

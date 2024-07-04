@@ -11,6 +11,6 @@
         }
       }
     },
-    "rewards": {"function": "glacier_players:tools/go_back"}
+    "rewards": {"function": "glacier_players:technical/tools/go_back"}
   }
   

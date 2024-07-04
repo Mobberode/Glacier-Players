@@ -11,6 +11,6 @@
         }
       }
     },
-    "rewards": {"function": "glacier_players:tools/actions/killer/give_toolset"}
+    "rewards": {"function": "glacier_players:technical/tools/actions/killer/give_toolset"}
   }
   

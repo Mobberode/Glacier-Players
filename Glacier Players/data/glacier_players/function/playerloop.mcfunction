@@ -5,4 +5,4 @@ execute as @e[tag=GlacierPlayer,limit=410,sort=arbitrary] run function glacier_p
 
 execute unless score #AutomaticConnect glacier_players.config matches 1 run function glacier_players:player/connect/connect_init
 
-execute as @r[tag=!glacier_players.processed_id] run function glacier_players:player/pid/begin_id_assign
+execute as @r[tag=!glacier_players.processed_id] run function glacier_players:technical/pid/begin_id_assign

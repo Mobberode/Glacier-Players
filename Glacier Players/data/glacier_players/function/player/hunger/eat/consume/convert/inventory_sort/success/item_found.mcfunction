@@ -3,7 +3,7 @@
 $execute store result score #Stored glacier_players.inventory_slot_count run data get entity @s Items[$(player_inv_slot)].count
 
 ##Get Max Stack
-function glacier_players:player/recurring_functions/inventory/items/get_max_stack with storage glacier_players.inventory_macro
+function glacier_players:recurring_functions/inventory/items/get_max_stack with storage glacier_players.inventory_macro
 #Add #Stored by 1
 scoreboard players add #Stored glacier_players.inventory_slot_count 1
 

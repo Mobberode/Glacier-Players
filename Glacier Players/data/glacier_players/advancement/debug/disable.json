@@ -11,6 +11,6 @@
         }
       }
     },
-    "rewards": {"function": "glacier_players:tools/debug/disable"}
+    "rewards": {"function": "glacier_players:technical/tools/debug/disable"}
   }
   

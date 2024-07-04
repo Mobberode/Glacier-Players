@@ -1,5 +1,5 @@
 scoreboard players operation @s glacier_players.experience_amount -= @s glacier_players.experience_requirement
-execute at @s run playsound minecraft:entity.player.levelup player @a ~ ~ ~
+playsound minecraft:entity.player.levelup player @a ~ ~ ~
 
 scoreboard players add @s glacier_players.experience_level 1
 

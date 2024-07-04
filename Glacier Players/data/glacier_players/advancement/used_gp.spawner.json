@@ -11,6 +11,6 @@
         }
       }
     },
-    "rewards": {"function": "glacier_players:tools/spawn_gp"}
+    "rewards": {"function": "glacier_players:technical/tools/spawn_gp"}
   }
   

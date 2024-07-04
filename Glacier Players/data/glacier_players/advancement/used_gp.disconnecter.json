@@ -11,6 +11,6 @@
         }
       }
     },
-    "rewards": {"function": "glacier_players:tools/actions/disconnecter/give_toolset"}
+    "rewards": {"function": "glacier_players:technical/tools/actions/disconnecter/give_toolset"}
   }
   

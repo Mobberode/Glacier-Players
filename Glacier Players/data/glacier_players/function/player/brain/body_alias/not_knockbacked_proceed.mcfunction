@@ -1,0 +1,1 @@
+execute as @e[sort=nearest,type=piglin_brute,limit=1,tag=GlacierPlayer.Alias_Selected] run function glacier_players:player/brain/body_alias/not_knockbacked

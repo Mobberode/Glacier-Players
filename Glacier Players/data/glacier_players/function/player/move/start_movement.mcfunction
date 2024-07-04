@@ -6,9 +6,9 @@ execute if score @s[tag=!glacier_players.knockbacked,tag=glacier_players.summone
 
 #Pathfind
 #High Quality (A* Complexity)
-#function glacier_players:player/pathfind/astar/initalize
+#function glacier_players:player/pathfind/advanced_simple/astar/initalize
 ##Medium Quality (Intermediate Simple)
-function glacier_players:player/pathfind/initalize
+function glacier_players:player/pathfind/advanced_simple/initalize
 ##Low Quality (Basic Simple)
 #function glacier_players:player/move/destination_marker/get_pos
 
