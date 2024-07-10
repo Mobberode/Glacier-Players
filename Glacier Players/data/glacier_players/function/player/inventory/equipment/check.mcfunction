@@ -11,4 +11,6 @@ execute if items entity @s weapon.mainhand *[minecraft:tool] run return run func
 execute if items entity @s weapon.mainhand #glacier_players:armour/global run return run function glacier_players:player/inventory/equipment/armour/armour_check
 
 ##Extensions
-function #glacier_players:extensions/inventory/equipment/misc with storage glacier_players.inventory_macro
+execute if items entity @s weapon.mainhand #glacier_players:tools/misc/custom run return run function #glacier_players:extensions/inventory/equipment/misc with storage glacier_players.inventory_macro
+
+tag @s remove GlacierPlayer.Inv_Sorted_Item

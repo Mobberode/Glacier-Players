@@ -1,3 +1,4 @@
+##Makes scoreboards and other things for proper function
 scoreboard objectives add glacier_players.rng dummy
 
 scoreboard objectives add glacier_players.communication_type dummy
@@ -55,14 +56,30 @@ scoreboard objectives add glacier_players.inventory_saved_partition dummy
 
 scoreboard objectives add glacier_players.inventory_saved_block_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_block_partition dummy
+
 scoreboard objectives add glacier_players.inventory_saved_weapon_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_weapon_partition dummy
+
 scoreboard objectives add glacier_players.inventory_saved_pickaxe_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_pickaxe_partition dummy
+
 scoreboard objectives add glacier_players.inventory_saved_shovel_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_shovel_partition dummy
+
 scoreboard objectives add glacier_players.inventory_saved_hoe_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_hoe_partition dummy
+
+scoreboard objectives add glacier_players.inventory_saved_shears_slot dummy
+scoreboard objectives add glacier_players.inventory_saved_shears_partition dummy
+
+scoreboard objectives add glacier_players.inventory_saved_bucket_slot dummy
+scoreboard objectives add glacier_players.inventory_saved_bucket_partition dummy
+
+scoreboard objectives add glacier_players.inventory_saved_water_bucket_slot dummy
+scoreboard objectives add glacier_players.inventory_saved_water_bucket_partition dummy
+
+scoreboard objectives add glacier_players.inventory_saved_lava_bucket_slot dummy
+scoreboard objectives add glacier_players.inventory_saved_lava_bucket_partition dummy
 
 #14142 = diag, 10000 = straight
 scoreboard objectives add glacier_players.pathfinding_g_cost dummy
@@ -93,10 +110,11 @@ scoreboard players set @a glacier_players.extensions_toolset 0
 scoreboard players set #Ticks glacier_players.number 20
 scoreboard players set #Second glacier_players.number 1
 
-#team add GlacierPlayers.DMCanidates
-
+##Make & Modify Teams
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never
 team modify GlacierPlayersTeam seeFriendlyInvisibles false
 team modify GlacierPlayersTeam friendlyFire false
+
+##Start the Data Pack
 schedule function glacier_players:start 1s

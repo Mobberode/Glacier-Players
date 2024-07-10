@@ -1,3 +1,4 @@
+##Get name
 $execute store result score #Connecting glacier_players.rng run random value 1..$(ext_names_count)
 
 execute if score #Connecting glacier_players.rng matches 1 run return run data modify storage glacier_players.visual_macro connecting_name set value "Alf-Coe"

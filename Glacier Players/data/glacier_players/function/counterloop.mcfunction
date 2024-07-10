@@ -1,3 +1,4 @@
+##Counts all glacier player related entites
 scoreboard players set #PlayerCounter glacier_players.number 0
 scoreboard players set #FakePlayerCounter glacier_players.number 0
 scoreboard players set #MarkerCounter glacier_players.number 0
