@@ -1,6 +1,7 @@
 ##Have totem set as offhand
 item replace entity @s weapon.mainhand with air
-execute as @n[type=piglin_brute,tag=GlacierPlayer.Alias_Selected] run return run function glacier_players:player/inventory/equipment/apply/totem_success
+scoreboard players set @s glacier_players.has_undying_totem 1
+execute as @n[type=piglin_brute,tag=GlacierPlayer.Alias_Selected] run function glacier_players:player/inventory/equipment/apply/totem_success
 
-##If the return run function failed
-tag @s remove GlacierPlayer.Inv_Sorted_Item
+##If theres still more totems to be stored in inv
+#tag @s remove GlacierPlayer.Inv_Sorted_Item

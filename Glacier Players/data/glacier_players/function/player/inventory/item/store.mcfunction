@@ -12,12 +12,15 @@ execute if entity @s[tag=GlacierPlayer.Inv_Sorted_Item] run return fail
 execute unless entity @s[tag=GlacierPlayer.Third_Inventory_Summoned] run function glacier_players:player/inventory/entites/summon
 
 scoreboard players set @s glacier_players.inventory_slot_number -1
+scoreboard players set @s glacier_players.inventory_saved_partition 1
 function glacier_players:player/inventory/item/check/hotbar
 
 scoreboard players set @s glacier_players.inventory_slot_number -1
+scoreboard players set @s glacier_players.inventory_saved_partition 2
 execute unless entity @s[tag=GlacierPlayer.Inv_Sorted_Item] run function glacier_players:player/inventory/item/check/inventory
 
 scoreboard players set @s glacier_players.inventory_slot_number -1
+scoreboard players set @s glacier_players.inventory_saved_partition 3
 execute unless entity @s[tag=GlacierPlayer.Inv_Sorted_Item] run function glacier_players:player/inventory/item/check/inventory_2
 
 execute unless entity @s[tag=GlacierPlayer.Inv_Sorted_Item] run function glacier_players:player/inventory/item/check/no_space with storage glacier_players.inventory_macro

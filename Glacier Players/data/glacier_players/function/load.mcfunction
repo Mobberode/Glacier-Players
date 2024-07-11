@@ -81,6 +81,8 @@ scoreboard objectives add glacier_players.inventory_saved_water_bucket_partition
 scoreboard objectives add glacier_players.inventory_saved_lava_bucket_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_lava_bucket_partition dummy
 
+scoreboard objectives add glacier_players.has_undying_totem dummy
+
 #14142 = diag, 10000 = straight
 scoreboard objectives add glacier_players.pathfinding_g_cost dummy
 scoreboard objectives add glacier_players.pathfinding_node dummy
