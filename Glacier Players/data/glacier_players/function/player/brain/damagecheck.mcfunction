@@ -9,6 +9,9 @@ scoreboard players operation @s glacier_players.absorption = #Additional_Health 
 execute if score @s glacier_players.previous_health > @s glacier_players.health run function glacier_players:player/brain/damage_indicator
 execute if score @s glacier_players.previous_absorption > @s glacier_players.absorption run function glacier_players:player/brain/damage_indicator
 
+##Totem
+scoreboard players operation @s glacier_players.has_undying_totem = #Condition glacier_players.has_undying_totem
+
 #Knockback
 execute if entity @s[tag=glacier_players.knockbacked] run function glacier_players:player/move/damaged/knockback_tick
 

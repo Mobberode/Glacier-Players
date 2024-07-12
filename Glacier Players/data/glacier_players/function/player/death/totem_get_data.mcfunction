@@ -11,4 +11,6 @@ execute if score #Offhand glacier_players.inventory_slot_count matches 1.. run r
 item replace entity @s horse.9 with debug_stick
 say h
 ##Check for if there are totems left
-execute if items entity @e[limit=3,type=donkey,tag=GlacierPlayer.Selected] horse.* totem_of_undying as @n[type=armor_stand,tag=GlacierPlayer.Player_Selected] run function glacier_players:player/inventory/death/replace/totem_check
+execute if items entity @e[limit=3,type=donkey,tag=GlacierPlayer.Selected] horse.* totem_of_undying as @n[type=armor_stand,tag=GlacierPlayer.Player_Selected] run return run function glacier_players:player/inventory/death/replace/totem_check
+
+##
