@@ -1,9 +1,12 @@
 ##Totem popped so remove the totem out of the player's hotbar
-##Run as hotbar entity
+##Remove score
 scoreboard players remove @s glacier_players.has_undying_totem 1
 
-##inventory
-execute as @e[limit=1,type=donkey,tag=GP.Inventory_Selected.InvSection1] run function glacier_players:player/death/totem_get_data
+##Store delay time (in ticks)
+execute store result score @s glacier_players.delay_totem_replace run random value 1..40
+
+##Start delay
+function glacier_players:recurring_functions/loops/totem_replace_delay
 
 ##Chat
 function glacier_players:player/speech/types/totem_popped/get_chat_contents with storage glacier_players.extensions
