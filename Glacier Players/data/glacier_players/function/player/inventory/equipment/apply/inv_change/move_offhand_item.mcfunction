@@ -1,4 +1,3 @@
-say moved
 ##Stores picked item into temp storage
 data modify storage glacier_players.inventory_macro temp_picked_item set from storage glacier_players.inventory_macro picked_item
 

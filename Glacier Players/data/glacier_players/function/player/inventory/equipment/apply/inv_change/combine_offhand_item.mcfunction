@@ -1,4 +1,3 @@
-say combine
 ##Store score from data
 #Get counts
 execute store result score #Amount glacier_players.number run data get storage glacier_players.inventory_macro picked_item_count

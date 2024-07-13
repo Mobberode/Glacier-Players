@@ -18,4 +18,3 @@ data modify entity @n[type=piglin_brute,tag=GlacierPlayer.Alias_Selected] HandIt
 
 ##Remove storage
 data remove storage glacier_players.inventory_macro temp_item
-say replaced

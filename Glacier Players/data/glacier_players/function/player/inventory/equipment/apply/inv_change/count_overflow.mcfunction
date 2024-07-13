@@ -1,4 +1,3 @@
-say overflowed
 ##Continue Mathing
 ##Store count by removing merged amount by the leftover amount
 execute store result entity @s Items[9].count int 1 run scoreboard players operation #TMA glacier_players.number -= #Amount glacier_players.number
