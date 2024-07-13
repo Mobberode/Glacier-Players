@@ -12,14 +12,15 @@
 3. Download the .zip file (if present) Otherwise, download the source
 
 ## Code contribution guidelines
-- ***Optimization and Efficency***
+- **Optimization and Efficiency**
 
-Glacier Players are optimized to save the most mspt and this matters when other datapacks are being used. It's important that when you are contributing to the Glacier Player's code, that you are taking mspt performance into account. Every milisecond and microsecond counts.
+Glacier Players are optimized to save the most mspt and this matters when other datapacks are being used. It's important that when you are contributing to the Glacier Player's code, that you are taking mspt performance into account. Every millisecond and microsecond counts.
 
-- ***Modular***
+- **Modular**
 
 Glacier Players allow extensions to build upon existing systems like the hunger system via allowing more food items to be recognised and eaten. Code should be for the most part modular for freedom with extensions if possible.
 
-- ***Player Accuracy***
+- **Player Accuracy**
 
+Glacier Players aim to replicate the actions of a player and while it may be impossible to exactly replicate it perfectly with just data packs. We can give that feel that they are player-like so its essential that most details about real players are in the Glacier Players. If you wish to make something more accurate. You can read the Minecraft Wiki on how everything works.
 Glacier Players aim to replicate the actions of a player and while it may be impossible to exactly replicate it perfectly with just data packs. We can give that feel that they are player-like so its essiental that most details about real players are in the Glacier Players aswell. If you wish to make something more accurate. You can read the Minecraft Wiki on how everything works.
