@@ -13,6 +13,7 @@ execute store result storage glacier_players.extensions ext_disconnect_lines_cou
 execute store result storage glacier_players.extensions ext_idle_lines_count int 1 run scoreboard players set #IdleLines glacier_players.extensions 200
 execute store result storage glacier_players.extensions ext_response_lines_count int 1 run scoreboard players set #ResponseLines glacier_players.extensions 0
 execute store result storage glacier_players.extensions ext_panic_lines_count int 1 run scoreboard players set #PanicLines glacier_players.extensions 21
+execute store result storage glacier_players.extensions ext_totem_popped_lines_count int 1 run scoreboard players set #TotemPoppedLines glacier_players.extensions 21
 execute store result storage glacier_players.extensions ext_death_lines_count int 1 run scoreboard players set #DeathLines glacier_players.extensions 62
 execute store result storage glacier_players.extensions ext_me_lines_count int 1 run scoreboard players set #MeLines glacier_players.extensions 60
 execute store result storage glacier_players.extensions ext_poll_lines_count int 1 run scoreboard players set #PollLines glacier_players.extensions 16
