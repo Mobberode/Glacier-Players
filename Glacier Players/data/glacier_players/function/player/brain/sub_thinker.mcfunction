@@ -8,8 +8,6 @@ execute if predicate glacier_players:2_tick_period run function glacier_players:
 
 ##Damage Check (Small Performance Cost!)
 function glacier_players:player/brain/damagecheck
-#Sync positions
-function glacier_players:player/brain/body_alias/loop
 
 ##Mob Recognigiton
 #function glacier_players:player/recognition/start

@@ -12,6 +12,3 @@ function glacier_players:player/brain/thinker_modes_init_check
 
 ##Interaction Test
 #function glacier_players:player/interactions/right_click
-
-##Disconnect (Minial Performance Cost!)
-execute unless score #AutomaticDisconnect glacier_players.config matches 1 run function glacier_players:player/disconnect/disconnect_init

@@ -1,1 +1,0 @@
-tp @e[limit=1,type=donkey,tag=GlacierPlayer.Inventory_Selected] @s

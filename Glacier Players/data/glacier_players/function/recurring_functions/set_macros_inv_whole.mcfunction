@@ -1,4 +1,3 @@
-tag @s add GlacierPlayer.Inventory_Selected
 tag @s add GlacierPlayer.Selected
 
 tag @s[tag=GP.InvSection1] add GP.Inventory_Selected.InvSection1
