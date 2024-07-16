@@ -206,8 +206,9 @@ execute if score #ChatContentType glacier_players.rng matches 197 run data modif
 execute if score #ChatContentType glacier_players.rng matches 198 run data modify storage glacier_players.visual_macro chat_contents set value "To whoever stole my diamonds, jokes on you, they were fake. got 'em!"
 execute if score #ChatContentType glacier_players.rng matches 199 run data modify storage glacier_players.visual_macro chat_contents set value "ha ha im so smart that i know that in fact, players cant get that oh yeah, how about you shut the fuck up"
 execute if score #ChatContentType glacier_players.rng matches 200 run data modify storage glacier_players.visual_macro chat_contents set value "boy i know your dreads look hideous irl. dont even think about saying anything"
+execute if score #ChatContentType glacier_players.rng matches 201 run data modify storage glacier_players.visual_macro chat_contents set value "get s.interlope.pull:27015"
 
-scoreboard players remove #ChatContentType glacier_players.rng 200
+scoreboard players remove #ChatContentType glacier_players.rng 201
 function #glacier_players:extensions/speech/text/get_idle_contents
 
 execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.visual_macro

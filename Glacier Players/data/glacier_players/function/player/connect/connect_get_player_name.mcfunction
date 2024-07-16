@@ -391,7 +391,7 @@ execute if score #Connecting glacier_players.rng matches 386 run return run data
 execute if score #Connecting glacier_players.rng matches 387 run return run data modify storage glacier_players.visual_macro connecting_name set value "Electric9001"
 execute if score #Connecting glacier_players.rng matches 388 run return run data modify storage glacier_players.visual_macro connecting_name set value "saw_13"
 execute if score #Connecting glacier_players.rng matches 389 run return run data modify storage glacier_players.visual_macro connecting_name set value "JamiePlayzMC"
-execute if score #Connecting glacier_players.rng matches 390 run return run data modify storage glacier_players.visual_macro connecting_name set value "INTERLOPER"
+execute if score #Connecting glacier_players.rng matches 390 run return run data modify storage glacier_players.visual_macro connecting_name set value "umbrellaman"
 execute if score #Connecting glacier_players.rng matches 391 run return run data modify storage glacier_players.visual_macro connecting_name set value "Anomiade"
 execute if score #Connecting glacier_players.rng matches 392 run return run data modify storage glacier_players.visual_macro connecting_name set value "philli_dam"
 execute if score #Connecting glacier_players.rng matches 393 run return run data modify storage glacier_players.visual_macro connecting_name set value "rabbijack9_"
