@@ -1,1 +1,1 @@
-tag @e[tag=glacier_players.knockbacked] remove glacier_players.knockbacked
+tag @s remove glacier_players.cant_move
