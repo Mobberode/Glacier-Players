@@ -2,4 +2,4 @@ execute if entity @s[type=donkey] run return run function glacier_players:recurr
 
 execute if entity @s[type=piglin_brute] run return run function glacier_players:recurring_functions/set_macros_alias
 
-execute if entity @s[type=marker] run function glacier_players:recurring_functions/set_macros_dmarker
+function glacier_players:recurring_functions/set_macros_dmarker

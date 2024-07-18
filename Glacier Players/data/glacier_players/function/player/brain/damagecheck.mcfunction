@@ -1,6 +1,6 @@
 ##Get Health Info
 scoreboard players operation @s glacier_players.previous_health = @s glacier_players.health
-scoreboard players operation @s glacier_players.health = #Health glacier_players.health
+execute store result score @s glacier_players.health run data get entity @e[limit=1,sort=nearest,type=piglin_brute,tag=GlacierPlayer.Alias_Selected] Health
 
 #Absorption
 scoreboard players operation @s glacier_players.health += #Additional_Health glacier_players.health
