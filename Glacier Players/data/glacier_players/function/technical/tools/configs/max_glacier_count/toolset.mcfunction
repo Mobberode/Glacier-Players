@@ -9,8 +9,6 @@ item replace entity @s hotbar.2 with minecraft:red_dye[food={saturation:0,nutrit
 execute if score #MaxConnectedLimit glacier_players.config matches 1 run item replace entity @s hotbar.3 with minecraft:green_candle[food={saturation:0,nutrition:0,eat_seconds:32000,can_always_eat:true},minecraft:custom_data={"gp.config.max_glacier_count.toggle":true},minecraft:custom_name='{"text":"Toggle Max Connections","color":"green"}']
 execute unless score #MaxConnectedLimit glacier_players.config matches 1 run item replace entity @s hotbar.3 with minecraft:red_candle[food={saturation:0,nutrition:0,eat_seconds:32000,can_always_eat:true},minecraft:custom_data={"gp.config.max_glacier_count.toggle":true},minecraft:custom_name='{"text":"Toggle Max Connections","color":"red"}']
 
-function glacier_players:config/config_book
-
 item replace entity @s hotbar.4 with air
 item replace entity @s hotbar.5 with air
 item replace entity @s hotbar.6 with air

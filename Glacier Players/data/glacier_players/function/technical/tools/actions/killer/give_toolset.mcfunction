@@ -5,9 +5,9 @@ item replace entity @s hotbar.0 with minecraft:skeleton_skull[food={saturation:0
 item replace entity @s hotbar.1 with minecraft:skeleton_skull[food={saturation:0,nutrition:0,eat_seconds:32000,can_always_eat:true},minecraft:custom_data={"gp.kill_nearest":true},minecraft:custom_name='{"text":"Kill Nearest","color":"red"}']
 item replace entity @s hotbar.2 with minecraft:wither_skeleton_skull[food={saturation:0,nutrition:0,eat_seconds:32000,can_always_eat:true},minecraft:custom_data={"gp.kill_all":true},minecraft:custom_name='{"text":"Kill All","color":"red"}']
 item replace entity @s hotbar.3 with minecraft:barrier[food={saturation:0,nutrition:0,eat_seconds:32000,can_always_eat:true},minecraft:custom_data={"gp.back":true},minecraft:custom_name='{"text":"Back Out","color":"red"}']
-function glacier_players:config/config_book
 
 item replace entity @s hotbar.4 with air
 item replace entity @s hotbar.5 with air
 item replace entity @s hotbar.6 with air
 item replace entity @s hotbar.7 with air
+item replace entity @s hotbar.8 with air
