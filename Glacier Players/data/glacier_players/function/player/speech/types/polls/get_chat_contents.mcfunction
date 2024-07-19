@@ -98,7 +98,12 @@ execute if score #ChatContentType glacier_players.rng matches 16 run data modify
 execute if score #ChatContentType glacier_players.rng matches 16 run data modify storage glacier_players.visual_macro chat_contents_poll_decision_3 set value "[...]"
 execute if score #ChatContentType glacier_players.rng matches 16 run data modify storage glacier_players.visual_macro chat_contents_poll_decision_4 set value "[....]"
 
-scoreboard players remove #ChatContentType glacier_players.rng 16
+execute if score #ChatContentType glacier_players.rng matches 17 run scoreboard players set #PollDecisions glacier_players.poll_decision 2
+execute if score #ChatContentType glacier_players.rng matches 17 run data modify storage glacier_players.visual_macro chat_contents_poll set value "What order do you listen The Death of Slim Shady in?"
+execute if score #ChatContentType glacier_players.rng matches 17 run data modify storage glacier_players.visual_macro chat_contents_poll_decision_1 set value "[In Order]"
+execute if score #ChatContentType glacier_players.rng matches 17 run data modify storage glacier_players.visual_macro chat_contents_poll_decision_2 set value "[Reverse]"
+
+scoreboard players remove #ChatContentType glacier_players.rng 17
 function #glacier_players:extensions/speech/text/get_poll_contents
 
 function glacier_players:player/speech/poll with storage glacier_players.visual_macro
