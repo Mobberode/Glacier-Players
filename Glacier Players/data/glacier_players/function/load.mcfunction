@@ -55,6 +55,7 @@ scoreboard objectives add glacier_players.inventory_player_hand dummy
 scoreboard objectives add glacier_players.inventory_saved_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_partition dummy
 scoreboard objectives add glacier_players.inventory_active_entites dummy
+scoreboard objectives add glacier_players.inventory_cant_pickup dummy
 
 scoreboard objectives add glacier_players.inventory_saved_block_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_block_partition dummy

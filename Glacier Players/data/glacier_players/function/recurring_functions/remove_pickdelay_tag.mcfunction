@@ -1,1 +1,2 @@
-tag @e[limit=1,tag=GlacierPlayer.Pickup_Delayed] remove GlacierPlayer.Pickup_Delayed
+scoreboard players remove @e[scores={glacier_players.inventory_cant_pickup=1..}] glacier_players.inventory_cant_pickup 1
+execute if entity @e[scores={glacier_players.inventory_cant_pickup=1..}] run schedule function glacier_players:recurring_functions/remove_pickdelay_tag 1t

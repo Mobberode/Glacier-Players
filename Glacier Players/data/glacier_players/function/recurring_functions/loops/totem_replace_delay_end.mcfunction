@@ -1,2 +1,2 @@
 ##inventory
-execute as @e[limit=1,type=donkey,tag=GP.Inventory_Selected.InvSection1] run function glacier_players:player/death/totem_get_data with storage glacier_players.macro
+$execute as $(saved_hotbar_uuid) run function glacier_players:player/death/totem_get_data with storage glacier_players.macro

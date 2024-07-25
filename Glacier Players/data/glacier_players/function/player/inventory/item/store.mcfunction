@@ -5,8 +5,8 @@ data modify entity @s HandItems[0] set from storage glacier_players.inventory_ma
 scoreboard players set #SortedItem glacier_players.condition 0
 
 ##Detect Equipment
-#function glacier_players:player/inventory/equipment/check
-#execute if score #SortedItem glacier_players.condition matches 1.. run return fail
+function glacier_players:player/inventory/equipment/check
+execute if score #SortedItem glacier_players.condition matches 1.. run return fail
 
 ##Spawn more inventory entites if needed
 execute unless score @s glacier_players.inventory_active_entites matches 3.. run function glacier_players:player/inventory/entites/summon with storage glacier_players.macro
