@@ -104,6 +104,8 @@ scoreboard players set #DeathMultiplier glacier_players.experience_amount 7
 
 #scoreboard objectives add glacier_players.block_destroy_timer dummy
 
+scoreboard objectives add glacier_players.knockbacked_timer dummy
+
 scoreboard objectives add glacier_players.difficulty dummy
 
 scoreboard objectives add glacier_players.tnt_fuse_timer dummy
@@ -130,6 +132,7 @@ team modify GlacierPlayersTeam friendlyFire false
 execute unless score #Done glacier_players.initalized_uuids matches 1 run data modify storage glacier_players.uuids instance prepend value {"this is just here so things dont go to shit":true}
 scoreboard players set #Done glacier_players.initalized_uuids 1
 
+kill @e[type=marker,tag=GP.MMarker]
 execute unless entity @e[limit=1,type=marker,tag=GP.MMarker] run function glacier_players:load_mmarker
 
 ##Start the Data Pack

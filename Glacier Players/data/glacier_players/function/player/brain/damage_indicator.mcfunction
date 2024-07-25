@@ -2,7 +2,8 @@
 execute at @s run function glacier_players:player/brain/damage_indicator_visuals
 scoreboard players add @s[tag=GlacierPlayer.Wearing_Armour] glacier_players.exhaustion 100
 #Give tag to self for no movements
-tag @s add glacier_players.cant_move
+#tag @s add glacier_players.cant_move
+scoreboard players set @s glacier_players.knockbacked_timer 20
 
 function #glacier_players:extensions/damage/took_damage
 

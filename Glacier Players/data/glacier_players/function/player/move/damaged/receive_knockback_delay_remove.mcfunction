@@ -1,1 +1,1 @@
-tag @s remove glacier_players.cant_move
+#tag @s remove glacier_players.cant_move

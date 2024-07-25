@@ -12,7 +12,7 @@ execute if score @s glacier_players.previous_health > @s glacier_players.health 
 scoreboard players operation @s glacier_players.has_undying_totem = #Condition glacier_players.has_undying_totem
 
 #Knockback
-execute if entity @s[tag=glacier_players.cant_move] run function glacier_players:player/move/damaged/knockback_tick
+execute if score @s glacier_players.knockbacked_timer matches 1.. run function glacier_players:player/move/damaged/knockback_tick
 
 #Void Death
 execute if score @s glacier_players.y_pos matches ..-62 run function glacier_players:player/death/die_init
