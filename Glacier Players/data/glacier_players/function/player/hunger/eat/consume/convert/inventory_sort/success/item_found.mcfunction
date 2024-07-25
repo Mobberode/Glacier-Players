@@ -13,4 +13,4 @@ execute if score #Stored glacier_players.inventory_slot_count >= @s glacier_play
 #If under max stack size
 execute if score #Stored glacier_players.inventory_slot_count < @s glacier_players.inventory_item_max_stack_size run function glacier_players:player/hunger/eat/consume/convert/inventory_sort/success/max_stack_size/under with storage glacier_players.inventory_macro
 
-tag @e[limit=1,tag=GlacierPlayer.Player_Selected] add GlacierPlayer.Inv_Sorted_Item
+scoreboard players set #SortedItem glacier_players.condition 1

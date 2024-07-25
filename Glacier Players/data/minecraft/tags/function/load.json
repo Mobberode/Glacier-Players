@@ -1,6 +1,7 @@
 {
     "replace":false,
 "values": [
-    "glacier_players:load"
+    "glacier_players:load",
+    "gp_gu:zzz/load"
   ]
 }

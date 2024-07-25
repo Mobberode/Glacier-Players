@@ -207,9 +207,46 @@ execute if score #ChatContentType glacier_players.rng matches 198 run data modif
 execute if score #ChatContentType glacier_players.rng matches 199 run data modify storage glacier_players.visual_macro chat_contents set value "ha ha im so smart that i know that in fact, players cant get that oh yeah, how about you shut the fuck up"
 execute if score #ChatContentType glacier_players.rng matches 200 run data modify storage glacier_players.visual_macro chat_contents set value "boy i know your dreads look hideous irl. dont even think about saying anything"
 execute if score #ChatContentType glacier_players.rng matches 201 run data modify storage glacier_players.visual_macro chat_contents set value "get s.interlope.pull:27015"
+execute if score #ChatContentType glacier_players.rng matches 202 run data modify storage glacier_players.visual_macro chat_contents set value "guys dont panic im a redstone expert"
+execute if score #ChatContentType glacier_players.rng matches 203 run data modify storage glacier_players.visual_macro chat_contents set value "Close your eyes and hold F3 + C for around 10 seconds to get a suprise! :troll:"
+execute if score #ChatContentType glacier_players.rng matches 204 run data modify storage glacier_players.visual_macro chat_contents set value "owner for the love of god get raknetify so my ping DONT GO NUTS!!!"
+execute if score #ChatContentType glacier_players.rng matches 205 run data modify storage glacier_players.visual_macro chat_contents set value "Cheesecake ftw"
+execute if score #ChatContentType glacier_players.rng matches 206 run data modify storage glacier_players.visual_macro chat_contents set value "yall fw terraria?"
+execute if score #ChatContentType glacier_players.rng matches 207 run data modify storage glacier_players.visual_macro chat_contents set value "this shi complicated"
+execute if score #ChatContentType glacier_players.rng matches 208 run data modify storage glacier_players.visual_macro chat_contents set value "damn, forgot to play the game"
+execute if score #ChatContentType glacier_players.rng matches 209 run data modify storage glacier_players.visual_macro chat_contents set value "I JUST SAW HEROBRINE"
+execute if score #ChatContentType glacier_players.rng matches 210 run data modify storage glacier_players.visual_macro chat_contents set value "where my boxes at?"
+execute if score #ChatContentType glacier_players.rng matches 211 run data modify storage glacier_players.visual_macro chat_contents set value "thats sad. being a online 24/7 minecraft mod"
+execute if score #ChatContentType glacier_players.rng matches 212 run data modify storage glacier_players.visual_macro chat_contents set value "GET OUT"
+execute if score #ChatContentType glacier_players.rng matches 213 run data modify storage glacier_players.visual_macro chat_contents set value "Give me your clothes, your boots and your motorcycle"
+execute if score #ChatContentType glacier_players.rng matches 214 run data modify storage glacier_players.visual_macro chat_contents set value "We are way beyond needing jesus at this point"
+execute if score #ChatContentType glacier_players.rng matches 215 run data modify storage glacier_players.visual_macro chat_contents set value "the hell was that"
+execute if score #ChatContentType glacier_players.rng matches 216 run data modify storage glacier_players.visual_macro chat_contents set value "lets be friend"
+execute if score #ChatContentType glacier_players.rng matches 217 run data modify storage glacier_players.visual_macro chat_contents set value "dont want this smoke im packing yall"
+execute if score #ChatContentType glacier_players.rng matches 218 run data modify storage glacier_players.visual_macro chat_contents set value "holy shit these ravenous claws are op"
+execute if score #ChatContentType glacier_players.rng matches 219 run data modify storage glacier_players.visual_macro chat_contents set value "Anyone got anymore golden apples so I can decompose them?"
+execute if score #ChatContentType glacier_players.rng matches 220 run data modify storage glacier_players.visual_macro chat_contents set value "finally i have over 10 rows of hearts from my absorption simulants!!"
+execute if score #ChatContentType glacier_players.rng matches 221 run data modify storage glacier_players.visual_macro chat_contents set value "har har har har har"
+execute if score #ChatContentType glacier_players.rng matches 222 run data modify storage glacier_players.visual_macro chat_contents set value "tf is that doing here"
+execute if score #ChatContentType glacier_players.rng matches 223 run data modify storage glacier_players.visual_macro chat_contents set value "THE AETHER PORTL IS WORKING&N*Q"
+execute if score #ChatContentType glacier_players.rng matches 224 run data modify storage glacier_players.visual_macro chat_contents set value "all these fishes man, im boutta get a whole phobia out of them"
+execute if score #ChatContentType glacier_players.rng matches 225 run data modify storage glacier_players.visual_macro chat_contents set value "this place like looks really off"
+execute if score #ChatContentType glacier_players.rng matches 226 run data modify storage glacier_players.visual_macro chat_contents set value "was that the one who watches"
+execute if score #ChatContentType glacier_players.rng matches 227 run data modify storage glacier_players.visual_macro chat_contents set value "why is there a steve contorting himself"
+execute if score #ChatContentType glacier_players.rng matches 228 run data modify storage glacier_players.visual_macro chat_contents set value "billys step away"
+execute if score #ChatContentType glacier_players.rng matches 229 run data modify storage glacier_players.visual_macro chat_contents set value "Im stuck in the basement"
+execute if score #ChatContentType glacier_players.rng matches 230 run data modify storage glacier_players.visual_macro chat_contents set value "can someone put me out of adventure"
+execute if score #ChatContentType glacier_players.rng matches 231 run data modify storage glacier_players.visual_macro chat_contents set value "GET OUT OF MY HEAD"
+execute if score #ChatContentType glacier_players.rng matches 232 run data modify storage glacier_players.visual_macro chat_contents set value "never do that ever "
+execute if score #ChatContentType glacier_players.rng matches 232 run data modify storage glacier_players.visual_macro chat_content_target set value "@e[limit=1,scores={glacier_players.pid=1..},sort=random]"
+execute if score #ChatContentType glacier_players.rng matches 233 run data modify storage glacier_players.visual_macro chat_contents set value "yo YO A FIRE IS BURNING EVERYTHING DOWN"
+execute if score #ChatContentType glacier_players.rng matches 234 run data modify storage glacier_players.visual_macro chat_contents set value "fuck whoever put lava casts all over my base"
 
-scoreboard players remove #ChatContentType glacier_players.rng 201
+scoreboard players remove #ChatContentType glacier_players.rng 234
 function #glacier_players:extensions/speech/text/get_idle_contents
 
 execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.visual_macro
 execute if score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak_advanced with storage glacier_players.visual_macro
+
+#setblock ~ ~999 ~ oak_sign{front_text:}
+#data modify block ~ ~ ~ front_text.messages[0]

@@ -1,5 +1,5 @@
 ##Add Tag for assumptions
-tag @s add GlacierPlayer.Inv_Sorted_Item
+scoreboard players set #SortedItem glacier_players.condition 1
 
 ##Totem Detect
 execute if items entity @s weapon.mainhand totem_of_undying run return run function glacier_players:player/inventory/equipment/apply/totem
@@ -13,4 +13,4 @@ execute if items entity @s weapon.mainhand totem_of_undying run return run funct
 ##Extensions
 execute if items entity @s weapon.mainhand #glacier_players:tools/misc/custom run return run function #glacier_players:extensions/inventory/equipment/misc with storage glacier_players.inventory_macro
 
-tag @s remove GlacierPlayer.Inv_Sorted_Item
+scoreboard players set #SortedItem glacier_players.condition 0

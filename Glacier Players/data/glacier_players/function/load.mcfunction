@@ -39,6 +39,7 @@ scoreboard objectives add glacier_players.food_eat_time dummy
 scoreboard objectives add glacier_players.food_eat_nutrition dummy
 scoreboard objectives add glacier_players.food_eat_saturation dummy
 scoreboard objectives add glacier_players.saturation dummy
+scoreboard objectives add glacier_players.eating_food dummy
 
 #scoreboard objectives add glacier_players.armour dummy
 #scoreboard objectives add glacier_players.armour_toughness dummy
@@ -53,6 +54,7 @@ scoreboard objectives add glacier_players.inventory_item_max_stack_size dummy
 scoreboard objectives add glacier_players.inventory_player_hand dummy
 scoreboard objectives add glacier_players.inventory_saved_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_partition dummy
+scoreboard objectives add glacier_players.inventory_active_entites dummy
 
 scoreboard objectives add glacier_players.inventory_saved_block_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_block_partition dummy
@@ -88,6 +90,8 @@ scoreboard objectives add glacier_players.delay_totem_replace dummy
 scoreboard objectives add glacier_players.pathfinding_g_cost dummy
 scoreboard objectives add glacier_players.pathfinding_node dummy
 
+scoreboard objectives add glacier_players.dmarker_summoned dummy
+
 scoreboard objectives add glacier_players.experience_requirement dummy
 scoreboard objectives add glacier_players.experience_amount dummy
 scoreboard objectives add glacier_players.experience_level dummy
@@ -113,11 +117,19 @@ scoreboard players set @a glacier_players.extensions_toolset 0
 scoreboard players set #Ticks glacier_players.number 20
 scoreboard players set #Second glacier_players.number 1
 
+scoreboard objectives add glacier_players.initalized_uuids dummy
+
 ##Make & Modify Teams
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never
 team modify GlacierPlayersTeam seeFriendlyInvisibles false
 team modify GlacierPlayersTeam friendlyFire false
+
+##for gu libary to work with glaciers
+execute if score #Done glacier_players.initalized_uuids matches 0 run data modify storage glacier_players.uuids instance prepend value {"this is just here so things dont go to shit":true}
+scoreboard players set #Done glacier_players.initalized_uuids 1
+
+execute unless entity @e[limit=1,type=marker,tag=GP.MMarker] run function glacier_players:load_mmarker
 
 ##Start the Data Pack
 schedule function glacier_players:start 1s

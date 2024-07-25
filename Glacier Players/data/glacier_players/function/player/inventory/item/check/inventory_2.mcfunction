@@ -3,7 +3,7 @@ execute store result storage glacier_players.inventory_macro player_inv_slot int
 #tellraw @a[tag=gp.debug] ["",{"score":{"name": "@s","objective": "glacier_players.inventory_slot_number"}}]
 
 ##Run as donkey entity
-execute as @e[type=donkey,limit=1,tag=GP.Inventory_Selected.InvSection3] run function glacier_players:player/inventory/item/check/inventory_contents/standard with storage glacier_players.inventory_macro
+$execute as $(saved_inventory2_uuid) run function glacier_players:player/inventory/item/check/inventory_contents/standard with storage glacier_players.inventory_macro
 
 ##Repeat
-execute unless score @s glacier_players.inventory_slot_number matches 11.. if entity @s[tag=!GlacierPlayer.Inv_Sorted_Item] run function glacier_players:player/inventory/item/check/inventory_2 with storage glacier_players.inventory_macro
+execute unless score @s glacier_players.inventory_slot_number matches 11.. unless score #SortedItem glacier_players.condition matches 1.. run function glacier_players:player/inventory/item/check/inventory_2 with storage glacier_players.inventory_macro

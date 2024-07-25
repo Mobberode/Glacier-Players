@@ -2,25 +2,17 @@
 data modify entity @s HandItems[0] set from storage glacier_players.inventory_macro picked_item
 
 ##Attempt to Transfer the item to the self's inventory by checking each slot
-tag @s remove GlacierPlayer.Inv_Sorted_Item
+scoreboard players set #SortedItem glacier_players.condition 0
 
 ##Detect Equipment
-function glacier_players:player/inventory/equipment/check
-execute if entity @s[tag=GlacierPlayer.Inv_Sorted_Item] run return fail
+#function glacier_players:player/inventory/equipment/check
+#execute if score #SortedItem glacier_players.condition matches 1.. run return fail
 
 ##Spawn more inventory entites if needed
-execute unless entity @s[tag=GlacierPlayer.Third_Inventory_Summoned] run function glacier_players:player/inventory/entites/summon
+execute unless score @s glacier_players.inventory_active_entites matches 3.. run function glacier_players:player/inventory/entites/summon with storage glacier_players.macro
 
 scoreboard players set @s glacier_players.inventory_slot_number -1
 scoreboard players set @s glacier_players.inventory_saved_partition 1
-function glacier_players:player/inventory/item/check/hotbar
+function glacier_players:player/inventory/item/check/hotbar with storage glacier_players.macro
 
-scoreboard players set @s glacier_players.inventory_slot_number -1
-scoreboard players set @s glacier_players.inventory_saved_partition 2
-execute unless entity @s[tag=GlacierPlayer.Inv_Sorted_Item] run function glacier_players:player/inventory/item/check/inventory
-
-scoreboard players set @s glacier_players.inventory_slot_number -1
-scoreboard players set @s glacier_players.inventory_saved_partition 3
-execute unless entity @s[tag=GlacierPlayer.Inv_Sorted_Item] run function glacier_players:player/inventory/item/check/inventory_2
-
-execute unless entity @s[tag=GlacierPlayer.Inv_Sorted_Item] run function glacier_players:player/inventory/item/check/no_space with storage glacier_players.inventory_macro
+execute unless score #SortedItem glacier_players.condition matches 1 run function glacier_players:player/inventory/item/store_inv

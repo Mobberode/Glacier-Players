@@ -5,4 +5,4 @@ $data modify storage glacier_players.inventory_macro potioneffect set from entit
 function glacier_players:player/hunger/eat/consume/properties/potion/set_effects
 
 ##Set Effects to Alias
-data modify entity @n[type=piglin_brute,tag=GlacierPlayer.Alias_Selected] active_effects set from entity @s active_effects
+$data modify entity $(saved_glacier_uuid) active_effects set from entity @s active_effects

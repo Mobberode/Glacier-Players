@@ -10,9 +10,7 @@ scoreboard players set @s[scores={glacier_players.saturation=21..}] glacier_play
 execute at @s[tag=!GlacierPlayer.Drinking] run playsound entity.player.burp player @a ~ ~ ~
 
 ##Remove Tags
-tag @s remove GlacierPlayer.Eating_Food
-tag @s remove GlacierPlayer.Eating_Food_Components
-tag @s remove GlacierPlayer.Eating_Food_Non_Components
+scoreboard players set @s glacier_players.eating_food 0
 tag @s remove GlacierPlayer.Drinking
 tag @s remove GlacierPlayer.Drinking_Honey
 

@@ -1,6 +1,5 @@
-tag @s add GlacierPlayer.Inv_Sorted_Item
-tag @s add GlacierPlayer.Eating_Food
-tag @s add GlacierPlayer.Eating_Food_Components
+scoreboard players set #SortedItem glacier_players.condition 1
+scoreboard players set @s glacier_players.eating_food 1
 
 ##Convert Seconds to Ticks
 #Converter

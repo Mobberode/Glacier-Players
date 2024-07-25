@@ -1,3 +1,1 @@
-tp @s ~ ~ ~ facing entity @n[tag=GlacierPlayer.DMarker_Selected]
-execute if score @s glacier_players.sub_mode matches 5 run return run function glacier_players:player/move/water/swim
-execute if score @s glacier_players.sub_mode matches 6 run function glacier_players:player/move/water/swim_sprint
+$execute rotated ~ ~ facing entity $(saved_dmarker_uuid) eyes run function glacier_players:player/move/cil_proceed

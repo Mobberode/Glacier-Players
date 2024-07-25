@@ -1,0 +1,1 @@
+$data modify storage glacier_players.uuids instance[$(abnormal_pid_num)] set value {blank:true}

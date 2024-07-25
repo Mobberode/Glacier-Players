@@ -1,3 +1,3 @@
-kill @e[type=marker,tag=GlacierPlayer.DMarker_Selected]
+$kill $(saved_dmarker_uuid)
 scoreboard players set @s glacier_players.sub_mode 0
-tag @s remove glacier_players.summoned_dmarker
+scoreboard players set @s glacier_players.dmarker_summoned 1

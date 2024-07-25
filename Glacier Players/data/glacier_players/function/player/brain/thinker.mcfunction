@@ -7,7 +7,7 @@ execute if entity @n[type=experience_orb,distance=0..3] run function glacier_pla
 ##Inventory (Small Performance Cost!)
 execute if predicate glacier_players:2_tick_period rotated ~ 0 run function glacier_players:player/inventory/inventory_start
 
-##Modes (Big Performance Cost!)
+##Modes (Mega Performance Cost!)
 function glacier_players:player/brain/thinker_modes_init_check
 
 ##Interaction Test
