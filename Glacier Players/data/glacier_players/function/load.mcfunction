@@ -127,7 +127,7 @@ team modify GlacierPlayersTeam seeFriendlyInvisibles false
 team modify GlacierPlayersTeam friendlyFire false
 
 ##for gu libary to work with glaciers
-execute if score #Done glacier_players.initalized_uuids matches 0 run data modify storage glacier_players.uuids instance prepend value {"this is just here so things dont go to shit":true}
+execute unless score #Done glacier_players.initalized_uuids matches 1 run data modify storage glacier_players.uuids instance prepend value {"this is just here so things dont go to shit":true}
 scoreboard players set #Done glacier_players.initalized_uuids 1
 
 execute unless entity @e[limit=1,type=marker,tag=GP.MMarker] run function glacier_players:load_mmarker
