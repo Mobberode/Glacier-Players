@@ -23,3 +23,6 @@ function #glacier_players:extensions/behaviour/player_init/connect
 tellraw @a ["",{"selector":"@s","color": "yellow"},{"text": " joined the game","color": "yellow"}]
 #Chat
 function glacier_players:player/connect/connect_speak
+
+##If Poll
+execute if score #Timer glacier_players.poll_decision matches 1.. run function glacier_players:player/speech/poll/player_set

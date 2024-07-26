@@ -5,6 +5,9 @@ function glacier_players:player/speech/types/death/get_chat_contents with storag
 ##Indicate
 tellraw @a ["",{"selector":"@s"},{"text": " was killed"}]
 
+##Store vote
+scoreboard players operation #DeathStore glacier_players.poll_decision = @s glacier_players.poll_decision
+
 ##Kill
 kill @e[limit=6,tag=GlacierPlayer.Abnormal_Selected]
 kill @e[limit=3,type=item,predicate=glacier_players:inventory/is_chest]
