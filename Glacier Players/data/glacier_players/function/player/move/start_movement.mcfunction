@@ -1,4 +1,5 @@
 ##Tick Pathfind
+$execute as $(saved_dmarker_uuid) run function glacier_players:recurring_functions/set_macros_dmarker
 function glacier_players:player/move/tick/pathfind_tick
 
 ##Sub Mode

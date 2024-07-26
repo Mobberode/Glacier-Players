@@ -1,5 +1,5 @@
 ##Move
-function glacier_players:player/move/start_movement
+function glacier_players:player/move/start_movement with storage glacier_players.macro
 
 ##Talk
 execute store result score @s glacier_players.rng run random value 0..2500

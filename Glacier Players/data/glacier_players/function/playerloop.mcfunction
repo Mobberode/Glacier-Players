@@ -9,7 +9,7 @@ function glacier_players:recurring_functions/mmarker_check with storage glacier_
 execute as @e[type=#glacier_players:tnts] at @s run function glacier_players:world/convert_tnt
 
 ##Main function that all Glaciers run
-execute as @e[type=armor_stand,tag=GlacierPlayer] run function glacier_players:player/start_player
+execute as @e[type=armor_stand,tag=GlacierPlayer,sort=random] run function glacier_players:player/start_player
 
 #Connect
 execute unless score #AutomaticConnect glacier_players.config matches 1 run function glacier_players:player/connect/connect_init

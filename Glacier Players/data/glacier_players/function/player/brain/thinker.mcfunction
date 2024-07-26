@@ -1,13 +1,13 @@
-##Hunger (Small Performance Cost!)
+##Hunger (Tiny Performance Cost!)
 function glacier_players:player/hunger/process
 
-##Experience Emulation (Small Performance Cost!)
+##Experience Emulation (Tiny Performance Cost!)
 execute if entity @n[type=experience_orb,distance=0..3] run function glacier_players:player/experience/init
 
-##Inventory (Small Performance Cost!)
+##Inventory (Tiny Performance Cost!)
 execute if predicate glacier_players:2_tick_period rotated ~ 0 run function glacier_players:player/inventory/inventory_start
 
-##Modes (Mega Performance Cost!)
+##Modes (Medium Performance Cost!)
 function glacier_players:player/brain/thinker_modes_init_check
 
 ##Interaction Test

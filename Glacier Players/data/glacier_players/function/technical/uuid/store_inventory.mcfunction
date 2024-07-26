@@ -1,4 +1,4 @@
-function gp_gu:generate
+function gp_gu:generate_non_glacier
 
 #Store
 $data modify storage glacier_players.uuids instance[$(pid_num)].inventory set from storage gu:main out
