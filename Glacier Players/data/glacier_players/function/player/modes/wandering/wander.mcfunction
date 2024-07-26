@@ -1,5 +1,6 @@
 ##Move
-function glacier_players:player/move/start_movement with storage glacier_players.macro
+function glacier_players:player/modes/wandering/get_dmarker_uuid with storage glacier_players.macro
+function glacier_players:player/move/start_movement
 
 ##Talk
 execute store result score @s glacier_players.rng run random value 0..2500
