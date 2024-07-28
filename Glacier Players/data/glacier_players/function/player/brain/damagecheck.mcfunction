@@ -5,6 +5,8 @@ scoreboard players operation @s glacier_players.health = #Health glacier_players
 #Absorption
 scoreboard players operation @s glacier_players.health += #Additional_Health glacier_players.health
 
+scoreboard players operation @s glacier_players.equipment_wearing_armour = #Condition glacier_players.equipment_wearing_armour
+
 ##Previous Health > Health
 execute if score @s glacier_players.previous_health > @s glacier_players.health run function glacier_players:player/brain/damage_indicator
 

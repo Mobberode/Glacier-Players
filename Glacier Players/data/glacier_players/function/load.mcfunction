@@ -45,6 +45,8 @@ scoreboard objectives add glacier_players.eating_food dummy
 #scoreboard objectives add glacier_players.armour_toughness dummy
 #scoreboard objectives add glacier_players.knockback_resistance dummy
 
+scoreboard objectives add glacier_players.equipment_wearing_armour dummy
+
 scoreboard objectives add glacier_players.inventory_slot_count dummy
 scoreboard objectives add glacier_players.inventory_slot_slot dummy
 scoreboard objectives add glacier_players.inventory_slot_comparing_count dummy
