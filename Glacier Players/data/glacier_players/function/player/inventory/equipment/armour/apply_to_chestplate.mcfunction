@@ -1,3 +1,6 @@
+##If glacier already has something in slot
+$execute at @s if items entity $(saved_alias_uuid) armor.chest #glacier_players:armour/global run function glacier_players:player/inventory/equipment/armour/drop/chestplate with storage glacier_players.macro
+
 item replace entity @s weapon.mainhand with air
 $data modify entity $(saved_alias_uuid) ArmorItems[2] set from storage glacier_players.inventory_macro picked_item
 #

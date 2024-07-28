@@ -1,6 +1,12 @@
 scoreboard players set @s glacier_players.inventory_cant_pickup 20
 scoreboard players reset @s glacier_players.inventory_saved_partition
-$summon item ~ ~ ~ {Item:{count: $(picked_item_count), components: $(picked_item_components), id:"$(picked_item_id)"}}
-#tag @s add GlacierPlayer.Pickup_Delayed
+
+##Use MMarker
+$execute as $(saved_mmarker_uuid) positioned 0.0 0.0 0.0 run function glacier_players:player/motion/item/throw
+
+execute rotated ~ ~ run summon item ^ ^1.275 ^ {Tags:["GP.Drop_Item"],Item:{id:debug_stick}}
+
+execute as @n[type=item,tag=GP.Drop_Item] at @s run function glacier_players:player/inventory/item/drop
+
 function glacier_players:recurring_functions/remove_pickdelay_tag
 msg @a[tag=gp.debug] no space in inv!
