@@ -2,6 +2,9 @@
 scoreboard players operation @s glacier_players.previous_health = @s glacier_players.health
 scoreboard players operation @s glacier_players.health = #Health glacier_players.health
 
+##Regenerate
+execute if score @s glacier_players.health matches ..19 if score @s glacier_players.saturation matches 1.. if score @s glacier_players.nutrition matches 18.. run function glacier_players:player/hunger/regenerate/sort_regen
+
 #Absorption
 scoreboard players operation @s glacier_players.health += #Additional_Health glacier_players.health
 

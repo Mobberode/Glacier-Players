@@ -4,7 +4,7 @@ $tellraw @a ["",{"text":"<! ","color":"gold"},{"selector":"@s","color":"gold"},{
 playsound block.amethyst_block.step player @a
 
 ##Ask
-execute as @e[scores={glacier_players.poll_decision=0..}] run function glacier_players:player/speech/poll/player_set
+execute as @e[scores={glacier_players.poll_decision=-1..}] run function glacier_players:player/speech/poll/player_set
 function glacier_players:player/speech/poll/acknowledge_loop
 
 ##Poll Timer

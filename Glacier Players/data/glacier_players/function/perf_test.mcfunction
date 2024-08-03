@@ -1,0 +1,1 @@
+function glacier_players:technical/uuid/get_uuids with storage glacier_players.macro

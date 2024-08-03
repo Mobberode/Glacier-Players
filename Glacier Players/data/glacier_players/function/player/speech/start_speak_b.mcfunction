@@ -1,8 +1,12 @@
 execute store result score @s glacier_players.speech_type run random value 1..100
+execute store result score @s glacier_players.rng run random value 1..100
+execute if score @s glacier_players.rng matches 80.. run function glacier_players:player/speech/set_response
+
+##Responding
+execute if score #Condition glacier_players.speech_response matches 1.. if score @s glacier_players.speech_type matches 1..25 run return run function glacier_players:player/speech/types/response/get_chat_contents with storage glacier_players.extensions
+
 ##Neutral (1)
 execute if score @s glacier_players.speech_type matches 1..85 run return run function glacier_players:player/speech/types/idle/get_chat_contents with storage glacier_players.extensions
-##Response (2)
-execute if score @s glacier_players.speech_type matches 500 run return run function glacier_players:player/speech/start_speak with storage glacier_players.extensions
 
 ##/me
 execute if score @s glacier_players.speech_type matches 86..97 run return run function glacier_players:player/speech/types/me/get_chat_contents with storage glacier_players.extensions

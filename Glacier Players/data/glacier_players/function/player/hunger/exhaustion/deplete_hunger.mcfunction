@@ -1,1 +1,1 @@
-scoreboard players remove @s[scores={glacier_players.nutrition=1..}] glacier_players.nutrition 1
+execute if score @s glacier_players.nutrition matches 1.. run scoreboard players remove @s glacier_players.nutrition 1

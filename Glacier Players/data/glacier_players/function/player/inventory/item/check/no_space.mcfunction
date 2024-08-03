@@ -2,7 +2,7 @@ scoreboard players set @s glacier_players.inventory_cant_pickup 20
 scoreboard players reset @s glacier_players.inventory_saved_partition
 
 ##Use MMarker
-$execute as $(saved_mmarker_uuid) positioned 0.0 0.0 0.0 run function glacier_players:player/motion/item/throw
+$execute positioned 0.0 0.0 0.0 as $(saved_mmarker_uuid) positioned run function glacier_players:player/motion/item/throw
 
 execute rotated ~ ~ run summon item ~ ~1.275 ~ {Tags:["GP.Drop_Item"],Item:{id:debug_stick}}
 

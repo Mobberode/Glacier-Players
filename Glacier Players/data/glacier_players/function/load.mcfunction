@@ -21,6 +21,10 @@ scoreboard objectives add glacier_players.x_pos dummy
 scoreboard objectives add glacier_players.y_pos dummy
 scoreboard objectives add glacier_players.z_pos dummy
 
+scoreboard objectives add glacier_players.x_respawn_pos dummy
+scoreboard objectives add glacier_players.y_respawn_pos dummy
+scoreboard objectives add glacier_players.z_respawn_pos dummy
+
 scoreboard objectives add glacier_players.ticks_till_force_destory_dmarker dummy
 #scoreboard objectives add glacier_players.gamemode dummy
 scoreboard objectives add glacier_players.config dummy
