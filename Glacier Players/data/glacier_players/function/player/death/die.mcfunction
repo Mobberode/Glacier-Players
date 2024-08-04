@@ -1,9 +1,9 @@
+##Indicate
+tellraw @a ["",{"selector":"@s"},{"text": " was killed"}]
+
 ##Chat Chat
 data modify storage minecraft:glacier_players.visual_macro chatter_name set from entity @s CustomName
 function glacier_players:player/speech/types/death/get_chat_contents with storage glacier_players.extensions
-
-##Indicate
-tellraw @a ["",{"selector":"@s"},{"text": " was killed"}]
 
 ##Store vote
 scoreboard players operation #DeathStore glacier_players.poll_decision = @s glacier_players.poll_decision

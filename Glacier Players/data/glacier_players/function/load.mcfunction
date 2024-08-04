@@ -142,4 +142,4 @@ kill @e[type=marker,tag=GP.MMarker]
 execute unless entity @e[limit=1,type=marker,tag=GP.MMarker] run function glacier_players:load_mmarker
 
 ##Start the Data Pack
-schedule function glacier_players:start 1s
+schedule function glacier_players:start 5s
