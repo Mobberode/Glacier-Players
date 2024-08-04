@@ -412,6 +412,11 @@ execute if score #Connecting glacier_players.rng matches 407 run return run data
 execute if score #Connecting glacier_players.rng matches 408 run return run data modify storage glacier_players.visual_macro connecting_name set value "Gigabyte"
 execute if score #Connecting glacier_players.rng matches 409 run return run data modify storage glacier_players.visual_macro connecting_name set value "Terabyte"
 execute if score #Connecting glacier_players.rng matches 410 run return run data modify storage glacier_players.visual_macro connecting_name set value "Petabyte"
+execute if score #Connecting glacier_players.rng matches 411 run return run data modify storage glacier_players.visual_macro connecting_name set value "S_HACKER"
+execute if score #Connecting glacier_players.rng matches 412 run return run data modify storage glacier_players.visual_macro connecting_name set value "Lemmie"
+execute if score #Connecting glacier_players.rng matches 413 run return run data modify storage glacier_players.visual_macro connecting_name set value "Bensee"
+execute if score #Connecting glacier_players.rng matches 414 run return run data modify storage glacier_players.visual_macro connecting_name set value "Mineralnaught"
+execute if score #Connecting glacier_players.rng matches 415 run return run data modify storage glacier_players.visual_macro connecting_name set value "Pixel"
 
-scoreboard players remove #Connecting glacier_players.rng 410
+scoreboard players remove #Connecting glacier_players.rng 415
 function #glacier_players:extensions/names/get_names

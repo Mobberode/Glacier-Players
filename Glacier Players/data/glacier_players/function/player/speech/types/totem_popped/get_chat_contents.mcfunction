@@ -17,8 +17,13 @@ execute if score #ChatContentType glacier_players.rng matches 12 run data modify
 execute if score #ChatContentType glacier_players.rng matches 13 run data modify storage glacier_players.visual_macro chat_contents set value "Nope nope"
 execute if score #ChatContentType glacier_players.rng matches 14 run data modify storage glacier_players.visual_macro chat_contents set value "STAY AWAY"
 execute if score #ChatContentType glacier_players.rng matches 15 run data modify storage glacier_players.visual_macro chat_contents set value "watch it before i place a restraining order on you"
+execute if score #ChatContentType glacier_players.rng matches 16 run data modify storage glacier_players.visual_macro chat_contents set value "i just pissed myself"
+execute if score #ChatContentType glacier_players.rng matches 17 run data modify storage glacier_players.visual_macro chat_contents set value "if this kills me"
+execute if score #ChatContentType glacier_players.rng matches 18 run data modify storage glacier_players.visual_macro chat_contents set value "please stop"
+execute if score #ChatContentType glacier_players.rng matches 19 run data modify storage glacier_players.visual_macro chat_contents set value "it wasnt serious"
+execute if score #ChatContentType glacier_players.rng matches 20 run data modify storage glacier_players.visual_macro chat_contents set value "I SURRENDER I SURRENDER I SURRENDER"
 
-scoreboard players remove #ChatContentType glacier_players.rng 15
+scoreboard players remove #ChatContentType glacier_players.rng 20
 function #glacier_players:extensions/speech/text/get_totem_popped_contents
 
 execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.visual_macro

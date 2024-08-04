@@ -44,8 +44,18 @@ execute if score #ChatContentType glacier_players.rng matches 37 run data modify
 execute if score #ChatContentType glacier_players.rng matches 38 run data modify storage glacier_players.visual_macro chat_contents set value "thats it im going to a parallel universe"
 execute if score #ChatContentType glacier_players.rng matches 39 run data modify storage glacier_players.visual_macro chat_contents set value "just like a star. im gone when its day, bye"
 execute if score #ChatContentType glacier_players.rng matches 40 run data modify storage glacier_players.visual_macro chat_contents set value "Good luck yall"
+execute if score #ChatContentType glacier_players.rng matches 41 run data modify storage glacier_players.visual_macro chat_contents set value "bye bye guys!!"
+execute if score #ChatContentType glacier_players.rng matches 42 run data modify storage glacier_players.visual_macro chat_contents set value "L"
+execute if score #ChatContentType glacier_players.rng matches 43 run data modify storage glacier_players.visual_macro chat_contents set value "hold on"
+execute if score #ChatContentType glacier_players.rng matches 44 run data modify storage glacier_players.visual_macro chat_contents set value "wait"
+execute if score #ChatContentType glacier_players.rng matches 45 run data modify storage glacier_players.visual_macro chat_contents set value "dont leave yet"
+execute if score #ChatContentType glacier_players.rng matches 46 run data modify storage glacier_players.visual_macro chat_contents set value "i will come back later"
+execute if score #ChatContentType glacier_players.rng matches 47 run data modify storage glacier_players.visual_macro chat_contents set value "imma go on fortnite"
+execute if score #ChatContentType glacier_players.rng matches 48 run data modify storage glacier_players.visual_macro chat_contents set value "lame"
+execute if score #ChatContentType glacier_players.rng matches 49 run data modify storage glacier_players.visual_macro chat_contents set value "imma be back tomorrow, bye guys"
+execute if score #ChatContentType glacier_players.rng matches 50 run data modify storage glacier_players.visual_macro chat_contents set value "need to charge real quick"
 
-scoreboard players remove #ChatContentType glacier_players.rng 40
+scoreboard players remove #ChatContentType glacier_players.rng 50
 function #glacier_players:extensions/speech/text/get_disconnect_contents
 
 execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.visual_macro

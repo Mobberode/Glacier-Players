@@ -47,8 +47,13 @@ execute if score #ChatContentType glacier_players.rng matches 42 run data modify
 execute if score #ChatContentType glacier_players.rng matches 43 run data modify storage glacier_players.visual_macro chat_contents set value "Im only playing for a bit because i got something in like a copule of minutes"
 execute if score #ChatContentType glacier_players.rng matches 44 run data modify storage glacier_players.visual_macro chat_contents set value "just testing something"
 execute if score #ChatContentType glacier_players.rng matches 45 run data modify storage glacier_players.visual_macro chat_contents set value "has there been a server reset?"
+execute if score #ChatContentType glacier_players.rng matches 46 run data modify storage glacier_players.visual_macro chat_contents set value "yooo its been ages since i played on this server"
+execute if score #ChatContentType glacier_players.rng matches 47 run data modify storage glacier_players.visual_macro chat_contents set value "i remember you"
+execute if score #ChatContentType glacier_players.rng matches 48 run data modify storage glacier_players.visual_macro chat_contents set value "back"
+execute if score #ChatContentType glacier_players.rng matches 49 run data modify storage glacier_players.visual_macro chat_contents set value "nice spawn"
+execute if score #ChatContentType glacier_players.rng matches 50 run data modify storage glacier_players.visual_macro chat_contents set value "whats up my dudes"
 
-scoreboard players remove #ChatContentType glacier_players.rng 45
+scoreboard players remove #ChatContentType glacier_players.rng 50
 function #glacier_players:extensions/speech/text/get_connect_contents
 
 execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.visual_macro

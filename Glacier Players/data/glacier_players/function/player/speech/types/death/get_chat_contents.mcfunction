@@ -66,8 +66,18 @@ execute if score #ChatContentType glacier_players.rng matches 59 run data modify
 execute if score #ChatContentType glacier_players.rng matches 60 run data modify storage glacier_players.visual_macro chat_contents set value "my brain ouch"
 execute if score #ChatContentType glacier_players.rng matches 61 run data modify storage glacier_players.visual_macro chat_contents set value "smart play!"
 execute if score #ChatContentType glacier_players.rng matches 62 run data modify storage glacier_players.visual_macro chat_contents set value "oh is this real chat"
+execute if score #ChatContentType glacier_players.rng matches 63 run data modify storage glacier_players.visual_macro chat_contents set value "i cant beleive i lost everything"
+execute if score #ChatContentType glacier_players.rng matches 64 run data modify storage glacier_players.visual_macro chat_contents set value "am i stupid??"
+execute if score #ChatContentType glacier_players.rng matches 65 run data modify storage glacier_players.visual_macro chat_contents set value ":("
+execute if score #ChatContentType glacier_players.rng matches 66 run data modify storage glacier_players.visual_macro chat_contents set value "admin pls help get my stuff back"
+execute if score #ChatContentType glacier_players.rng matches 67 run data modify storage glacier_players.visual_macro chat_contents set value "somebody help me get that back"
+execute if score #ChatContentType glacier_players.rng matches 68 run data modify storage glacier_players.visual_macro chat_contents set value "-122821 132 92264"
+execute if score #ChatContentType glacier_players.rng matches 69 run data modify storage glacier_players.visual_macro chat_contents set value "I got this"
+execute if score #ChatContentType glacier_players.rng matches 70 run data modify storage glacier_players.visual_macro chat_contents set value "shit... only 3 hearts left"
+execute if score #ChatContentType glacier_players.rng matches 71 run data modify storage glacier_players.visual_macro chat_contents set value "Someone gift me a heart? im 1 heart away from being banned"
+execute if score #ChatContentType glacier_players.rng matches 72 run data modify storage glacier_players.visual_macro chat_contents set value "Thats it, im locking the fuck in"
 
-scoreboard players remove #ChatContentType glacier_players.rng 62
+scoreboard players remove #ChatContentType glacier_players.rng 72
 function #glacier_players:extensions/speech/text/get_death_contents
 
 execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.visual_macro

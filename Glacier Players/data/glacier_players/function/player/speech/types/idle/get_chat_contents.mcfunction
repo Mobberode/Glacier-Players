@@ -241,8 +241,19 @@ execute if score #ChatContentType glacier_players.rng matches 232 run data modif
 execute if score #ChatContentType glacier_players.rng matches 232 run data modify storage glacier_players.visual_macro chat_content_target set value "@e[limit=1,scores={glacier_players.pid=1..},sort=random]"
 execute if score #ChatContentType glacier_players.rng matches 233 run data modify storage glacier_players.visual_macro chat_contents set value "yo YO A FIRE IS BURNING EVERYTHING DOWN"
 execute if score #ChatContentType glacier_players.rng matches 234 run data modify storage glacier_players.visual_macro chat_contents set value "fuck whoever put lava casts all over my base"
+execute if score #ChatContentType glacier_players.rng matches 235 run data modify storage glacier_players.visual_macro chat_contents set value "i love to dream whatever this is"
+execute if score #ChatContentType glacier_players.rng matches 236 run data modify storage glacier_players.visual_macro chat_contents set value "this might be a little too over the top but here it is"
+execute if score #ChatContentType glacier_players.rng matches 237 run data modify storage glacier_players.visual_macro chat_contents set value "Isnt this great!"
+execute if score #ChatContentType glacier_players.rng matches 238 run data modify storage glacier_players.visual_macro chat_contents set value "This is getting dangerous, im getting out"
+execute if score #ChatContentType glacier_players.rng matches 239 run data modify storage glacier_players.visual_macro chat_contents set value "i love cooking microwave meals"
+execute if score #ChatContentType glacier_players.rng matches 240 run data modify storage glacier_players.visual_macro chat_contents set value "a whole gang is waiting for me, im so cooked"
+execute if score #ChatContentType glacier_players.rng matches 241 run data modify storage glacier_players.visual_macro chat_contents set value "We getting a little too old here"
+execute if score #ChatContentType glacier_players.rng matches 242 run data modify storage glacier_players.visual_macro chat_contents set value "fuck my dad, fuck my mum, fuck my kids, fuck everyone"
+execute if score #ChatContentType glacier_players.rng matches 243 run data modify storage glacier_players.visual_macro chat_contents set value "Ima have a crashout"
+execute if score #ChatContentType glacier_players.rng matches 244 run data modify storage glacier_players.visual_macro chat_contents set value "enough minecraft for today"
+execute if score #ChatContentType glacier_players.rng matches 245 run data modify storage glacier_players.visual_macro chat_contents set value "why is there command blocks here?"
 
-scoreboard players remove #ChatContentType glacier_players.rng 234
+scoreboard players remove #ChatContentType glacier_players.rng 245
 function #glacier_players:extensions/speech/text/get_idle_contents
 
 execute unless score @s glacier_players.speech_advanced_mode matches 1 run function glacier_players:player/speech/speak with storage glacier_players.visual_macro
