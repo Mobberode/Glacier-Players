@@ -138,8 +138,5 @@ team modify GlacierPlayersTeam friendlyFire false
 execute unless score #Done glacier_players.initalized_uuids matches 1 run data modify storage glacier_players.uuids instance prepend value {"this is just here so things dont go to shit":true}
 scoreboard players set #Done glacier_players.initalized_uuids 1
 
-kill @e[type=marker,tag=GP.MMarker]
-execute unless entity @e[limit=1,type=marker,tag=GP.MMarker] run function glacier_players:load_mmarker
-
 ##Start the Data Pack
 schedule function glacier_players:start 5s

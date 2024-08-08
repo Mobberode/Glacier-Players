@@ -1,5 +1,5 @@
 #tag @s add GlacierPlayer.Alias_Selected
-tag @s add GlacierPlayer.Selected
+#tag @s add GlacierPlayer.Selected
 
 execute store result score #Health glacier_players.health run data get entity @s Health
 

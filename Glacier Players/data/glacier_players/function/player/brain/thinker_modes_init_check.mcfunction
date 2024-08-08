@@ -3,4 +3,4 @@ execute unless score @s glacier_players.knockbacked_timer matches 1.. run functi
 
 ##This will be a timer of how long a mode lasts for.
 scoreboard players remove @s glacier_players.mode_time 1
-execute if score @s glacier_players.mode_time matches ..-1 run function glacier_players:player/brain/thinker_modes
+execute if score @s glacier_players.mode_time matches ..0 run function glacier_players:player/brain/thinker_modes
