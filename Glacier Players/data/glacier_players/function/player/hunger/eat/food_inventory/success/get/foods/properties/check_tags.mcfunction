@@ -1,5 +1,5 @@
 execute if entity @s[tag=GlacierPlayer.Ate_Raw_Chicken] run function glacier_players:player/hunger/eat/consume/properties/chicken
-execute if entity @s[tag=GlacierPlayer.Ate_Chorus_Fruit] at @s run function glacier_players:player/hunger/eat/consume/properties/chorus_fruit
+execute if entity @s[tag=GlacierPlayer.Ate_Chorus_Fruit] positioned as @s run function glacier_players:player/hunger/eat/consume/properties/chorus_fruit
 execute if entity @s[tag=GlacierPlayer.Ate_Enchanted_Golden_Apple] run function glacier_players:player/hunger/eat/consume/properties/enchanted_golden_apple
 execute if entity @s[tag=GlacierPlayer.Ate_Golden_Apple] run function glacier_players:player/hunger/eat/consume/properties/golden_apple
 execute if entity @s[tag=GlacierPlayer.Ate_Poisonous_Potato] run function glacier_players:player/hunger/eat/consume/properties/poisonous_potato
