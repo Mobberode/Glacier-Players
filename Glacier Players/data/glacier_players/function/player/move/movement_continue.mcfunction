@@ -1,6 +1,6 @@
 ##Check
 #End early if near
-execute if entity @e[limit=1,distance=0..1.5,type=marker,tag=GlacierPlayer.Selected] run return run function glacier_players:player/move/destination_marker/reached with storage glacier_players.macro
+execute if entity @e[limit=1,distance=0..2,type=marker,tag=GlacierPlayer.Selected] run return run function glacier_players:player/move/destination_marker/reached with storage glacier_players.macro
 
 #Not in Liquid/On Ground
 execute if predicate glacier_players:ground_detect rotated ~ 0 run return run function glacier_players:player/move/movement_continue_normal with storage glacier_players.macro

@@ -139,4 +139,4 @@ execute unless score #Done glacier_players.initalized_uuids matches 1 run data m
 scoreboard players set #Done glacier_players.initalized_uuids 1
 
 ##Start the Data Pack
-schedule function glacier_players:start 5s
+schedule function glacier_players:start 3s
