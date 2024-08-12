@@ -8,3 +8,5 @@ $execute as $(saved_hotbar_uuid) run function glacier_players:recurring_function
 $execute as $(saved_alias_uuid) run function glacier_players:recurring_functions/set_macros_alias
 
 #function glacier_players:player/death/die_init
+
+$say $(saved_hotbar_uuid)
