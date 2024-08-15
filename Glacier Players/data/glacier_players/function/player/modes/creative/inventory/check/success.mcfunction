@@ -1,5 +1,5 @@
 ##Success
-say yes
+#say yes
 scoreboard players set #SortedItem glacier_players.condition 1
 
 ##Get count of block

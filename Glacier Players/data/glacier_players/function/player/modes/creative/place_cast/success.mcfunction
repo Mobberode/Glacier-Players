@@ -2,7 +2,7 @@
 $execute at $(saved_glacier_uuid) if entity @s[distance=..2] run return fail
 
 #setblock ^ ^ ^-.1 dirt
-say success
+#say success
 
 ##Check if condition is success. Fetch inventory
 function glacier_players:player/modes/creative/inventory/check/get_hotbar
