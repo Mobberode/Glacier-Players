@@ -1,8 +1,8 @@
 ##Set block
-$setblock ^ ^ ^-.1 $(saved_block_item)
+#$setblock ^ ^ ^-.1 $(saved_block_item)
 
 ##Run tree function
-function glacier_players:trees/block_tree/start
+#function glacier_players:trees/block_tree/start
 
 ##Run Distance and Rotation checks
 function glacier_players:player/modes/creative/rules/distance

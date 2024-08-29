@@ -1,0 +1,1 @@
+data modify storage glacier_players.visual_macro line.idle set value [{contents:''}]

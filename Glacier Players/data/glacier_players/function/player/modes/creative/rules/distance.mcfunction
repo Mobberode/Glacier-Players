@@ -1,4 +1,7 @@
 ##Run Distance functions based on score
+##The functions in them will have rotations that relate to the distance
+#Get Rotation before hand
+execute store result score @s glacier_players.rotation run data get entity @s Rotation[1]
 #1 Block
 execute if score @s glacier_players.cast_steps matches ..10 run return run function glacier_players:player/modes/creative/rules/distances/1
 #2 Blocks
