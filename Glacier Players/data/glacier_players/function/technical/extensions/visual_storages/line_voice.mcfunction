@@ -1,1 +1,1 @@
-data modify storage glacier_players.visual_macro line.voice set value [{voicename:"",contents:{voicefile:"",tickduration:"",maxvolume:"",minvolume:"",pitch:""}}]
+data modify storage glacier_players.visual_macro line.voice set value [{id:"t3",contents:{namespace:"glacier_sounds:test_voice_line3",tickduration:"10",maxvolume:"2.5",minvolume:"0.01",pitch:"1"}}]
