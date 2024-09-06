@@ -1,1 +1,0 @@
-$tellraw @a ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"selector":"$(chat_content_target)","color":"yellow"},{"text":"$(chat_contents) "},{"selector":"$(chat_content_target_2)","color":"yellow"}]

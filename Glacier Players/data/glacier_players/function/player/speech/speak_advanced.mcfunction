@@ -1,1 +1,0 @@
-$tellraw @a ["",$(chat_raw_json)]

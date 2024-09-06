@@ -1,2 +1,2 @@
 ##Get name
-$execute store result score #Connecting glacier_players.rng run random value 1..$(ext_names_count)
+$execute store result storage glacier_players.extensions rng run random value 0..$(ext_names_count)
