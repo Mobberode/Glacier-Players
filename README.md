@@ -25,4 +25,3 @@ Glacier Players allow extensions to build upon existing systems like the hunger 
 - **Player Accuracy**
 
 Glacier Players aim to replicate the actions of a player and while it may be impossible to exactly replicate it perfectly with just data packs. We can give that feel that they are player-like so its essential that most details about real players are in the Glacier Players. If you wish to make something more accurate. You can read the Minecraft Wiki on how everything works.
-Glacier Players aim to replicate the actions of a player and while it may be impossible to exactly replicate it perfectly with just data packs. We can give that feel that they are player-like so its essiental that most details about real players are in the Glacier Players aswell. If you wish to make something more accurate. You can read the Minecraft Wiki on how everything works.
