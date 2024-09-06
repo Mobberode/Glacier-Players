@@ -2,18 +2,10 @@
 #You may modify parts of this function to suit your extension
 
 ##Set the content amounts the extension has
-#Only modify the numbers!
-scoreboard players set #ExtNames glacier_players.extensions 10
-scoreboard players set #ExtConnectLines glacier_players.extensions 10
-scoreboard players set #ExtDisconnectLines glacier_players.extensions 10
-scoreboard players set #ExtIdleLines glacier_players.extensions 10
-scoreboard players set #ExtDeathLines glacier_players.extensions 10
-scoreboard players set #ExtPanicLines glacier_players.extensions 10
-scoreboard players set #ExtTotemPoppedLines glacier_players.extensions 2
-scoreboard players set #ExtDeathLines glacier_players.extensions 10
-scoreboard players set #ExtMeLines glacier_players.extensions 10
-scoreboard players set #ExtPollLines glacier_players.extensions 3
-scoreboard players set #ExtVoiceLines glacier_players.extensions 2
+#LEGACY (pre release 18)
+function ext_template:load_legacy
+#Release >18
+function ext_template:contents/add_lines
 
 ##Does your extension have tools? 0 = No, 1 = Yes
 scoreboard players set #ExtToolsEnabled glacier_players.extensions 1

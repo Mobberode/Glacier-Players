@@ -9,10 +9,6 @@ tellraw @a ["",{"text": "[GPE Loader] Prepare extensions for load","color": "aqu
 scoreboard players set #Loaded glacier_players.extensions 0
 function glacier_players:technical/extensions/visual_storages/set
 
-execute store result storage glacier_players.extensions ext_response_lines_count int 1 run scoreboard players set #ResponseLines glacier_players.extensions 115
-
-execute store result storage glacier_players.extensions ext_me_lines_count int 1 run scoreboard players set #MeLines glacier_players.extensions 100
-
 #Tools
 scoreboard players set #ExtensionToolkitMost glacier_players.extensions 0
 
@@ -28,12 +24,23 @@ execute store result storage glacier_players.extensions ext_connect_lines_count 
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.disconnect[]
 execute store result storage glacier_players.extensions ext_disconnect_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.idle[]execute store result storage glacier_players.extensions ext_idles_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.idle[]
+execute store result storage glacier_players.extensions ext_idles_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.death[]execute store result storage glacier_players.extensions ext_death_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.death[]
+execute store result storage glacier_players.extensions ext_death_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.polls[]execute store result storage glacier_players.extensions ext_poll_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.polls[]
+execute store result storage glacier_players.extensions ext_poll_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.voice[]execute store result storage glacier_players.extensions ext_voice_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.voice[]
+execute store result storage glacier_players.extensions ext_voice_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.totem_popped[]execute store result storage glacier_players.extensions ext_totem_popped_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.totem_popped[]
+execute store result storage glacier_players.extensions ext_totem_popped_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+
+execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.me[]
+execute store result storage glacier_players.extensions ext_me_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+
+execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.response[]
+execute store result storage glacier_players.extensions ext_response_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
