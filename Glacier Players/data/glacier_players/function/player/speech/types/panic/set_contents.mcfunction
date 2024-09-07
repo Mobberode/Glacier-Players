@@ -1,0 +1,1 @@
+$data modify storage glacier_players.visual_macro chat_contents set from storage glacier_players.visual_macro line.panic[$(rng)].contents

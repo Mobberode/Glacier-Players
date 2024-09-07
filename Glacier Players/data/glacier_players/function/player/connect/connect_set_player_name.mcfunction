@@ -1,0 +1,1 @@
+$data modify storage glacier_players.visual_macro connecting_name set from storage glacier_players.visual_macro names[$(rng)].contents

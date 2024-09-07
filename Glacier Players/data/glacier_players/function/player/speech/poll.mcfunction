@@ -1,6 +1,9 @@
 ##Begin the Voting process
 scoreboard players enable @a glacier_players.poll_decision
-$tellraw @a ["",{"text":"<! ","color":"gold"},{"selector":"@s","color":"gold"},{"text":">","color":"gold"},{"text":"\n$(chat_contents_poll)"},{"text":"\n$(chat_contents_poll_decision_1)","color":"red"},{"text":" "},{"text":"$(chat_contents_poll_decision_2)","color":"blue"},{"text":" "},{"text":"$(chat_contents_poll_decision_3)","color":"green"},{"text":" "},{"text":"$(chat_contents_poll_decision_4)","color":"yellow"}]
+execute store result storage glacier_players.visual_macro decisions_processed int 1 run scoreboard players set #DecisionsProcessed glacier_players.number 0
+scoreboard players set #DecisionsColour glacier_players.number 0
+$tellraw @a ["",{"text":"<! ","color":"gold"},{"selector":"@s","color":"gold"},{"text":">","color":"gold"},{"text":"\n$(chat_contents_poll)"}]
+function glacier_players:player/speech/poll/prompt_decisions with storage
 playsound block.amethyst_block.step player @a
 
 ##Ask
