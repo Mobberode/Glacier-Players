@@ -9,10 +9,10 @@ execute if score #Condition glacier_players.speech_response matches 1.. if score
 execute if score @s glacier_players.speech_type matches 1..85 run return run function glacier_players:player/speech/types/idle/get_chat_contents with storage glacier_players.extensions
 
 ##/me
-execute if score @s glacier_players.speech_type matches 86..97 run return run function glacier_players:player/speech/types/me/get_chat_contents with storage glacier_players.extensions
+execute if score @s glacier_players.speech_type matches 86..93 run return run function glacier_players:player/speech/types/me/get_chat_contents with storage glacier_players.extensions
 
 ##Poll
-execute if score @s glacier_players.speech_type matches 98..99 unless score #Timer glacier_players.poll_decision matches 1.. run return run function glacier_players:player/speech/types/polls/get_chat_contents with storage glacier_players.extensions
+execute if score @s glacier_players.speech_type matches 94..95 unless score #Timer glacier_players.poll_decision matches 1.. run return run function glacier_players:player/speech/types/polls/get_chat_contents with storage glacier_players.extensions
 
 ##Voices
 execute unless score @s glacier_players.voice_timer matches 1.. at @s run function glacier_players:player/speech/types/voices/get_lines with storage glacier_players.extensions
