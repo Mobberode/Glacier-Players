@@ -1,1 +1,1 @@
-$tellraw @a ["",{"text": "$(chat_contents_poll_decision): ","color":"$(decision_colour)"}]
+$tellraw @a ["",{"text":"|||| ","color":"$(decision_colour)"},$(chat_contents_poll_decision)]
