@@ -1,4 +1,5 @@
 ##Consume
+scoreboard players set @s[scores={glacier_players.nutrition=..-1}] glacier_players.nutrition 0
 scoreboard players operation @s glacier_players.nutrition += @s glacier_players.food_eat_nutrition
 scoreboard players operation @s glacier_players.saturation += @s glacier_players.food_eat_saturation
 

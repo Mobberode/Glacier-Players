@@ -1,3 +1,2 @@
-tag @s add GlacierPlayer.Selected
-#execute as 02e40f20-686a-4e40-8dda-84d3a2cadc3f run tag @s remove GlacierPlayer.Selected
-tag 02e40f20-686a-4e40-8dda-84d3a2cadc3f remove GlacierPlayer.Selected
+#execute if score @s[scores={glacier_players.saturation=1..,glacier_players.nutrition=18..}] glacier_players.health matches ..19 run function glacier_players:player/hunger/regenerate/sort_regen
+execute if score @s glacier_players.health matches ..19 if score @s glacier_players.saturation matches 1.. if score @s glacier_players.nutrition matches 18.. run function glacier_players:player/hunger/regenerate/sort_regen
