@@ -2,6 +2,12 @@
 #say yes
 scoreboard players set #SortedItem glacier_players.condition 1
 
+##Conditions
+#Set conditions
+scoreboard players set #Rotateable glacier_players.condition 0
+$execute if items entity @s horse.$(player_inv_slot) #glacier_players:blocks/is_rotatable run function glacier_players:player/modes/creative/inventory/check/conditions/check
+
+
 ##Get count of block
 $execute store result score #Blocks glacier_players.number run execute if items entity @s horse.$(player_inv_slot) *
 $data modify storage glacier_players.inventory_macro saved_block_item set from entity @s Items[$(player_inv_slot)].id

@@ -1,5 +1,5 @@
 #summon marker ^ ^ ^-.1 {Tags:[GP.Place_Marker]}
-$execute at $(saved_glacier_uuid) if entity @s[distance=..2] run return fail
+$execute at $(saved_glacier_uuid) if entity @s[distance=..2.5] run return fail
 
 #setblock ^ ^ ^-.1 dirt
 #say success

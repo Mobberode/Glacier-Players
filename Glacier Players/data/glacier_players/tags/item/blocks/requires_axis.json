@@ -1,0 +1,15 @@
+{
+    "values": [
+        "basalt",
+        "polished_basalt",
+        "bamboo_block",
+        "stripped_bamboo_block",
+        "bone_block",
+        "chain",
+        "deepslate",
+        "#glacier_players:blocks/types/froglights",
+        "hay_block",
+        "#minecraft:logs",
+        "muddy_mangrove_roots"
+    ]
+}
