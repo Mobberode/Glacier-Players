@@ -1,0 +1,16 @@
+{
+    "values": [
+        "oak_sign",
+        "birch_sign",
+        "acacia_sign",
+        "bamboo_sign",
+        "cherry_sign",
+        "jungle_sign",
+        "warped_sign",
+        "spruce_sign",
+        "crimson_sign",
+        "dark_oak_sign",
+        "mangrove_sign",
+        "#minecraft:hanging_signs"
+    ]
+}
