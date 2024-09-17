@@ -129,6 +129,7 @@ scoreboard players set #Ticks glacier_players.number 20
 scoreboard players set #Second glacier_players.number 1
 
 scoreboard objectives add glacier_players.initalized_uuids dummy
+scoreboard objectives add glacier_players.initalized_gp_data dummy
 
 ##Make & Modify Teams
 team add GlacierPlayersTeam
@@ -139,6 +140,10 @@ team modify GlacierPlayersTeam friendlyFire false
 ##for gu libary to work with glaciers
 execute unless score #Done glacier_players.initalized_uuids matches 1 run data modify storage glacier_players.uuids instance prepend value {"this is just here so things dont go to shit":true}
 scoreboard players set #Done glacier_players.initalized_uuids 1
+
+##Glacier Data
+execute unless score #Done glacier_players.initalized_gp_data matches 1 run data modify storage glacier_players.glacier_data instance prepend value {"this is just here so things dont go to shit":true}
+scoreboard players set #Done glacier_players.initalized_gp_data 1
 
 ##Start the Data Pack
 schedule function glacier_players:start 3s
