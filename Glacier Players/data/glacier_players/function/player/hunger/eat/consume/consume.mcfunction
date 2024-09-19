@@ -8,7 +8,7 @@ scoreboard players set @s[scores={glacier_players.nutrition=21..}] glacier_playe
 scoreboard players set @s[scores={glacier_players.saturation=21..}] glacier_players.saturation 20
 
 ##Indicator
-execute at @s[tag=!GlacierPlayer.Drinking] run playsound entity.player.burp player @a ~ ~ ~
+execute positioned as @s[tag=!GlacierPlayer.Drinking] run playsound entity.player.burp player @a ~ ~ ~
 
 ##Remove Tags
 scoreboard players set @s glacier_players.eating_food 0

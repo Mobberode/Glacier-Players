@@ -1,5 +1,5 @@
 ##Damage
-execute at @s run function glacier_players:player/brain/damage_indicator_visuals
+execute positioned as @s run function glacier_players:player/brain/damage_indicator_visuals
 scoreboard players add @s[scores={glacier_players.equipment_wearing_armour=1..}] glacier_players.exhaustion 100
 #Give tag to self for no movements
 #tag @s add glacier_players.cant_move

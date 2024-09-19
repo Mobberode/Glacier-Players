@@ -10,7 +10,7 @@ execute unless block ~ ~ ~ #glacier_players:non_solids unless block ~ ~ ~ #glaci
 execute if block ~ ~ ~ #glacier_players:non_solids unless block ~ ~1 ~ #glacier_players:non_solids run return fail
 
 #Loop
-execute if score @s glacier_players.cast_steps <= #Distance glacier_players.cast_steps at @s run return run function glacier_players:player/pathfind/advanced_simple/raycast/movement
+execute if score @s glacier_players.cast_steps <= #Distance glacier_players.cast_steps positioned as @s run return run function glacier_players:player/pathfind/advanced_simple/raycast/movement
 
 ##Else loop fails
 function glacier_players:player/pathfind/advanced_simple/raycast/after_movement

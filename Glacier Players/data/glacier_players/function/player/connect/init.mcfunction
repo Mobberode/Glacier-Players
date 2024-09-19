@@ -9,6 +9,8 @@ execute store result storage glacier_players.macro pid_num int 1 run scoreboard 
 
 ##Get and Store UUID
 function glacier_players:player/connect/uuid/store with storage glacier_players.macro
+##Glacier Data
+function glacier_players:player/connect/data/store with storage glacier_players.macro
 
 ##Set XP, Hunger, Saturation and other things
 function glacier_players:recurring_functions/set_player

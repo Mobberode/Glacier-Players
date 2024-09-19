@@ -1,0 +1,2 @@
+scoreboard players operation #DeathStore glacier_players.poll_decision = @s glacier_players.poll_decision
+scoreboard players operation #Stored glacier_players.data.has_set_spawnpoint = @s glacier_players.data.has_set_spawnpoint

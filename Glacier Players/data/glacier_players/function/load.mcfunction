@@ -131,6 +131,8 @@ scoreboard players set #Second glacier_players.number 1
 scoreboard objectives add glacier_players.initalized_uuids dummy
 scoreboard objectives add glacier_players.initalized_gp_data dummy
 
+scoreboard objectives add glacier_players.data.has_set_spawnpoint dummy
+
 ##Make & Modify Teams
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never

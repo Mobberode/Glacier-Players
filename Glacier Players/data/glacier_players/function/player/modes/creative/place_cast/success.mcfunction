@@ -1,5 +1,5 @@
 #summon marker ^ ^ ^-.1 {Tags:[GP.Place_Marker]}
-$execute at $(saved_glacier_uuid) if entity @s[distance=..2] run return fail
+$execute positioned as $(saved_glacier_uuid) if entity @s[distance=..2] run return fail
 
 ##Check if condition is success. Fetch inventory
 function glacier_players:player/modes/creative/inventory/check/get_hotbar

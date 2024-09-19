@@ -15,4 +15,4 @@ execute if score @s glacier_players.speech_type matches 86..93 run return run fu
 execute if score @s glacier_players.speech_type matches 94..95 unless score #Timer glacier_players.poll_decision matches 1.. run return run function glacier_players:player/speech/types/polls/get_chat_contents with storage glacier_players.extensions
 
 ##Voices
-execute unless score @s glacier_players.voice_timer matches 1.. at @s run function glacier_players:player/speech/types/voices/get_lines with storage glacier_players.extensions
+execute unless score @s glacier_players.voice_timer matches 1.. positioned as @s run function glacier_players:player/speech/types/voices/get_lines with storage glacier_players.extensions
