@@ -133,6 +133,9 @@ scoreboard objectives add glacier_players.initalized_gp_data dummy
 
 scoreboard objectives add glacier_players.data.has_set_spawnpoint dummy
 
+scoreboard objectives add glacier_players.release dummy
+scoreboard players set #Version glacier_players.release 18
+
 ##Make & Modify Teams
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never

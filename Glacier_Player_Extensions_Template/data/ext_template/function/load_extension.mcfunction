@@ -3,7 +3,7 @@
 
 ##Set the content amounts the extension has
 #LEGACY (pre release 18)
-function ext_template:load_legacy
+execute unless score #Version glacier_players.release matches 18.. run function ext_template:load_legacy
 #Release >18
 function ext_template:contents/add_lines
 

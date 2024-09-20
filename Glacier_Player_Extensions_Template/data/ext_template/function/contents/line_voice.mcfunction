@@ -1,0 +1,3 @@
+data modify storage gpe.ext_template.visual_macro line.voice set value [{id:"ext1",contents:{namespace:"ext_template_sounds:example",tickduration:"10",maxvolume:"2.5",minvolume:"0.01",pitch:"1"}},{id:"ext2",contents:{namespace:"ext_template_sounds:example2",tickduration:"10",maxvolume:"2.5",minvolume:"0.01",pitch:"1"}}]
+
+data modify storage minecraft:glacier_players.visual_macro line.voice append from storage gpe.ext_template.visual_macro line.voice[]
