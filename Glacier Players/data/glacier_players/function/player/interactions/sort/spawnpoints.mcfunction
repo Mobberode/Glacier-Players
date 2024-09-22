@@ -1,1 +1,1 @@
-execute if block ~ ~ ~ #minecraft:beds run function glacier_players:player/interactions/actions/bed/set_spawnpoint with storage glacier_players.macro
+execute if block ~ ~ ~ #minecraft:beds run function glacier_players:player/interactions/actions/bed/dimensions_check
