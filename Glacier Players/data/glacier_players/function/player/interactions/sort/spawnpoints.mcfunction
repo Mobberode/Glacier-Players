@@ -1,1 +1,2 @@
-execute if block ~ ~ ~ #minecraft:beds run function glacier_players:player/interactions/actions/bed/dimensions_check
+execute if block ~ ~ ~ #minecraft:beds run return run function glacier_players:player/interactions/actions/bed/dimensions_check
+function glacier_players:player/interactions/actions/respawn_anchor/check

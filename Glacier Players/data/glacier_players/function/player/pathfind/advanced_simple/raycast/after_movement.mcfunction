@@ -1,5 +1,6 @@
 ##Success check
-execute if block ~ ~ ~ #glacier_players:non_solids run return run function glacier_players:player/pathfind/advanced_simple/raycast/block_detection
+function glacier_players:player/pathfind/advanced_simple/raycast/block_detection
+#execute if block ~ ~ ~ #glacier_players:non_solids run return run function glacier_players:player/pathfind/advanced_simple/raycast/block_detection
 
 ##Fallback
-function glacier_players:player/pathfind/advanced_simple/fallback with storage minecraft:glacier_players.macro
+#function glacier_players:player/pathfind/advanced_simple/fallback with storage minecraft:glacier_players.macro
