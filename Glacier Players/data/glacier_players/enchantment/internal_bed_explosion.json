@@ -1,0 +1,46 @@
+{
+  "description": {
+    "text": "Glacier Player Internals - Bed Explosion"
+  },
+  "supported_items": "#minecraft:enchantable/bow",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "glacier_players:player/interactions/actions/bed/remove_explosion_enchantment"
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:explode",
+          "damage_type": "minecraft:explosion",
+          "radius": 5,
+          "block_interaction": "tnt",
+          "small_particle": {
+            "type": "minecraft:ash"
+          },
+          "large_particle": {
+            "type": "minecraft:ash"
+          },
+          "sound": "particle.soul_escape",
+          "create_fire": true
+        }
+      }
+    ]
+  }
+}

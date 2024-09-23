@@ -1,4 +1,4 @@
-scoreboard players set #Explode glacier_players.condition 1
+scoreboard players set #Explode glacier_players.condition 0
 ##Check for dimensions that beds can explode in.
 execute if dimension minecraft:the_nether run scoreboard players set #Explode glacier_players.condition 1
 execute if dimension minecraft:the_end run scoreboard players set #Explode glacier_players.condition 1
