@@ -4,4 +4,4 @@ $data modify storage glacier_players.glacier_data instance[$(pid_num)].data.spaw
 $data modify storage glacier_players.glacier_data instance[$(pid_num)].data.spawnpoint.y set from block ~ ~ ~ y
 $data modify storage glacier_players.glacier_data instance[$(pid_num)].data.spawnpoint.z set from block ~ ~ ~ z
 $data modify storage glacier_players.glacier_data instance[$(pid_num)].data.spawnpoint.uses_respawn_anchor set value true
-say Anchor Spawnpoint Set!
+#say Anchor Spawnpoint Set!
