@@ -4,7 +4,7 @@ scoreboard players reset @s glacier_players.inventory_saved_partition
 ##Use MMarker
 $execute positioned 0.0 0.0 0.0 as $(saved_mmarker_uuid) run function glacier_players:player/motion/item/throw
 
-$execute rotated ~ ~ run summon item ~ ~1.275 ~ {Item:{id:"$(item_convert_id)"},Tags:[GP.Drop_Item]}
+$summon item ~ ~1.275 ~ {Item:{id:"$(item_convert_id)"},Tags:[GP.Drop_Item]}
 
 #$summon item ~ ~ ~ {Item:{count: $(picked_item_count), components: $(picked_item_components), id:"$(picked_item_id)"}}
 
