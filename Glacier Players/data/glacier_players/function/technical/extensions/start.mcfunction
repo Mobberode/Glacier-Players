@@ -9,12 +9,13 @@ tellraw @a ["",{"text": "[GPE Loader] Prepare extensions for load","color": "aqu
 scoreboard players set #Loaded glacier_players.extensions 0
 function glacier_players:technical/extensions/visual_storages/set
 
-#Tools
+#Data Tools
 scoreboard players set #ExtensionToolkitMost glacier_players.extensions 0
-
 function glacier_players:technical/extensions/loader/load_extensions
 
 ##Apply
+tellraw @a ["",{"text": "[GPE Loader] Applying visual data counts","color": "aqua"}]
+#
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro names[]
 execute store result storage glacier_players.extensions ext_names_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
@@ -44,3 +45,5 @@ execute store result storage glacier_players.extensions ext_me_lines_count int 1
 
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.response[]
 execute store result storage glacier_players.extensions ext_response_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+
+tellraw @a ["",{"text": "[GPE Loader] Extensions Loaded: ","color": "aqua"},{"score":{"name": "#Loaded","objective": "glacier_players.extensions"},"color": "green"}]
