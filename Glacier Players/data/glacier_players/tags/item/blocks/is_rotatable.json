@@ -1,14 +1,13 @@
 {
     "values": [
+        "crafter",
+        "creaking_heart",
         "#minecraft:stairs",
         "#minecraft:logs",
         "#minecraft:banners",
         "jigsaw",
         "#glacier_players:blocks/types/mob_heads",
-        "activator_rail",
         "#glacier_players:blocks/types/signs",
-        "detector_rail",
-        "powered_rail",
         "basalt",
         "polished_basalt",
         "bamboo_block",
