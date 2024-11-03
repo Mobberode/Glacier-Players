@@ -7,3 +7,6 @@ execute if score #RotationType glacier_players.condition matches 2 run return ru
 execute if score #RotationType glacier_players.condition matches 3 run return run function glacier_players:player/modes/creative/test_rot_check/fork2_bordercheck/orientation/summon
 #RotationType glacier_players.condition 4 = Rotation
 execute if score #RotationType glacier_players.condition matches 4 run return run function glacier_players:player/modes/creative/test_rot_check/fork2_bordercheck/rotation/summon
+
+##Fallback
+function glacier_players:player/modes/creative/test_rot_check/fork2_bordercheck/axis/summon

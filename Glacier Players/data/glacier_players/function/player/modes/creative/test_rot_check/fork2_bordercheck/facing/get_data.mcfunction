@@ -1,0 +1,3 @@
+function glacier_players:player/modes/creative/test_rot_check/fork2_bordercheck/facing/rot
+execute as @n[type=marker,tag=GlacierPlayer.BlockBorder_Height] run function glacier_players:player/modes/creative/test_rot_check/fork2_bordercheck/facing/height
+execute unless score #Is_Overriddable glacier_players.condition matches 1 run function glacier_players:player/modes/creative/test_rot_check/fork2_bordercheck/facing/set_position

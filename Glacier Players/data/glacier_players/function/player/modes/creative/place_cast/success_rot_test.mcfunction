@@ -1,1 +1,0 @@
-execute positioned ^ ^ ^-.1 run function glacier_players:player/modes/creative/place_cast/success_rot_test2
