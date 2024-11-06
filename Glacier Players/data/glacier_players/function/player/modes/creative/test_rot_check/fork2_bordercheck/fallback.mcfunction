@@ -1,3 +1,4 @@
+tp @n[tag=GP.Place_Cast] ~ ~ ~
 data modify storage glacier_players.build_macro rot set value ""
 
 data modify storage glacier_players.build_macro pos set value "~ ~ ~-.5"
