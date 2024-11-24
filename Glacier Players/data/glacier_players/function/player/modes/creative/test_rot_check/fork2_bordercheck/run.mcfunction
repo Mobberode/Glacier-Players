@@ -1,6 +1,7 @@
 data remove storage glacier_players.build_macro block
 data modify storage glacier_players.build_macro block set from entity @s SelectedItem.id
 execute store result score #PlaceRotation glacier_players.rotation run data get entity @s Rotation[0]
+execute store result score #PlaceRotation_Height glacier_players.rotation run data get entity @s Rotation[1]
 
 scoreboard players set #RotationType glacier_players.condition 0
 execute if items entity @s weapon.mainhand #glacier_players:blocks/requires_axis run scoreboard players set #RotationType glacier_players.condition 1
