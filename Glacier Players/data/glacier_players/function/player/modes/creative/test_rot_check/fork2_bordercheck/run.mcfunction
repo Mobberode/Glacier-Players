@@ -10,7 +10,8 @@ execute if items entity @s weapon.mainhand #glacier_players:blocks/requires_faci
 execute if items entity @s weapon.mainhand #glacier_players:blocks/requires_orientation run scoreboard players set #RotationType glacier_players.condition 3
 execute if items entity @s weapon.mainhand #glacier_players:blocks/requires_rotate run scoreboard players set #RotationType glacier_players.condition 4
 
-execute store result score #InvertRot glacier_players.condition if items entity @s weapon.mainhand #stairs
+execute store result score #InvertRot glacier_players.condition if items entity @s weapon.mainhand #glacier_players:blocks/invert_rotation
+execute store result score #1x2 glacier_players.condition if items entity @s weapon.mainhand #glacier_players:blocks/sizes/1x2
 
 function glacier_players:recurring_functions/get_pos
 scoreboard players operation #Compare glacier_players.x_pos = @s glacier_players.x_pos

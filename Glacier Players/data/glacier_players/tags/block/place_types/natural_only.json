@@ -1,0 +1,14 @@
+{
+    "values": [
+        "grass_block",
+        "dirt",
+        "coarse_dirt",
+        "rooted_dirt",
+        "farmland",
+        "podzol",
+        "mycelium",
+        "moss_block",
+        "mud",
+        "muddy_mangrove_roots"
+    ]
+}
