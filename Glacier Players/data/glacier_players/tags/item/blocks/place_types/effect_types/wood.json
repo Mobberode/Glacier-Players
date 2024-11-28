@@ -1,0 +1,23 @@
+{
+    "values": [
+        "#wooden_buttons",
+        "#wooden_doors",
+        "#wooden_fences",
+        "#wooden_pressure_plates",
+        "#wooden_slabs",
+        "#wooden_stairs",
+        "#wooden_trapdoors",
+        "#logs_that_burn",
+        "#planks",
+        "#oak_logs",
+        "#birch_logs",
+        "#acacia_logs",
+        "#cherry_logs",
+        "#jungle_logs",
+        "#spruce_logs",
+        "#dark_oak_logs",
+        "#mangrove_logs",
+        "#pale_oak_logs",
+        "lectern"
+    ]
+}
