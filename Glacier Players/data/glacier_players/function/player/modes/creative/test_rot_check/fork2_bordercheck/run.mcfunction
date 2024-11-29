@@ -11,7 +11,8 @@ execute if items entity @s weapon.mainhand #glacier_players:blocks/requires_orie
 execute if items entity @s weapon.mainhand #glacier_players:blocks/requires_rotate run scoreboard players set #RotationType glacier_players.condition 4
 
 execute store result score #InvertRot glacier_players.condition if items entity @s weapon.mainhand #glacier_players:blocks/invert_rotation
-execute store result score #1x2 glacier_players.condition if items entity @s weapon.mainhand #glacier_players:blocks/sizes/1x2
+execute store result score #1x2 glacier_players.condition if items entity @s weapon.mainhand #glacier_players:blocks/place_types/sizes/1x2
+function glacier_players:player/modes/creative/place_effect
 
 function glacier_players:recurring_functions/get_pos
 scoreboard players operation #Compare glacier_players.x_pos = @s glacier_players.x_pos
