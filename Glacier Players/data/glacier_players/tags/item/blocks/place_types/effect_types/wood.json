@@ -47,6 +47,16 @@
         "brown_mushroom_block",
         "red_mushroom_block",
         "mushroom_stem",
-        "#glacier_players:blocks/place_types/effect_types/subtypes/wood/stem"
+        "#glacier_players:blocks/place_types/effect_types/subtypes/wood/nether",
+        "pumpkin",
+        "jack_o_lantern",
+        "tripwire_hook",
+        "repeater",
+        "carved_pumpkin",
+        "melon",
+        "daylight_detector",
+        "cocoa_beans",
+        "chorus_flower",
+        "beetroot_seeds"
     ]
 }

@@ -5,4 +5,4 @@ tellraw @a ["",{"score":{"name":"#Compare","objective":"glacier_players.x_pos"}}
 execute if score #Compare glacier_players.x_pos matches 0 if score #Compare glacier_players.z_pos matches 0 run return run say fail
 
 $setblock $(pos) $(block)$(rot)
-$playsound $(sound_namespace) block @a ~ ~ ~
+$playsound $(sound_namespace) block @a ~ ~ ~ 0.8 1

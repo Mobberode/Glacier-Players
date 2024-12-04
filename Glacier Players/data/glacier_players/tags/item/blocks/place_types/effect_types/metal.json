@@ -1,0 +1,20 @@
+{
+    "values": [
+        "activator_rail",
+        "detector_rail",
+        "diamond_block",
+        "emerald_block",
+        "gold_block",
+        "heavy_weighted_pressure_plate",
+        "light_weighted_pressure_plate",
+        "hopper",
+        "iron_bars",
+        "iron_block",
+        "iron_door",
+        "iron_trapdoor",
+        "powered_rail",
+        "rail",
+        "redstone_block",
+        "turtle_egg"
+    ]
+}
