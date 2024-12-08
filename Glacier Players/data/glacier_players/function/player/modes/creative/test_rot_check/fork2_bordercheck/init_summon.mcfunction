@@ -1,1 +1,0 @@
-$execute positioned $(borderpos_x). $(borderpos_y) $(borderpos_z). run function glacier_players:player/modes/creative/test_rot_check/fork2_bordercheck/summon

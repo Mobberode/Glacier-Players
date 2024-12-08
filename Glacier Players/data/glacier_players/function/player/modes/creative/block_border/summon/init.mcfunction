@@ -1,0 +1,1 @@
+$execute positioned $(borderpos_x). $(borderpos_y) $(borderpos_z). run function glacier_players:player/modes/creative/block_border/summon/visuals
