@@ -6,7 +6,7 @@
 function glacier_players:recurring_functions/mmarker_check with storage glacier_players.macro
 
 ##Turns TNT to not destory Glaciers
-execute as @e[type=#glacier_players:tnts] at @s run function glacier_players:world/convert_tnt
+execute as @e[type=#glacier_players:tnts] positioned as @s run function glacier_players:world/convert_tnt
 
 ##Main function that all Glaciers run
 execute as @e[type=armor_stand,tag=GlacierPlayer,sort=random] run function glacier_players:player/start_player
