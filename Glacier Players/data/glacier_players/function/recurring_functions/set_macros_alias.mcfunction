@@ -9,8 +9,8 @@ execute store result score #Condition glacier_players.has_undying_totem if items
 
 execute store result score #Condition glacier_players.equipment_wearing_armour if items entity @s armor.* #glacier_players:armour/global
 
-data modify storage glacier_players.equipment_macro armouritems set from entity @s ArmorItems
-function glacier_players:player/armour/run
+#data modify storage glacier_players.equipment_macro armouritems set from entity @s ArmorItems
+#function glacier_players:player/armour/run
 
 #execute if score #Fire glacier_players.condition matches 1 run data merge entity @s {Fire:160s}
 

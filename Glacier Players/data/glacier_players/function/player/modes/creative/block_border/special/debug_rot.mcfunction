@@ -1,1 +1,1 @@
-$say $(rot)
+#$say $(rot)

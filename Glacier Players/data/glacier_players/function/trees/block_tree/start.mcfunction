@@ -12,4 +12,4 @@ execute if block ~ ~ ~ #glacier_players:functional/functional run return run
 execute if block ~ ~ ~ #glacier_players:misc/misc run return run
 
 ##fail
-say Failed to get block!
+#say Failed to get block!

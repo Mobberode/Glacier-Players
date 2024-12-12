@@ -2,20 +2,15 @@
 #say yes
 scoreboard players set #SortedItem glacier_players.condition 1
 
-##Conditions
-#Set conditions
-scoreboard players set #Rotateable glacier_players.condition 0
-$execute if items entity @s horse.$(player_inv_slot) #glacier_players:blocks/is_rotatable run function glacier_players:player/modes/creative/inventory/check/conditions/check
+summon chest_minecart ~ ~ ~ {Tags:[GP.Place_Item_Set],UUID:[I;61,23,37,712436],Invulnerable:true,NoGravity:true}
+$item replace entity 0000003d-0000-0017-0000-0025000adef4 container.0 from entity @s horse.$(player_inv_slot)
 
+##Execute as entity
+execute as 0000003d-0000-0017-0000-0025000adef4 positioned as @s run function glacier_players:player/modes/creative/run
 
-##Get count of block
-$execute store result score #Blocks glacier_players.number run execute if items entity @s horse.$(player_inv_slot) *
-$data modify storage glacier_players.inventory_macro saved_block_item set from entity @s Items[$(player_inv_slot)].id
-
-##Remove block count by 1
-scoreboard players remove #Blocks glacier_players.number 1
+function glacier_players:player/modes/creative/place_cast/pre_init
 
 ##Check
-execute if score #Blocks glacier_players.number matches 1.. run return run function glacier_players:player/modes/creative/inventory/update_block_count
+execute if score #Blocks glacier_players.number matches 1.. run return run function glacier_players:player/modes/creative/inventory/update_block_count with storage glacier_players.inventory_macro
 
-function glacier_players:player/modes/creative/inventory/remove_block
+function glacier_players:player/modes/creative/inventory/remove_block with storage glacier_players.inventory_macro

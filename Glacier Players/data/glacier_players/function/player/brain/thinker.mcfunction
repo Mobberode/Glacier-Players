@@ -2,7 +2,7 @@
 function glacier_players:player/hunger/process
 
 ##Experience Emulation (Tiny Performance Cost!)
-execute if entity @n[distance=0..3,type=experience_orb] run function glacier_players:player/experience/init
+execute if entity @e[limit=1,distance=0..3,type=experience_orb,sort=nearest] run function glacier_players:player/experience/init
 
 ##Inventory (Tiny Performance Cost!)
 execute if predicate glacier_players:2_tick_period run function glacier_players:player/inventory/inventory_start
