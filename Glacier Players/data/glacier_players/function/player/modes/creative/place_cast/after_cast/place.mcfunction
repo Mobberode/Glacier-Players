@@ -7,5 +7,4 @@ execute if score #Compare glacier_players.x_pos matches 0 if score #Compare glac
 $setblock $(pos) $(block)$(rot)
 $playsound $(sound_namespace) block @a ~ ~ ~ 0.8 1
 
-##Remove block count by 1
-scoreboard players remove #Blocks glacier_players.number 1
+execute as 0000003d-0000-0017-0000-0025000adef4 run function glacier_players:player/modes/creative/place_cast/after_cast/after_place

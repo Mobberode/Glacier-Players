@@ -10,7 +10,5 @@ execute as 0000003d-0000-0017-0000-0025000adef4 positioned as @s run function gl
 
 function glacier_players:player/modes/creative/place_cast/pre_init
 
-##Check
-execute if score #Blocks glacier_players.number matches 1.. run return run function glacier_players:player/modes/creative/inventory/update_block_count with storage glacier_players.inventory_macro
-
-function glacier_players:player/modes/creative/inventory/remove_block with storage glacier_players.inventory_macro
+#Update Slot
+function glacier_players:player/modes/creative/inventory/update_slot with storage glacier_players.inventory_macro

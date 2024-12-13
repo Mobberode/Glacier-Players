@@ -1,2 +1,2 @@
 ##Remove block
-$item replace entity @s horse.$(player_inv_slot) with debug_stick
+item replace entity @s container.0 with air

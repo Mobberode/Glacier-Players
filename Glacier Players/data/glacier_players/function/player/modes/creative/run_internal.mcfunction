@@ -1,4 +1,3 @@
-tp ~ ~ ~
 data remove storage glacier_players.build_macro block
 execute store result score #PlaceRotation glacier_players.rotation run data get entity @s Rotation[0]
 execute store result score #PlaceRotation_2Decimal glacier_players.rotation run data get entity @s Rotation[0] 100
@@ -26,7 +25,3 @@ data modify storage glacier_players.build_macro block set from entity @s Items[0
 data modify storage glacier_players.inventory_macro saved_block_item set from storage glacier_players.build_macro block
 ##Count
 execute store result score #Blocks glacier_players.number run execute if items entity @s container.0 *
-
-##Clear
-item replace entity @s container.0 with air
-kill @s
