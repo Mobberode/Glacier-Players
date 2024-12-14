@@ -1,0 +1,2 @@
+execute store result score #1x2x1 glacier_players.condition if items entity @s container.0 #glacier_players:blocks/place_types/sizes/1x2x1
+execute store result score #1x1x2 glacier_players.condition if items entity @s container.0 #glacier_players:blocks/place_types/sizes/1x1x2

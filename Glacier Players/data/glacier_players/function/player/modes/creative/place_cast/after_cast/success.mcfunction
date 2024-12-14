@@ -1,3 +1,3 @@
 function glacier_players:player/modes/creative/block_border/run
 function glacier_players:player/modes/creative/place_cast/after_cast/border_type_check
-function glacier_players:player/modes/creative/place_cast/after_cast/place with storage glacier_players.build_macro
+function glacier_players:player/modes/creative/place_cast/after_cast/finalize

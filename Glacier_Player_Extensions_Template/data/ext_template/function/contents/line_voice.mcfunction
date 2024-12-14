@@ -1,1 +1,3 @@
-data modify storage glacier_players.visual_macro line.voice append value {id:"ext1",contents:{namespace:"ext_template_sounds:example",tickduration:"10",maxvolume:"2.5",minvolume:"0.01",pitch:"1"},id:"ext2",contents:{namespace:"ext_template_sounds:example2",tickduration:"10",maxvolume:"2.5",minvolume:"0.01",pitch:"1"}}
+data modify storage glacier_players.visual_macro_temp contents append value {id:"ext1",contents:{namespace:"ext_template_sounds:example",tickduration:"10",maxvolume:"2.5",minvolume:"0.01",pitch:"1"},id:"ext2",contents:{namespace:"ext_template_sounds:example2",tickduration:"10",maxvolume:"2.5",minvolume:"0.01",pitch:"1"}}
+
+data modify storage glacier_players.visual_macro line.voice append from storage glacier_players.visual_macro_temp contents[]

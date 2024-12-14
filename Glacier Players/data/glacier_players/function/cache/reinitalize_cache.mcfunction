@@ -2,4 +2,4 @@
 data remove storage glacier_players.uuids instance
 data modify storage glacier_players.uuids instance prepend value {"this is just here so things dont go to shit":dont_even_try_again}
 #Notify
-tellraw @a ["",{"text":"[Glacier Players] UUID cache reinitalized","color":"dark_red"}]
+tellraw @a ["",{"text":"[>_] Glacier Players | UUID cache reinitalized","color":"dark_red"}]
