@@ -13,6 +13,9 @@
 2. Pick a release to download
 3. Download the .zip file (if present) Otherwise, download the source
 
+## Credits
+[StringLib](https://github.com/CMDred/StringLib/), [gu](https://github.com/gibbsly/gu)
+
 ## Code contribution guidelines
 - **Optimization and Efficiency**
 
