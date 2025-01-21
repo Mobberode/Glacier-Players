@@ -2,10 +2,7 @@
 #You may modify parts of this function to suit your extension
 
 ##Set the content amounts the extension has
-#LEGACY (pre release 18)
-execute unless score #Version glacier_players.release matches 18.. run function ext_template:load_legacy
-#Release >18
-function ext_template:contents/add_lines
+function ext_template:release_check
 
 ##Does your extension have tools? 0 = No, 1 = Yes
 scoreboard players set #ExtToolsEnabled glacier_players.extensions 1

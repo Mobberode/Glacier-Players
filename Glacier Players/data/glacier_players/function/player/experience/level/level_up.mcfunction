@@ -14,7 +14,7 @@ execute if score @s glacier_players.experience_amount >= @s glacier_players.expe
 playsound minecraft:entity.player.levelup player @a ~ ~ ~
 
 ##Extra Indicator
-tellraw @a ["",{"selector":"@s"},{"text": " Leveled up to "},{"score":{"name": "@s","objective": "glacier_players.experience_level"},"color": "green"},{"text": "!","color": "green"}]
+tellraw @a [{selector:"@s"},{text:" Leveled up to "},{score:{name:"@s",objective: glacier_players.experience_level},color:green},{text:"!",color:green}]
 
 ##Extensions
 function #glacier_players:extensions/experience/leveled_up

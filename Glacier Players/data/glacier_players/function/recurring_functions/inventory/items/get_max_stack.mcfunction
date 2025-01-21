@@ -10,4 +10,4 @@ $execute if items entity @s horse.$(player_inv_slot) *[minecraft:max_stack_size=
 ##If the typical max stack sizes dont match. Run the dynamic function
 execute unless score @s glacier_players.inventory_item_max_stack_size matches 1.. run function glacier_players:recurring_functions/inventory/items/get_max_stack_dynamic with storage glacier_players.inventory_macro
 
-#tellraw @a[tag=gp.debug] ["",{"text":"Max Size Slots: "},{"score":{"name": "@s","objective": "glacier_players.inventory_item_max_stack_size"}}]
+#tellraw @a[tag=gp.debug] [{text:"Max Size Slots: "},{score:{name:"@s",objective:glacier_players.inventory_item_max_stack_size}}]

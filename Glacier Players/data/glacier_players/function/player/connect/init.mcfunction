@@ -22,7 +22,7 @@ execute at @s run function glacier_players:player/connect/init_body with storage
 function #glacier_players:extensions/behaviour/player_init/connect
 
 ##Indicate that the glacier has joined the game
-tellraw @a ["",{"selector":"@s","color": "yellow"},{"text": " joined the game","color": "yellow"}]
+tellraw @a [{selector:"@s",color:yellow},{text:" joined the game",color:yellow}]
 #Chat
 function glacier_players:player/connect/connect_speak
 

@@ -1,0 +1,3 @@
+data modify storage glacier_players.visual_macro_temp contents append value {contents:'{"text":"Extension Panic PlaceHolder 1"}',contents:'{"text":"Extension Panic PlaceHolder 2"}',contents:'{"text":"Extension Panic PlaceHolder 3"}',contents:'{"text":"Extension Panic PlaceHolder 4"}',contents:'{"text":"Extension Panic PlaceHolder 5"}',contents:'{"text":"Extension Panic PlaceHolder 6"}',contents:'{"text":"Extension Panic PlaceHolder 7"}',contents:'{"text":"Extension Panic PlaceHolder 8"}',contents:'{"text":"Extension Panic PlaceHolder 9"}',contents:'{"text":"Extension Panic PlaceHolder 10 Advanced!","color":"red"}'}
+
+data modify storage glacier_players.visual_macro line.panic append from storage glacier_players.visual_macro_temp contents[]

@@ -1,6 +1,6 @@
 scoreboard players set @s glacier_players.inventory_saved_partition 3
 ##Check Item
-#tellraw @a[tag=gp.debug] ["",{"score":{"name": "@s","objective": "glacier_players.inventory_slot_number"}}]
+#tellraw @a[tag=gp.debug] [{score:{name:"@s",objective:glacier_players.inventory_slot_number}}]
 
 #Check if current slot has same item
 $execute as $(saved_inventory2_uuid) if items entity @s horse.$(player_inv_slot) *[consumable] unless items entity @s horse.$(player_inv_slot) minecraft:tipped_arrow run function glacier_players:player/hunger/eat/food_inventory/success/component_check with storage glacier_players.inventory_macro

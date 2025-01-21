@@ -1,0 +1,10 @@
+function ext_template:contents/json/line_connect
+function ext_template:contents/json/line_death
+function ext_template:contents/json/line_disconnect
+function ext_template:contents/json/line_idle
+function ext_template:contents/json/line_me
+function ext_template:contents/json/line_panic
+function ext_template:contents/json/line_poll
+function ext_template:contents/json/line_totem_popped
+function ext_template:contents/line_voice
+function ext_template:contents/names

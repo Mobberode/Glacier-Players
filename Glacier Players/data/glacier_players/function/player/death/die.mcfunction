@@ -2,7 +2,7 @@
 execute store result storage glacier_players.macro spawnradius int 1 run gamerule spawnRadius
 
 ##Indicate
-tellraw @a ["",{"selector":"@s"},{"text": " was killed"}]
+tellraw @a [{selector:"@s"},{text:" was killed"}]
 
 ##Chat Chat
 data modify storage minecraft:glacier_players.visual_macro chatter_name set from entity @s CustomName

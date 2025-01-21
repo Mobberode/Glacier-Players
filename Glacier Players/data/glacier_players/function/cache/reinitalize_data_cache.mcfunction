@@ -2,4 +2,4 @@
 data remove storage glacier_players.glacier_data instance
 data modify storage glacier_players.glacier_data instance prepend value {"this is just here so things dont go to shit":dont_even_try_again}
 #Notify
-tellraw @a ["",{"text":"[>_] Glacier Players | Glacier Data cache reinitalized","color":"dark_red"}]
+tellraw @a [{text:"[>_] Glacier Players | Glacier Data cache reinitalized",color:dark_red}]

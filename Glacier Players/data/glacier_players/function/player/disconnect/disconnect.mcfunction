@@ -1,5 +1,5 @@
 ##Indicates the glacier left the game
-tellraw @a ["",{"selector":"@s","color": "yellow"},{"text": " left the game","color": "yellow"}]
+tellraw @a [{selector:"@s",color:yellow},{text:" left the game",color:yellow}]
 
 #Kill all entites related to self
 kill @e[tag=GlacierPlayer.Abnormal_Selected]

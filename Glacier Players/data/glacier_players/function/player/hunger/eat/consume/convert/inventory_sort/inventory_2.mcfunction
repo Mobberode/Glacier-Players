@@ -1,6 +1,6 @@
 scoreboard players set @s glacier_players.inventory_saved_partition 2
 ##Check Item
-#tellraw @a[tag=gp.debug] ["",{"score":{"name": "@s","objective": "glacier_players.inventory_slot_number"}}]
+#tellraw @a[tag=gp.debug] [{score:{name:"@s",objective:glacier_players.inventory_slot_number}}]
 
 #Check if current slot is nothing
 $execute as $(saved_inventory2_uuid) if items entity @s horse.$(player_inv_slot) debug_stick unless score #SpaceSlot glacier_players.inventory_slot_number matches 0.. run function glacier_players:player/hunger/eat/consume/convert/inventory_sort/success/space_found with storage glacier_players.inventory_macro

@@ -1,6 +1,6 @@
 {
   "description": {
-    "text": "Glacier Player Internals - Bed Explosion"
+    text: "Glacier Player Internals - Bed Explosion"
   },
   "supported_items": "#minecraft:enchantable/bow",
   "weight": 1,

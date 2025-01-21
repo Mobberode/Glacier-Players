@@ -1,6 +1,6 @@
-forceload remove all
-forceload add ~ ~
-forceload add 0 0
+#forceload remove all
+#forceload add ~ ~
+#forceload add 0 0
 
 execute store result storage glacier_players.macro pid_num int 1 run scoreboard players get @s glacier_players.pid
 

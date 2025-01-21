@@ -1,5 +1,5 @@
 ##Announce Poll Results
-tellraw @a ["",{"text": "[! POLL RESULTS !]\n","color": "aqua"},{"storage":"glacier_players.visual_macro","nbt":"chat_contents_poll","interpret":true}]
+tellraw @a [{text:"[! POLL RESULTS !] ",color:aqua},{storage:glacier_players.visual_macro,nbt:chat_contents_poll,interpret:true}]
 
 execute store result storage glacier_players.visual_macro decisions_processed int 1 run scoreboard players set #DecisionsProcessed glacier_players.number 0
 scoreboard players set #DecisionsColour glacier_players.number 0

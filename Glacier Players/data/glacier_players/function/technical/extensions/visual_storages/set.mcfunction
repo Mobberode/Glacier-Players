@@ -1,4 +1,4 @@
-tellraw @a ["",{"text": "[>_] GPE Loader | Preparing visual storages","color": "aqua"}]
+tellraw @a [{text:"[>_] GPE Loader | Preparing visual storages",color:aqua}]
 ##Names
 function glacier_players:technical/extensions/visual_storages/names
 ##Lines

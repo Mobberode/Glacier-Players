@@ -135,7 +135,7 @@ scoreboard objectives add glacier_players.data.has_set_spawnpoint dummy
 scoreboard objectives add glacier_players.data.has_set_respawn_anchor dummy
 
 scoreboard objectives add glacier_players.release dummy
-scoreboard players set #Version glacier_players.release 18
+scoreboard players set #Version glacier_players.release 20
 
 ##Make & Modify Teams
 team add GlacierPlayersTeam

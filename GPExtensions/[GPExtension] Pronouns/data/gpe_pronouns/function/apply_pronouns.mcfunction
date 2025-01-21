@@ -1,1 +1,1 @@
-$data merge entity @s {CustomName:'["",{"text":$(gpe_pronouns_name)},{"text":" "},{"text":"($(gpe_pronouns_pronouns))","color": "gray"}]'}
+$data modify entity @s CustomName set value [{text:$(gpe_pronouns_name)},{text:" "},{text:"($(gpe_pronouns_pronouns))",color:gray}]
