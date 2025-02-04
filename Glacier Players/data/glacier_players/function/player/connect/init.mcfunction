@@ -1,11 +1,14 @@
 ##Remove Tag
 tag @s remove GP.Connecting
 
+##Set Name from storage
+data modify entity @s CustomName set from storage glacier_players.visual_macro connecting_name
+
 ##Assign ID
 function glacier_players:technical/pid/begin_id_assign
 
 ##Get pid_num in scoreboard
-execute store result storage glacier_players.macro pid_num int 1 run scoreboard players get @s glacier_players.pid
+execute store result storage glacier_players.macro pid_num int 1 run scoreboard players operation #Saved glacier_players.pid = @s glacier_players.pid
 
 ##Get and Store UUID
 function glacier_players:player/connect/uuid/store with storage glacier_players.macro

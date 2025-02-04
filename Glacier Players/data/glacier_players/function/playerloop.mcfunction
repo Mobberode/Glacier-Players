@@ -9,6 +9,7 @@ function glacier_players:recurring_functions/mmarker_check with storage glacier_
 execute as @e[type=#glacier_players:tnts] positioned as @s run function glacier_players:world/convert_tnt
 
 ##Main function that all Glaciers run
+scoreboard players set #RanForceLoad glacier_players.condition 0
 execute as @e[type=armor_stand,tag=GlacierPlayer,sort=random] run function glacier_players:player/start_player
 
 #Connect

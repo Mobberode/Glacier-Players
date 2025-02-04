@@ -10,7 +10,10 @@ scoreboard objectives add glacier_players.poll_response_delay trigger
 scoreboard objectives add glacier_players.speech_response dummy
 
 #scoreboard objectives add glacier_players.personality dummy
+##PID is for glaciers only
 scoreboard objectives add glacier_players.pid dummy
+##Relation PID is for glaciers and their related entites
+scoreboard objectives add glacier_players.relation_pid dummy
 
 scoreboard objectives add glacier_players.health dummy
 scoreboard objectives add glacier_players.previous_health dummy
