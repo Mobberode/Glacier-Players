@@ -6,7 +6,7 @@ execute unless score #StringLib.Init StringLib.Uninstall matches 1 run return ru
 scoreboard objectives remove StringLib.Uninstall
 
 # Tellraw
-#tellraw @s ["﹌ ",{text:"StringLib >> ","color":"#99EAD6"},"Uninstalled StringLib (v0.2.0)"]
+tellraw @s ["﹌ ",{text:"StringLib >> ","color":"#99EAD6"},"Uninstalled StringLib (v0.2.0)"]
 
 # Remove scoreboards & data storages
 scoreboard objectives remove StringLib

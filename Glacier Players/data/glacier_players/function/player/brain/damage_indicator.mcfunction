@@ -14,4 +14,4 @@ execute if score @s glacier_players.has_undying_totem > #Condition glacier_playe
 execute if score @s glacier_players.health matches ..0 run return run function glacier_players:player/death/die_init
 
 ##Chat in Panic Type
-execute if score @s glacier_players.health matches ..5 run function glacier_players:player/speech/types/panic/condition
+execute if score @s glacier_players.health matches ..5 unless score #Talk glacier_players.config matches 0 run function glacier_players:player/speech/types/panic/condition

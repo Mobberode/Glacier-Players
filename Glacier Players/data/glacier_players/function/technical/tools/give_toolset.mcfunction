@@ -11,6 +11,4 @@ item replace entity @s hotbar.2 with air
 item replace entity @s hotbar.3 with air
 item replace entity @s hotbar.4 with air
 item replace entity @s hotbar.5 with air
-
-##Extensions
-#function #glacier_players:extensions/tools/toolbox_types
+item replace entity @s hotbar.6 with air

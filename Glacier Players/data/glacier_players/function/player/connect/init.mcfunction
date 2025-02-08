@@ -27,7 +27,7 @@ function #glacier_players:extensions/behaviour/player_init/connect
 ##Indicate that the glacier has joined the game
 tellraw @a [{selector:"@s",color:yellow},{text:" joined the game",color:yellow}]
 #Chat
-function glacier_players:player/connect/connect_speak
+execute unless score #Talk glacier_players.config matches 0 run function glacier_players:player/connect/connect_speak
 
 ##If Poll
 execute if score #Timer glacier_players.poll_decision matches 1.. run function glacier_players:player/speech/poll/player_set

@@ -1,0 +1,2 @@
+execute if score @s glacier_players.voice_timer matches 1.. run function glacier_players:player/speech/types/voices/microphone_visual_loop
+execute if score @s glacier_players.rng matches 0 unless score #Talk glacier_players.config matches 0 run function glacier_players:player/speech/check

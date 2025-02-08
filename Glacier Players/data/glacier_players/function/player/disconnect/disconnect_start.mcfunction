@@ -6,7 +6,7 @@ function glacier_players:recurring_functions/dual_macros_all with storage glacie
 function glacier_players:player/disconnect/remove_uuids with storage glacier_players.abnormal_macro
 
 ##Chat
-function glacier_players:player/disconnect/disconnect_speak
+execute unless score #Talk glacier_players.config matches 0 run function glacier_players:player/disconnect/disconnect_speak
 
 ##Disconnect
 function glacier_players:player/disconnect/disconnect

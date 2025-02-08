@@ -140,6 +140,9 @@ scoreboard objectives add glacier_players.data.has_set_respawn_anchor dummy
 scoreboard objectives add glacier_players.release dummy
 scoreboard players set #Version glacier_players.release 20
 
+#Init Settings
+execute unless score #Init glacier_players.config matches 1.. run function glacier_players:init_config
+
 ##Make & Modify Teams
 team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never
