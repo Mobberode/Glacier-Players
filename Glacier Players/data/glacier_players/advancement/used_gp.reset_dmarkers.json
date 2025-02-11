@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "trigger": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": {"gp.reset_dmarkers":true}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {"function": "glacier_players:technical/tools/reset_dmarkers"}
+  }
+  

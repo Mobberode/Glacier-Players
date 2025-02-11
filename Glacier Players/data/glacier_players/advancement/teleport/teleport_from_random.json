@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "trigger": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": {"gp.teleport_from_random":true}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {"function": "glacier_players:technical/tools/teleport_from_random"}
+  }
+  
