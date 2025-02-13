@@ -17,5 +17,7 @@ execute if score #Build glacier_players.config matches 1.. run item replace enti
 execute unless score #Talk glacier_players.config matches 1 run item replace entity @s hotbar.6 with poisonous_potato[consumable={animation:none,consume_seconds:32000,has_consume_particles:false,sound:ui.button.click},minecraft:custom_data={gp.config_talk:true},minecraft:custom_name={text:"Toggle Talking",color:red},item_model=red_candle]
 execute if score #Talk glacier_players.config matches 1.. run item replace entity @s hotbar.6 with poisonous_potato[consumable={animation:none,consume_seconds:32000,has_consume_particles:false,sound:ui.button.click},minecraft:custom_data={gp.config_talk:true},minecraft:custom_name={text:"Toggle Talking",color:green},item_model=green_candle]
 
-item replace entity @s hotbar.7 with air
+execute unless score #ForceLoad glacier_players.config matches 1 run item replace entity @s hotbar.7 with poisonous_potato[consumable={animation:none,consume_seconds:32000,has_consume_particles:false,sound:ui.button.click},minecraft:custom_data={gp.config_forceload:true},minecraft:custom_name={text:"Toggle Forceload",color:red},item_model=red_candle]
+execute if score #ForceLoad glacier_players.config matches 1.. run item replace entity @s hotbar.7 with poisonous_potato[consumable={animation:none,consume_seconds:32000,has_consume_particles:false,sound:ui.button.click},minecraft:custom_data={gp.config_forceload:true},minecraft:custom_name={text:"Toggle Forceload",color:green},item_model=green_candle]
+
 item replace entity @s hotbar.8 with air

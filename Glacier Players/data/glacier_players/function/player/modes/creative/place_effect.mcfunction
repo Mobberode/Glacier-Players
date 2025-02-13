@@ -214,6 +214,9 @@ execute if items entity @s container.0 #glacier_players:blocks/place_types/effec
 
 execute if items entity @s container.0 #glacier_players:blocks/place_types/effect_types/wool run return run function glacier_players:player/modes/creative/effects/wool
 
+###Has special properties
+execute if items entity @s container.0 #glacier_players:blocks/place_types/crops run return run function glacier_players:player/modes/creative/effects/crops
+
 #Extensions
 execute if items entity @s container.0 #glacier_players:blocks/place_types/effect_types/custom run return run function #glacier_players:extensions/creative/effects_custom
 

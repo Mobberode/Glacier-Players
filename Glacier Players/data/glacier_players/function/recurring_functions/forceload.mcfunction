@@ -1,3 +1,2 @@
-scoreboard players set #RanForceLoad glacier_players.condition 1
-forceload remove all
-forceload add 0 0
+execute if score #RanForceLoad glacier_players.condition matches 0 run function glacier_players:recurring_functions/forceload_init
+forceload add ~ ~

@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "trigger": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": {"gp.config_forceload":true}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {"function": "glacier_players:technical/tools/configs/forceload/forceload"}
+  }
+  
