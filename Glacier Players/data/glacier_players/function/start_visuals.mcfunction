@@ -1,0 +1,2 @@
+tellraw @s [{text:"[>_] Glacier Players Initalized! ",color:gold},{storage:glacier_players.visual_macro,nbt:startup}]
+tellraw @s [{text:"[!] Credits: ",color:blue},{storage:glacier_players.visual_macro,nbt:"credits[]",interpret:true}]
