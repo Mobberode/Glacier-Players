@@ -24,6 +24,8 @@ scoreboard objectives add glacier_players.x_pos dummy
 scoreboard objectives add glacier_players.y_pos dummy
 scoreboard objectives add glacier_players.z_pos dummy
 
+scoreboard objectives add glacier_players.airtime dummy
+
 scoreboard objectives add glacier_players.x_respawn_pos dummy
 scoreboard objectives add glacier_players.y_respawn_pos dummy
 scoreboard objectives add glacier_players.z_respawn_pos dummy
