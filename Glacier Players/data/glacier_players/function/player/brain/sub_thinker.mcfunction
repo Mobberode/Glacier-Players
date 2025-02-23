@@ -13,8 +13,4 @@ function glacier_players:player/brain/damagecheck
 #function glacier_players:player/recognition/start
 
 ##Debug (Small Performance Cost!)
-#execute if predicate glacier_players:20_tick_period run data modify storage glacier_players.macro debug_info_name set from entity @s CustomName
-#execute if predicate glacier_players:20_tick_period run function glacier_players:technical/tools/debug/name_info with storage glacier_players.macro
-
-#data modify storage glacier_players.macro debug_info_name set from entity @s CustomName
-#function glacier_players:technical/tools/debug/name_info with storage glacier_players.macro
+execute if score #Debug_GlacierStats glacier_players.config matches 1 run execute if predicate glacier_players:20_tick_period run function glacier_players:technical/tools/debug/name_info
