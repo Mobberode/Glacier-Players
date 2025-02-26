@@ -1,0 +1,1 @@
+execute as @e[tag=GlacierPlayer] run function glacier_players:player/disconnect/disconnect_start

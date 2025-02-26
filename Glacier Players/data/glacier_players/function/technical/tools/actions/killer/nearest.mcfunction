@@ -1,0 +1,1 @@
+execute as @n[tag=GlacierPlayer] run function glacier_players:player/death/die_init

@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "trigger": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": {"gp_action":"back"}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {"function": "glacier_players:technical/tools/back"}
+  }

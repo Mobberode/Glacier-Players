@@ -1,0 +1,1 @@
+tp @e[tag=GlacierPlayer,limit=1,sort=random] @s

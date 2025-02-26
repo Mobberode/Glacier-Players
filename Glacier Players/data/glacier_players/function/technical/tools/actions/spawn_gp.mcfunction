@@ -1,0 +1,1 @@
+function glacier_players:player/connect/connect_start
