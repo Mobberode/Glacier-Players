@@ -1,5 +1,5 @@
 #Test
-data modify entity @s HandItems[0] set from storage glacier_players.inventory_macro picked_item
+data modify entity @s equipment.mainhand set from storage glacier_players.inventory_macro picked_item
 
 ##Attempt to Transfer the item to the self's inventory by checking each slot
 scoreboard players set #SortedItem glacier_players.condition 0

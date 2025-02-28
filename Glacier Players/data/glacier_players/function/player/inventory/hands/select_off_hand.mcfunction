@@ -1,2 +1,2 @@
-$execute unless items entity $(saved_hotbar_uuid) horse.$(item_select_hand) minecraft:debug_stick run data modify entity @s HandItems[1] set from entity $(saved_hotbar_uuid) Items[$(item_select_hand)]
+$execute unless items entity $(saved_hotbar_uuid) horse.$(item_select_hand) minecraft:debug_stick run data modify entity @s equipment.offhand set from entity $(saved_hotbar_uuid) Items[$(item_select_hand)]
 msg @a[tag=gp.debug] off hand select
