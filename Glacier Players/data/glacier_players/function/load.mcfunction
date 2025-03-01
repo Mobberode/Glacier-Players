@@ -160,4 +160,6 @@ execute unless score #Done glacier_players.initalized_gp_data matches 1 run data
 scoreboard players set #Done glacier_players.initalized_gp_data 1
 
 ##Start the Data Pack
-schedule function glacier_players:start 3s
+schedule function glacier_players:start 1.5s
+##BugFixer
+function glacier_players:bugfixer

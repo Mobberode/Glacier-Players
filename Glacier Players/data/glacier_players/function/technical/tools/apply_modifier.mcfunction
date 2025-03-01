@@ -1,0 +1,9 @@
+item modify entity @s hotbar.0 glacier_players:toolset_default
+item modify entity @s hotbar.1 glacier_players:toolset_default
+item modify entity @s hotbar.2 glacier_players:toolset_default
+item modify entity @s hotbar.3 glacier_players:toolset_default
+item modify entity @s hotbar.4 glacier_players:toolset_default
+item modify entity @s hotbar.5 glacier_players:toolset_default
+item modify entity @s hotbar.6 glacier_players:toolset_default
+item modify entity @s hotbar.7 glacier_players:toolset_default
+item modify entity @s hotbar.8 glacier_players:toolset_default
