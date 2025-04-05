@@ -14,4 +14,4 @@ data modify entity @s Items[] merge from block 0 0 0 Items[]
 execute store result storage glacier_players.inventory_macro picked_item.count int 1 run scoreboard players get @s glacier_players.inventory_slot_count
 
 ##Reprocess
-function glacier_players:player/inventory/item/item_reprocess
+function glacier_players:player/inventory_reworked/item/reprocess

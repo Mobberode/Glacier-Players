@@ -1,3 +1,4 @@
+scoreboard players set #NoDrop glacier_players.config 0
 scoreboard players set #ItemFound glacier_players.condition 0
 
 data modify storage glacier_players.inventory_macro saved_glacier_uuid set from storage glacier_players.macro saved_glacier_uuid

@@ -1,2 +1,0 @@
-data modify storage minecraft:glacier_players.inventory_macro item_book_contents set from block 0 0 0  Items[].components.minecraft:written_book_content.pages
-function glacier_players:player/inventory/item/books/books_content with storage glacier_players.inventory_macro

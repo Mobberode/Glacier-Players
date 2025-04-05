@@ -1,6 +1,6 @@
 function glacier_players:player/inventory_reworked/item/internal/check/inventory_contents/internal_fill with storage glacier_players.inventory_macro
 
 #Check if current slot is empty
-execute if items block 0 0 0 container.* debug_stick run return run function glacier_players:player/inventory_reworked/item/internal/check/success/override_empty_slot with storage glacier_players.inventory_macro
+execute unless items block 0 0 0 container.* * run return run function glacier_players:player/inventory_reworked/item/internal/check/success/override_empty_slot with storage glacier_players.inventory_macro
 #Check if current slot has same item
-$execute if items block 0 0 0 container.* $(picked_item_id) run function glacier_players:player/inventory/item/check/success/same_item with storage glacier_players.inventory_macro
+$execute if items block 0 0 0 container.* $(picked_item_id) run function glacier_players:player/inventory_reworked/item/internal/check/success/same_item with storage glacier_players.inventory_macro
