@@ -14,7 +14,7 @@ $item replace entity @s horse.$(player_inv_slot) with debug_stick
 $data modify entity $(saved_hotbar_uuid) Items[9] set from storage glacier_players.inventory_macro temp_item
 
 ##Apply to alias
-$data modify entity $(saved_alias_uuid) HandItems[1] set from storage glacier_players.inventory_macro temp_item
+$data modify entity $(saved_alias_uuid) equipment.offhand set from storage glacier_players.inventory_macro temp_item
 
 ##Remove storage
 data remove storage glacier_players.inventory_macro temp_item
