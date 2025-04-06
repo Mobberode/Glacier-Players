@@ -8,7 +8,7 @@ execute store result block 0 0 0 Items[].count int 1 run scoreboard players get 
 tellraw @a[tag=gp.debug] [{score:{name:"#Temp",objective:glacier_players.number},color:gold},{score:{name:"#Temp2",objective:glacier_players.number},color:yellow}]
 
 ##Modify slot
-data modify entity @s Items[] merge from block 0 0 0 Items[]
+data modify entity @s Items append from block 0 0 0 Items[]
 
 ##Finish by setting storage
 execute store result storage glacier_players.inventory_macro picked_item.count int 1 run scoreboard players get @s glacier_players.inventory_slot_count

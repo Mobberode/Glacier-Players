@@ -1,6 +1,3 @@
-##Give tag to self
-scoreboard players set #NextItem glacier_players.number 1
-
 #Debug
 msg @a[tag=gp.debug] ran universal component check
 
@@ -11,7 +8,6 @@ data modify storage glacier_players.inventory_macro components set value ''
 data modify storage glacier_players.inventory_macro components set from block 0 0 0 Items[].components
 
 #Components
-$execute unless data storage glacier_players.inventory_macro {components:$(picked_item_components)} run return fail
+tellraw @a [{storage:glacier_players.inventory_macro,nbt:components,color:red},{storage:glacier_players.inventory_macro,nbt:picked_item_components,color:blue}]
 
-##Remove if check fails
-scoreboard players set #NextItem glacier_players.number 0
+$execute unless data storage glacier_players.inventory_macro {components:$(picked_item_components)} run scoreboard players set #NextItem glacier_players.number 1

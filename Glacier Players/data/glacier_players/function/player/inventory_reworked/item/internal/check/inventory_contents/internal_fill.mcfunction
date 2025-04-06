@@ -1,2 +1,5 @@
 data remove block 0 0 0 Items
-$item replace block 0 0 0 container.0 from entity @s horse.$(player_inv_slot)
+$data modify block 0 0 0 Items[] set from entity @s Items[{Slot:$(player_inv_slot)b}]
+
+data modify storage glacier_players.inventory_macro test set from block 0 0 0 Items
+tellraw @a [{storage:glacier_players.inventory_macro,nbt:test}]
