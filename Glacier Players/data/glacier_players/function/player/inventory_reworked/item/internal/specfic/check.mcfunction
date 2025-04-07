@@ -1,2 +1,0 @@
-##Check Components
-function glacier_players:player/inventory_reworked/item/internal/specfic/universal/component_check with storage glacier_players.inventory_macro

@@ -1,5 +1,5 @@
 ##Modify storage to have offhand slot
-data modify storage minecraft:glacier_players.inventory_macro picked_item merge value {Slot:9b}
+data modify storage minecraft:glacier_players.inventory_macro picked_item.Slot set value 9
 
 ##Store into offhand
-data modify entity @s Items[9] set from storage glacier_players.inventory_macro picked_item
+data modify entity @s Items append from storage glacier_players.inventory_macro picked_item

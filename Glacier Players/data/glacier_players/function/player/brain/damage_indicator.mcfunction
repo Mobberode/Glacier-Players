@@ -7,9 +7,6 @@ scoreboard players set @s glacier_players.knockbacked_timer 20
 
 function #glacier_players:extensions/damage/took_damage
 
-##Totem
-execute if score @s glacier_players.has_undying_totem > #Condition glacier_players.has_undying_totem run return run function glacier_players:player/death/totem_pop
-
 ##Die and Respawn
 execute if score @s glacier_players.health matches ..0 run return run function glacier_players:player/death/die_init
 

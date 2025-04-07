@@ -1,3 +1,0 @@
-$execute as $(saved_glacier_uuid) run scoreboard players set @s glacier_players.inventory_active_entites 3
-summon donkey ~ ~ ~ {Invulnerable:true,Silent:true,Tags:["expai_ai_changes_disabled","GP.Invs","GP.Invs_Fill","GP.InvSection3"],NoAI:true,ChestedHorse:true,attributes:[{id:"scale",base:0.1}],DeathLootTable:"minecraft:empty",PersistenceRequired:true}
-execute as @e[limit=1,tag=GP.Invs_Fill] run function glacier_players:player/inventory/inventory_initalize

@@ -1,0 +1,2 @@
+$execute unless score @s glacier_players.inventory_active_entites matches 2.. as $(saved_hotbar_uuid) if items entity @s horse.6 * run return run function glacier_players:player/inventory/entities/summon_second with storage glacier_players.macro
+$execute unless score @s glacier_players.inventory_active_entites matches 3.. as $(saved_inventory_uuid) if items entity $(saved_inventory_uuid) horse.12 * run function glacier_players:player/inventory/entities/summon_third with storage glacier_players.macro

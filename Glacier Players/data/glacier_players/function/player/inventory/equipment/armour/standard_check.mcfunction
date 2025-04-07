@@ -7,7 +7,7 @@ execute if items entity @s weapon.mainhand #glacier_players:armour/diamond run p
 execute if items entity @s weapon.mainhand #glacier_players:armour/turtle run playsound item.armor.equip_turtle player @a ~ ~ ~ 1 1
 
 ##Extensions
-function #glacier_players:extensions/inventory/equipment/armour_sounds with storage glacier_players.inventory_macro
+function #glacier_players:extensions/inventory_reworked/equipment/armour_sounds with storage glacier_players.inventory_macro
 
 ##Check suitable slots
 execute if items entity @s weapon.mainhand #glacier_players:armour/helmet run return run function glacier_players:player/inventory/equipment/armour/apply_to_helmet with storage glacier_players.macro

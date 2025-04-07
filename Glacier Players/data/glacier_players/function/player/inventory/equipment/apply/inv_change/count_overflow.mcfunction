@@ -7,7 +7,7 @@ execute store result storage glacier_players.inventory_macro picked_item.count i
 tellraw @a [{score:{name:"#TMA",objective:glacier_players.number},color:gold},{score:{name: "#Amount",objective:glacier_players.number}}]
 
 ##Reprocess
-function glacier_players:player/inventory/item/item_reprocess
+function glacier_players:player/inventory/item/reprocess
 
 ##Remove tag so picked item gets moved somewhere else
 scoreboard players set #SortedItem glacier_players.condition 0

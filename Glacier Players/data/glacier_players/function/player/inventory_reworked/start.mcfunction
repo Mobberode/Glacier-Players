@@ -1,1 +1,0 @@
-execute unless score @s glacier_players.inventory_cant_pickup matches 1.. run function glacier_players:player/inventory_reworked/search

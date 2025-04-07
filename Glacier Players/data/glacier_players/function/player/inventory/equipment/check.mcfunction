@@ -11,6 +11,6 @@ execute if items entity @s weapon.mainhand totem_of_undying run return run funct
 execute if items entity @s weapon.mainhand #glacier_players:armour/global run return run function glacier_players:player/inventory/equipment/armour/armour_check
 
 ##Extensions
-execute if items entity @s weapon.mainhand #glacier_players:tools/misc/custom run return run function #glacier_players:extensions/inventory/equipment/misc with storage glacier_players.inventory_macro
+execute if items entity @s weapon.mainhand #glacier_players:tools/misc/custom run return run function #glacier_players:extensions/inventory_reworked/equipment/misc with storage glacier_players.inventory_macro
 
 scoreboard players set #SortedItem glacier_players.condition 0
