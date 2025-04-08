@@ -1,4 +1,5 @@
 execute store result storage glacier_players.inventory_macro player_inv_slot int 1 run scoreboard players add @s glacier_players.inventory_slot_number 1
+scoreboard players operation #Value glacier_players.inventory_saved_slot = @s glacier_players.inventory_slot_number
 
 ##Check Item
 tellraw @a[tag=gp.debug] [{score:{name:"@s",objective:glacier_players.inventory_slot_number}}]

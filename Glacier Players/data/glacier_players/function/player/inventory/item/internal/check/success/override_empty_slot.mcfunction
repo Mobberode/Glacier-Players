@@ -1,4 +1,3 @@
-$scoreboard players set $(saved_glacier_uuid) glacier_players.inventory_saved_slot $(player_inv_slot)
 ##Store Item into the Hotbar
 msg @a[tag=gp.debug] empty slot overridden
 

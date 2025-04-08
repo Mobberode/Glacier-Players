@@ -1,4 +1,3 @@
-$scoreboard players operation $(saved_glacier_uuid) glacier_players.inventory_saved_slot = @s glacier_players.inventory_slot_number
 ##Remove Tag
 scoreboard players set #NextItem glacier_players.number 0
 

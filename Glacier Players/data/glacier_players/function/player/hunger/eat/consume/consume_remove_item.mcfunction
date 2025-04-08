@@ -12,5 +12,5 @@ $execute store result entity @s Items[$(saved_slot)].count int 1 run scoreboard 
 ##Find if food can transition into something (stew -> bowl)
 function glacier_players:player/hunger/eat/consume/convert/food_tree with storage glacier_players.inventory_macro
 
-##If amount is 0 or less. Replace the item with a debug stick
+##If amount is 0 or less. Empty
 execute if score #Stored glacier_players.inventory_slot_count matches ..0 run function glacier_players:player/hunger/eat/consume/remove with storage glacier_players.inventory_macro

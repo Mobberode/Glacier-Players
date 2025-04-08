@@ -17,6 +17,7 @@ tag @s remove GlacierPlayer.Drinking_Honey
 
 ##Store Parition and Slot
 execute store result storage glacier_players.inventory_macro saved_partition int 1 run scoreboard players get @s glacier_players.inventory_saved_partition
+
 execute store result storage glacier_players.inventory_macro saved_slot int 1 run scoreboard players get @s glacier_players.inventory_saved_slot
 
 ##Run special code for special foods

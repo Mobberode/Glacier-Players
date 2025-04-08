@@ -1,12 +1,12 @@
 ##Give Tag to self for future references
 tag @s add GlacierPlayer.Inventory_SelectedFood
+scoreboard players set #ComponentsFound glacier_players.condition 0
 
-$data modify storage glacier_players.inventory_macro saved_item_id set from entity @s Items[$(player_inv_slot)].id
-$scoreboard players set $(saved_glacier_uuid) glacier_players.inventory_saved_slot $(player_inv_slot)
-##Check
-$execute store success score #Components glacier_players.rng run data get entity @s Items[$(player_inv_slot)].components.minecraft:food
+##Get this data if no components are added in
+data modify storage glacier_players.inventory_macro saved_item_id set from block 0 0 0 Items[].id
 
-##Fail (0)
-$execute if score #Components glacier_players.rng matches 0 as $(saved_glacier_uuid) run return run function glacier_players:player/hunger/eat/food_inventory/success/get/get_set_food_info with storage glacier_players.inventory_macro
-##Success (1)
-function glacier_players:player/hunger/eat/food_inventory/success/get/get_food_components with storage glacier_players.inventory_macro
+##Data check instead of item check because item checks dont know if component was added in or not
+execute store result score #Components glacier_players.condition if data block 0 0 0 Items[].components.minecraft:food
+
+##Components success
+execute if score #Components glacier_players.condition matches 1.. run function glacier_players:player/inventory/item/internal/food/success/get/get_food_components with storage glacier_players.inventory_macro
