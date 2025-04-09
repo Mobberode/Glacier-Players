@@ -5,7 +5,7 @@ scoreboard players remove #Blocks glacier_players.number 1
 
 ##Check
 #Remove slot
-execute if score #Blocks glacier_players.number matches ..0 run return run function glacier_players:player/inventory/item/internal/creative/remove_block
+execute if score #Blocks glacier_players.number matches ..0 run return run function glacier_players:player/inventory/item/internal/shared/empty_slot
 
 #Update Slot (else)
-function glacier_players:player/inventory/item/internal/creative/update_slot with storage glacier_players.inventory_macro
+function glacier_players:player/inventory/item/internal/shared/update_slot with storage glacier_players.inventory_macro

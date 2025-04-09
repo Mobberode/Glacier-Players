@@ -1,3 +1,5 @@
+function glacier_players:player/waypoint/check
+
 function glacier_players:recurring_functions/set_hunger
 function glacier_players:recurring_functions/set_player_attributes
 function glacier_players:recurring_functions/set_experience

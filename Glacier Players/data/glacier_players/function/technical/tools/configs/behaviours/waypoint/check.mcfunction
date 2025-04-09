@@ -1,0 +1,2 @@
+execute if score #UseLocatorBar glacier_players.config matches 1 run return run function glacier_players:technical/tools/configs/behaviours/waypoint/enable
+execute if score #UseLocatorBar glacier_players.config matches 0 run return run function glacier_players:technical/tools/configs/behaviours/waypoint/disable

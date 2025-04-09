@@ -1,19 +1,19 @@
-##Get Components
-$execute store result score #ProcessStewTime glacier_players.number run data get entity @s Items[$(saved_slot)].components.minecraft:suspicious_stew_effects[$(susstewnum)].duration
-$data modify storage glacier_players.inventory_macro sussteweffect set from entity @s Items[$(saved_slot)].components.minecraft:suspicious_stew_effects[$(susstewnum)].id
+##Store Components
+data modify storage glacier_players.inventory_macro suspicious_stew_effects set from block 0 0 0 Items[].components.minecraft:suspicious_stew_effects[-1]
+#Get
+execute store result score #ProcessStewTime glacier_players.number run data get storage glacier_players.inventory_macro suspicious_stew_effects.duration
+data modify storage glacier_players.inventory_macro sussteweffect set from storage glacier_players.inventory_macro suspicious_stew_effects.id
 
-##Default Time if less than 1 second
-execute if score #ProcessStewTime glacier_players.number matches ..19 run scoreboard players set #ProcessStewTime glacier_players.number 100
+##Fallback to 20t if less than 20t (duration)
+execute if score #ProcessStewTime glacier_players.number matches ..19 run scoreboard players set #ProcessStewTime glacier_players.number 20
 
 ##Convert Ticks to Seconds
-scoreboard players reset #Seconds glacier_players.number
-function glacier_players:player/hunger/eat/food_inventory/maths/convert_ticks_to_seconds_stew with storage glacier_players.inventory_macro
+execute store result storage glacier_players.inventory_macro susstewduration int 1 run scoreboard players operation #ProcessStewTime glacier_players.number /= #Ticks glacier_players.number
 
-##Give Effects
-$execute as $(saved_glacier_uuid) run function glacier_players:player/hunger/data/food/on_consume/suspicious_stew/effect with storage glacier_players.inventory_macro
-
-#Tick up
-execute store result storage glacier_players.inventory_macro susstewnum int 1 run scoreboard players add #ProcessedStewEffects glacier_players.number 1
+##Give Effects to self
+function glacier_players:player/hunger/data/food/on_consume/suspicious_stew/effect with storage glacier_players.inventory_macro
 
 ##Loop
-execute unless score #ProcessedStewEffects glacier_players.number >= #StewEffects glacier_players.number run function glacier_players:player/hunger/data/food/on_consume/suspicious_stew/give_effects with storage glacier_players.inventory_macro
+data remove block 0 0 0 Items[].components.minecraft:suspicious_stew_effects[-1]
+
+execute if data block 0 0 0 Items[].components.minecraft:suspicious_stew_effects[-1].duration run function glacier_players:player/hunger/data/food/on_consume/suspicious_stew/give_effects

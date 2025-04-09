@@ -1,2 +1,0 @@
-##Update Slot
-$item modify entity @s horse.$(player_inv_slot) {"function":"minecraft:set_count","count":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#Blocks"},"score":"glacier_players.number"},"conditions":[]}

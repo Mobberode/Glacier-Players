@@ -139,6 +139,8 @@ scoreboard objectives add glacier_players.initalized_gp_data dummy
 scoreboard objectives add glacier_players.data.has_set_spawnpoint dummy
 scoreboard objectives add glacier_players.data.has_set_respawn_anchor dummy
 
+scoreboard objectives add glacier_players.has_waypoint dummy
+
 scoreboard objectives add glacier_players.release dummy
 scoreboard players set #Version glacier_players.release 20
 

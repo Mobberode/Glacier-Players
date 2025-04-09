@@ -1,0 +1,1 @@
+execute as @e[tag=GlacierPlayer] run attribute @s waypoint_transmit_range modifier add glacier_players:blocked_transmit -1 add_multiplied_total

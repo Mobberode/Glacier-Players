@@ -1,3 +1,2 @@
-$data modify entity @s Items[$(saved_slot)].id set value "minecraft:bowl"
-$data remove entity @s Items[$(saved_slot)].components
+$item replace entity @s horse.$(saved_slot) with bowl
 scoreboard players set #Stored glacier_players.inventory_slot_count 1

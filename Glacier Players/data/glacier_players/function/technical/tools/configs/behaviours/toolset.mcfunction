@@ -20,3 +20,6 @@ execute if score #Inventory glacier_players.config matches 1.. run item replace 
 
 execute unless score #Hunger glacier_players.config matches 1 run item replace entity @s hotbar.7 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/hunger/hunger"},custom_name={text:"Toggle Hunger",color:red},item_model=red_candle]
 execute if score #Hunger glacier_players.config matches 1.. run item replace entity @s hotbar.7 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/hunger/hunger"},custom_name={text:"Toggle Hunger",color:green},item_model=green_candle]
+
+execute unless score #UseLocatorBar glacier_players.config matches 1 run item replace entity @s hotbar.8 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/waypoint/run"},custom_name={text:"Toggle Locator Bar",color:red},item_model=red_candle]
+execute if score #UseLocatorBar glacier_players.config matches 1.. run item replace entity @s hotbar.8 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/waypoint/run"},custom_name={text:"Toggle Locator Bar",color:green},item_model=green_candle]
