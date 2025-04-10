@@ -1,0 +1,2 @@
+scoreboard players set #SummonedEntity glacier_players.condition 1
+summon donkey ~ ~ ~ {Invulnerable:true,Silent:true,Tags:["expai_ai_changes_disabled","GP.Invs","GP.Invs.Init","GP.InvSection1"],NoAI:true,ChestedHorse:true,attributes:[{id:"scale",base:0.1}],DeathLootTable:"minecraft:empty",PersistenceRequired:true}

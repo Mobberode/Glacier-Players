@@ -1,7 +1,6 @@
 item replace entity @s hotbar.0 with poisonous_potato[custom_data={gp_action:"back",gp_return_function:"glacier_players:technical/tools/configs/toolset"},custom_name={text:"Back Out",color:red},item_model=barrier]
 
-execute unless score #Permadeath glacier_players.config matches 1 run item replace entity @s hotbar.1 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/death/permadeath"},custom_name={text:"Toggle Permadeath",color:red},item_model=red_candle]
-execute if score #Permadeath glacier_players.config matches 1.. run item replace entity @s hotbar.1 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/death/permadeath"},custom_name={text:"Toggle Permadeath",color:green},item_model=green_candle]
+item replace entity @s hotbar.1 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/pages/death/toolset"},custom_name={text:"Death Configs",color:aqua},item_model=skeleton_skull]
 
 execute unless score #Build glacier_players.config matches 1 run item replace entity @s hotbar.2 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/build/build"},custom_name={text:"Toggle Building",color:red},item_model=red_candle]
 execute if score #Build glacier_players.config matches 1.. run item replace entity @s hotbar.2 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/build/build"},custom_name={text:"Toggle Building",color:green},item_model=green_candle]

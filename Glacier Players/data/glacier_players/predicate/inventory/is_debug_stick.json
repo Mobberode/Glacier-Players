@@ -1,7 +1,0 @@
-{
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "nbt": "{Age:0s,Item:{id:\"minecraft:debug_stick\"}}"
-    }
-  }  

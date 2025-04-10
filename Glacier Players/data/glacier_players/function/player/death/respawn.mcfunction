@@ -4,8 +4,8 @@ summon piglin_brute ~ ~ ~ {attributes:[{id:"scale",base:0.93},{id:"max_health",b
 ##Respawn Player
 summon armor_stand ~ ~ ~ {CustomNameVisible:true,Tags:["GlacierPlayer","glacier_players.processed_id","GP.DeathProcess"],Silent:true,Invulnerable:true,ShowArms:true,DisabledSlots:1,attributes:[{id:"scale",base:0.9113924}],equipment:{}}
 
-##Respawn Partition 1
-summon donkey ~ ~ ~ {Invulnerable:true,Silent:true,Tags:["expai_ai_changes_disabled","GP.Invs","GP.Invs.Init","GP.InvSection1"],NoAI:true,ChestedHorse:true,attributes:[{id:"scale",base:0.1}],DeathLootTable:"minecraft:empty",PersistenceRequired:true}
+##Respawn Partitions
+function glacier_players:player/death/summon_inventory
 
 ##Run functions with entites selected
 function glacier_players:player/death/respawn_set with storage glacier_players.abnormal_macro

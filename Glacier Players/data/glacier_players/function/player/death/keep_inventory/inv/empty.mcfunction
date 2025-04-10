@@ -1,0 +1,15 @@
+item modify entity @s horse.0 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.1 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.2 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.3 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.4 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.5 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.6 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.7 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.8 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.9 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.10 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.11 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.12 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.13 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}
+item modify entity @s horse.14 {"function":"minecraft:set_count","count":{"type":"minecraft:constant","value":-1}}

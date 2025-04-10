@@ -1,5 +1,5 @@
 ##Get Scores
-execute store result score @s glacier_players.inventory_slot_count run data get storage glacier_players.inventory_macro picked_item.count
+execute store result score @s glacier_players.inventory_slot_count run data get storage glacier_players.inventory_macro processed_item.count
 
 execute store result score @s glacier_players.inventory_slot_comparing_count run data get block 0 0 0 Items[].count
 

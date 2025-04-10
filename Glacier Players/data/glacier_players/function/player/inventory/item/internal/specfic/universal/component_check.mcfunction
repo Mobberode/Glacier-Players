@@ -8,4 +8,4 @@ data modify storage glacier_players.inventory_macro components set value ''
 data modify storage glacier_players.inventory_macro components set from block 0 0 0 Items[].components
 
 #Components
-$execute unless data storage glacier_players.inventory_macro {components:$(picked_item_components)} run scoreboard players set #NextItem glacier_players.number 1
+$execute unless data storage glacier_players.inventory_macro {components:$(processed_item_components)} run scoreboard players set #NextItem glacier_players.number 1

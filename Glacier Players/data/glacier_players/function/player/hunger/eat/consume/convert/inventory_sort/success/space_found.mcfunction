@@ -1,1 +1,0 @@
-$execute store result storage glacier_players.inventory_macro item_convert_slot int 1 run scoreboard players set #SpaceSlot glacier_players.inventory_slot_number $(player_inv_slot)

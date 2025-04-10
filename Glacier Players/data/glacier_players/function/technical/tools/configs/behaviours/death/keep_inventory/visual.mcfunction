@@ -1,0 +1,3 @@
+execute if score #KeepInventory glacier_players.config matches 0 run return run tellraw @s [{text:"[C] Mode: 0 (Force No Keep Inventory)",color:gold}]
+execute if score #KeepInventory glacier_players.config matches 1 run return run tellraw @s [{text:"[C] Mode: 1 (Force Keep Inventory)",color:gold}]
+execute if score #KeepInventory glacier_players.config matches 2 run return run tellraw @s [{text:"[C] Mode: 2 (Use Gamerule)",color:gold}]

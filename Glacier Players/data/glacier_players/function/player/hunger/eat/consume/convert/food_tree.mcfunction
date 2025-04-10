@@ -11,4 +11,4 @@ execute if data storage minecraft:glacier_players.inventory_macro {item_convert_
 execute if data storage minecraft:glacier_players.inventory_macro {item_convert_id:"minecraft:milk_bucket"} run function glacier_players:player/hunger/eat/consume/convert/to/bucket
 
 ##Extensions
-function #glacier_players:extensions/inventory/foods_convert
+function #glacier_players:extensions/inventory/food_convert

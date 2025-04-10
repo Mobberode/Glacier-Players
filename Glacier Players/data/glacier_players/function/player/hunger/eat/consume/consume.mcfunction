@@ -21,7 +21,7 @@ execute store result storage glacier_players.inventory_macro saved_partition int
 execute store result storage glacier_players.inventory_macro saved_slot int 1 run scoreboard players get @s glacier_players.inventory_saved_slot
 
 ##Run special code for special foods
-function glacier_players:player/hunger/eat/food_inventory/success/get/foods/properties/check_tags
+function glacier_players:player/hunger/eat/consume/check_tags
 $data modify entity $(saved_alias_uuid) active_effects set from entity @s active_effects
 
 ##Remove 1 of the eaten item from the Glacier's inventory

@@ -1,9 +1,9 @@
 ##Store score from data
 #Get counts
-execute store result score #Amount glacier_players.number run data get storage glacier_players.inventory_macro picked_item_count
+execute store result score #Amount glacier_players.number run data get storage glacier_players.inventory_macro processed_item_count
 execute store result score #CAmount glacier_players.number run data get entity @s Items[9].count
 #Get max stack data
-execute store result score #MaxStackSize glacier_players.number run data get storage glacier_players.inventory_macro picked_item_components.minecraft:max_stack_size
+execute store result score #MaxStackSize glacier_players.number run data get storage glacier_players.inventory_macro processed_item_components.minecraft:max_stack_size
 
 ##Mathing time
 ##Combine both "#Amount" and #CAmount

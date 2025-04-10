@@ -107,7 +107,7 @@ scoreboard objectives add glacier_players.dmarker_summoned dummy
 scoreboard objectives add glacier_players.experience_requirement dummy
 scoreboard objectives add glacier_players.experience_amount dummy
 scoreboard objectives add glacier_players.experience_level dummy
-scoreboard players set #DeathMultiplier glacier_players.experience_amount 7
+scoreboard players set #DropMultiplier glacier_players.experience_amount 7
 
 #scoreboard objectives add glacier_players.attackers_id dummy
 #scoreboard objectives add glacier_players.attacking_id dummy

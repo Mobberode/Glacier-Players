@@ -1,7 +1,13 @@
 {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "nbt": "{Age:0s,Item:{id:\"minecraft:chest\"}}"
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{Age:0s}",
+    "slots": {
+      "contents": {
+        "items": "chest",
+        "count": 1
+      }
     }
-  }  
+  }
+}
