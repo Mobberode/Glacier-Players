@@ -1,0 +1,3 @@
+execute if score #Chat.Filter.Sexual glacier_players.config matches 1 run function glacier_players:technical/extensions/visual_storages/filter/sexual
+execute if score #Chat.Filter.Swear glacier_players.config matches 1 run function glacier_players:technical/extensions/visual_storages/filter/swear
+execute if score #Chat.Filter.Racial glacier_players.config matches 1 run function glacier_players:technical/extensions/visual_storages/filter/racial

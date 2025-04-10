@@ -15,4 +15,15 @@ scoreboard players set #ForceLoad glacier_players.config 1
 
 scoreboard players set #Debug_GlacierStats glacier_players.config 0
 
+scoreboard players set #Experimental.Airtime glacier_players.config 0
+scoreboard players set #Experimental.InteractionTest glacier_players.config 0
+
+scoreboard players set #Chat.Poll glacier_players.config 1
+scoreboard players set #Chat.Voice glacier_players.config 0
+
+scoreboard players set #Chat.Filter glacier_players.config 0
+scoreboard players set #Chat.Filter.Sexual glacier_players.config 0
+scoreboard players set #Chat.Filter.Swear glacier_players.config 0
+scoreboard players set #Chat.Filter.Racial glacier_players.config 0
+
 scoreboard players set #Init glacier_players.config 1

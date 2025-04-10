@@ -1,0 +1,9 @@
+item replace entity @s hotbar.0 with poisonous_potato[custom_data={gp_action:"back",gp_return_function:"glacier_players:technical/tools/configs/toolset"},custom_name={text:"Back Out",color:red},item_model=barrier]
+
+execute unless score #Chat.Voice glacier_players.config matches 1 run item replace entity @s hotbar.1 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/chat/voice"},custom_name={text:"Toggle Voice",color:red},item_model=red_candle]
+execute if score #Chat.Voice glacier_players.config matches 1.. run item replace entity @s hotbar.1 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/chat/voice"},custom_name={text:"Toggle Voice",color:green},item_model=green_candle]
+
+execute unless score #Chat.Poll glacier_players.config matches 1 run item replace entity @s hotbar.2 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/chat/poll"},custom_name={text:"Toggle Polls",color:red},item_model=red_candle]
+execute if score #Chat.Poll glacier_players.config matches 1.. run item replace entity @s hotbar.2 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/chat/poll"},custom_name={text:"Toggle Polls",color:green},item_model=green_candle]
+
+item replace entity @s hotbar.4 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/chat/filter/toolset"},custom_name={text:"Chat Filters",color:aqua},item_model=structure_void]

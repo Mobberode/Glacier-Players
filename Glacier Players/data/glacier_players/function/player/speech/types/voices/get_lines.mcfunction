@@ -4,4 +4,4 @@ function glacier_players:player/speech/types/voices/set_contents with storage gl
 tellraw @a [{text:"{"},{selector:"@s"},{text:"}"},{text:" 🔊",color:gold}]
 
 function glacier_players:player/speech/voice with storage glacier_players.visual_macro
-execute positioned ~ ~2 ~ run function glacier_players:player/speech/types/voices/microphone_visual
+#execute positioned ~ ~2 ~ run function glacier_players:player/speech/types/voices/microphone_visual

@@ -1,4 +1,4 @@
-item replace entity @s hotbar.0 with poisonous_potato[custom_data={gp_action:"back",gp_return_function:"glacier_players:technical/tools/configs/toolset"},custom_name={text:"Back Out",color:red},item_model=barrier]
+item replace entity @s hotbar.0 with poisonous_potato[custom_data={gp_action:"back",gp_return_function:"glacier_players:technical/tools/configs/behaviours/toolset"},custom_name={text:"Back Out",color:red},item_model=barrier]
 
 execute unless score #Permadeath glacier_players.config matches 1 run item replace entity @s hotbar.1 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/death/permadeath"},custom_name={text:"Toggle Permadeath",color:red},item_model=red_candle]
 execute if score #Permadeath glacier_players.config matches 1.. run item replace entity @s hotbar.1 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/death/permadeath"},custom_name={text:"Toggle Permadeath",color:green},item_model=green_candle]

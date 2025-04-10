@@ -13,6 +13,9 @@ function glacier_players:technical/extensions/visual_storages/set
 scoreboard players set #ExtensionToolkitMost glacier_players.extensions 0
 function glacier_players:technical/extensions/loader/load_extensions
 
+##Filter
+execute if score #Chat.Filter glacier_players.config matches 1 run function glacier_players:technical/extensions/visual_storages/filter/apply
+
 ##Apply
 tellraw @a [{text:"[>_] GPE Loader | Applying visual data counts",color:aqua}]
 #

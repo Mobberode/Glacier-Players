@@ -1,2 +1,2 @@
-execute unless score #Voices glacier_players.config matches 1 run return run function glacier_players:player/speech/start_speak
-execute if score #Voices glacier_players.config matches 1 run function glacier_players:player/speech/start_speak_b
+execute unless score #Chat.Voice glacier_players.config matches 1 run return run function glacier_players:player/speech/start_speak
+execute if score #Chat.Voice glacier_players.config matches 1 run function glacier_players:player/speech/start_speak_b

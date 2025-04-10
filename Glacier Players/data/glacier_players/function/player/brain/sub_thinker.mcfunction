@@ -12,5 +12,7 @@ function glacier_players:player/brain/damagecheck
 ##Mob Recognigiton
 #function glacier_players:player/recognition/start
 
+function #glacier_players:extensions/sub_thinker
+
 ##Debug (Small Performance Cost!)
 execute if score #Debug_GlacierStats glacier_players.config matches 1 run execute if predicate glacier_players:20_tick_period run function glacier_players:technical/tools/debug/name_info
