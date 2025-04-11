@@ -1,0 +1,1 @@
+data modify storage glacier_players.visual_macro sprays set value [{id:mariowithshotgun,contents:{text:"2",font:"glacier_sprays:images"}},{id:poppydisaster,contents:{text:"1",font:"glacier_sprays:images"}}]

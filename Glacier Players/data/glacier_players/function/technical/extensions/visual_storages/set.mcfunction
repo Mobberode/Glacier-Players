@@ -12,3 +12,5 @@ function glacier_players:technical/extensions/visual_storages/line_polls
 function glacier_players:technical/extensions/visual_storages/line_response
 function glacier_players:technical/extensions/visual_storages/line_totem_popped
 function glacier_players:technical/extensions/visual_storages/line_voice
+##Sprays
+function glacier_players:technical/extensions/visual_storages/sprays

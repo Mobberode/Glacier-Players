@@ -49,4 +49,7 @@ execute store result storage glacier_players.extensions ext_me_lines_count int 1
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.response[]
 execute store result storage glacier_players.extensions ext_response_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
+execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro sprays[]
+execute store result storage glacier_players.extensions ext_sprays_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+
 tellraw @a [{text:"[>_] GPE Loader | Extensions Loaded: ",color:aqua},{score:{name:"#Loaded",objective:glacier_players.extensions},color:green}]

@@ -1,0 +1,2 @@
+$summon minecraft:text_display ~ ~ ~ {text:{storage:glacier_players.visual_macro,nbt:spray_text,font:"$(spray_font)",interpret:true},background:0,Tags:["GlacierPlayer.Spray.Init"]}
+execute as @e[tag=GlacierPlayer.Spray.Init] run function glacier_players:player/speech/sprays/finalize

@@ -1,0 +1,1 @@
+execute positioned ^ ^ ^-0.125 run function glacier_players:player/speech/sprays/run with storage glacier_players.visual_macro
