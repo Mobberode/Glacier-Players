@@ -20,6 +20,7 @@ scoreboard players set #Experimental.InteractionTest glacier_players.config 0
 
 scoreboard players set #Chat.Poll glacier_players.config 1
 scoreboard players set #Chat.Voice glacier_players.config 0
+scoreboard players set #Chat.Sprays glacier_players.config 0
 
 scoreboard players set #Chat.Filter glacier_players.config 0
 scoreboard players set #Chat.Filter.Sexual glacier_players.config 0

@@ -102,8 +102,6 @@ scoreboard objectives add glacier_players.delay_totem_replace dummy
 scoreboard objectives add glacier_players.pathfinding_g_cost dummy
 scoreboard objectives add glacier_players.pathfinding_node dummy
 
-scoreboard objectives add glacier_players.dmarker_summoned dummy
-
 scoreboard objectives add glacier_players.experience_requirement dummy
 scoreboard objectives add glacier_players.experience_amount dummy
 scoreboard objectives add glacier_players.experience_level dummy

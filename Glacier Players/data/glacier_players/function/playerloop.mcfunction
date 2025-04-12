@@ -2,8 +2,8 @@
 #Debug Function
 #execute as @e[type=marker] at @s run particle angry_villager ~ ~ ~ 0 0 0 0 1 force @a[tag=gp.debug]
 
-##Check marker
-function glacier_players:recurring_functions/mmarker_check with storage glacier_players.macro
+##Check statics
+function glacier_players:recurring_functions/static_check
 
 ##Turns TNT to not destory Glaciers
 execute as @e[type=#glacier_players:tnts] positioned as @s run function glacier_players:world/convert_tnt
