@@ -1,1 +1,0 @@
-summon minecraft:text_display ~ ~ ~ {text:{text:"2",font:"glacier_sprays:images"},background:0}

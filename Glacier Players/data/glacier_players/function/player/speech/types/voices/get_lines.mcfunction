@@ -1,4 +1,4 @@
-$execute store result storage glacier_players.extensions rng int 1 run random value 0..$(ext_voice_lines_count)
+$execute store result storage glacier_players.extensions rng int 1 run random value -1..$(ext_voice_lines_count)
 function glacier_players:player/speech/types/voices/set_contents with storage glacier_players.extensions
 
 tellraw @a [{text:"{"},{selector:"@s"},{text:"}"},{text:" 🔊",color:gold}]

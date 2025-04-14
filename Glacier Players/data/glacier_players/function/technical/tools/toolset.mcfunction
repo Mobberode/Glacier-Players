@@ -1,3 +1,4 @@
+scoreboard players set @s glacier_players.extensions_toolset -1
 function glacier_players:technical/tools/force/clear_hotbar
 
 item replace entity @s hotbar.0 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/actions/toolset"},custom_name={text:"Glacier Player Actions",color:blue},item_model=ward_armor_trim_smithing_template]
@@ -6,4 +7,4 @@ item replace entity @s hotbar.3 with poisonous_potato[custom_data={gp_action:"ev
 
 
 item replace entity @s hotbar.7 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/debug/toolset"},custom_name={text:"Debug",color:red},item_model=redstone]
-item replace entity @s hotbar.8 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/extensions/selector/select"},custom_name={text:"Toolboxed Extensions",color:aqua},enchantment_glint_override=true,item_model=chest_minecart]
+item replace entity @s hotbar.8 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/extensions/init"},custom_name={text:"Toolboxed Extensions",color:aqua},enchantment_glint_override=true,item_model=chest_minecart]

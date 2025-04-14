@@ -11,6 +11,8 @@ function glacier_players:technical/extensions/visual_storages/line_panic
 function glacier_players:technical/extensions/visual_storages/line_polls
 function glacier_players:technical/extensions/visual_storages/line_response
 function glacier_players:technical/extensions/visual_storages/line_totem_popped
+###Empty
+##Voices
 function glacier_players:technical/extensions/visual_storages/line_voice
 ##Sprays
 function glacier_players:technical/extensions/visual_storages/sprays
