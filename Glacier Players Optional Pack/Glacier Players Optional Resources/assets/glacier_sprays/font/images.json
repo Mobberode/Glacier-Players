@@ -1,0 +1,39 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "glacier_sprays:poppy.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["1"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_sprays:watchyotonemf.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["2"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_sprays:bald_sally.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["3"]
+        }, 
+        {
+            "type": "bitmap",
+            "file": "glacier_sprays:razzpfp.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["4"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_sprays:ns2_free.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["5"]
+        } 
+    ]
+}
