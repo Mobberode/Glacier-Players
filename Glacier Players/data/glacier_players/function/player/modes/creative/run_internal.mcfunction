@@ -1,7 +1,8 @@
 data remove storage glacier_players.build_macro block
-execute store result score #PlaceRotation glacier_players.rotation run data get entity @s Rotation[0]
-execute store result score #PlaceRotation_2Decimal glacier_players.rotation run data get entity @s Rotation[0] 100
-execute store result score #PlaceRotation_Height glacier_players.rotation run data get entity @s Rotation[1]
+data modify storage glacier_players.build_macro entity_rotation set from entity @s Rotation
+execute store result score #PlaceRotation glacier_players.rotation run data get storage glacier_players.build_macro entity_rotation[0]
+execute store result score #PlaceRotation_2Decimal glacier_players.rotation run data get storage glacier_players.build_macro entity_rotation[0] 100
+execute store result score #PlaceRotation_Height glacier_players.rotation run data get storage glacier_players.build_macro entity_rotation[1]
 
 ##ID
 data modify storage glacier_players.build_macro block set from block 0 0 0 Items[].id
