@@ -1,1 +1,0 @@
-execute as @e[type=armor_stand,scores={glacier_players.delay_totem_replace=1..}] run function glacier_players:recurring_functions/loops/totem_replace_delay_loop

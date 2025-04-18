@@ -1,1 +1,1 @@
-$tellraw @a [{text:"|||| ",color:$(decision_colour)},{storage:glacier_players.visual_macro,nbt:chat_contents_poll_decision,interpret:true},{text:" | "},{selector:"@e[scores={glacier_players.poll_decision=$(decisions_processed)}]",color:yellow}]
+tellraw @a [{storage:glacier_players.visual_macro,nbt:decision_start,interpret:true},{storage:glacier_players.visual_macro,nbt:chat_contents_poll_decision,interpret:true},{text:" | "},{selector:"@e[predicate=glacier_players:id/decision]",color:yellow}]

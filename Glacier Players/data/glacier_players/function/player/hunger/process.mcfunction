@@ -1,5 +1,5 @@
 ##If Hunger Effect
-#execute if predicate glacier_players:has_hunger_effect run function glacier_players:player/hunger/effects/hunger/temp
+execute if predicate glacier_players:has_hunger_effect run function glacier_players:player/hunger/effects/hunger/temp
 
 ##Normal
 execute if score @s glacier_players.exhaustion matches 4000.. run function glacier_players:player/hunger/exhaustion/reached_threshold

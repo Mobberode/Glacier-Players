@@ -1,2 +1,2 @@
 $tp $(x) $(y).625 $(z)
-#$tp @s $(x) $(y).625 $(z) $(angle) ~
+#$tp @s x y.625 z angle ~
