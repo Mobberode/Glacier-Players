@@ -1,5 +1,4 @@
-##Give Tag to self for future references
-tag @s add GlacierPlayer.Inventory_SelectedFood
+##Score
 scoreboard players set #ComponentsFound glacier_players.condition 0
 
 ##Data check instead of item check because item checks dont know if component was added in or not

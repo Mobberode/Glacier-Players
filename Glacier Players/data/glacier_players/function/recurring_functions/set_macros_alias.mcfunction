@@ -5,7 +5,7 @@ execute store result score #Health glacier_players.health run data get entity @s
 
 execute store result score #Additional_Health glacier_players.health run data get entity @s AbsorptionAmount
 
-execute store result score #Condition glacier_players.has_undying_totem if items entity @s weapon.* totem_of_undying
+execute store result score #Condition glacier_players.has_undying_totem if items entity @s weapon.* *[death_protection]
 
 execute store result score #Condition glacier_players.equipment_wearing_armour if items entity @s armor.* #glacier_players:armour/global
 

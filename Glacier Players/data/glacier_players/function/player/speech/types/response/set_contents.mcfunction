@@ -1,1 +1,0 @@
-$data modify storage glacier_players.visual_macro chat_contents set from storage glacier_players.visual_macro line.response[$(rng)].contents

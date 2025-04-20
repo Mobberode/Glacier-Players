@@ -1,0 +1,2 @@
+scoreboard players set @s glacier_players.inventory_cant_pickup 20
+function glacier_players:recurring_functions/remove_pickdelay_tag

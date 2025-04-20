@@ -1,3 +1,4 @@
+tag @s add GlacierPlayer.Inventory_SelectedFood
 ##Success
 scoreboard players set #SortedItem glacier_players.condition 1
 #

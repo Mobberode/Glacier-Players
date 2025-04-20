@@ -1,4 +1,5 @@
-$execute store result storage glacier_players.extensions rng int 1 run random value -1..$(ext_disconnect_lines_count)
-function glacier_players:player/speech/types/disconnect/set_contents with storage glacier_players.extensions
+data modify storage glacier_players.visual_macro_temp chat_storage set from storage glacier_players.visual_macro line.disconnect
+
+function glacier_players:player/speech/get_contents
 
 function glacier_players:player/speech/speak

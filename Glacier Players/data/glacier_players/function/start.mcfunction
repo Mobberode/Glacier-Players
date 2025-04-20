@@ -12,6 +12,6 @@ data modify storage glacier_players.visual_macro credits set value [{text:"Glaci
 execute as @a run function glacier_players:start_visuals
 
 function gp_gu:zzz/load
-function #load:_private/load
+function stringlib:zprivate/load
 
 execute as @a run function #glacier_players:initalize

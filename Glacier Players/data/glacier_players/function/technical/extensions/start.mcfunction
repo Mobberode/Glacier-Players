@@ -23,16 +23,12 @@ execute store result score #Ext glacier_players.number if data storage glacier_p
 execute store result storage glacier_players.extensions ext_names_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.connect[]
-execute store result storage glacier_players.extensions ext_connect_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.disconnect[]
-execute store result storage glacier_players.extensions ext_disconnect_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.idle[]
-execute store result storage glacier_players.extensions ext_idles_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.death[]
-execute store result storage glacier_players.extensions ext_death_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.polls[]
 execute store result storage glacier_players.extensions ext_poll_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
@@ -41,13 +37,10 @@ execute store result score #Ext glacier_players.number if data storage glacier_p
 execute store result storage glacier_players.extensions ext_voice_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.totem_popped[]
-execute store result storage glacier_players.extensions ext_totem_popped_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.me[]
-execute store result storage glacier_players.extensions ext_me_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.response[]
-execute store result storage glacier_players.extensions ext_response_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
 
 execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro sprays[]
 execute store result storage glacier_players.extensions ext_sprays_count int 1 run scoreboard players remove #Ext glacier_players.number 1

@@ -25,4 +25,4 @@ function glacier_players:player/hunger/eat/consume/check_tags
 $data modify entity $(saved_alias_uuid) active_effects set from entity @s active_effects
 
 ##Remove 1 of the eaten item from the Glacier's inventory
-execute as @e[limit=1,type=donkey,tag=GlacierPlayer.Inventory_SelectedFood] run function glacier_players:player/hunger/eat/consume/consume_remove_item
+execute as @e[limit=1,type=donkey,tag=GlacierPlayer.Inventory_SelectedFood,tag=GlacierPlayer.Selected] run function glacier_players:player/hunger/eat/consume/consume_remove_item
