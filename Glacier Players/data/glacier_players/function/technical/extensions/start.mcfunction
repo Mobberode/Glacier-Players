@@ -19,31 +19,27 @@ execute if score #Chat.Filter glacier_players.config matches 1 run function glac
 ##Apply
 tellraw @a [{text:"[>_] GPE Loader | Applying visual data counts",color:aqua}]
 #
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro names[]
-execute store result storage glacier_players.extensions ext_names_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+execute store result score #ExtNames glacier_players.number if data storage glacier_players.visual_macro names[]
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.connect[]
+execute store result score #ExtConnect glacier_players.number if data storage glacier_players.visual_macro line.connect[]
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.disconnect[]
+execute store result score #ExtDisconnect glacier_players.number if data storage glacier_players.visual_macro line.disconnect[]
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.idle[]
+execute store result score #ExtIdle glacier_players.number if data storage glacier_players.visual_macro line.idle[]
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.death[]
+execute store result score #ExtDeath glacier_players.number if data storage glacier_players.visual_macro line.death[]
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.polls[]
-execute store result storage glacier_players.extensions ext_poll_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+execute store result score #ExtPolls glacier_players.number if data storage glacier_players.visual_macro line.polls[]
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.voice[]
-execute store result storage glacier_players.extensions ext_voice_lines_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+execute store result score #ExtVoice glacier_players.number if data storage glacier_players.visual_macro line.voice[]
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.totem_popped[]
+execute store result score #ExtTotemPopped glacier_players.number if data storage glacier_players.visual_macro line.totem_popped[]
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.me[]
+execute store result score #ExtMe glacier_players.number if data storage glacier_players.visual_macro line.me[]
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro line.response[]
+execute store result score #ExtResponse glacier_players.number if data storage glacier_players.visual_macro line.response[]
 
-execute store result score #Ext glacier_players.number if data storage glacier_players.visual_macro sprays[]
-execute store result storage glacier_players.extensions ext_sprays_count int 1 run scoreboard players remove #Ext glacier_players.number 1
+execute store result score #ExtSprays glacier_players.number if data storage glacier_players.visual_macro sprays[]
 
 scoreboard players remove #ExtensionToolkitMost glacier_players.extensions 1
 

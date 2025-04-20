@@ -1,1 +1,1 @@
-$data modify storage glacier_players.visual_macro chat_contents set from storage glacier_players.visual_macro_temp chat_storage[$(rng)].contents
+$data modify storage glacier_players.visual_macro visual_contents set from storage glacier_players.visual_macro_temp visual_storage[$(rng)]
