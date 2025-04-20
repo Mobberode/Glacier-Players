@@ -8,6 +8,7 @@ tellraw @s [{text:""},{text:"Visual Storage Statistics",color:aqua},\
 {text:"\nVoice:"},{score:{name:"#ExtVoice",objective:glacier_players.number},color:gold},\
 {text:"\nTotemPopped:"},{score:{name:"#ExtTotemPopped",objective:glacier_players.number},color:gold},\
 {text:"\nMe:"},{score:{name:"#ExtMe",objective:glacier_players.number},color:gold},\
+{text:"\nPanic:"},{score:{name:"#ExtPanic",objective:glacier_players.number},color:gold},\
 {text:"\nResponse:"},{score:{name:"#ExtResponse",objective:glacier_players.number},color:gold},\
 {text:"\nSprays:"},{score:{name:"#ExtSprays",objective:glacier_players.number},color:gold},\
 ]

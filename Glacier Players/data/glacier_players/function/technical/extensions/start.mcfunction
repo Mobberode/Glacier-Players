@@ -37,6 +37,8 @@ execute store result score #ExtTotemPopped glacier_players.number if data storag
 
 execute store result score #ExtMe glacier_players.number if data storage glacier_players.visual_macro line.me[]
 
+execute store result score #ExtPanic glacier_players.number if data storage glacier_players.visual_macro line.panic[]
+
 execute store result score #ExtResponse glacier_players.number if data storage glacier_players.visual_macro line.response[]
 
 execute store result score #ExtSprays glacier_players.number if data storage glacier_players.visual_macro sprays[]
