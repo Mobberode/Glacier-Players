@@ -1,1 +1,1 @@
-data modify storage glacier_players.build_macro sound_namespace set value "minecraft:block.netherite_blocks.place"
+data modify storage glacier_players:build_macro sound_namespace set value "minecraft:block.netherite_blocks.place"

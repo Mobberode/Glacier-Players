@@ -9,6 +9,6 @@ function gp_optional:contents/add_lines
 
 ##Visuals on extension load (a pair of ' must be included at both start and end!)
 #Based on JSON text
-data modify storage glacier_players.extensions extension_visuals set value {"text": "[>_] Optional content Mounted!","color": "green"}
+data modify storage glacier_players:extensions extension_visuals set value {"text": "[>_] Optional content Mounted!","color": "green"}
 
-function glacier_players:technical/extensions/loader/extensions_startup_visuals with storage glacier_players.extensions
+function glacier_players:technical/extensions/loader/extensions_startup_visuals with storage glacier_players:extensions

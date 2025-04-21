@@ -1,7 +1,7 @@
 ##Ran by the glacier
-data modify entity @s CustomName set from storage glacier_players.abnormal_macro respawning_name
+data modify entity @s CustomName set from storage glacier_players:abnormal_macro respawning_name
 function glacier_players:player/death/restore_data
-function glacier_players:player/death/reprocess_uuids with storage glacier_players.abnormal_macro
+function glacier_players:player/death/reprocess_uuids with storage glacier_players:abnormal_macro
 function glacier_players:recurring_functions/set_player
 tag @s remove GP.DeathProcess
 #On respawn event for glaciers

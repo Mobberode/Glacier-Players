@@ -9,7 +9,7 @@ scoreboard players set #ExtTotemPoppedLines glacier_players.extensions 2
 scoreboard players set #ExtDeathLines glacier_players.extensions 10
 scoreboard players set #ExtMeLines glacier_players.extensions 10
 scoreboard players set #ExtPollLines glacier_players.extensions 3
-scoreboard players set #ExtVoiceLines glacier_players.extensions 2
+scoreboard players set #ExtVoiceLines glacier_players.extensions 0
 
 ##Combine the extension contents to the Glacier Players
 #Names

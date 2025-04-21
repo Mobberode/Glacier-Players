@@ -1,1 +1,1 @@
-data modify storage glacier_players.build_macro sound_namespace set value "minecraft:block.mangrove_roots.place"
+data modify storage glacier_players:build_macro sound_namespace set value "minecraft:block.mangrove_roots.place"

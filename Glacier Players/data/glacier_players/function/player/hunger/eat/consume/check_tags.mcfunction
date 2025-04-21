@@ -14,4 +14,4 @@ execute if entity @s[tag=GlacierPlayer.Drank_Milk_Bucket] run function glacier_p
 execute if entity @s[tag=GlacierPlayer.Drank_Potion] run function glacier_players:player/hunger/data/food/on_consume/potion/get_components_info
 
 ##Extensions
-function #glacier_players:extensions/inventory/food_properties with storage glacier_players.inventory_macro
+function #glacier_players:extensions/inventory/food_properties with storage glacier_players:inventory_macro

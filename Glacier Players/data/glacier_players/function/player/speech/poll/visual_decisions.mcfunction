@@ -1,1 +1,1 @@
-tellraw @a [{text:""},{storage:glacier_players.visual_macro,nbt:decision_start,interpret:true},{storage:glacier_players.visual_macro,nbt:visual_contents_poll_decision,interpret:true}]
+tellraw @a [{text:""},{storage:"glacier_players:visual_macro",nbt:decision_start,interpret:true},{storage:"glacier_players:visual_macro",nbt:visual_contents_poll_decision,interpret:true}]

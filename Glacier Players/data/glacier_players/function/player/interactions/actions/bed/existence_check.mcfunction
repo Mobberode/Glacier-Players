@@ -1,1 +1,1 @@
-$execute positioned $(x) $(y) $(z) unless block ~ ~ ~ #minecraft:beds run function glacier_players:player/interactions/actions/bed/destroy_spawnpoint with storage glacier_players.macro
+$execute positioned $(x) $(y) $(z) unless block ~ ~ ~ #minecraft:beds run function glacier_players:player/interactions/actions/bed/destroy_spawnpoint with storage glacier_players:macro

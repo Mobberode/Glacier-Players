@@ -6,4 +6,4 @@ kill @e[tag=GlacierPlayer.Abnormal_Selected]
 kill @e[limit=1,type=item,predicate=glacier_players:inventory/is_chest]
 
 ##Drop XP
-execute unless score #Drop glacier_players.experience_amount matches ..0 run function glacier_players:player/death/drop_experience with storage glacier_players.experience_macro
+execute unless score #Drop glacier_players.experience_amount matches ..0 run function glacier_players:player/death/drop_experience with storage glacier_players:experience_macro

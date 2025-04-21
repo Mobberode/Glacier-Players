@@ -2,7 +2,7 @@ tp @s ~ ~ ~ ~ ~
 #If vertical
 execute if score #Face glacier_players.condition matches 1 run function glacier_players:player/speech/sprays/vertical_do
 #Allow anywhere
-data modify entity @s Pos set from storage glacier_players.visual_macro spray_pos
+data modify entity @s Pos set from storage glacier_players:visual_macro spray_pos
 execute positioned as @s run function glacier_players:player/speech/sprays/realign
 
 tag @s remove GlacierPlayer.Spray.Init

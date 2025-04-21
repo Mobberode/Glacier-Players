@@ -1,4 +1,4 @@
-data modify storage glacier_players.visual_macro spray_pos set from entity @s Pos
+data modify storage glacier_players:visual_macro spray_pos set from entity @s Pos
 function glacier_players:player/modes/creative/block_border/run
 
 function glacier_players:player/speech/sprays/align

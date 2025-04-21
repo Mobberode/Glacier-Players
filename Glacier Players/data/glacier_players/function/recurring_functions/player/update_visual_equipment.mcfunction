@@ -1,2 +1,2 @@
-data modify entity @s equipment.hands set from storage glacier_players.equipment_macro equipments_hands
-data modify entity @s equipment.armors set from storage glacier_players.equipment_macro equipments_gear
+data modify entity @s equipment.hands set from storage glacier_players:equipment_macro equipments_hands
+data modify entity @s equipment.armors set from storage glacier_players:equipment_macro equipments_gear

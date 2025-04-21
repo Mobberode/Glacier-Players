@@ -1,1 +1,1 @@
-data modify storage glacier_players.build_macro sound_namespace set value "minecraft:block.weeping_vines.place"
+data modify storage glacier_players:build_macro sound_namespace set value "minecraft:block.weeping_vines.place"

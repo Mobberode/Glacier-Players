@@ -1,5 +1,5 @@
 #Simple Move
-function glacier_players:recurring_functions/get_dmarker_uuid with storage glacier_players.macro
+function glacier_players:recurring_functions/get_dmarker_uuid with storage glacier_players:macro
 function glacier_players:player/modes/interacting/movement/start
 
 ##Main Interact function

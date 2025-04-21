@@ -1,3 +1,6 @@
-data modify storage glacier_players.visual_macro_temp contents append value {contents:"Extension Name PlaceHolder 1",contents:"Extension Name PlaceHolder 2",contents:"Extension Name PlaceHolder 3",contents:"Extension Name PlaceHolder 4",contents:"Extension Name PlaceHolder 5",contents:"Extension Name PlaceHolder 6",contents:"Extension Name PlaceHolder 7",contents:"Extension Name PlaceHolder 8",contents:"Extension Name PlaceHolder 9",contents:"Extension Name PlaceHolder 10"}
+data modify storage glacier_players:visual_macro_temp contents append value {contents:"Extension Name PlaceHolder 1",contents:"Extension Name PlaceHolder 2",contents:"Extension Name PlaceHolder 3",contents:"Extension Name PlaceHolder 4",contents:"Extension Name PlaceHolder 5",contents:"Extension Name PlaceHolder 6",contents:"Extension Name PlaceHolder 7",contents:"Extension Name PlaceHolder 8",contents:"Extension Name PlaceHolder 9",contents:"Extension Name PlaceHolder 10"}
 
-data modify storage glacier_players.visual_macro names append from storage glacier_players.visual_macro_temp contents[]
+##If 20+
+execute if score #Version glacier_players.release matches ..20 run return run data modify storage glacier_players.visual_macro names append from storage glacier_players:visual_macro_temp contents[]
+
+data modify storage glacier_players:visual_macro names append from storage glacier_players:visual_macro_temp contents[]

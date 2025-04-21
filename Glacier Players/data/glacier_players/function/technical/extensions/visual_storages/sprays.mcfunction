@@ -1,1 +1,1 @@
-data modify storage glacier_players.visual_macro sprays set value []
+data modify storage glacier_players:visual_macro sprays set value []

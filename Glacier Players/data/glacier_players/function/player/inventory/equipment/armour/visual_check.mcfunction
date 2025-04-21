@@ -7,4 +7,4 @@ execute if items entity @s weapon.mainhand #glacier_players:armour/turtle run re
 execute if items entity @s weapon.mainhand #glacier_players:armour/netherite run return run playsound item.armor.equip_netherite
 
 ##Extensions
-function #glacier_players:extensions/inventory/equipment/armour_sounds with storage glacier_players.inventory_macro
+function #glacier_players:extensions/inventory/equipment/armour_sounds with storage glacier_players:inventory_macro

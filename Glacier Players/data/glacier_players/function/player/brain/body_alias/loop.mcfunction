@@ -1,2 +1,2 @@
-execute unless score @s glacier_players.knockbacked_timer matches 1.. at @s run return run function glacier_players:player/brain/body_alias/not_knockbacked_proceed with storage glacier_players.macro
-function glacier_players:player/brain/body_alias/knockbacked_proceed with storage glacier_players.macro
+execute unless score @s glacier_players.knockbacked_timer matches 1.. at @s run return run function glacier_players:player/brain/body_alias/not_knockbacked_proceed with storage glacier_players:macro
+function glacier_players:player/brain/body_alias/knockbacked_proceed with storage glacier_players:macro

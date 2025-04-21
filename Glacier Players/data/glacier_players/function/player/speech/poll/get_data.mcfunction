@@ -1,1 +1,1 @@
-$data modify storage glacier_players.visual_macro visual_contents_poll_decision set from storage glacier_players.visual_macro_temp poll.decisions[$(decisions_processed)].decision
+$data modify storage glacier_players:visual_macro visual_contents_poll_decision set from storage glacier_players:visual_macro_temp poll.decisions[$(decisions_processed)].decision

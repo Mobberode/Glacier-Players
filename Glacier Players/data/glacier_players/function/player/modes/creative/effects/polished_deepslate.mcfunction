@@ -1,1 +1,1 @@
-data modify storage glacier_players.build_macro sound_namespace set value "minecraft:block.polished_deepslate.place"
+data modify storage glacier_players:build_macro sound_namespace set value "minecraft:block.polished_deepslate.place"

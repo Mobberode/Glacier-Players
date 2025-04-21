@@ -1,1 +1,1 @@
-data modify storage glacier_players.build_macro sound_namespace set value "minecraft:block.large_amethyst_bud.place"
+data modify storage glacier_players:build_macro sound_namespace set value "minecraft:block.large_amethyst_bud.place"

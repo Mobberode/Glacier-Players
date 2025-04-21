@@ -8,4 +8,4 @@ summon armor_stand ~ ~ ~ {CustomNameVisible:true,Tags:["GlacierPlayer","glacier_
 function glacier_players:player/death/summon_inventory
 
 ##Run functions with entites selected
-function glacier_players:player/death/respawn_set with storage glacier_players.abnormal_macro
+function glacier_players:player/death/respawn_set with storage glacier_players:abnormal_macro
