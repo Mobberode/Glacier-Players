@@ -1,0 +1,1 @@
+execute if entity @s[tag=!glacier_players_optional.set_profile] unless score #MountProfilePictures glacier_players.optional.config matches ..0 run function gp_optional:profile/set

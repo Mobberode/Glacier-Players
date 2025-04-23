@@ -3,3 +3,6 @@ execute if score #MountSprays glacier_players.optional.config matches 1.. run it
 
 execute unless score #MountVoices glacier_players.optional.config matches 1 run item replace entity @s hotbar.2 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"gp_optional:tools/mount/voices"},custom_name={text:"Mount Voices",color:red},item_model=red_candle]
 execute if score #MountVoices glacier_players.optional.config matches 1.. run item replace entity @s hotbar.2 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"gp_optional:tools/mount/voices"},custom_name={text:"Mount Voices",color:green},item_model=green_candle]
+
+execute unless score #MountProfilePictures glacier_players.optional.config matches 1 run item replace entity @s hotbar.3 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"gp_optional:tools/mount/profiles"},custom_name={text:"Mount Profile Pictures",color:red},item_model=red_candle]
+execute if score #MountProfilePictures glacier_players.optional.config matches 1 run item replace entity @s hotbar.3 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"gp_optional:tools/mount/profiles"},custom_name={text:"Mount Profile Pictures",color:green},item_model=green_candle]

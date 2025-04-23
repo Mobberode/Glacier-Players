@@ -2,7 +2,7 @@
 #You may modify parts of this function to suit your extension
 scoreboard objectives add glacier_players.optional.config dummy
 #First time setup
-execute unless score #FirstTime glacier_players:optional.config matches 1.. run function gp_optional:first_setup
+execute unless score #FirstTime glacier_players.optional.config matches 1.. run function gp_optional:first_setup
 
 ##Set the content amounts the extension has
 data remove storage glacier_players:visual_macro_temp contents

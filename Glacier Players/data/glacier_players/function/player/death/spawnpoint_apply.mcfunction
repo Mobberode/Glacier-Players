@@ -1,5 +1,5 @@
 ##not actually saving its just reading the values
-function glacier_players:technical/data/save
+function glacier_players:technical/data/save with storage glacier_players:macro
 
 data modify storage glacier_players:abnormal_macro x set from storage glacier_players:glacier_data temp.data.respawn.pos[0]
 data modify storage glacier_players:abnormal_macro y set from storage glacier_players:glacier_data temp.data.respawn.pos[1]

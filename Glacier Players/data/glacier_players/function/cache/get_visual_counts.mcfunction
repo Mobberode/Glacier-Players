@@ -12,3 +12,5 @@ tellraw @s [{text:""},{text:"Visual Storage Statistics",color:aqua},\
 {text:"\nResponse:"},{score:{name:"#ExtResponse",objective:glacier_players.number},color:gold},\
 {text:"\nSprays:"},{score:{name:"#ExtSprays",objective:glacier_players.number},color:gold},\
 ]
+
+function #glacier_players:visual_counts
