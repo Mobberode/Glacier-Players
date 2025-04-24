@@ -1,4 +1,4 @@
-scoreboard players set @s glacier_players.extensions_toolset -1
+scoreboard players set @s glacier_players.extensions_toolset -2
 function glacier_players:technical/tools/force/clear_hotbar
 
 item replace entity @s hotbar.0 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/actions/toolset"},custom_name={text:"Glacier Player Actions",color:blue},item_model=ward_armor_trim_smithing_template]

@@ -1,0 +1,2 @@
+execute unless score #Pronouns gpe_pronouns.config matches 1.. run item replace entity @s hotbar.1 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"gpe_pronouns:tools/pronouns"},custom_name={text:"Pronouns",color:red},item_model=red_candle]
+execute if score #Pronouns gpe_pronouns.config matches 1.. run item replace entity @s hotbar.1 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"gpe_pronouns:tools/pronouns"},custom_name={text:"Pronouns",color:green},item_model=green_candle]

@@ -5,7 +5,7 @@ function glacier_players:recurring_functions/dual_macros_all with storage glacie
 
 ##Get Fake Player Info
 scoreboard players operation #StoredDeathID glacier_players.pid = @s glacier_players.pid
-data modify storage glacier_players:abnormal_macro respawning_name set from entity @s CustomName
+data modify storage glacier_players:abnormal_macro name set from entity @s CustomName
 
 ##Get Experience
 function glacier_players:player/death/experience_get

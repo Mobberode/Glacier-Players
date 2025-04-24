@@ -1,10 +1,10 @@
-execute store result score @s gpe_pronouns_icement.pronouns run random value 1..7
-execute if score @s gpe_pronouns_icement.pronouns matches 1 run data modify storage gpe_pronouns:macro pronoun set value "He/Him"
-execute if score @s gpe_pronouns_icement.pronouns matches 2 run data modify storage gpe_pronouns:macro pronoun set value "She/Her"
-execute if score @s gpe_pronouns_icement.pronouns matches 3 run data modify storage gpe_pronouns:macro pronoun set value "They/Them"
-execute if score @s gpe_pronouns_icement.pronouns matches 4 run data modify storage gpe_pronouns:macro pronoun set value "It/Its"
-execute if score @s gpe_pronouns_icement.pronouns matches 5 run data modify storage gpe_pronouns:macro pronoun set value "Fae/Faer"
-execute if score @s gpe_pronouns_icement.pronouns matches 6 run data modify storage gpe_pronouns:macro pronoun set value "Any"
-execute if score @s gpe_pronouns_icement.pronouns matches 7 run data modify storage gpe_pronouns:macro pronoun set value "None"
+data modify storage glacier_players:visual_macro_temp visual_storage set from storage gpe_pronouns:macro pronouns
+function glacier_players:player/speech/get_contents
 
-function gpe_pronouns:apply_pronouns with storage gpe_pronouns:macro
+execute if data storage glacier_players:glacier_data temp.data.visual.pronoun run return run function gpe_pronouns:reapply
+#
+
+data modify storage gpe_pronouns:macro pronoun set from storage glacier_players:visual_macro visual_contents
+data modify storage glacier_players:glacier_data temp.data.visual.pronoun set from storage gpe_pronouns:macro pronoun
+
+function gpe_pronouns:apply_pronouns

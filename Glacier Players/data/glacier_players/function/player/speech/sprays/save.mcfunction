@@ -4,7 +4,7 @@ data modify storage glacier_players:sprays temp.dimension set from entity @s Dim
 
 ##UUID
 function gp_gu:generate
-data modify storage glacier_players:sprays temp.uuid set from storage gu:main out.uuid
+data modify storage glacier_players:sprays temp.uuid set from storage gu:main out
 
 ##Store
 data modify storage glacier_players:sprays instances prepend from storage glacier_players:sprays temp

@@ -1,1 +1,1 @@
-$data modify storage glacier_players:glacier_data instance[$(pid_num)] set from storage glacier_players:glacier_data temp
+$data modify storage glacier_players:glacier_data instance[{id:$(pid_num)}] set from storage glacier_players:glacier_data temp

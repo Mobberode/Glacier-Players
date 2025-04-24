@@ -2,7 +2,7 @@
 #You may only change the Visuals on extension load
 
 ##Store tool info into glacier_players.extensions
-execute if score #ExtToolsEnabled glacier_players.extensions matches 1 run function gp_optional:mount/mount_tool_info
+function gp_optional:mount/mount_tool_info
 
 ##Visual storage
 function gp_optional:contents/add_lines
