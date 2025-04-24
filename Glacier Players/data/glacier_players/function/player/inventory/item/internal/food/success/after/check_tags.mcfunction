@@ -8,8 +8,10 @@ execute if entity @s[tag=GlacierPlayer.Ate_Rotten_Flesh] run function glacier_pl
 execute if entity @s[tag=GlacierPlayer.Ate_Spider_Eye] run function glacier_players:player/hunger/data/food/on_consume/spider_eye
 execute if entity @s[tag=GlacierPlayer.Ate_Suspicious_Stew] run function glacier_players:player/hunger/data/food/on_consume/suspicious_stew/get_components_info
 execute if entity @s[tag=GlacierPlayer.Drank_Bottled_Honey] run function glacier_players:player/hunger/data/food/on_consume/honey_bottle
+execute if entity @s[tag=GlacierPlayer.Drank_Milk_Bucket] run function glacier_players:player/hunger/data/food/on_consume/milk_bucket
 
 execute if entity @s[tag=GlacierPlayer.Drank_Potion] run function glacier_players:player/hunger/data/food/on_consume/potion/get_components_info
+execute if entity @s[tag=GlacierPlayer.Drank_Ominous_Bottle] run function glacier_players:player/hunger/data/food/on_consume/potion/ominous_bottle
 
 ##Extensions
 function #glacier_players:extensions/inventory/food_properties with storage glacier_players:inventory_macro

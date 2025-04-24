@@ -1,6 +1,8 @@
 {
     "values": [
 "bedrock",
+"test_block",
+"test_instance_block",
 "oak_log",
 "oak_wood",
 "stripped_oak_log",

@@ -17,12 +17,11 @@ tag @s remove GlacierPlayer.Drinking_Honey
 
 ##Store Parition and Slot
 execute store result storage glacier_players:inventory_macro saved_partition int 1 run scoreboard players get @s glacier_players.inventory_saved_partition
-
 execute store result storage glacier_players:inventory_macro saved_slot int 1 run scoreboard players get @s glacier_players.inventory_saved_slot
-
-##Run special code for special foods
-function glacier_players:player/hunger/eat/consume/check_tags
-$data modify entity $(saved_alias_uuid) active_effects set from entity @s active_effects
 
 ##Remove 1 of the eaten item from the Glacier's inventory
 execute as @e[limit=1,type=donkey,tag=GlacierPlayer.Inventory_SelectedFood,tag=GlacierPlayer.Selected] run function glacier_players:player/hunger/eat/consume/consume_remove_item
+
+##Run special code for special foods
+function glacier_players:player/inventory/item/internal/food/success/after/check_tags
+$data modify entity $(saved_alias_uuid) active_effects set from entity @s active_effects

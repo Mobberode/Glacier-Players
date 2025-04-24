@@ -1,0 +1,1 @@
+$effect give @s bad_omen 6000 $(ominous_amplifier)

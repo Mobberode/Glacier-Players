@@ -2,6 +2,13 @@
     "values": [
         "milk_bucket",
         "water_bucket",
-        "lava_bucket"
+        "lava_bucket",
+        "powder_snow_bucket",
+        "cod_bucket",
+        "salmon_bucket",
+        "axolotl_bucket",
+        "tadpole_bucket",
+        "pufferfish_bucket",
+        "tropical_fish_bucket"
     ]
 }
