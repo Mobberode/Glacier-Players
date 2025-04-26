@@ -1,10 +1,10 @@
 ##Extensions
 #Unload previously loaded
-tellraw @a [{text:"[>_] GPE Loader | Removing previously loaded extensions",color:aqua}]
+tellraw @a [{text:"[>_] GPE Loader | Unloading loaded extensions",color:aqua}]
 function glacier_players:technical/extensions/loader/remove/previously_loaded
 
 #Load extensions
-tellraw @a [{text:"[>_] GPE Loader | Prepare extensions for load",color:aqua}]
+tellraw @a [{text:"[>_] GPE Loader | Prepare loading extensions",color:aqua}]
 
 scoreboard players set #Loaded glacier_players.extensions 0
 function glacier_players:technical/extensions/visual_storages/set
@@ -14,10 +14,11 @@ scoreboard players set #ExtensionToolkitMost glacier_players.extensions 0
 function glacier_players:technical/extensions/loader/load_extensions
 
 ##Filter
+tellraw @a [{text:"[>_] GPE Loader | Applying Filters (if applicable)",color:aqua}]
 execute if score #Chat.Filter glacier_players.config matches 1 run function glacier_players:technical/extensions/visual_storages/filter/apply
 
 ##Apply
-tellraw @a [{text:"[>_] GPE Loader | Applying visual data counts",color:aqua}]
+tellraw @a [{text:"[>_] GPE Loader | Counting Visual Data amounts",color:aqua}]
 
 #
 

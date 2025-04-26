@@ -6,5 +6,4 @@ function ext_template:contents/line_me
 function ext_template:contents/line_panic
 function ext_template:contents/line_poll
 function ext_template:contents/line_totem_popped
-function ext_template:contents/line_voice
 function ext_template:contents/names

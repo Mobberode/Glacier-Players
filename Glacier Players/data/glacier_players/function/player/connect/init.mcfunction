@@ -16,7 +16,7 @@ function glacier_players:player/connect/data/store with storage glacier_players:
 function glacier_players:recurring_functions/set_player
 
 #Initalize the alias and inventory and run further functions with them
-execute at @s run function glacier_players:player/connect/init_body with storage glacier_players:macro
+execute at @s run function glacier_players:player/connect/init_body
 
 ##Run the on connect function for extensions
 function #glacier_players:extensions/behaviour/player_init/connect

@@ -7,7 +7,7 @@ data modify storage glacier_players:inventory_macro check_function set value "gl
 scoreboard players set #DuplicateNotFound glacier_players.condition 0
 
 ##Spawn more inventory entites if needed
-execute unless score @s glacier_players.inventory_active_entites matches 3.. run function glacier_players:player/inventory/entities/summon with storage glacier_players:macro
+execute unless score @s glacier_players.inventory_active_entites matches 3.. run function glacier_players:player/inventory/entities/summon
 
 function glacier_players:player/inventory/item/partitions/hotbar
 

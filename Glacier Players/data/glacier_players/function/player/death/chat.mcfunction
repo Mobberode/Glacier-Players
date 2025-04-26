@@ -1,1 +1,1 @@
-function glacier_players:player/speech/types/death/get_chat_contents with storage glacier_players:extensions
+function glacier_players:player/speech/types/death/get_chat_contents

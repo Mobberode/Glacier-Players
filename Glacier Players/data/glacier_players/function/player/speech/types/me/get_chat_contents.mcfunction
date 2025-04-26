@@ -2,4 +2,4 @@ data modify storage glacier_players:visual_macro_temp visual_storage set from st
 
 function glacier_players:player/speech/get_contents
 
-function glacier_players:player/speech/speak_me with storage glacier_players:visual_macro
+function glacier_players:player/speech/speak_me

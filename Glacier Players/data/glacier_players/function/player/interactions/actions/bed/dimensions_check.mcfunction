@@ -7,4 +7,4 @@ function #glacier_players:extensions/interactions/bed_affected_dimensions
 
 execute if score #Explode glacier_players.condition matches 1 run return run function glacier_players:player/interactions/actions/bed/explode_bed
 
-function glacier_players:player/interactions/actions/bed/set_spawnpoint with storage glacier_players:macro
+function glacier_players:player/interactions/actions/bed/set_spawnpoint
