@@ -34,6 +34,188 @@
             "ascent": 16,
             "height": 32,
             "chars": ["5"]
-        } 
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:suggest_shutup.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["6"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:6dice.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["7"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:armourstand.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["8"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:bloopi.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["9"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:clown.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["a"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:crown.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["b"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:egg.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["c"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:explosion.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["d"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:glaciercog.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["e"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:glacierheart.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["f"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:goofystand.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["g"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:grass.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["h"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:greenring.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["i"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:grin.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["j"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:id_0.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["k"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:jellyfish.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["l"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:myears.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["m"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:rightarrow.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["n"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:ringedplanet.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["o"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:rockart.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["p"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:signature.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["q"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:spraycan.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["r"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:stare.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["s"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:stayawayfromthismf.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["t"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:wahhhhh.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["u"]
+        },
+        {
+            "type": "bitmap",
+            "file": "glacier_images:xgrin.png",
+            "ascent": 16,
+            "height": 32,
+            "chars": ["v"]
+        }
     ]
 }
