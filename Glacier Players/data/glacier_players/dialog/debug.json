@@ -1,0 +1,20 @@
+{"type":"multi_action",
+"title":"Glacier Players Debug PROTOTYPE",
+"columns": 1,
+"on_cancel":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:menu"},
+"actions":
+[
+  {"id":"gp.debug_mode",
+  "label":"Debug Mode",
+  "on_click":{
+    "action": "run_command",
+    "command": "function glacier_players:technical/tools/actions/teleport/from_random"}},
+      {"id":"gp.debug_stats",
+  "label":"Debug Stats",
+  "on_click":{
+    "action": "run_command",
+    "command": "function glacier_players:technical/tools/actions/teleport/to_random"}}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "type": "multi_action",
+    "title": "Glacier Links",
+    "on_cancel":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:menu"},
+    "actions": [
+        {"label":"Discord","on_click":{"action":"open_url","url":"https://discord.gg/fvsvmavex8"}},
+        {"label":"Source (GitHub)","on_click":{"action":"open_url","url":"https://github.com/Mobberode/Glacier-Players"}},
+        {"label":"Trello","on_click":{"action":"open_url","url":"https://trello.com/b/4oeiX5qQ/expai-and-glacier-players"}}
+    ]
+}

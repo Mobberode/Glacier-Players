@@ -1,0 +1,39 @@
+{"type":"multi_action",
+"title":"Glacier Players Actions PROTOTYPE",
+"columns": 1,
+"on_cancel":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:menu"},
+"actions":
+[
+  {"id":"gp.connect",
+  "label":"Force Connection",
+  "on_click":{
+    "action": "run_command",
+    "command": "function glacier_players:technical/tools/actions/spawn_gp"}},
+    
+      {"id":"gp.disconnect",
+  "label":"Disconnect Sub-Actions",
+  "on_click":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:a_disconnect"}},
+
+          {"id":"gp.kill",
+  "label":"Kill Sub-Actions",
+  "on_click":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:a_kill"}},
+
+      {"id":"gp.teleport",
+  "label":"Teleport Sub-Actions",
+  "on_click":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:a_teleport"}},
+
+      {"id":"gp.reset_dmarkers",
+  "label":"Reset DMarkers",
+  "on_click":{
+    "action": "run_command",
+    "command": "function glacier_players:technical/tools/actions/reset_dmarkers"}}
+  ]
+}

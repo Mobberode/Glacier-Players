@@ -1,0 +1,9 @@
+{
+    "type": "multi_action_input_form",
+    "title": "Glacier Players Temp",
+    "inputs": [{"key":"test","type":"single_option","label":"Allow Connections","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]}
+    ],
+    "actions": [
+        {"id":"a","label":"Submit Config Changes","on_submit":{"type":"command_template","template":"tellraw @a {text:$(test)}"}}
+    ]
+}

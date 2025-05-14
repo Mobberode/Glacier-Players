@@ -1,0 +1,15 @@
+{"type":"multi_action",
+"title":"Glacier Players Configs PROTOTYPE",
+"columns": 1,
+"on_cancel":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:menu"},
+"actions":
+[
+  {"id":"gp.connect",
+  "label":"Force Connection",
+  "on_click":{
+    "action": "run_command",
+    "command": "function glacier_players:technical/tools/actions/spawn_gp"}}
+  ]
+}

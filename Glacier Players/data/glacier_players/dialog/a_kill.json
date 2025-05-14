@@ -1,0 +1,25 @@
+{"type":"multi_action",
+"title":"Glacier Players Actions PROTOTYPE",
+"columns": 1,
+"on_cancel":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:actions"},
+"actions":
+[
+  {"id":"gp.kill_all",
+  "label":"Kill (All)",
+  "on_click":{
+    "action": "run_command",
+    "command": "function glacier_players:technical/tools/actions/killer/all"}},
+      {"id":"gp.kill_nearest",
+  "label":"Kill (Nearest)",
+  "on_click":{
+    "action": "run_command",
+    "command": "function glacier_players:technical/tools/actions/killer/nearest"}},
+      {"id":"gp.kill_random",
+  "label":"Kill (Random)",
+  "on_click":{
+    "action": "run_command",
+    "command": "function glacier_players:technical/tools/actions/killer/random"}}
+  ]
+}

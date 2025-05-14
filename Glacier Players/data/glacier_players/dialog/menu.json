@@ -1,0 +1,42 @@
+{"type":"multi_action",
+"title":"Glacier Players",
+"columns":1,
+"actions":
+[
+    {"id":"gp.actions",
+  "label":"Actions",
+  "on_click":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:actions"}},
+    
+        {"id":"gp.config",
+  "label":"Config WIP",
+  "on_click":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:configs"}},
+
+            {"id":"gp.experimental",
+  "label":"Experimental WIP",
+  "on_click":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:experimental"}},
+
+                {"id":"gp.debug",
+  "label":"Debug WIP",
+  "on_click":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:debug"}},
+    
+                    {"id":"gp.extensions",
+  "label":"Extensions WIP",
+  "on_click":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:extensions"}},
+
+                        {"id":"gp.links",
+  "label":"Links",
+  "on_click":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:links"}}
+]
+}

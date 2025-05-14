@@ -1,0 +1,25 @@
+{"type":"multi_action",
+"title":"Glacier Players Actions PROTOTYPE",
+"columns": 1,
+"on_cancel":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:actions"},
+"actions":
+[
+  {"id":"gp.teleport_to_you",
+  "label":"Teleport Random to You",
+  "on_click":{
+    "action": "run_command",
+    "command": "function glacier_players:technical/tools/actions/teleport/from_random"}},
+      {"id":"gp.teleport_to_random",
+  "label":"Teleport You to Random",
+  "on_click":{
+    "action": "run_command",
+    "command": "function glacier_players:technical/tools/actions/teleport/to_random"}},
+      {"id":"gp.teleport_all_to_you",
+  "label":"Teleport All to You",
+  "on_click":{
+    "action": "run_command",
+    "command": "function glacier_players:technical/tools/actions/teleport/from_all"}}
+  ]
+}
