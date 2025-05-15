@@ -1,5 +1,5 @@
 ##Store Item into the Hotbar
-msg @a[tag=gp.debug] empty slot overridden
+msg @a[scores={glacier_players.debug=1..}] empty slot overridden
 
 ##Modify slot
 data modify storage glacier_players:inventory_macro processed_item.Slot set from storage glacier_players:inventory_macro player_inv_slot

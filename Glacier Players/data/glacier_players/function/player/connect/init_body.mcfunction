@@ -4,5 +4,5 @@ summon piglin_brute ~ ~ ~ {attributes:[{id:"scale",base:0.93},{id:"max_health",b
 function glacier_players:player/inventory/entities/summon_first
 
 ##Execute as the alias and partition
-execute as @e[distance=0..1,limit=1,type=piglin_brute,tag=GP.Atlas_Init] run function glacier_players:technical/uuid/store_alias with storage glacier_players:macro
-execute as @e[distance=0..1,limit=3,type=donkey,tag=GP.Invs.Init] run function glacier_players:player/inventory/item/partitions/entities/initalize
+execute as @e[dy=0,limit=1,type=piglin_brute,tag=GP.Atlas_Init] run function glacier_players:technical/uuid/store_alias with storage glacier_players:macro
+execute as @e[dy=0,limit=3,type=donkey,tag=GP.Invs.Init] run function glacier_players:player/inventory/item/partitions/entities/initalize

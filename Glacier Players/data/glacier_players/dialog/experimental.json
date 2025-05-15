@@ -6,10 +6,15 @@
     "dialog": "glacier_players:menu"},
 "actions":
 [
-  {"id":"gp.connect",
-  "label":"Force Connection",
+  {
+  "label":"Airtime",
   "on_click":{
     "action": "run_command",
-    "command": "function glacier_players:technical/tools/actions/spawn_gp"}}
+    "command": "function glacier_players:technical/tools/experimental/airtime"}},
+      {
+  "label":"Interaction Test",
+  "on_click":{
+    "action": "run_command",
+    "command": "function glacier_players:technical/tools/experimental/interaction_test"}}
   ]
 }

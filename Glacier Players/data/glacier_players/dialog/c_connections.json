@@ -1,0 +1,13 @@
+{
+    "type": "multi_action_input_form",
+    "title": "Configs - Connections PH",
+    "inputs": [
+        {"key":"test","type":"single_option","label":"Connections","options":[{"id":"test_true","display":"ON","initial":true},{"id":"test_false","display":"OFF"}]},
+        {"key":"test2","type":"single_option","label":"Disconnections","options":[{"id":"test_true","display":"ON","initial":true},{"id":"test_false","display":"OFF"}]},
+        {"key":"test3","type":"single_option","label":"Connections Limit","options":[{"id":"test_true","display":"ON","initial":true},{"id":"test_false","display":"OFF"}]},
+        {"key":"test","type":"text","label":"Max Natural Connections","initial":"16"}
+    ],
+    "actions": [
+        {"id":"a","label":"Submit Config Changes","on_submit":{"type":"command_template","template":"tellraw @a {text:$(test)}"}}
+    ]
+}

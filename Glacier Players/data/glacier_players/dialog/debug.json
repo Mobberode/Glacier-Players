@@ -6,15 +6,15 @@
     "dialog": "glacier_players:menu"},
 "actions":
 [
-  {"id":"gp.debug_mode",
+  {
   "label":"Debug Mode",
   "on_click":{
     "action": "run_command",
-    "command": "function glacier_players:technical/tools/actions/teleport/from_random"}},
-      {"id":"gp.debug_stats",
+    "command": "function glacier_players:technical/tools/debug/debug"}},
+      {
   "label":"Debug Stats",
   "on_click":{
     "action": "run_command",
-    "command": "function glacier_players:technical/tools/actions/teleport/to_random"}}
+    "command": "function glacier_players:technical/tools/debug/stats/stats"}}
   ]
 }

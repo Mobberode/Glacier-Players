@@ -1,5 +1,5 @@
 ##Debug Text
-msg @a[tag=gp.debug] ran stored same item
+msg @a[scores={glacier_players.debug=1..}] ran stored same item
 
 ##Store
 function glacier_players:player/inventory/item/internal/check/success/same_item/store_processed_item

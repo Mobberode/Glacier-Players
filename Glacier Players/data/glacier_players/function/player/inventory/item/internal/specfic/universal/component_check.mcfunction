@@ -1,5 +1,5 @@
 #Debug
-msg @a[tag=gp.debug] ran universal component check
+msg @a[scores={glacier_players.debug=1..}] ran universal component check
 
 ##Reset data
 data modify storage glacier_players:inventory_macro components set value ''

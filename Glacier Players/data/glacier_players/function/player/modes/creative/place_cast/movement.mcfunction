@@ -3,7 +3,7 @@ scoreboard players add @s glacier_players.cast_steps 1
 tp ^ ^ ^.025
 
 #Debug
-particle rain ~ ~ ~ 0 0 0 0 1 force @a[tag=gp.debug]
+particle rain ~ ~ ~ 0 0 0 0 1 force @a[scores={glacier_players.debug=1..}]
 
 ##check
 execute unless block ~ ~ ~ #glacier_players:non_solids_building run return run function glacier_players:player/modes/creative/place_cast/after_cast/success

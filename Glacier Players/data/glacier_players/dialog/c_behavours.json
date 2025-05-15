@@ -11,8 +11,14 @@
         {"key":"test7","type":"single_option","label":"Inventory","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
         {"key":"test8","type":"single_option","label":"Hunger","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
         {"key":"test9","type":"single_option","label":"Locator Bar","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
-        {"key":"test10","type":"single_option","label":"Polls","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]}
-
+        {"key":"test10","type":"single_option","label":"Voice [RP]","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
+        {"key":"test10","type":"single_option","label":"Sprays [RP]","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
+        {"key":"test10","type":"single_option","label":"Polls","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
+        {"key":"test10","type":"single_option","label":"Global Chat Filter","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
+        {"key":"test10","type":"single_option","label":"Filter - Sexual","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
+        {"key":"test10","type":"single_option","label":"Filter - Swearing","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
+        {"key":"test10","type":"single_option","label":"Filter - Racial","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
+        {"key":"test10","type":"single_option","label":"Forceload","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]}
     ],
     "actions": [
         {"id":"a","label":"Submit Config Changes","on_submit":{"type":"command_template","template":"tellraw @a {text:$(test)}"}}

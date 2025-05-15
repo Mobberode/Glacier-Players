@@ -2,4 +2,4 @@ $execute as $(saved_hotbar_uuid) run function glacier_players:player/inventory/i
 
 execute if items block 0 0 0 container.* * run item replace entity @s weapon.offhand from block 0 0 0 container.0
 
-msg @a[tag=gp.debug] off hand select
+msg @a[scores={glacier_players.debug=1..}] off hand select

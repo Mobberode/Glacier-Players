@@ -18,4 +18,4 @@ data modify storage glacier_players:hitbox full set string storage glacier_playe
 data modify storage glacier_players:hitbox modified set string storage glacier_players:hitbox modified 0 -1
 
 #Info
-tellraw @a[tag=gp.debug] [{text:""},{selector:"@s",color:blue},{text:" | "},{storage:"glacier_players:hitbox",nbt:original,color:red},{text:" (Original Value) / "},{storage:"glacier_players:hitbox",nbt:full,color:gold},{text:" (Full Hitbox Height) / "},{storage:"glacier_players:hitbox",nbt:modified,color:yellow},{text:" (Modified: 0.01 subtracted for selectors)"}]
+tellraw @a[scores={glacier_players.debug=1..}] [{text:""},{selector:"@s",color:blue},{text:" | "},{storage:"glacier_players:hitbox",nbt:original,color:red},{text:" (Original Value) / "},{storage:"glacier_players:hitbox",nbt:full,color:gold},{text:" (Full Hitbox Height) / "},{storage:"glacier_players:hitbox",nbt:modified,color:yellow},{text:" (Modified: 0.01 subtracted for selectors)"}]

@@ -10,7 +10,7 @@ execute if score #Pass glacier_players.condition matches 0 run return fail
 #Distance and comparsions
 function glacier_players:player/modes/creative/place_cast/after_cast/block_distance_compare
 
-tellraw @a[tag=gp.debug] [{score:{name:"#Compare",objective:glacier_players.x_pos}},{text:" "},{score:{name:"#Compare",objective:glacier_players.y_pos}},{text:" "},{score:{name:"#Compare",objective:glacier_players.z_pos}}]
+tellraw @a[scores={glacier_players.debug=1..}] [{score:{name:"#Compare",objective:glacier_players.x_pos}},{text:" "},{score:{name:"#Compare",objective:glacier_players.y_pos}},{text:" "},{score:{name:"#Compare",objective:glacier_players.z_pos}}]
 
 function glacier_players:player/modes/creative/place_cast/after_cast/place with storage glacier_players:build_macro
 

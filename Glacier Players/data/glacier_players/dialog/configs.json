@@ -6,10 +6,15 @@
     "dialog": "glacier_players:menu"},
 "actions":
 [
-  {"id":"gp.connect",
-  "label":"Force Connection",
+  {
+  "label":"Connectivity",
   "on_click":{
-    "action": "run_command",
-    "command": "function glacier_players:technical/tools/actions/spawn_gp"}}
+    "action": "show_dialog",
+    "dialog": "glacier_players:c_connections"}},
+      {
+  "label":"Behaviours",
+  "on_click":{
+    "action": "show_dialog",
+    "dialog": "glacier_players:c_behavours"}}
   ]
 }
