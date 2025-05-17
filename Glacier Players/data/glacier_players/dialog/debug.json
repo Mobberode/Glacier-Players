@@ -1,20 +1,11 @@
-{"type":"multi_action",
-"title":"Glacier Players Debug PROTOTYPE",
-"columns": 1,
-"on_cancel":{
-    "action": "show_dialog",
-    "dialog": "glacier_players:menu"},
-"actions":
-[
-  {
-  "label":"Debug Mode",
-  "on_click":{
-    "action": "run_command",
-    "command": "function glacier_players:technical/tools/debug/debug"}},
-      {
-  "label":"Debug Stats",
-  "on_click":{
-    "action": "run_command",
-    "command": "function glacier_players:technical/tools/debug/stats/stats"}}
-  ]
+{
+    "type": "multi_action_input_form",
+    "title": "Glacier Players Debug",
+    "inputs": [
+        {"key":"1","type":"single_option","label":"Debug Mode","options":[{"id":"1","display":"ON"},{"id":"0","display":"OFF","initial":true}]},
+        {"key":"2","type":"single_option","label":"Debug Stats","options":[{"id":"1","display":"ON"},{"id":"0","display":"OFF","initial":true}]}
+    ],
+    "actions": [
+        {"id":"submit","label":"Submit Config Changes","on_submit":{"type":"command_template","template":"function glacier_players:technical/unstable_dialog/submit_debug_changes {1:$(1),2:$(2)}"}}
+    ]
 }
