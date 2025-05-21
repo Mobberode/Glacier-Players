@@ -5,7 +5,7 @@ function glacier_players:technical/extensions/start
 
 data modify storage glacier_players:visual_macro startup.release set value 22
 data modify storage glacier_players:visual_macro startup.version set value ["25w20a"]
-data modify storage glacier_players:visual_macro startup.unstable set value true
+data modify storage glacier_players:visual_macro startup.unstable set value false
 
 data modify storage glacier_players:visual_macro credits set value [{text:"Glacier Players"},{text:gu,click_event:{action:"open_url",url:"https://github.com/gibbsly/gu"},underlined:true},{text:StringLib,click_event:{action:"open_url",url:"https://github.com/CMDred/StringLib/"},underlined:true}]
 
