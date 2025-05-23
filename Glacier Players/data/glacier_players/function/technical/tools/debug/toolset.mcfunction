@@ -5,3 +5,6 @@ execute if score @s glacier_players.debug matches 1.. run item replace entity @s
 
 execute unless score #Debug_GlacierStats glacier_players.config matches 1 run item replace entity @s hotbar.2 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/debug/stats/stats"},custom_name={text:"Toggle Debug Stats",color:red},item_model=red_candle]
 execute if score #Debug_GlacierStats glacier_players.config matches 1.. run item replace entity @s hotbar.2 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/debug/stats/stats"},custom_name={text:"Toggle Debug Stats",color:green},item_model=green_candle]
+
+execute unless score #Debug_DMarker glacier_players.config matches 1 run item replace entity @s hotbar.3 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/debug/dmarker"},custom_name={text:"Toggle DMarker Locations",color:red},item_model=red_candle]
+execute if score #Debug_DMarker glacier_players.config matches 1.. run item replace entity @s hotbar.3 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/debug/dmarker"},custom_name={text:"Toggle DMarker Locations",color:green},item_model=green_candle]

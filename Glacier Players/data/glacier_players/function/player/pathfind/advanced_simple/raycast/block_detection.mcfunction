@@ -1,2 +1,1 @@
 summon marker ~ ~ ~ {Tags:["GP.DMarker_Place_Canidate"]}
-#execute as @e[type=marker,tag=GP.DMarker_Place_Canidate_Set] run function glacier_players:player/pathfind/advanced_simple/after_casts/set_candiate

@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=GP.DMarker] at @s run particle angry_villager ~ ~ ~ 0 0 0 0 1 force @a[scores={glacier_players.debug=1..}]
