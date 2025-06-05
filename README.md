@@ -2,13 +2,13 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Mobberode/Glacier-Players?style=plastic&logo=Github&color=aqua)
 
 # Glacier Players
-## INSTALLATION ON GITHUB (Latest Commit)
+## INSTALLATION FOR GITHUB (Latest Commit)
 1. Press the green code button on the repo
 2. Download ZIP
 3. Unzip ZIP
 4. Go in the folder and keep doing down until you see a folder called Glacier Players
 
-## INSTALLATION IN GITHUB (Releases)
+## INSTALLATION FOR GITHUB (Releases)
 1. Go to the releases page
 2. Pick a release to download
 3. Download the .zip file (if present) Otherwise, download the source
