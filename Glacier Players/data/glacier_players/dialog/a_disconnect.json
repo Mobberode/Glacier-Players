@@ -1,25 +1,26 @@
 {"type":"multi_action",
 "title":"Glacier Players Actions - Disconnect PROTOTYPE",
 "columns": 1,
-"on_cancel":{
-    "action": "show_dialog",
-    "dialog": "glacier_players:actions"},
+"exit_action":{
+    "label": "Back",
+    "action": {"type":"show_dialog",
+    "dialog": "glacier_players:actions"}},
 "actions":
 [    
       {
   "label":"Disconnect (All)",
-  "on_click":{
-    "action": "run_command",
+  "action":{
+    "type": "run_command",
     "command": "function glacier_players:technical/tools/actions/disconnecter/all"}},
           {
   "label":"Disconnect (Nearest)",
-  "on_click":{
-    "action": "run_command",
+  "action":{
+    "type": "run_command",
     "command": "function glacier_players:technical/tools/actions/disconnecter/nearest"}},
           {
   "label":"Disconnect (Random)",
-  "on_click":{
-    "action": "run_command",
+  "action":{
+    "type": "run_command",
     "command": "function glacier_players:technical/tools/actions/disconnecter/random"}}
   ]
 }

@@ -1,11 +1,11 @@
 {
-    "type": "multi_action_input_form",
+    "type": "multi_action",
     "title": "Actions - Advanced Connection",
     "inputs": [
         {"key":"connecting_radius","type":"text","label":"Spawning Radius","initial":"32"},
         {"key":"name_head","type":"text","label":"Player Head Name","initial":"Steve"}
     ],
     "actions": [
-        {"id":"connect","label":"Spawn Selected Glacier","on_submit":{"type":"command_template","template":"function glacier_players:player/connect/connect_advanced {connecting_radius:$(connecting_radius),name_head:$(name_head)}"}}
+        {"label":"Spawn Selected Glacier","action":{"type":"dynamic/run_command","template":"function glacier_players:player/connect/connect_advanced {connecting_radius:$(connecting_radius),name_head:$(name_head)}"}}
     ]
 }

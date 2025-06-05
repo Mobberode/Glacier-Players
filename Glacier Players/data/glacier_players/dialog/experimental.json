@@ -1,20 +1,21 @@
 {"type":"multi_action",
 "title":"Glacier Players Experimental PROTOTYPE",
 "columns": 1,
-"on_cancel":{
-    "action": "show_dialog",
-    "dialog": "glacier_players:menu"},
+"exit_action":{
+  "label": "Back",
+  "action": {"type":"show_dialog",
+  "dialog": "glacier_players:menu"}},
 "actions":
 [
   {
   "label":"Airtime",
-  "on_click":{
-    "action": "run_command",
+  "action":{
+    "type": "run_command",
     "command": "function glacier_players:technical/tools/experimental/airtime"}},
       {
   "label":"Interaction Test",
-  "on_click":{
-    "action": "run_command",
+  "action":{
+    "type": "run_command",
     "command": "function glacier_players:technical/tools/experimental/interaction_test"}}
   ]
 }

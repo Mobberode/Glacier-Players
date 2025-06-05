@@ -1,6 +1,10 @@
 {
-    "type": "multi_action_input_form",
+    "type": "multi_action",
     "title": "Glacier Players Temp",
+    "exit_action":{
+    "label": "Back",
+    "action": {"type":"show_dialog",
+    "dialog": "glacier_players:configs"}},
     "inputs": [
         {"key":"test","type":"single_option","label":"Permadeath","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
         {"key":"test2","type":"single_option","label":"Keep Inventory","options":[{"id":"test_true","display":"True"},{"id":"test_false","display":"False"},{"id":"testa","display":"Use Gamerule","initial":true}]},
@@ -15,6 +19,6 @@
 
     ],
     "actions": [
-        {"id":"a","label":"Submit Config Changes","on_submit":{"type":"command_template","template":"tellraw @a {text:$(test)}"}}
+        {"label":"Submit Config Changes","action":{"type":"dynamic/run_command","template":"tellraw @a {text:$(test)}"}}
     ]
 }

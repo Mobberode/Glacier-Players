@@ -4,39 +4,39 @@
 "actions":
 [
   {
-  "label":"Actions",
-  "on_click":{
-    "action": "show_dialog",
+  "label":"Actions WIP",
+  "action":{
+    "type": "show_dialog",
     "dialog": "glacier_players:actions"}},
     
   {
   "label":"Config WIP",
-  "on_click":{
-    "action": "show_dialog",
+  "action":{
+    "type": "show_dialog",
     "dialog": "glacier_players:configs"}},
 
   {
   "label":"Experimental WIP",
-  "on_click":{
-    "action": "show_dialog",
+  "action":{
+    "type": "show_dialog",
     "dialog": "glacier_players:experimental"}},
 
   {
   "label":"Debug WIP",
-  "on_click":{
-    "action": "show_dialog",
+  "action":{
+    "type": "show_dialog",
     "dialog": "glacier_players:debug"}},
     
   {
   "label":"Extensions WIP",
-  "on_click":{
-    "action": "show_dialog",
+  "action":{
+    "type": "show_dialog",
     "dialog": "glacier_players:extensions"}},
 
   {
   "label":"Links",
-  "on_click":{
-    "action": "show_dialog",
+  "action":{
+    "type": "show_dialog",
     "dialog": "glacier_players:links"}}
 ]
 }
