@@ -17,6 +17,7 @@
         {"key":"test9","type":"single_option","label":"Locator Bar","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
         {"key":"test10","type":"single_option","label":"Voice [RP]","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
         {"key":"test10","type":"single_option","label":"Sprays [RP]","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
+        {"key":"test10","type":"single_option","label":"Mark Glacier Messages","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
         {"key":"test10","type":"single_option","label":"Polls","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
         {"key":"test10","type":"single_option","label":"Global Chat Filter","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},
         {"key":"test10","type":"single_option","label":"Filter - Sexual","options":[{"id":"test_true","display":"True","initial":true},{"id":"test_false","display":"False"}]},

@@ -1,0 +1,1 @@
+execute if score #Chat.Mark_Messages glacier_players.config matches 1.. run function glacier_players:player/speech/config/mark
