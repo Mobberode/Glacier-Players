@@ -8,6 +8,10 @@
         "cut_copper_slab",
         "copper_door",
         "copper_trapdoor",
-        "copper_bulb"
+        "copper_bulb",
+        "copper_chain",
+        "lightning_rod",
+        "copper_golem_statue",
+        "copper_lantern"
     ]
 }

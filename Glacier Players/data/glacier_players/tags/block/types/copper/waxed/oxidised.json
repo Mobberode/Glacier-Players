@@ -8,6 +8,10 @@
         "waxed_oxidized_cut_copper_slab",
         "waxed_oxidized_copper_door",
         "waxed_oxidized_copper_trapdoor",
-        "waxed_oxidized_copper_bulb"
+        "waxed_oxidized_copper_bulb",
+        "waxed_oxidized_copper_chain",
+        "waxed_oxidized_lightning_rod",
+        "waxed_oxidized_copper_golem_statue",
+        "waxed_oxidized_copper_lantern"
     ]
 }

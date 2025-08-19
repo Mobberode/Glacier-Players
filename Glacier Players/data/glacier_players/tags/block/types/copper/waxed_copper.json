@@ -35,6 +35,26 @@
         "waxed_oxidized_cut_copper_slab",
         "waxed_oxidized_copper_door",
         "waxed_oxidized_copper_trapdoor",
-        "waxed_oxidized_copper_bulb"
+        "waxed_oxidized_copper_bulb",
+        "waxed_copper_bars",
+        "waxed_exposed_copper_bars",
+        "waxed_weathered_copper_bars",
+        "waxed_oxidized_copper_bars",
+        "waxed_copper_chain",
+        "waxed_exposed_copper_chain",
+        "waxed_weathered_copper_chain",
+        "waxed_oxidized_copper_chain",
+        "waxed_lightning_rod",
+        "waxed_exposed_lightning_rod",
+        "waxed_weathered_lightning_rod",
+        "waxed_oxidized_lightning_rod",
+        "waxed_copper_golem_statue",
+        "waxed_exposed_copper_golem_statue",
+        "waxed_weathered_copper_golem_statue",
+        "waxed_oxidized_copper_golem_statue",
+        "waxed_copper_lantern",
+        "waxed_exposed_copper_lantern",
+        "waxed_weathered_copper_lantern",
+        "waxed_oxidized_copper_lantern"
     ]
 }

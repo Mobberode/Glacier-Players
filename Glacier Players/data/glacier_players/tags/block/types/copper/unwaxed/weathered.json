@@ -8,6 +8,10 @@
         "weathered_cut_copper_slab",
         "weathered_copper_door",
         "weathered_copper_trapdoor",
-        "weathered_copper_bulb"
+        "weathered_copper_bulb",
+        "weathered_copper_chain",
+        "weathered_lightning_rod",
+        "weathered_copper_golem_statue",
+        "weathered_copper_lantern"
     ]
 }

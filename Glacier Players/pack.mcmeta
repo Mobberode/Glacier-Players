@@ -1,7 +1,7 @@
 {
   "id": "gp",
   "pack": {
-    "pack_format": 81,
-    "description": [{"text":"Pack Format 81 - 1.21.7, Release 23"},{"selector":"gp"}]
+    "pack_format": 83.1,
+    "description": [{"text":"Pack Format 83.1 - 25w33a, Release 23"},{"selector":"gp"}]
   }
 }

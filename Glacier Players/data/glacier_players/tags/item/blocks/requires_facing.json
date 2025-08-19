@@ -64,7 +64,7 @@
         "soul_lantern",
         "lectern",
         "lever",
-        "lightning_rod",
+        "#lightning_rods",
         "loom",
         "melon_seeds",
         "observer",
@@ -97,7 +97,9 @@
         "stonecutter",
         "torch",
         "soul_torch",
+        "copper_torch",
         "#minecraft:trapdoors",
-        "tripwire_hook"
+        "tripwire_hook",
+        "#copper_golem_statues"
     ]
 }

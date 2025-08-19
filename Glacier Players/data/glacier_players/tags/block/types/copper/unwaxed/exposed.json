@@ -8,6 +8,10 @@
         "exposed_cut_copper_slab",
         "exposed_copper_door",
         "exposed_copper_trapdoor",
-        "exposed_copper_bulb"
+        "exposed_copper_bulb",
+        "exposed_copper_chain",
+        "exposed_lightning_rod",
+        "exposed_copper_golem_statue",
+        "exposed_copper_lantern"
     ]
 }

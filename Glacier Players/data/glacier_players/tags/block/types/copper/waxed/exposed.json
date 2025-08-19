@@ -8,6 +8,10 @@
         "waxed_exposed_cut_copper_slab",
         "waxed_exposed_copper_door",
         "waxed_exposed_copper_trapdoor",
-        "waxed_exposed_copper_bulb"
+        "waxed_exposed_copper_bulb",
+        "waxed_exposed_copper_chain",
+        "waxed_exposed_lightning_rod",
+        "waxed_exposed_copper_golem_statue",
+        "waxed_exposed_copper_lantern"
     ]
 }
