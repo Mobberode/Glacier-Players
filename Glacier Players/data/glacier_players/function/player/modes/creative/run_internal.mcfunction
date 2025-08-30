@@ -10,6 +10,7 @@ data modify storage glacier_players:inventory_macro saved_block_item set from st
 ##Count
 execute store result score #Blocks glacier_players.number if items block 0 0 0 container.0 *
 
+function glacier_players:player/modes/creative/side_availability
 function glacier_players:player/modes/creative/rotation
 function glacier_players:player/modes/creative/size
 function glacier_players:player/modes/creative/place_effect

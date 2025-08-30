@@ -1,0 +1,2 @@
+data modify storage glacier_players:build_macro place_conditions set value "if block ~ ~ ~ minecraft:soul_sand"
+data modify storage glacier_players:build_macro sound_namespace set value "minecraft:item.nether_wart.plant"

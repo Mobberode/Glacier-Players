@@ -1,3 +1,6 @@
+#reset
+data modify storage glacier_players:build_macro place_conditions set value "unless block ~ ~ ~ #glacier_players:non_solids_building"
+
 execute if items block 0 0 0 container.0 #glacier_players:blocks/place_types/effect_types/amethyst run return run function glacier_players:player/modes/creative/effects/amethyst
 
 execute if items block 0 0 0 container.0 #glacier_players:blocks/place_types/effect_types/amethyst_cluster run return run function glacier_players:player/modes/creative/effects/amethyst_cluster
