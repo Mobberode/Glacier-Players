@@ -1,0 +1,1 @@
+function glacier_players:player/modes/creative/special_conditions/loop
