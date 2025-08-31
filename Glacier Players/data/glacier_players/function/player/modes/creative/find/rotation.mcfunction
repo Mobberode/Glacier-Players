@@ -6,6 +6,6 @@ execute if items block 0 0 0 container.0 #glacier_players:blocks/requires_facing
 
 execute if items block 0 0 0 container.0 #glacier_players:blocks/requires_orientation run return run data modify storage glacier_players:build_macro type.rotation set value orientation
 
-execute if items block 0 0 0 container.0 #glacier_players:blocks/requires_rotate run return run data modify storage glacier_players:build_macro type.rotation set value rotate
+execute if items block 0 0 0 container.0 #glacier_players:blocks/requires_rotate run return run data modify storage glacier_players:build_macro type.rotation set value rotation
 
 function #glacier_players:extensions/creative/rotation_custom
