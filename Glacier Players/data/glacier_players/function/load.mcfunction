@@ -24,8 +24,6 @@ scoreboard objectives add glacier_players.x_pos dummy
 scoreboard objectives add glacier_players.y_pos dummy
 scoreboard objectives add glacier_players.z_pos dummy
 
-scoreboard objectives add glacier_players.airtime dummy
-
 scoreboard objectives add glacier_players.x_respawn_pos dummy
 scoreboard objectives add glacier_players.y_respawn_pos dummy
 scoreboard objectives add glacier_players.z_respawn_pos dummy
@@ -137,6 +135,7 @@ scoreboard objectives add glacier_players.initalized_gp_data dummy
 scoreboard objectives add glacier_players.data.has_set_spawnpoint dummy
 scoreboard objectives add glacier_players.data.has_set_respawn_anchor dummy
 
+scoreboard objectives add glacier_players.waypoint_range dummy
 scoreboard objectives add glacier_players.has_waypoint dummy
 
 ##If #Version is already set.
@@ -153,10 +152,6 @@ team add GlacierPlayersTeam
 team modify GlacierPlayersTeam collisionRule never
 team modify GlacierPlayersTeam seeFriendlyInvisibles false
 team modify GlacierPlayersTeam friendlyFire false
-
-##for gu libary to work with glaciers
-execute unless score #Done glacier_players.initalized_uuids matches 1 run data modify storage glacier_players:uuids instance prepend value {"this is just here so things dont go to shit":true}
-scoreboard players set #Done glacier_players.initalized_uuids 1
 
 ##Glacier Data
 execute unless score #Done glacier_players.initalized_gp_data matches 1 run data modify storage glacier_players:glacier_data instance prepend value {"this is just here so things dont go to shit":true}

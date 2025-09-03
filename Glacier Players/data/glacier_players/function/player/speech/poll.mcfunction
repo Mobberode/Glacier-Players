@@ -8,7 +8,7 @@ function glacier_players:player/speech/poll/prompt_decisions
 playsound block.amethyst_block.step player @a
 
 ##Ask
-execute as @e[type=armor_stand,tag=GlacierPlayer] run function glacier_players:player/speech/poll/player_set
+execute as @e[type=marker,tag=GlacierPlayer] run function glacier_players:player/speech/poll/player_set
 function glacier_players:player/speech/poll/acknowledge_loop
 
 ##Poll Timer

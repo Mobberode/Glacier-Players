@@ -1,0 +1,1 @@
+$execute as $(saved_mannequin_uuid) at @s run function glacier_players:player/brain/thinker

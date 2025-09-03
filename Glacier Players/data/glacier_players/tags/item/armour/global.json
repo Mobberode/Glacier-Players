@@ -24,6 +24,10 @@
         "netherite_chestplate",
         "netherite_leggings",
         "netherite_boots",
-        "turtle_helmet"
+        "turtle_helmet",
+        "copper_helmet",
+        "copper_chestplate",
+        "copper_leggings",
+        "copper_boots"
     ]
 }

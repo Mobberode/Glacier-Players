@@ -1,1 +1,1 @@
-execute as @n[tag=GlacierPlayer] at @s run function glacier_players:player/death/die_init
+kill @n[tag=GlacierPlayer.Mannequin]

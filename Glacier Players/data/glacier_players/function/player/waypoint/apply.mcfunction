@@ -1,0 +1,1 @@
+$attribute $(saved_mannequin_uuid) waypoint_transmit_range base set $(temp)

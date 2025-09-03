@@ -24,4 +24,4 @@ execute as @e[limit=1,type=donkey,tag=GlacierPlayer.Inventory_SelectedFood,tag=G
 
 ##Run special code for special foods
 function glacier_players:player/inventory/item/internal/food/success/after/check_tags
-$data modify entity $(saved_alias_uuid) active_effects set from entity @s active_effects
+$data modify entity $(saved_mannequin_uuid) active_effects set from entity @s active_effects

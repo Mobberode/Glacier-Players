@@ -7,7 +7,7 @@ function glacier_players:recurring_functions/static_check
 
 ##Main function that all Glaciers run
 scoreboard players set #RanForceLoad glacier_players.condition 0
-execute as @e[type=armor_stand,tag=GlacierPlayer,sort=random] run function glacier_players:player/start_player
+execute as @e[type=marker,tag=GlacierPlayer] run function glacier_players:player/start_player
 
 #Connect
 execute unless score #AutomaticConnect glacier_players.config matches 0 run function glacier_players:player/connect/connect_init

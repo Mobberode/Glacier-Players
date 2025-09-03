@@ -10,5 +10,5 @@ $item replace entity @s horse.$(player_inv_slot) with air
 ##Store temp storage into offhand
 $item replace entity $(saved_hotbar_uuid) horse.9 from block 0 0 0 container.9
 
-##Apply to alias
-$item replace entity $(saved_alias_uuid) weapon.offhand from block 0 0 0 container.9
+##Apply to mannequin
+$item replace entity $(saved_mannequin_uuid) weapon.offhand from block 0 0 0 container.9

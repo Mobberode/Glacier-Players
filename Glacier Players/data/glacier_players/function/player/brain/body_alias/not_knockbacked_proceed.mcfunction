@@ -1,1 +1,0 @@
-$execute as $(saved_alias_uuid) run function glacier_players:player/brain/body_alias/not_knockbacked

@@ -1,13 +1,13 @@
 ##Conditions
-#execute store result score #Fire glacier_players.condition if predicate glacier_players:fire_detect
 #Recurring Functions (Mega Performance Cost!)
+function glacier_players:technical/uuid/upload
 execute at @s run function glacier_players:recurring_functions/dual_macros
 
 ##Get Pos (Minial Performance Cost!)
-execute if predicate glacier_players:2_tick_period run function glacier_players:recurring_functions/get_pos
+#execute if predicate glacier_players:2_tick_period run function glacier_players:recurring_functions/get_pos
 
 ##Damage Check (Small Performance Cost!)
-function glacier_players:player/brain/damagecheck
+function glacier_players:player/brain/damagecheck with storage glacier_players:macro
 
 ##Mob Recognigiton
 #function glacier_players:player/recognition/start

@@ -1,0 +1,1 @@
+$data modify entity $(saved_mannequin_uuid) CustomName set from entity @s data.visual.raw_name

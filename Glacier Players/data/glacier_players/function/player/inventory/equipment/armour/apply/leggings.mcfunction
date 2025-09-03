@@ -1,6 +1,6 @@
 scoreboard players set #SortedItem glacier_players.condition 1
 ##If glacier already has something in slot
-$execute as $(saved_alias_uuid) run function glacier_players:player/inventory/equipment/armour/check/leggings
+$execute as $(saved_mannequin_uuid) run function glacier_players:player/inventory/equipment/armour/check/leggings
 
 item replace entity @s weapon.mainhand with air
 #

@@ -1,1 +1,1 @@
-execute as @e[tag=GlacierPlayer] run function glacier_players:technical/tools/configs/behaviours/waypoint/enable_run
+execute as @e[tag=GlacierPlayer.Mannequin] run function glacier_players:technical/tools/configs/behaviours/waypoint/enable_run
