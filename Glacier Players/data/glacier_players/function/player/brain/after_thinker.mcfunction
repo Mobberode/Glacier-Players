@@ -1,3 +1,6 @@
+#Update various things
+scoreboard players operation @s glacier_players.exhaustion += #Exhaustion glacier_players.temp
+
 #Sync positions (Tiny cost)
 function glacier_players:player/brain/body_alias/loop with storage glacier_players:macro
 

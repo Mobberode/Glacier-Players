@@ -1,3 +1,4 @@
+scoreboard players reset * glacier_players.temp
 ##Subthinker (Runs important tasks)
 function glacier_players:player/brain/sub_thinker
 ##Thinker (The brain of a Glacier)

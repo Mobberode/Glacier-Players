@@ -1,13 +1,13 @@
 #tag @s add GlacierPlayer.Alias_Selected
 #tag @s add GlacierPlayer.Selected
 
-#execute store result score #Health glacier_players.health run data get entity @s Health
+execute store result score #Health glacier_players.health run data get entity @s Health
 
-#execute store result score #Additional_Health glacier_players.health run data get entity @s AbsorptionAmount
+execute store result score #Additional_Health glacier_players.health run data get entity @s AbsorptionAmount
 
-#execute store result score #Condition glacier_players.has_undying_totem if items entity @s weapon.* *[death_protection]
+execute store result score #Condition glacier_players.has_undying_totem if items entity @s weapon.* *[death_protection]
 
-#execute store result score #Condition glacier_players.equipment_wearing_armour if items entity @s armor.* #glacier_players:armour/global
+execute store result score #Condition glacier_players.equipment_wearing_armour if items entity @s armor.* #glacier_players:armour/global
 
 #data modify storage glacier_players:equipment_macro armouritems set from entity @s ArmorItems
 #function glacier_players:player/armour/run
