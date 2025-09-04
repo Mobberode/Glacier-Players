@@ -1,1 +1,0 @@
-#tag @s remove glacier_players.cant_move

@@ -1,5 +1,5 @@
 ##Remove Tag
-function glacier_players:technical/uuid/empty
+function glacier_players:technical/data/empty
 tag @s remove GP.Connecting
 
 ##Assign ID
@@ -9,15 +9,14 @@ execute store result storage glacier_players:macro pid_num int 1 run scoreboard 
 
 ##Get and Store UUID
 function glacier_players:technical/uuid/store
-##Glacier Data
-function glacier_players:player/connect/data/store with storage glacier_players:macro
+
 
 ##Set XP, Hunger, Saturation and other things
 function glacier_players:recurring_functions/set_player
 ##Set Name from storage
 function glacier_players:technical/name/update
 ##Set Skin from storage
-#function glacier_players:technical/skin/update
+function glacier_players:technical/skin/update
 
 ##Initalize the Mannequin and inventory and run further functions with them
 execute at @s run function glacier_players:player/connect/init_body
@@ -26,8 +25,7 @@ execute at @s run function glacier_players:player/connect/init_body
 function #glacier_players:extensions/behaviour/player_init/connect
 
 ##Apply all edits to data
-function glacier_players:technical/uuid/update
-function glacier_players:technical/data/saveback with storage glacier_players:macro
+function glacier_players:technical/data/update
 
 ##Indicate that the glacier has joined the game
 tellraw @a [{selector:"@s",color:yellow},{text:" joined the game",color:yellow}]

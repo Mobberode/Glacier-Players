@@ -1,0 +1,1 @@
+$data modify entity $(saved_mannequin_uuid) profile set from entity @s data.data.visual.skin

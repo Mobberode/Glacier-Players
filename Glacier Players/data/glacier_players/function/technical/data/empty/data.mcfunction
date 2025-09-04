@@ -1,0 +1,1 @@
+data remove storage glacier_players:macro instance.data

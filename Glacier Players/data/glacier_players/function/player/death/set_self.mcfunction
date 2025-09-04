@@ -7,7 +7,7 @@ tag @s remove GP.DeathProcess
 #On respawn event for glaciers
 function #glacier_players:extensions/behaviour/player_init/respawn
 
-function glacier_players:technical/uuid/update
+function glacier_players:technical/data/update
 
 ##If Poll
 return run execute if score @s glacier_players.poll_decision matches 1..
