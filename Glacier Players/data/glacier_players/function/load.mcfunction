@@ -42,10 +42,13 @@ scoreboard objectives add glacier_players.cast_steps dummy
 
 scoreboard objectives add glacier_players.nutrition dummy
 scoreboard objectives add glacier_players.exhaustion dummy
+
 scoreboard objectives add glacier_players.food_eat_time dummy
 scoreboard objectives add glacier_players.food_eat_nutrition dummy
 scoreboard objectives add glacier_players.food_eat_saturation dummy
+
 scoreboard objectives add glacier_players.saturation dummy
+
 scoreboard objectives add glacier_players.eating_food dummy
 
 #scoreboard objectives add glacier_players.armour dummy
@@ -65,33 +68,6 @@ scoreboard objectives add glacier_players.inventory_saved_slot dummy
 scoreboard objectives add glacier_players.inventory_saved_partition dummy
 scoreboard objectives add glacier_players.inventory_active_entites dummy
 scoreboard objectives add glacier_players.inventory_cant_pickup dummy
-
-scoreboard objectives add glacier_players.inventory_saved_block_slot dummy
-scoreboard objectives add glacier_players.inventory_saved_block_partition dummy
-
-scoreboard objectives add glacier_players.inventory_saved_weapon_slot dummy
-scoreboard objectives add glacier_players.inventory_saved_weapon_partition dummy
-
-scoreboard objectives add glacier_players.inventory_saved_pickaxe_slot dummy
-scoreboard objectives add glacier_players.inventory_saved_pickaxe_partition dummy
-
-scoreboard objectives add glacier_players.inventory_saved_shovel_slot dummy
-scoreboard objectives add glacier_players.inventory_saved_shovel_partition dummy
-
-scoreboard objectives add glacier_players.inventory_saved_hoe_slot dummy
-scoreboard objectives add glacier_players.inventory_saved_hoe_partition dummy
-
-scoreboard objectives add glacier_players.inventory_saved_shears_slot dummy
-scoreboard objectives add glacier_players.inventory_saved_shears_partition dummy
-
-scoreboard objectives add glacier_players.inventory_saved_bucket_slot dummy
-scoreboard objectives add glacier_players.inventory_saved_bucket_partition dummy
-
-scoreboard objectives add glacier_players.inventory_saved_water_bucket_slot dummy
-scoreboard objectives add glacier_players.inventory_saved_water_bucket_partition dummy
-
-scoreboard objectives add glacier_players.inventory_saved_lava_bucket_slot dummy
-scoreboard objectives add glacier_players.inventory_saved_lava_bucket_partition dummy
 
 scoreboard objectives add glacier_players.has_undying_totem dummy
 scoreboard objectives add glacier_players.delay_totem_replace dummy
@@ -114,8 +90,6 @@ scoreboard players set #DropMultiplier glacier_players.experience_amount 7
 scoreboard objectives add glacier_players.knockbacked_timer dummy
 
 scoreboard objectives add glacier_players.difficulty dummy
-
-scoreboard objectives add glacier_players.tnt_fuse_timer dummy
 
 scoreboard objectives add glacier_players.number dummy
 scoreboard objectives add glacier_players.temp dummy

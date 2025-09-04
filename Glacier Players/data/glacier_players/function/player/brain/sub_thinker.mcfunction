@@ -7,7 +7,7 @@ function glacier_players:recurring_functions/dual_macros
 execute if predicate glacier_players:2_tick_period run function glacier_players:recurring_functions/get_pos
 
 ##Damage Check (Small Performance Cost!)
-function glacier_players:player/brain/damagecheck with storage glacier_players:macro
+function glacier_players:player/brain/damagecheck
 
 ##Mob Recognigiton
 #function glacier_players:player/recognition/start

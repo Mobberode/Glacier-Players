@@ -6,4 +6,4 @@ data modify storage glacier_players:macro instance.data.respawn.pos append from 
 data modify storage glacier_players:macro instance.data.respawn.pos append from block ~ ~ ~ z
 data modify storage glacier_players:macro instance.data.respawn.angle set from entity @s Rotation[0]
 
-say Spawnpoint Set!
+#say Spawnpoint Set!

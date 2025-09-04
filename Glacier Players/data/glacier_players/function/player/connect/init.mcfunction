@@ -13,6 +13,7 @@ function glacier_players:technical/uuid/store
 
 ##Set XP, Hunger, Saturation and other things
 function glacier_players:recurring_functions/set_player
+
 ##Set Name from storage
 function glacier_players:technical/name/update
 ##Set Skin from storage

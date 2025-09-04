@@ -1,4 +1,4 @@
-$execute unless entity $(saved_mannequin_uuid) run function glacier_players:player/death/die_init
+function glacier_players:player/brain/existence_check with storage glacier_players:macro
 
 ##Get Health Info
 scoreboard players operation @s glacier_players.previous_health = @s glacier_players.health

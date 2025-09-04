@@ -1,1 +1,0 @@
-data modify storage glacier_players:external filename set from storage glacier_players:external current.with[].with[0]

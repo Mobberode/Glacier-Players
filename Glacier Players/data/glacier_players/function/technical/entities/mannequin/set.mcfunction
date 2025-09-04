@@ -1,0 +1,4 @@
+function glacier_players:technical/uuid/store_mannequin
+
+function glacier_players:technical/name/self_apply
+function glacier_players:technical/skin/self_apply

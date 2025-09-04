@@ -1,0 +1,1 @@
+data modify entity @s CustomName set from storage glacier_players:macro instance.data.visual.raw_name

@@ -14,3 +14,5 @@ execute unless score #AutomaticConnect glacier_players.config matches 0 run func
 
 #Assign IDs to players
 execute as @r[tag=!glacier_players.processed_id] run function glacier_players:technical/pid/begin_id_assign
+
+schedule function glacier_players:playerloop 1t

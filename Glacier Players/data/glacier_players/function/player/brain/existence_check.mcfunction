@@ -1,0 +1,1 @@
+$execute unless entity $(saved_mannequin_uuid) run function glacier_players:player/death/die_init

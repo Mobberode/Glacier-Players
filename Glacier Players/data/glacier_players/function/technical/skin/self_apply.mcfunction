@@ -1,0 +1,1 @@
+data modify entity @s profile set from storage glacier_players:macro instance.data.visual.skin

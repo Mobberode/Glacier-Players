@@ -1,5 +1,4 @@
-#tag @s add GlacierPlayer.Alias_Selected
-#tag @s add GlacierPlayer.Selected
+tag @s add GlacierPlayer.Selected
 
 execute store result score #Health glacier_players.health run data get entity @s Health
 
@@ -11,8 +10,6 @@ execute store result score #Condition glacier_players.equipment_wearing_armour i
 
 #data modify storage glacier_players:equipment_macro armouritems set from entity @s ArmorItems
 #function glacier_players:player/armour/run
-
-#execute if score #Fire glacier_players.condition matches 1 run data merge entity @s {Fire:160s}
 
 #data modify storage glacier_players:equipment_macro equipments_hands set from entity @s HandItems
 #data modify storage glacier_players:equipment_macro equipments_gear set from entity @s ArmorItems
