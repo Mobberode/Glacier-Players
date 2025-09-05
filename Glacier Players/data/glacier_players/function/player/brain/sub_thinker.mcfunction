@@ -6,6 +6,9 @@ function glacier_players:recurring_functions/dual_macros
 ##Get Pos (Minial Performance Cost!)
 execute if predicate glacier_players:2_tick_period run function glacier_players:recurring_functions/get_pos
 
+##Hunger tick
+function glacier_players:player/brain/hunger
+
 ##Damage Check (Small Performance Cost!)
 function glacier_players:player/brain/damagecheck
 

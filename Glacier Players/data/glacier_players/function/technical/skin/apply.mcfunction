@@ -1,1 +1,1 @@
-$data modify entity $(saved_mannequin_uuid) profile set from entity @s data.data.visual.skin
+$data modify entity $(saved_mannequin_uuid) profile set from storage glacier_players:macro instance.data.visual.skin

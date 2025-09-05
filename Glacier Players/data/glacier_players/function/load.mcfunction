@@ -92,7 +92,6 @@ scoreboard objectives add glacier_players.knockbacked_timer dummy
 scoreboard objectives add glacier_players.difficulty dummy
 
 scoreboard objectives add glacier_players.number dummy
-scoreboard objectives add glacier_players.temp dummy
 scoreboard objectives add glacier_players.condition dummy
 scoreboard objectives add glacier_players.rotation dummy
 scoreboard objectives add glacier_players.block_type dummy
@@ -104,14 +103,13 @@ scoreboard players set @a glacier_players.extensions_toolset 0
 scoreboard players set #Ticks glacier_players.number 20
 scoreboard players set #Second glacier_players.number 1
 
-scoreboard objectives add glacier_players.initalized_uuids dummy
-scoreboard objectives add glacier_players.initalized_gp_data dummy
-
 scoreboard objectives add glacier_players.data.has_set_spawnpoint dummy
 scoreboard objectives add glacier_players.data.has_set_respawn_anchor dummy
 
 scoreboard objectives add glacier_players.waypoint_range dummy
 scoreboard objectives add glacier_players.has_waypoint dummy
+
+scoreboard objectives add glacier_players.died dummy
 
 ##Ver
 scoreboard objectives add glacier_players.release dummy

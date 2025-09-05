@@ -1,0 +1,1 @@
+$execute as $(saved_dmarker_uuid) run scoreboard players add #MarkerCounter glacier_players.number 1

@@ -1,5 +1,5 @@
 ##Move
-function glacier_players:recurring_functions/get_dmarker_uuid with storage glacier_players:macro
+function glacier_players:recurring_functions/count_dmarker with storage glacier_players:macro
 function glacier_players:player/move/start_movement
 
 ##Talk

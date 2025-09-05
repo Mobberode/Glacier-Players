@@ -4,7 +4,7 @@ execute unless entity @e[limit=1,type=marker,tag=GP.MMarker] run function glacie
 function glacier_players:technical/extensions/start
 
 data modify storage glacier_players:visual_macro startup.release set value 24
-data modify storage glacier_players:visual_macro startup.version set value ["25w36a"]
+data modify storage glacier_players:visual_macro startup.version set value ["25w36b"]
 data modify storage glacier_players:visual_macro startup.unstable set value true
 
 data modify storage glacier_players:visual_macro credits set value [{text:"Glacier Players"},{text:gu,click_event:{action:"open_url",url:"https://github.com/gibbsly/gu"},underlined:true},{text:StringLib,click_event:{action:"open_url",url:"https://github.com/CMDred/StringLib/"},underlined:true}]

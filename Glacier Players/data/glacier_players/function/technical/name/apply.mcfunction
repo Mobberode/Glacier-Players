@@ -1,1 +1,1 @@
-$data modify entity $(saved_mannequin_uuid) CustomName set from entity @s data.data.visual.raw_name
+$data modify entity $(saved_mannequin_uuid) CustomName set from storage glacier_players:macro instance.data.visual.raw_name

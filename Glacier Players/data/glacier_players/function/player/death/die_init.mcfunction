@@ -1,10 +1,11 @@
 #If Force Killed
+scoreboard players set @s glacier_players.died 1
 scoreboard players set #MarkDeath glacier_players.condition 1
 execute store result storage glacier_players:abnormal_macro pid_num int 1 run scoreboard players operation #StoredDeathID glacier_players.pid = @s glacier_players.pid
 function glacier_players:recurring_functions/dual_macros_all
 
 ##Get Fake Player Info
-data modify storage glacier_players:abnormal_macro name set from entity @s CustomName
+data modify storage glacier_players:abnormal_macro name set from storage glacier_players:macro instance.data.visual.raw_name
 
 ##Get Experience
 function glacier_players:player/death/experience_get

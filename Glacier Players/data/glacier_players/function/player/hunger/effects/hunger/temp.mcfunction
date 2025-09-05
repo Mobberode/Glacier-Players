@@ -8,4 +8,4 @@ execute if score #Amplifier glacier_players.condition matches -128..-1 run score
 scoreboard players operation #Add glacier_players.exhaustion = #5 glacier_players.number
 scoreboard players operation #Add glacier_players.exhaustion *= #Amplifier glacier_players.condition
 
-scoreboard players operation #Exhaustion glacier_players.temp += #Add glacier_players.exhaustion
+scoreboard players operation #Add glacier_players.exhaustion += #Add glacier_players.exhaustion

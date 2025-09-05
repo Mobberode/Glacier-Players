@@ -1,14 +1,14 @@
 function glacier_players:player/brain/existence_check with storage glacier_players:macro
 
 ##Get Health Info
-scoreboard players operation @s glacier_players.previous_health = @s glacier_players.health
-scoreboard players operation @s glacier_players.health = #Health glacier_players.health
+scoreboard players operation @s glacier_players.previous_health = #Value glacier_players.health
+scoreboard players operation @s glacier_players.health = #Value glacier_players.health
 
 ##Regenerate
-execute if score @s[scores={glacier_players.saturation=1..,glacier_players.nutrition=18..}] glacier_players.health matches 1..19 run function glacier_players:player/hunger/regenerate/sort_regen
+execute unless score @s[scores={glacier_players.saturation=1..,glacier_players.nutrition=18..}] glacier_players.health >= #Max glacier_players.health run function glacier_players:player/hunger/regenerate/sort_regen
 
 #Absorption
-scoreboard players operation @s glacier_players.health += #Additional_Health glacier_players.health
+scoreboard players operation @s glacier_players.health += #Additional glacier_players.health
 
 scoreboard players operation @s glacier_players.equipment_wearing_armour = #Condition glacier_players.equipment_wearing_armour
 

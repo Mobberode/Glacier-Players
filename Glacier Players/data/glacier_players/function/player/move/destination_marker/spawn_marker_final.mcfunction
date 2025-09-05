@@ -1,6 +1,6 @@
 tag @s remove GP.DMarker_Process
 tag @s add GP.DMarker
-$tp $(destination_marker_xpos) $(destination_marker_ypos) $(destination_marker_zpos)
+$tp ~$(x) ~$(y) ~$(z)
 
 scoreboard players operation @s glacier_players.relation_pid = #Saved glacier_players.pid
 
