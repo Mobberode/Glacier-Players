@@ -3,7 +3,7 @@ function glacier_players:recurring_functions/count_dmarker with storage glacier_
 function glacier_players:player/modes/interacting/movement/start
 
 ##Main Interact function
-function glacier_players:player/interactions/search
+$execute as $(saved_glacier_uuid) run function glacier_players:player/interactions/search
 
 ##Talk
 execute store result score @s glacier_players.rng run random value 0..2500

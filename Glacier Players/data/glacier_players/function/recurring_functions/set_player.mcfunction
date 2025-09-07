@@ -1,7 +1,6 @@
 function glacier_players:player/waypoint/check
 
 function glacier_players:recurring_functions/set_hunger
-#function glacier_players:recurring_functions/set_player_attributes
 function glacier_players:recurring_functions/set_experience
 
 execute unless score @s glacier_players.data.has_set_spawnpoint matches 1 run return run function glacier_players:recurring_functions/no_set_spawn with storage glacier_players:macro

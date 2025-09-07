@@ -5,7 +5,7 @@ scoreboard players operation @s glacier_players.previous_health = #Value glacier
 scoreboard players operation @s glacier_players.health = #Value glacier_players.health
 
 ##Regenerate
-execute unless score @s[scores={glacier_players.saturation=1..,glacier_players.nutrition=18..}] glacier_players.health >= #Max glacier_players.health run function glacier_players:player/hunger/regenerate/sort_regen
+execute unless score @s[scores={glacier_players.saturation=1..,glacier_players.nutrition=18..}] glacier_players.health >= #Max glacier_players.health unless score @s glacier_players.health matches ..0 run function glacier_players:player/hunger/regenerate/sort_regen
 
 #Absorption
 scoreboard players operation @s glacier_players.health += #Additional glacier_players.health

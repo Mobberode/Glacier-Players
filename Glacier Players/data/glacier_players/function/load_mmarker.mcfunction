@@ -1,1 +1,1 @@
-summon marker ~ ~ ~ {Tags:[GP.MMarker],UUID:[I;61,23,37,712435]}
+summon marker 0.0 0.0 0.0 {Tags:[GP.MMarker],UUID:[I;61,23,37,712435]}

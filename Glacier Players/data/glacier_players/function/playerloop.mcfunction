@@ -5,6 +5,9 @@ execute if score #Debug_DMarker glacier_players.config matches 1.. run function 
 ##Check statics
 function glacier_players:recurring_functions/static_check
 
+##Tick world spawn location
+function glacier_players:world_spawn
+
 ##Main function that all Glaciers run
 scoreboard players set #RanForceLoad glacier_players.condition 0
 execute as @e[type=marker,tag=GlacierPlayer] at @s run function glacier_players:player/start_player
