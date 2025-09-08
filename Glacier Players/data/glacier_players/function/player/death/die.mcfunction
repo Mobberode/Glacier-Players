@@ -14,6 +14,7 @@ execute unless score #Talk glacier_players.config matches 0 run function glacier
 function glacier_players:player/death/store_data
 
 ##Kill
+kill
 kill @e[limit=6,tag=GlacierPlayer.Abnormal_Selected]
 kill @e[limit=3,type=item,predicate=glacier_players:inventory/is_chest]
 

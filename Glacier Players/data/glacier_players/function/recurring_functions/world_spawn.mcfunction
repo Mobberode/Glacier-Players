@@ -1,0 +1,1 @@
+$execute positioned $(world_x) $(world_y) $(world_z) run spreadplayers ~ ~ 0 $(spawnradius) false @s
