@@ -6,6 +6,6 @@ scoreboard players set #DecisionsColour glacier_players.number 0
 
 function glacier_players:player/speech/poll/prompt_voters
 
-scoreboard players set @e[type=player] glacier_players.poll_decision -1
+scoreboard players set @a glacier_players.poll_decision -1
 scoreboard players set @e[tag=GlacierPlayer] glacier_players.poll_decision -1
 schedule clear glacier_players:player/speech/poll/acknowledge_loop

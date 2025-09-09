@@ -7,7 +7,7 @@ function glacier_players:recurring_functions/set_player
 execute at @s run function glacier_players:player/death/resummon
 
 function glacier_players:technical/data/update
-tag @s remove GP.DeathProcess
+
 #On respawn event for glaciers
 function #glacier_players:extensions/behaviour/player_init/respawn
 

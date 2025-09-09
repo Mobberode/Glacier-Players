@@ -1,5 +1,4 @@
 #tag @s add GlacierPlayer.Selected
-
 scoreboard players add #FakePlayerCounter glacier_players.number 1
 
 ##This below costs more and more tps the more glaciers!

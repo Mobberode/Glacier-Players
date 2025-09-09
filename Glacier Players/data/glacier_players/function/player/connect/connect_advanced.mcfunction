@@ -2,6 +2,4 @@
 
 $data modify storage glacier_players:macro spawnradius set value $(connecting_radius)
 
-summon marker ~ ~ ~ {Tags:["GlacierPlayer",GP.Connecting]}
-
-execute as @e[limit=5,type=marker,tag=GP.Connecting] run function glacier_players:player/connect/init
+execute summon marker run function glacier_players:player/connect/init

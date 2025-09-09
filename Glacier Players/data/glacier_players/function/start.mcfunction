@@ -1,6 +1,4 @@
 ##Starts the Data Pack
-kill @e[type=marker,tag=GP.MMarker]
-execute unless entity @e[limit=1,type=marker,tag=GP.MMarker] run function glacier_players:load_mmarker
 function glacier_players:technical/extensions/start
 
 data modify storage glacier_players:visual_macro startup.release set value 24

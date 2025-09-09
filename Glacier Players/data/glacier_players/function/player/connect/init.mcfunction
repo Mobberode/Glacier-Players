@@ -1,6 +1,6 @@
 ##Remove Tag
 function glacier_players:technical/data/empty
-tag @s remove GP.Connecting
+tag @s add GlacierPlayer
 
 ##Assign ID
 function glacier_players:technical/pid/begin_id_assign

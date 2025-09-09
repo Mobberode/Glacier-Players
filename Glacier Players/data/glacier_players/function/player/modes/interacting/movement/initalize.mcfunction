@@ -1,5 +1,5 @@
 #Pathfind
-function glacier_players:player/pathfind/advanced_simple/initalize
+function glacier_players:player/move/path_method
 
 ##Set Sub Mode
 #On Land

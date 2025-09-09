@@ -2,7 +2,7 @@
 execute store result score #Distance glacier_players.cast_steps run random value 2..22
 
 scoreboard players set @s glacier_players.cast_steps 0
-function glacier_players:player/pathfind/advanced_simple/raycast/process
+function glacier_players:player/pathfind/advanced_simple/raycast/movement
 
 scoreboard players add #Turns glacier_players.condition 1
 

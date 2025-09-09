@@ -1,5 +1,7 @@
-##Respawn glacier
-summon marker ~ ~ ~ {Tags:["GlacierPlayer","glacier_players.processed_id","GP.DeathProcess"]}
+##Prepare for respawn
+function glacier_players:technical/data/update
+function glacier_players:technical/data/empty/uuids
+function glacier_players:technical/world_spawn/get
 
 ##Run functions with entites selected
-function glacier_players:player/death/respawn_set
+execute summon marker run function glacier_players:player/death/respawn_set

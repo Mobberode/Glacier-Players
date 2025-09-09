@@ -1,6 +1,5 @@
 ##Marker
-execute positioned 0.0 0.0 0.0 rotated ~ 0 anchored eyes positioned ^ ^ ^ run summon marker ~ ~ ~ {Tags:[glacier_players.hitbox],UUID:[I;61,23,37,712434]}
-execute as 0000003d-0000-0017-0000-0025000adef2 run function glacier_players:technical/height/as_marker
+execute positioned 0.0 0.0 0.0 rotated ~ 0 anchored eyes positioned ^ ^ ^ summon marker run function glacier_players:technical/height/as_marker
 data modify storage glacier_players:hitbox original set from storage glacier_players:hitbox full
 
 ##Mathss

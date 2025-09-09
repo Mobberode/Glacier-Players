@@ -2,9 +2,6 @@
 #Debug Function
 execute if score #Debug_DMarker glacier_players.config matches 1.. run function glacier_players:recurring_functions/reveal_dmarkers
 
-##Check statics
-function glacier_players:recurring_functions/static_check
-
 ##Tick world spawn location
 function glacier_players:world_spawn
 

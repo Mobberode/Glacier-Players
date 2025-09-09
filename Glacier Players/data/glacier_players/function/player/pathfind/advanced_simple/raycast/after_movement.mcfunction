@@ -1,2 +1,1 @@
-##Success check
-function glacier_players:player/pathfind/advanced_simple/raycast/block_detection
+summon marker ~ ~ ~ {Tags:["GP.DMarker_Place_Canidate"]}

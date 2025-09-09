@@ -1,1 +1,0 @@
-summon marker ~ ~ ~ {Tags:["GP.DMarker_Place_Canidate"]}
