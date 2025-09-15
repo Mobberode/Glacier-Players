@@ -1,2 +1,2 @@
-function glacier_players:player/waypoint/check
+function glacier_players:technical/waypoint/check
 attribute @s waypoint_transmit_range modifier remove glacier_players:blocked_transmit

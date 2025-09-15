@@ -1,0 +1,1 @@
+execute store result storage glacier_players:macro instance.data.waypoint.range int 1 run scoreboard players get @s glacier_players.waypoint_range

@@ -1,2 +1,0 @@
-execute store result storage glacier_players:macro temp int 1 run scoreboard players get @s glacier_players.waypoint_range
-function glacier_players:player/waypoint/apply with storage glacier_players:macro
