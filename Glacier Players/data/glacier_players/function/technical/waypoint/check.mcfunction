@@ -1,1 +1,1 @@
-execute if score #UseLocatorBar glacier_players.config matches 1.. unless score @s glacier_players.has_waypoint matches 1.. run function glacier_players:technical/waypoint/set
+execute unless score @s glacier_players.has_waypoint matches 1.. run function glacier_players:technical/waypoint/set

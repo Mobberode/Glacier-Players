@@ -1,0 +1,2 @@
+function glacier_players:technical/waypoint/self_apply with storage glacier_players:macro
+attribute @s waypoint_transmit_range modifier remove glacier_players:blocked_transmit

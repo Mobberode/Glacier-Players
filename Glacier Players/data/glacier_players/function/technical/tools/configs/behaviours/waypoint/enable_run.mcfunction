@@ -1,2 +1,5 @@
-function glacier_players:technical/waypoint/check
-attribute @s waypoint_transmit_range modifier remove glacier_players:blocked_transmit
+function glacier_players:technical/uuid/force {id:mannequin}
+
+execute store result storage glacier_players:macro temp int 1 run scoreboard players get @s glacier_players.waypoint_range
+
+function glacier_players:technical/tools/configs/behaviours/waypoint/display with storage glacier_players:macro

@@ -9,7 +9,10 @@ execute if score @s glacier_players.exhaustion matches 4000.. run function glaci
 ##Normal
 function glacier_players:player/hunger/health_relationship
 
-#If the food inv check found a food source
-execute if score @s glacier_players.eating_food matches 1.. run return run function glacier_players:player/hunger/eat/consume/consume_tick
-##Eat Check
-function glacier_players:player/hunger/eat_check
+##Eating
+function glacier_players:player/hunger/check
+
+##Save
+scoreboard players operation #Saved glacier_players.nutrition = @s glacier_players.nutrition
+scoreboard players operation #Saved glacier_players.saturation = @s glacier_players.saturation
+scoreboard players operation #Saved glacier_players.exhaustion = @s glacier_players.exhaustion

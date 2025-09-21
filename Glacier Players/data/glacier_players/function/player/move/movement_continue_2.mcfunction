@@ -1,2 +1,2 @@
-execute if block ~ ~-.25 ~ #glacier_players:non_solids run function glacier_players:player/move/movement_pause
-execute if block ~ ~.25 ~ #glacier_players:liquids run function glacier_players:player/move/movement_continue_in_liquid
+execute if predicate glacier_players:liquid_detect run function glacier_players:player/move/movement_pause
+function glacier_players:player/move/movement_continue_in_liquid

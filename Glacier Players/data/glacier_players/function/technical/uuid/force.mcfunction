@@ -1,0 +1,1 @@
+$data modify storage glacier_players:macro forced_uuid set from entity @s data.uuids.$(id)
