@@ -1,3 +1,6 @@
+#Hunger
+function glacier_players:player/hunger/mannequin_process
+
 ##Modes (Medium Performance Cost!)
 function glacier_players:player/brain/thinker_modes_init_check
 

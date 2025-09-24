@@ -1,0 +1,1 @@
+data modify storage glacier_players:macro instance.data.food.consume_sound set from storage glacier_players:macro consume_sound
