@@ -1,6 +1,3 @@
-##Default sound
-data modify storage glacier_players:macro consume_sound set value "entity.generic.eat"
-
 ##Add Tag
 function glacier_players:player/inventory/item/internal/food/success/give_tags_set
 

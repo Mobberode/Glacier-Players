@@ -21,5 +21,4 @@ execute store result storage glacier_players:inventory_macro saved_slot int 1 ru
 execute as @e[limit=1,type=donkey,tag=GlacierPlayer.Inventory_SelectedFood,tag=GlacierPlayer.Selected] run function glacier_players:player/hunger/eat/consume/consume_remove_item
 
 ##Run special code for special foods
-function glacier_players:player/inventory/item/internal/food/success/after/check_tags
-#$data modify entity $(saved_mannequin_uuid) active_effects set from entity @s active_effects
+function glacier_players:player/inventory/item/internal/food/success/after/check_special with storage glacier_players:macro

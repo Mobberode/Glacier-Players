@@ -15,7 +15,4 @@ execute store result score #Saturation glacier_players.number run data get stora
 execute store result score #ProcessEatTime glacier_players.number run data get storage glacier_players:inventory_macro consumable.consume_seconds
 
 #Sound
-##Default sound
-data modify storage glacier_players:macro consume_sound set value "entity.generic.eat"
-#
-data modify storage glacier_players:macro consume_sound set from storage glacier_players:inventory_macro consumable.sound
+data modify storage glacier_players:hunger consume_sound set from storage glacier_players:inventory_macro consumable.sound
