@@ -2,7 +2,6 @@ scoreboard players set #SortedItem glacier_players.condition 1
 ##If glacier already has something in slot
 $execute as $(saved_mannequin_uuid) run function glacier_players:player/inventory/equipment/armour/check/custom with storage glacier_players:equipment_macro
 
-item replace entity @s weapon.mainhand with air
 #
 $item replace entity $(uuid) horse.$(inv_slot) from block 0 0 0 container.0
 
