@@ -1,3 +1,2 @@
-$waypoint modify @s style set $(profile)
+function gp_optional:profile/macro with storage glacier_players:visual_macro
 waypoint modify @s color white
-tag @s add glacier_players_optional.set_profile
