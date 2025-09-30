@@ -1,6 +1,6 @@
 ##Remove Tags
 tag @s remove GlacierPlayer.Inventory_SelectedFood
-tag @s remove GlacierPlayer.Inv_Food_ReplaceItem
+scoreboard players set #ReplaceItem glacier_players.condition 0
 
 ##Get and Store
 function glacier_players:player/inventory/item/internal/ready
@@ -21,5 +21,5 @@ function glacier_players:player/inventory/item/internal/shared/update_slot with 
 ##Find if food can transition into something (stew -> bowl)
 item replace block 0 0 0 container.0 from block 0 0 0 container.1
 
-execute if score #Stored glacier_players.inventory_slot_count matches ..0 run tag @s add GlacierPlayer.Inv_Food_ReplaceItem
+execute if score #Stored glacier_players.inventory_slot_count matches ..0 run scoreboard players set #ReplaceItem glacier_players.condition 1
 function glacier_players:player/hunger/eat/consume/convert/food_tree

@@ -6,7 +6,7 @@ execute in overworld positioned 0.0 0.0 0.0 summon marker run function glacier_p
 
 summon item ~ ~1.275 ~ {Tags:["GP.Drop_Item"],Item:{id:debug_stick}}
 
-execute as @n[type=item,tag=GP.Drop_Item] at @s run function glacier_players:player/inventory/item/drop
+execute as @n[x=0,type=item,tag=GP.Drop_Item] at @s run function glacier_players:player/inventory/item/drop
 
 function glacier_players:recurring_functions/remove_pickdelay_tag
 msg @a[scores={glacier_players.debug=1..}] no space in inv!

@@ -18,7 +18,7 @@ execute store result storage glacier_players:inventory_macro saved_partition int
 execute store result storage glacier_players:inventory_macro saved_slot int 1 run scoreboard players get @s glacier_players.inventory_saved_slot
 
 ##Remove 1 of the eaten item from the Glacier's inventory
-execute as @e[limit=1,type=donkey,tag=GlacierPlayer.Inventory_SelectedFood,tag=GlacierPlayer.Selected] run function glacier_players:player/hunger/eat/consume/consume_remove_item
+execute as @n[limit=1,x=0,type=donkey,tag=GlacierPlayer.Inventory_SelectedFood,tag=GlacierPlayer.Selected] run function glacier_players:player/hunger/eat/consume/consume_remove_item
 
 ##Run special code for special foods
 function glacier_players:player/inventory/item/internal/food/success/after/check_special with storage glacier_players:macro
