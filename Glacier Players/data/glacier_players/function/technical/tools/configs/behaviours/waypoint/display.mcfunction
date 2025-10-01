@@ -1,1 +1,1 @@
-$execute as $(forced_uuid) run function glacier_players:technical/tools/configs/behaviours/waypoint/apply with storage glacier_players:macro
+$execute as $(uuid) run function glacier_players:technical/tools/configs/behaviours/waypoint/apply with storage glacier_players:macro

@@ -1,6 +1,4 @@
 ##Prepare for respawn
-function glacier_players:technical/data/update
-function glacier_players:technical/data/empty/uuids
 function glacier_players:technical/world_spawn/get
 
 ##Run functions with entites selected

@@ -1,2 +1,12 @@
-execute if score #MountProfilePictures glacier_players.optional.config matches ..0 if entity @s[tag=glacier_players_optional.set_profile] run return run function gp_optional:profile/remove
-execute unless entity @s[tag=glacier_players_optional.set_profile] run function gp_optional:profile/set
+##Another Instance
+execute store result storage glacier_players:temp pid_num int 1 run scoreboard players get @s glacier_players.pid
+function glacier_players:technical/data/upload with storage glacier_players:temp
+function glacier_players:technical/data/mark_edit
+##
+
+##Run
+data modify storage glacier_players:temp uuid set from storage glacier_players:macro instance.uuids.mannequin
+function gp_optional:profile/condition
+
+##Remove Instance
+function glacier_players:technical/data/update

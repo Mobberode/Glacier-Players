@@ -1,5 +1,5 @@
 ##Ran by the glacier
-data modify entity @s CustomName set from storage glacier_players:abnormal_macro name
+function glacier_players:technical/name/self_apply
 function glacier_players:player/death/restore_data
 function glacier_players:technical/uuid/store
 function glacier_players:recurring_functions/set_player

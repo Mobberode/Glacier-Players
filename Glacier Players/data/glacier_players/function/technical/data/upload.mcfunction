@@ -1,2 +1,3 @@
-data modify storage glacier_players:macro instance set from entity @s data
-#tellraw @a [{text:"Upload Full:",color:gray},{entity:"@s",nbt:data,color:gold}]
+$data modify storage glacier_players:macro active_instances append from storage glacier_players:macro instances[{id:$(pid_num)}]
+
+#tellraw @a [{text:"Upload Full:",color:gray},{storage:"glacier_players:macro",nbt:"active_instances[-1]",color:gold}]

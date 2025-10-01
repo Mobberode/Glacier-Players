@@ -6,7 +6,9 @@ execute if score #Debug_DMarker glacier_players.config matches 1.. run function 
 function glacier_players:world_spawn
 
 ##Main function that all Glaciers run
+data modify storage glacier_players:macro active_instances set value []
 scoreboard players set #RanForceLoad glacier_players.condition 0
+
 execute as @e[type=marker,tag=GlacierPlayer] at @s run function glacier_players:player/start_player
 
 #Connect

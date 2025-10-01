@@ -1,5 +1,5 @@
 ##Remove Tag
-function glacier_players:technical/data/empty
+function glacier_players:technical/data/empty/all
 tag @s add GlacierPlayer
 
 ##Assign ID
@@ -7,9 +7,9 @@ function glacier_players:technical/pid/begin_id_assign
 #Get pid_num in scoreboard
 execute store result storage glacier_players:macro pid_num int 1 run scoreboard players operation #Saved glacier_players.pid = @s glacier_players.pid
 
-##Get and Store UUID
+##Get and Store UUID + ID
 function glacier_players:technical/uuid/store
-
+data modify storage glacier_players:macro instance.id set from storage glacier_players:macro pid_num
 
 ##Set XP, Hunger, Saturation and other things
 function glacier_players:recurring_functions/set_player
@@ -26,7 +26,7 @@ execute at @s run function glacier_players:player/connect/init_body
 function #glacier_players:extensions/behaviour/player_init/connect
 
 ##Apply all edits to data
-function glacier_players:technical/data/update
+function glacier_players:technical/data/create with storage glacier_players:macro
 
 ##Indicate that the glacier has joined the game
 tellraw @a [{selector:"@s",color:yellow},{text:" joined the game",color:yellow}]

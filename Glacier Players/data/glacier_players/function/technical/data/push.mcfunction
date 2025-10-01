@@ -1,0 +1,2 @@
+$data modify storage glacier_players:macro instances[{id:$(instance_id)}] set from storage glacier_players:macro instance
+$data remove storage glacier_players:macro active_instances[{id:$(instance_id)}]

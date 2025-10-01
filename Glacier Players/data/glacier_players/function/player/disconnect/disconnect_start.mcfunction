@@ -1,5 +1,4 @@
 ##Get Info
-execute store result storage glacier_players:abnormal_macro pid_num int 1 run scoreboard players get @s glacier_players.pid
 function glacier_players:recurring_functions/dual_macros_all
 
 ##Get Experience

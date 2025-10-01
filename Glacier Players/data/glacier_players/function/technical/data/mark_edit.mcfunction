@@ -1,0 +1,1 @@
+data modify storage glacier_players:macro instance set from storage glacier_players:macro active_instances[-1]
