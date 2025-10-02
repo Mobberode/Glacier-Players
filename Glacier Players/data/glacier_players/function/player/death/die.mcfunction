@@ -22,4 +22,4 @@ kill @e[limit=3,type=item,predicate=glacier_players:inventory/is_chest]
 execute unless score #Permadeath glacier_players.config matches 1.. run function glacier_players:player/death/spawnpoint_detect
 
 ##Drop XP
-execute unless score #Drop glacier_players.experience_amount matches ..0 unless score #KeepInventory glacier_players.condition matches 1.. run function glacier_players:player/death/drop_experience with storage glacier_players:experience_macro
+execute unless score #Drop glacier_players.experience_amount matches ..0 unless score #KeepInventory glacier_players.condition matches 1.. run function glacier_players:player/death/drop_experience with storage glacier_players:temp

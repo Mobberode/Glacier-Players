@@ -1,4 +1,4 @@
-execute if data storage glacier_players:toolkit {remove_hotbar:false} run return fail
+execute if score #KeepHotbar glacier_players.condition matches 1.. run return fail
 
 item replace entity @s hotbar.0 with air
 item replace entity @s hotbar.1 with air

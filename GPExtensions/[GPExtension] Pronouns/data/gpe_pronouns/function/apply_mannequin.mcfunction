@@ -1,0 +1,1 @@
+$execute as $(uuid) run function glacier_players:technical/name/self_apply

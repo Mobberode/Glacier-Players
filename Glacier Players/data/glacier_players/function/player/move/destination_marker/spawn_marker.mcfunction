@@ -1,3 +1,3 @@
 scoreboard players set @s glacier_players.ticks_till_force_destory_dmarker 0
 
-execute summon marker run function glacier_players:player/move/destination_marker/spawn_marker_final with storage glacier_players:marker_macro
+execute summon marker run function glacier_players:player/move/destination_marker/spawn_marker_final with storage glacier_players:temp

@@ -1,2 +1,1 @@
-data remove storage glacier_players:toolkit remove_hotbar
-data modify storage glacier_players:toolkit remove_hotbar set from entity @s SelectedItem.components.minecraft:custom_data.gp_remove_hotbar
+execute store result score #KeepHotbar glacier_players.condition if items entity @s weapon.mainhand *[custom_data~{gp_keep_hotbar:true}]
