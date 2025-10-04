@@ -1,5 +1,4 @@
 ##Remove Tags
-tag @s remove GlacierPlayer.Inventory_SelectedFood
 scoreboard players set #ReplaceItem glacier_players.condition 0
 
 ##Get and Store

@@ -1,0 +1,1 @@
+$execute as $(uuid) run function glacier_players:player/hunger/eat/consume/consume_remove_item

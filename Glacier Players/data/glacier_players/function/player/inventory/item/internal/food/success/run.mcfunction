@@ -1,4 +1,6 @@
-tag @s add GlacierPlayer.Inventory_SelectedFood
+##Save the UUID for when the food is fully consumed
+data modify storage glacier_players:macro instance.data.food.partition set from storage glacier_players:inventory_macro inventory_entity
+
 ##Success
 scoreboard players set #SortedItem glacier_players.condition 1
 #Fallback values

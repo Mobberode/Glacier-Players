@@ -1,10 +1,7 @@
 {
     "type": "multi_action",
-    "title": "Glacier Links",
-    "exit_action":{
-    "label": "Back",
-    "action": {"type":"show_dialog",
-    "dialog": "glacier_players:menu"}},
+    "title": "Glacier Players",
+    "columns": 2,
     "actions": [
         {"label":"Discord [13+]","action":{"type":"open_url","url":"https://discord.gg/fvsvmavex8"}},
         {"label":"Source (GitHub)","action":{"type":"open_url","url":"https://github.com/Mobberode/Glacier-Players"}},
