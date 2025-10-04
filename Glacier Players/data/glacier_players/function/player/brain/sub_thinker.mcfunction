@@ -7,7 +7,7 @@ function glacier_players:technical/data/mark_edit
 function glacier_players:recurring_functions/dual_macros
 
 ##Get Pos (Minial Performance Cost!)
-execute if predicate glacier_players:2_tick_period run function glacier_players:recurring_functions/get_pos
+function glacier_players:recurring_functions/get_pos
 
 ##Damage Check (Small Performance Cost!)
 function glacier_players:player/brain/damagecheck

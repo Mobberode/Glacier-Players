@@ -1,4 +1,4 @@
-##Add Tag for assumptions
+##Set score assumptions
 scoreboard players set #SortedItem glacier_players.condition 1
 
 ##Totem Detect

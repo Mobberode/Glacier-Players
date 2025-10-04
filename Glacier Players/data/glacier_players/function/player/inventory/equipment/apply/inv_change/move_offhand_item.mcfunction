@@ -13,7 +13,7 @@ function glacier_players:player/inventory/item/reprocess
 ##Store temp storage into offhand
 data modify entity @s Items[9] set from storage glacier_players:inventory_macro temp_processed_item
 
-##Remove tag so picked item gets moved somewhere else
+##Set score so picked item gets moved somewhere else
 scoreboard players set #SortedItem glacier_players.condition 0
 
 ##Remove storage

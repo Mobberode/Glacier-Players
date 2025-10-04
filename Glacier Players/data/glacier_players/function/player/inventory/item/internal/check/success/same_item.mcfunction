@@ -2,7 +2,7 @@
 scoreboard players set #NextItem glacier_players.number 0
 
 ##Get the Max Stack Limit
-function glacier_players:player/inventory/item/internal/check/max_stack/get_max_stack
+execute store result score #Value glacier_players.inventory_item_max_stack_size run function glacier_players:player/inventory/item/internal/check/max_stack/get_max_stack
 
 ##Check if it's mutliple set items
 function glacier_players:player/inventory/item/internal/specfic/check

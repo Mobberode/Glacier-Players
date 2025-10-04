@@ -15,8 +15,8 @@ function glacier_players:player/death/store_data
 
 ##Kill
 kill
-kill @e[limit=6,tag=GlacierPlayer.Abnormal_Selected]
-kill @e[limit=3,type=item,predicate=glacier_players:inventory/is_chest]
+kill @e[x=0,limit=6,tag=GlacierPlayer.Abnormal_Selected]
+kill @e[x=0,limit=3,type=item,predicate=glacier_players:inventory/is_chest]
 
 ##Respawn
 execute unless score #Permadeath glacier_players.config matches 1.. run function glacier_players:player/death/spawnpoint_detect

@@ -9,5 +9,5 @@ data modify entity @s Items append from storage glacier_players:inventory_macro 
 ##Detect for tools or anything with the tool component (pickaxes, axes and such)
 #$execute if items entity @s horse.$(player_inv_slot) *[minecraft:tool] run function glacier_players:player/inventory/equipment/tool_check
 
-#Give tag to indicate that the item has been stored
+#Set score to indicate that the item has been stored
 scoreboard players set #SortedItem glacier_players.condition 1

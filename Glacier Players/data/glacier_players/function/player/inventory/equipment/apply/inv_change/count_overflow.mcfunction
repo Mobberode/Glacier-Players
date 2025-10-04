@@ -7,5 +7,5 @@ execute store result storage glacier_players:inventory_macro processed_item.coun
 ##Reprocess
 function glacier_players:player/inventory/item/reprocess
 
-##Remove tag so picked item gets moved somewhere else
+##Set score so picked item gets moved somewhere else
 scoreboard players set #SortedItem glacier_players.condition 0

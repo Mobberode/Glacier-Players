@@ -16,9 +16,7 @@ scoreboard players operation @s glacier_players.equipment_wearing_armour = #Cond
 execute if score @s glacier_players.previous_health > @s glacier_players.health run function glacier_players:player/brain/damage_indicator
 
 ##Totem
-execute if score @s glacier_players.has_undying_totem > #Condition glacier_players.has_undying_totem run return run function glacier_players:player/death/totem_pop
-#
-scoreboard players operation @s glacier_players.has_undying_totem = #Condition glacier_players.has_undying_totem
+function glacier_players:player/brain/totem_check
 
 #Knockback
 scoreboard players operation #Value glacier_players.knockbacked_timer = @s glacier_players.knockbacked_timer
