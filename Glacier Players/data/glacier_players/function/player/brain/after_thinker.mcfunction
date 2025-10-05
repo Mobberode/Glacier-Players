@@ -1,4 +1,6 @@
-#Update various things
+#@Update various things
+#Hunger
+function glacier_players:player/hunger/saveback
 #Sync positions (Tiny cost)
 function glacier_players:player/brain/body_alias/loop with storage glacier_players:macro
 

@@ -2,7 +2,7 @@
     "function": "minecraft:set_components",
     "components": {
       "minecraft:consumable": {
-        "consume_seconds": 32000,
+        "consume_seconds": 32767,
         "animation": "none",
         "has_consume_particles": false
       },

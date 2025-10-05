@@ -8,6 +8,6 @@ data modify storage glacier_players:macro instance.data.respawn.pos append from 
 data modify storage glacier_players:macro instance.data.respawn.pitch set from entity @s Rotation[0]
 data modify storage glacier_players:macro instance.data.respawn.yaw set from entity @s Rotation[1]
 
-data modify storage glacier_players:macro instance.data.respawn.uses_respawn_anchor set value true
+data modify storage glacier_players:macro instance.data.respawn.respawn_anchor set value true
 
 #say Anchor Spawnpoint Set!

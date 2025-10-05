@@ -1,1 +1,0 @@
-scoreboard players operation @s glacier_players.pid = #RespawningPlayerID glacier_players.pid

@@ -5,6 +5,9 @@ execute if score #Debug_DMarker glacier_players.config matches 1.. run function 
 ##Tick world spawn location
 function glacier_players:world_spawn
 
+##difficulty (0 = Peaceful, 1 = Easy, 2 = Normal, 3 = Hard)
+execute store result score #Value glacier_players.difficulty run difficulty
+
 ##Main function that all Glaciers run
 data modify storage glacier_players:macro active_instances set value []
 scoreboard players set #RanForceLoad glacier_players.condition 0

@@ -1,12 +1,10 @@
 ##Makes scoreboards and other things for proper function
 scoreboard objectives add glacier_players.rng dummy
 
-scoreboard objectives add glacier_players.communication_type dummy
 scoreboard objectives add glacier_players.speech_type dummy
-scoreboard objectives add glacier_players.speech_advanced_mode dummy
 scoreboard objectives add glacier_players.voice_timer dummy
 scoreboard objectives add glacier_players.poll_decision trigger
-scoreboard objectives add glacier_players.poll_response_delay trigger
+scoreboard objectives add glacier_players.poll_response_delay dummy
 scoreboard objectives add glacier_players.speech_response dummy
 
 #scoreboard objectives add glacier_players.personality dummy
@@ -16,17 +14,11 @@ scoreboard objectives add glacier_players.pid dummy
 scoreboard objectives add glacier_players.relation_pid dummy
 
 scoreboard objectives add glacier_players.health dummy
-scoreboard objectives add glacier_players.previous_health dummy
 scoreboard objectives add glacier_players.absorption dummy
-scoreboard objectives add glacier_players.previous_absorption dummy
 
 scoreboard objectives add glacier_players.x_pos dummy
 scoreboard objectives add glacier_players.y_pos dummy
 scoreboard objectives add glacier_players.z_pos dummy
-
-scoreboard objectives add glacier_players.x_respawn_pos dummy
-scoreboard objectives add glacier_players.y_respawn_pos dummy
-scoreboard objectives add glacier_players.z_respawn_pos dummy
 
 scoreboard objectives add glacier_players.ticks_till_force_destory_dmarker dummy
 #scoreboard objectives add glacier_players.gamemode dummy
@@ -41,13 +33,12 @@ scoreboard objectives add glacier_players.mode_time dummy
 scoreboard objectives add glacier_players.cast_steps dummy
 
 scoreboard objectives add glacier_players.nutrition dummy
+scoreboard objectives add glacier_players.saturation dummy
 scoreboard objectives add glacier_players.exhaustion dummy
 
 scoreboard objectives add glacier_players.food_eat_time dummy
 scoreboard objectives add glacier_players.food_eat_nutrition dummy
 scoreboard objectives add glacier_players.food_eat_saturation dummy
-
-scoreboard objectives add glacier_players.saturation dummy
 
 scoreboard objectives add glacier_players.eating_food dummy
 
@@ -58,14 +49,10 @@ scoreboard objectives add glacier_players.eating_food dummy
 scoreboard objectives add glacier_players.equipment_wearing_armour dummy
 
 scoreboard objectives add glacier_players.inventory_slot_count dummy
-scoreboard objectives add glacier_players.inventory_slot_slot dummy
-scoreboard objectives add glacier_players.inventory_slot_comparing_count dummy
-scoreboard objectives add glacier_players.inventory_slot_comparing_slot dummy
 scoreboard objectives add glacier_players.inventory_slot_number dummy
 scoreboard objectives add glacier_players.inventory_item_max_stack_size dummy
 scoreboard objectives add glacier_players.inventory_player_hand dummy
 scoreboard objectives add glacier_players.inventory_saved_slot dummy
-scoreboard objectives add glacier_players.inventory_saved_partition dummy
 scoreboard objectives add glacier_players.inventory_active_entites dummy
 scoreboard objectives add glacier_players.inventory_cant_pickup dummy
 
@@ -94,7 +81,8 @@ scoreboard objectives add glacier_players.difficulty dummy
 scoreboard objectives add glacier_players.number dummy
 scoreboard objectives add glacier_players.condition dummy
 scoreboard objectives add glacier_players.rotation dummy
-scoreboard objectives add glacier_players.block_type dummy
+
+#scoreboard objectives add glacier_players.block_type dummy
 
 scoreboard objectives add glacier_players.extensions dummy
 scoreboard objectives add glacier_players.extensions_toolset dummy
@@ -102,6 +90,7 @@ scoreboard players set @a glacier_players.extensions_toolset 0
 
 scoreboard players set #Ticks glacier_players.number 20
 scoreboard players set #Second glacier_players.number 1
+scoreboard players set #2 glacier_players.number 2
 
 scoreboard objectives add glacier_players.data.has_set_spawnpoint dummy
 scoreboard objectives add glacier_players.data.has_set_respawn_anchor dummy

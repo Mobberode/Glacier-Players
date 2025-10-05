@@ -1,13 +1,13 @@
 ##Get Scores
 execute store result score @s glacier_players.inventory_slot_count run data get storage glacier_players:inventory_macro processed_item.count
 
-execute store result score @s glacier_players.inventory_slot_comparing_count run data get block 0 0 0 Items[].count
+execute store result score #Compare glacier_players.inventory_slot_count run data get block 0 0 0 Items[].count
 
-tellraw @a[scores={glacier_players.debug=1..}] [{score:{name:"@s",objective: glacier_players.inventory_slot_count},color:gold},{score:{name:"@s",objective: glacier_players.inventory_slot_comparing_count},color: yellow}]
+tellraw @a[scores={glacier_players.debug=1..}] [{score:{name:"@s",objective: glacier_players.inventory_slot_count},color:gold},{score:{name:"#Compare",objective: glacier_players.inventory_slot_count},color: yellow}]
 
 ##Math time Rework
 #Combines both scores into 1
-scoreboard players operation @s glacier_players.inventory_slot_count += @s glacier_players.inventory_slot_comparing_count
+scoreboard players operation @s glacier_players.inventory_slot_count += #Compare glacier_players.inventory_slot_count
 
 tellraw @a[scores={glacier_players.debug=1..}] [{score:{name:"@s",objective: glacier_players.inventory_slot_count},color:blue}]
 

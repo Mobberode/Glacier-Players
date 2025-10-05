@@ -1,20 +1,13 @@
-##Consume
-scoreboard players set @s[scores={glacier_players.nutrition=..-1}] glacier_players.nutrition 0
-scoreboard players operation @s glacier_players.nutrition += @s glacier_players.food_eat_nutrition
-scoreboard players operation @s glacier_players.saturation += @s glacier_players.food_eat_saturation
-
-##Fallback Scores to 20 if exceeded
-scoreboard players set @s[scores={glacier_players.nutrition=21..}] glacier_players.nutrition 20
-scoreboard players set @s[scores={glacier_players.saturation=21..}] glacier_players.saturation 20
+function glacier_players:player/hunger/eat/consume/nutrition
+function glacier_players:player/hunger/eat/consume/saturation
 
 ##Indicator
 execute positioned as @s[tag=!GlacierPlayer.Drinking] run playsound entity.player.burp player @a ~ ~ ~
 
-##Remove Tags
+##Set eating
 scoreboard players set @s glacier_players.eating_food 0
 
-##Store Parition and Slot
-execute store result storage glacier_players:inventory_macro saved_partition int 1 run scoreboard players get @s glacier_players.inventory_saved_partition
+##Store Slot
 execute store result storage glacier_players:inventory_macro saved_slot int 1 run scoreboard players get @s glacier_players.inventory_saved_slot
 
 ##Start removing from the saved partition

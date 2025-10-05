@@ -1,2 +1,2 @@
-execute if score @s glacier_players.nutrition matches 20.. run return run function glacier_players:player/hunger/regenerate/fast_regen_tick
-execute if score @s glacier_players.nutrition matches 18..19 run function glacier_players:player/hunger/regenerate/slow_regen_tick
+execute if score #Saved glacier_players.nutrition matches 200.. run return run function glacier_players:player/hunger/regenerate/fast_regen_tick
+execute if score #Saved glacier_players.nutrition matches 180..190 run function glacier_players:player/hunger/regenerate/slow_regen_tick
