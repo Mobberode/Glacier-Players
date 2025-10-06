@@ -8,7 +8,7 @@ data modify storage glacier_players:temp uuid set from storage glacier_players:m
 data modify storage glacier_players:temp value set from storage glacier_players:macro instance.data.waypoint.range
 
 ##Run
-function glacier_players:technical/tools/configs/behaviours/waypoint/display with storage glacier_players:temp
+function glacier_players:technical/tools/configs/behaviours/zzz/waypoint/display with storage glacier_players:temp
 
 ##Remove Instance
 function glacier_players:technical/data/update

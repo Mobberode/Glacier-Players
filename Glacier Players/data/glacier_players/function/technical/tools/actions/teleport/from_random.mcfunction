@@ -1,1 +1,1 @@
-tp @s @e[tag=GlacierPlayer,limit=1,sort=random]
+tp @s @e[tag=GlacierPlayer.Mannequin,limit=1,sort=random]

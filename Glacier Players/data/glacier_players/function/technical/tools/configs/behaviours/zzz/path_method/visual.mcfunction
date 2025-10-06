@@ -1,0 +1,3 @@
+execute if score #PathMethod glacier_players.config matches 0 run return run tellraw @s [{text:"[C] Mode: 0 (Simple)",color:gold}]
+execute if score #PathMethod glacier_players.config matches 1 run return run tellraw @s [{text:"[C] Mode: 1 (Intermediate Simple)",color:gold}]
+execute if score #PathMethod glacier_players.config matches 2 run return run tellraw @s [{text:"[C] Mode: 2 (A*)",color:gold}]

@@ -1,0 +1,1 @@
+$execute as $(uuid) run function glacier_players:technical/tools/configs/behaviours/zzz/waypoint/apply with storage glacier_players:macro

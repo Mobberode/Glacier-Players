@@ -1,1 +1,1 @@
-tp @e[tag=GlacierPlayer] @s
+tp @e[tag=GlacierPlayer.Mannequin] @s

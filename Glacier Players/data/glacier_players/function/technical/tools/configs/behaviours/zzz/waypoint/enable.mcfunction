@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=GlacierPlayer] run function glacier_players:technical/tools/configs/behaviours/zzz/waypoint/enable_run

@@ -1,0 +1,13 @@
+item replace entity @s hotbar.0 with poisonous_potato[custom_data={gp_action:"back",gp_return_function:"glacier_players:technical/tools/configs/behaviours/toolset"},custom_name={text:"Back Out",color:red},item_model=barrier]
+
+execute unless score #Experience glacier_players.config matches 1 run item replace entity @s hotbar.1 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/zzz/exp/exp"},custom_name={text:"Toggle Experience",color:red},item_model=red_candle]
+execute if score #Experience glacier_players.config matches 1.. run item replace entity @s hotbar.1 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/zzz/exp/exp"},custom_name={text:"Toggle Experience",color:green},item_model=green_candle]
+
+execute unless score #Inventory glacier_players.config matches 1 run item replace entity @s hotbar.2 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/zzz/inventory/inventory"},custom_name={text:"Toggle Inventory",color:red},item_model=red_candle]
+execute if score #Inventory glacier_players.config matches 1.. run item replace entity @s hotbar.2 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/zzz/inventory/inventory"},custom_name={text:"Toggle Inventory",color:green},item_model=green_candle]
+
+execute unless score #Hunger glacier_players.config matches 1 run item replace entity @s hotbar.3 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/zzz/hunger/hunger"},custom_name={text:"Toggle Hunger",color:red},item_model=red_candle]
+execute if score #Hunger glacier_players.config matches 1.. run item replace entity @s hotbar.3 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/zzz/hunger/hunger"},custom_name={text:"Toggle Hunger",color:green},item_model=green_candle]
+
+execute unless score #UseLocatorBar glacier_players.config matches 1 run item replace entity @s hotbar.4 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/zzz/waypoint/run"},custom_name={text:"Toggle Locator Bar",color:red},item_model=red_candle]
+execute if score #UseLocatorBar glacier_players.config matches 1.. run item replace entity @s hotbar.4 with poisonous_potato[custom_data={gp_action:"event",gp_event_function:"glacier_players:technical/tools/configs/behaviours/zzz/waypoint/run"},custom_name={text:"Toggle Locator Bar",color:green},item_model=green_candle]

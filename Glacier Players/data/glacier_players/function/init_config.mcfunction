@@ -12,6 +12,7 @@ scoreboard players set #KeepInventory glacier_players.config 2
 scoreboard players set #MaxConnectedLimit glacier_players.config 1
 scoreboard players set #MaxConnected glacier_players.config 16
 scoreboard players set #ForceLoad glacier_players.config 1
+scoreboard players set #PathMethod glacier_players.config 1
 
 scoreboard players set #Debug_GlacierStats glacier_players.config 0
 
