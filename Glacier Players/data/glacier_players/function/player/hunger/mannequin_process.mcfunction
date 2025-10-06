@@ -1,3 +1,6 @@
+##Peaceful
+execute if score #Value glacier_players.difficulty matches 0 run function glacier_players:player/hunger/peaceful
+
 ##Regenerate
 execute if score #Saved glacier_players.saturation matches 10.. if score #Saved glacier_players.nutrition matches 180.. unless score #Saved glacier_players.health >= #Max glacier_players.health unless score #Saved glacier_players.health matches ..0 run function glacier_players:player/hunger/regenerate/sort_regen
 
