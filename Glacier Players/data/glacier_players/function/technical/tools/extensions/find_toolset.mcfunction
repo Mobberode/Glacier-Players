@@ -1,2 +1,4 @@
-$data modify storage glacier_players:extensions current_plr_ext_toolset set from storage glacier_players:extensions ext_namespace[$(plr_ts)]
-function glacier_players:technical/tools/extensions/run_toolset_function with storage glacier_players:extensions
+$data modify storage glacier_players:extensions function set from storage glacier_players:extensions ext_namespace[$(plr_ts)]
+
+data modify storage glacier_players:extensions retained_data.toolset set from storage glacier_players:extensions function
+function glacier_players:technical/tools/macro/run with storage glacier_players:extensions

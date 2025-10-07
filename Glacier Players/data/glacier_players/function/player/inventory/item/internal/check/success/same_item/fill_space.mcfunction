@@ -11,7 +11,7 @@ tellraw @a[scores={glacier_players.debug=1..}] [{score:{name:"@s",objective:glac
 data modify entity @s Items append from block 0 0 0 Items[]
 
 ##Finish by setting storage
-execute store result storage glacier_players:inventory_macro processed_item.count int 1 run scoreboard players get @s glacier_players.inventory_slot_count
+execute store result storage glacier_players:inventory_macro processed_item.count int 1 run scoreboard players get #Current glacier_players.inventory_slot_count
 
 ##Reprocess
 function glacier_players:player/inventory/item/reprocess

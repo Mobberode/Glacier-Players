@@ -5,11 +5,11 @@
         "conditions": {
           "item": {
             "predicates": {
-              "minecraft:custom_data": {"gp_action":"event"}
+              "minecraft:custom_data": {"gp_action":{}}
             }
           }
         }
       }
     },
-    "rewards": {"function": "glacier_players:technical/tools/event"}
+    "rewards": {"function": "glacier_players:technical/tools/action"}
   }

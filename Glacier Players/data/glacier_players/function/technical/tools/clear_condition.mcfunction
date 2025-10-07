@@ -1,1 +1,1 @@
-execute store result score #KeepHotbar glacier_players.condition if items entity @s weapon.mainhand *[custom_data~{gp_keep_hotbar:true}]
+execute store result score #KeepHotbar glacier_players.condition if data storage glacier_players:extensions tool_data.gp_action{keep_hotbar:true}

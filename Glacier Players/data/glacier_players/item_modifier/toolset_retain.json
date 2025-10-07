@@ -1,0 +1,14 @@
+{
+  "function": "copy_custom_data",
+  "source": {
+    "type": "storage",
+    "source": "glacier_players:extensions"
+  },
+  "ops": [
+    {
+      "source": "retained_data",
+      "target": "gp_action.retained_data",
+      "op": "replace"
+    }
+  ]
+}
