@@ -7,6 +7,6 @@
         {"label":"Source (GitHub)","action":{"type":"open_url","url":"https://github.com/Mobberode/Glacier-Players"}},
         {"label":"Trello","action":{"type":"open_url","url":"https://trello.com/b/4oeiX5qQ/expai-and-glacier-players"}},
         {"label":"Planet Minecraft","action":{"type":"open_url","url":"https://www.planetminecraft.com/data-pack/glacier-players"}},
-        {"label":"Extensions Wiki","action":{"type":"open_url","url":"https://github.com/Mobberode/Glacier-Players/wiki"}},
+        {"label":"Extensions Wiki","action":{"type":"open_url","url":"https://github.com/Mobberode/Glacier-Players/wiki"}}
     ]
 }
