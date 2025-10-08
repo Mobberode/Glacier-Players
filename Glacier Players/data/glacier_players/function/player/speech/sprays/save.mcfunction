@@ -1,6 +1,7 @@
 ##Location
 data modify storage glacier_players:sprays temp.pos set from entity @s Pos
-data modify storage glacier_players:sprays temp.dimension set from entity @s Dimension
+
+execute positioned 0 1024 0 summon piglin_brute run function glacier_players:player/speech/sprays/dimension
 
 ##UUID
 function gp_gu:generate

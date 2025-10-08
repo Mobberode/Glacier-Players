@@ -1,0 +1,1 @@
+$execute in $(dimension) positioned $(pos_x) $(pos_y) $(pos_z) run function glacier_players:player/speech/sprays/cache/kill with storage glacier_players:sprays
