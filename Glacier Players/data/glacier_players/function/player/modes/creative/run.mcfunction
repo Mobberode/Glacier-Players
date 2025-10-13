@@ -3,9 +3,6 @@ scoreboard players set #SortedItem glacier_players.condition 1
 
 data modify block 0 0 0 Items[].Slot set value 0
 
-##Get Hitbox
-function glacier_players:technical/height/run
-
 scoreboard players set #IsGlacier glacier_players.condition 1
 
 function glacier_players:player/modes/creative/run_internal

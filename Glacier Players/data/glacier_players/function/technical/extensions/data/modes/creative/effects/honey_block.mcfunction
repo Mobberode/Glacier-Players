@@ -1,1 +1,1 @@
-data modify storage glacier_players:build_macro sound_namespace set value "minecraft:block.honey_block.place"
+data modify storage glacier_players:build_macro sequence_temp.sound set value "minecraft:block.honey_block.place"

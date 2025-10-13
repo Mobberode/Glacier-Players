@@ -1,6 +1,4 @@
 ##For players
-function glacier_players:technical/height/run
-
 tag @s add GP.Used_Place
 
 scoreboard players set #IsGlacier glacier_players.condition 0

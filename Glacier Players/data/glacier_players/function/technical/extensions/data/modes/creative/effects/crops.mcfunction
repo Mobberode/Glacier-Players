@@ -11,7 +11,7 @@ execute if items block 0 0 0 container.0 sugar_cane run return run function glac
 
 data modify storage glacier_players:build_macro place_conditions set value "if block ~ ~ ~ #glacier_players:conditions/farming/general"
 
-data modify storage glacier_players:build_macro sound_namespace set value "minecraft:item.crop.plant"
+data modify storage glacier_players:build_macro sequence_temp.sound set value "minecraft:item.crop.plant"
 
 ##Item names doesnt corrospond with their block names
 execute if items block 0 0 0 container.0 wheat_seeds run return run data modify storage glacier_players:build_macro block set value "minecraft:wheat"

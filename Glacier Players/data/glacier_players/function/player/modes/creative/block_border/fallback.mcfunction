@@ -1,4 +1,4 @@
-data modify storage glacier_players:build_macro rot set value ""
+data modify storage glacier_players:build_macro sequence_temp.data append value ""
 
 data modify storage glacier_players:build_macro pos set value "~ ~ ~-.5"
 execute if entity @s[type=marker,tag=GlacierPlayer.BlockBorder_N] run return 1

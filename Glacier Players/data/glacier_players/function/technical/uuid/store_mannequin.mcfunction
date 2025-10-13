@@ -1,4 +1,4 @@
-function gp_gu:generate
+function glacier_players:technical/gu/generate
 
 #Store
 data modify storage glacier_players:macro instance.uuids.mannequin set from storage gu:main out
