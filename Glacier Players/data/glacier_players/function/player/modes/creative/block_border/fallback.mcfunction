@@ -1,14 +1,12 @@
-data modify storage glacier_players:build_macro sequence_temp.data append value ""
+data modify storage test test set from entity @s Tags
+execute if entity @s[tag=GlacierPlayer.BlockBorder_N] run return run data modify storage glacier_players:build_macro sequence_temp.position set value "~ ~ ~-.5"
 
-data modify storage glacier_players:build_macro pos set value "~ ~ ~-.5"
-execute if entity @s[type=marker,tag=GlacierPlayer.BlockBorder_N] run return 1
-data modify storage glacier_players:build_macro pos set value "~.5 ~ ~"
-execute if entity @s[type=marker,tag=GlacierPlayer.BlockBorder_E] run return 2
-data modify storage glacier_players:build_macro pos set value "~ ~ ~.5"
-execute if entity @s[type=marker,tag=GlacierPlayer.BlockBorder_S] run return 3
-data modify storage glacier_players:build_macro pos set value "~-.5 ~ ~"
-execute if entity @s[type=marker,tag=GlacierPlayer.BlockBorder_W] run return 4
-data modify storage glacier_players:build_macro pos set value "~ ~.5 ~"
-execute if entity @s[type=marker,tag=GlacierPlayer.BlockBorder_Up] run return 10
-data modify storage glacier_players:build_macro pos set value "~ ~-.5 ~"
-execute if entity @s[type=marker,tag=GlacierPlayer.BlockBorder_Down] run return 0
+execute if entity @s[tag=GlacierPlayer.BlockBorder_E] run return run data modify storage glacier_players:build_macro sequence_temp.position set value "~.5 ~ ~"
+
+execute if entity @s[tag=GlacierPlayer.BlockBorder_S] run return run data modify storage glacier_players:build_macro sequence_temp.position set value "~ ~ ~.5"
+
+execute if entity @s[tag=GlacierPlayer.BlockBorder_W] run return run data modify storage glacier_players:build_macro sequence_temp.position set value "~-.5 ~ ~"
+
+execute if entity @s[tag=GlacierPlayer.BlockBorder_Up] run return run data modify storage glacier_players:build_macro sequence_temp.position set value "~ ~.5 ~"
+
+execute if entity @s[tag=GlacierPlayer.BlockBorder_Down] run return run data modify storage glacier_players:build_macro sequence_temp.position set value "~ ~-.5 ~"

@@ -16,6 +16,7 @@ function glacier_players:player/modes/creative/sequence/data/process
 #Merge
 data modify storage dnt:ram in set from storage glacier_players:build_macro data_merge
 function dnt:concat
+data modify storage glacier_players:build_macro data set value ""
 data modify storage glacier_players:build_macro data set from storage dnt:ram out
 
 ##Sound
@@ -23,5 +24,6 @@ data modify storage glacier_players:build_macro sound set from storage glacier_p
 
 ###Loop
 execute if data storage glacier_players:build_macro sequence[-1] run function glacier_players:player/modes/creative/sequence/process
+
 #Debug Thing
 function glacier_players:player/modes/creative/place_cast/after_cast/place with storage glacier_players:build_macro

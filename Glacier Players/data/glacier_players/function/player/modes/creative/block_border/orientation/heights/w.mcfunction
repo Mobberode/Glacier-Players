@@ -1,4 +1,4 @@
 #Up
-execute if score #PlaceRotation_Height glacier_players.rotation matches 45.. run return run data modify storage glacier_players:build_macro sequence_temp.data append value "orientation=up_east"
+execute if score #PlaceRotation_Height glacier_players.rotation matches 45.. run return run data modify storage glacier_players:build_macro temp_rot set value "orientation=up_east"
 #Down
-execute if score #PlaceRotation_Height glacier_players.rotation matches ..-45 run return run data modify storage glacier_players:build_macro sequence_temp.data append value "orientation=down_west"
+execute if score #PlaceRotation_Height glacier_players.rotation matches ..-45 run return run data modify storage glacier_players:build_macro temp_rot set value "orientation=down_west"
