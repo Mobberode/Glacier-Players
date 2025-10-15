@@ -1,5 +1,5 @@
 ##Prepare
-data modify storage glacier_players:build_macro pos set from storage glacier_players:build_macro check[-1].pos
+data modify storage glacier_players:build_macro pos set from storage glacier_players:build_macro check[-1].position
 data remove storage glacier_players:build_macro check[-1]
 
 ##Check
