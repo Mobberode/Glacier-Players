@@ -3,6 +3,7 @@
         "#stairs",
         "#beds",
         "#doors",
-        "#banners"
+        "#banners",
+        "hopper"
     ]
 }
