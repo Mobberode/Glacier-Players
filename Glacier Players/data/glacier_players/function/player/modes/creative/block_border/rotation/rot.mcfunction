@@ -1,3 +1,5 @@
+execute unless entity @s[tag=GlacierPlayer.BlockBorder_Vertical] run return run function glacier_players:player/modes/creative/block_border/rotation/side_set
+
 #0 (S)
 data modify storage glacier_players:temp build_rotation set value "rotation=0"
 execute if score #PlaceRotation_2Decimal glacier_players.rotation matches -1124..1124 run return 0
