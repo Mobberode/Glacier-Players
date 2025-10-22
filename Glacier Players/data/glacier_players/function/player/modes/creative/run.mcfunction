@@ -9,4 +9,4 @@ function glacier_players:player/modes/creative/run_internal
 function glacier_players:player/modes/creative/place_cast/pre_init
 
 ##If success
-execute if score #Success glacier_players.condition matches 1.. run function glacier_players:player/inventory/item/internal/creative/update_stack
+execute if score #Success glacier_players.condition matches 1.. unless score @s glacier_players.rule.infinite_items matches 1.. run function glacier_players:player/inventory/item/internal/creative/update_stack

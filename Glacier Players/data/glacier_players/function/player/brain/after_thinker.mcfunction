@@ -1,4 +1,4 @@
-#@Update various things
+#Update various things
 #Hunger
 function glacier_players:player/hunger/saveback
 #Sync positions (Tiny cost)

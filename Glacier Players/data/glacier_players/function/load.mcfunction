@@ -43,7 +43,7 @@ scoreboard objectives add glacier_players.food_eat_saturation dummy
 scoreboard objectives add glacier_players.eating_food dummy
 
 #scoreboard objectives add glacier_players.armour dummy
-#scoreboard objectives add glacier_players.armour_toughness dummy
+#scoreboard objectives add glacier_players.armour.toughness dummy
 #scoreboard objectives add glacier_players.knockback_resistance dummy
 
 scoreboard objectives add glacier_players.equipment_wearing_armour dummy
@@ -57,7 +57,6 @@ scoreboard objectives add glacier_players.inventory_active_entites dummy
 scoreboard objectives add glacier_players.inventory_cant_pickup dummy
 
 scoreboard objectives add glacier_players.has_undying_totem dummy
-scoreboard objectives add glacier_players.delay_totem_replace dummy
 
 #14142 = diag, 10000 = straight
 scoreboard objectives add glacier_players.pathfinding_g_cost dummy
@@ -72,8 +71,6 @@ scoreboard players set #DropMultiplier glacier_players.experience_amount 7
 #scoreboard objectives add glacier_players.attacking_id dummy
 #scoreboard objectives add glacier_players.fight_time dummy
 
-#scoreboard objectives add glacier_players.block_destroy_timer dummy
-
 scoreboard objectives add glacier_players.knockbacked_timer dummy
 
 scoreboard objectives add glacier_players.difficulty dummy
@@ -81,8 +78,6 @@ scoreboard objectives add glacier_players.difficulty dummy
 scoreboard objectives add glacier_players.number dummy
 scoreboard objectives add glacier_players.condition dummy
 scoreboard objectives add glacier_players.rotation dummy
-
-#scoreboard objectives add glacier_players.block_type dummy
 
 scoreboard objectives add glacier_players.extensions dummy
 scoreboard objectives add glacier_players.extensions_toolset dummy
@@ -99,6 +94,13 @@ scoreboard objectives add glacier_players.waypoint_range dummy
 scoreboard objectives add glacier_players.has_waypoint dummy
 
 scoreboard objectives add glacier_players.died dummy
+
+##Rules
+scoreboard objectives add glacier_players.rule.stop_exhaustion dummy
+scoreboard objectives add glacier_players.rule.infinite_items dummy
+scoreboard objectives add glacier_players.rule.can_build dummy
+scoreboard objectives add glacier_players.rule.ignore_hunger_limitations dummy
+scoreboard objectives add glacier_players.rule.can_starve dummy
 
 ##Ver
 scoreboard objectives add glacier_players.release dummy
