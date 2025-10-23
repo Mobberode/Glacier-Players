@@ -8,6 +8,7 @@ scoreboard players operation @s glacier_players.health += #Additional glacier_pl
 #Save
 scoreboard players operation #Saved glacier_players.health = @s glacier_players.health
 
+##Armour
 scoreboard players operation @s glacier_players.equipment_wearing_armour = #Condition glacier_players.equipment_wearing_armour
 
 ##Previous Health > Health

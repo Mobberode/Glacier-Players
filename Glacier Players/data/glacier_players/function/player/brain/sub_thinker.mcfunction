@@ -1,3 +1,7 @@
+##Process
+#Invulnerable Rule
+scoreboard players operation #Saved glacier_players.rule.invulnerable = @s glacier_players.rule.invulnerable
+
 ##Conditions
 #Recurring Functions (Mega Performance Cost!)
 execute store result storage glacier_players:macro pid_num int 1 run scoreboard players get @s glacier_players.pid

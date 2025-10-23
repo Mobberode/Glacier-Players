@@ -101,6 +101,7 @@ scoreboard objectives add glacier_players.rule.infinite_items dummy
 scoreboard objectives add glacier_players.rule.can_build dummy
 scoreboard objectives add glacier_players.rule.ignore_hunger_limitations dummy
 scoreboard objectives add glacier_players.rule.can_starve dummy
+scoreboard objectives add glacier_players.rule.invulnerable dummy
 
 ##Ver
 scoreboard objectives add glacier_players.release dummy
