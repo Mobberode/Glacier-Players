@@ -15,6 +15,7 @@ scoreboard objectives add glacier_players.relation_pid dummy
 
 scoreboard objectives add glacier_players.health dummy
 scoreboard objectives add glacier_players.absorption dummy
+scoreboard objectives add glacier_players.died dummy
 
 scoreboard objectives add glacier_players.x_pos dummy
 scoreboard objectives add glacier_players.y_pos dummy
@@ -90,10 +91,12 @@ scoreboard players set #2 glacier_players.number 2
 scoreboard objectives add glacier_players.data.has_set_spawnpoint dummy
 scoreboard objectives add glacier_players.data.has_set_respawn_anchor dummy
 
+## Waypoint
 scoreboard objectives add glacier_players.waypoint_range dummy
 scoreboard objectives add glacier_players.has_waypoint dummy
 
-scoreboard objectives add glacier_players.died dummy
+## Block range
+scoreboard objectives add glacier_players.attribute.block_range dummy
 
 ##Rules
 scoreboard objectives add glacier_players.rule.stop_exhaustion dummy

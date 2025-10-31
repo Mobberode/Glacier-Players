@@ -2,7 +2,7 @@
 function glacier_players:player/death/keep_inventory/detect
 
 ##Get spawnradius
-execute store result storage glacier_players:macro spawnradius int 1 run gamerule spawnRadius
+execute store result storage glacier_players:macro spawnradius int 1 run gamerule respawn_radius
 
 ##Indicate
 tellraw @a [{selector:"@s"},{text:" was killed"}]
