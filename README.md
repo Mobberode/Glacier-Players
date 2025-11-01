@@ -2,24 +2,29 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Mobberode/Glacier-Players?style=plastic&logo=Github&color=aqua)
 
 # Glacier Players
-## INSTALLATION FOR GITHUB (Latest Commit)
-1. Press the green code button on the repo
-2. Download ZIP
-3. Unzip ZIP
-4. Go in the folder and keep doing down until you see a folder called Glacier Players
+Minecraft Datapack that is based on having player bots which mimic player behaviour whilst being vanillia.\
+**Glacier Players is in an Alpha state and not everything will be present!**
 
-## INSTALLATION FOR GITHUB (Releases)
+# Installation Guide
+## GitHub (Source)
+1. Press the green code button.
+2. Click the "Download ZIP" button at the bottom.
+3. Unzip the `.zip` file when downloaded.
+4. Go inside the recently unzipped folder and drag the "Glacier Players" folder into a world's "datapack" folder.
+
+## GitHub (Releases)
 1. Go to the releases page
 2. Pick a release to download
-3. Download the .zip file (if present) Otherwise, download the source
+3. Download the `.zip` file (if present) Otherwise, download the source and follow steps 3 and 4 of the Source tutorial.
 
 ## Credits
-[StringLib](https://github.com/CMDred/StringLib/), [gu](https://github.com/gibbsly/gu)
+- [Dahesor's NBT Transformer](https://github.com/Dahesor/DNT-Dahesor-NBT-Transformer)
+- [gu](https://github.com/gibbsly/gu)
 
 ## Code contribution guidelines
 - **Optimization and Efficiency**
 
-Glacier Players are optimized to save the most mspt and this matters when other datapacks are being used. It's important that when you are contributing to the Glacier Player's code, that you are taking mspt performance into account. Every millisecond and microsecond counts.
+Glacier Players attempts to use the most optimizations that are possible like macro caching to reduce the amount of selectors. Tick performance matters when mods and other datapacks are being used so consider the performance of the code when contributing.
 
 - **Modular**
 
@@ -27,4 +32,8 @@ Glacier Players allow extensions to build upon existing systems like the hunger 
 
 - **Player Accuracy**
 
-Glacier Players aim to replicate the actions of a player and while it may be impossible to exactly replicate it perfectly with just data packs. We can give that feel that they are player-like so its essential that most details about real players are in the Glacier Players. If you wish to make something more accurate. You can read the Minecraft Wiki on how everything works.
+Glacier Players aim to replicate the actions of a player and while it may be impossible to exactly replicate it perfectly with the limitations of data packs. Its essential that most details about real players are in Glacier Players. If you wish to make something more accurate. You can read the Minecraft Wiki or trustworthy sources on how everything works.
+
+# Links
+- https://www.planetminecraft.com/data-pack/glacier-players/
+- https://trello.com/b/4oeiX5qQ/glacier-players
