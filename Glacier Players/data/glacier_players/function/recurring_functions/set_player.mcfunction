@@ -1,3 +1,5 @@
+scoreboard players set @s glacier_players.speech_rarity 1500
+
 function glacier_players:technical/waypoint/check
 function glacier_players:recurring_functions/set_hunger
 function glacier_players:recurring_functions/set_experience

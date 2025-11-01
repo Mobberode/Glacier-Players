@@ -1,11 +1,11 @@
 ##Makes scoreboards and other things for proper function
 scoreboard objectives add glacier_players.rng dummy
 
-scoreboard objectives add glacier_players.speech_type dummy
 scoreboard objectives add glacier_players.voice_timer dummy
 scoreboard objectives add glacier_players.poll_decision trigger
 scoreboard objectives add glacier_players.poll_response_delay dummy
 scoreboard objectives add glacier_players.speech_response dummy
+scoreboard objectives add glacier_players.speech_rarity dummy
 
 #scoreboard objectives add glacier_players.personality dummy
 ##PID is for glaciers only

@@ -1,1 +1,0 @@
-scoreboard players remove @s glacier_players.voice_timer 1
