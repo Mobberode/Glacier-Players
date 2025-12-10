@@ -9,4 +9,4 @@ function glacier_players:player/death/totem_start with storage glacier_players:m
 function glacier_players:player/speech/types/totem_popped/get_chat_contents
 
 ##Extensions
-function #glacier_players:extensions/damage/totem_popped with storage glacier_players:macro
+function #glacier_players:extensions/damage/totem_popped

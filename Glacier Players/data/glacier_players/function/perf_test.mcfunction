@@ -1,1 +1,1 @@
-$say $(test)
+$tp $(pos)

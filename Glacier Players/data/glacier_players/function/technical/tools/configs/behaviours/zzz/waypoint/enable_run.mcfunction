@@ -1,5 +1,5 @@
 ##Another Instance
-execute store result storage glacier_players:temp pid_num int 1 run scoreboard players get @s glacier_players.pid
+execute store result storage glacier_players:temp num int 1 run scoreboard players get @s glacier_players.pid
 function glacier_players:technical/data/upload with storage glacier_players:temp
 function glacier_players:technical/data/mark_edit
 ##

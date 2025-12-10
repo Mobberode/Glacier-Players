@@ -1,2 +1,2 @@
-$data modify storage glacier_players:visual_macro name set from storage glacier_players:visual_macro names[$(rng)].contents
+$data modify storage glacier_players:visual_macro name set from storage glacier_players:visual_macro names[$(num)].contents
 data modify storage glacier_players:visual_macro name[].id set value glacier_players

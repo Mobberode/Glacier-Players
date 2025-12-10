@@ -1,1 +1,1 @@
-$return run random value 0..$(speech_rarity)
+$return run random value 0..$(num)

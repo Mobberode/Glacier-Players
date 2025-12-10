@@ -4,8 +4,8 @@ scoreboard players operation #Saved glacier_players.rule.invulnerable = @s glaci
 
 ##Conditions
 #Recurring Functions (Mega Performance Cost!)
-execute store result storage glacier_players:macro pid_num int 1 run scoreboard players get @s glacier_players.pid
-function glacier_players:technical/data/upload with storage glacier_players:macro
+execute store result storage glacier_players:temp num int 1 run scoreboard players get @s glacier_players.pid
+function glacier_players:technical/data/upload with storage glacier_players:temp
 function glacier_players:technical/data/mark_edit
 function glacier_players:recurring_functions/dual_macros
 

@@ -11,6 +11,6 @@ execute if items block 0 0 0 container.0 *[death_protection] run return run func
 execute if items block 0 0 0 container.0 *[equippable] run return run function glacier_players:player/inventory/equipment/armour/armour_check
 
 ##Extensions
-execute if items block 0 0 0 container.0 #glacier_players:tools/misc/custom run return run function #glacier_players:extensions/inventory/equipment/misc with storage glacier_players:inventory_macro
+execute if items block 0 0 0 container.0 #glacier_players:tools/misc/custom run return run function #glacier_players:extensions/inventory/equipment/misc
 
 scoreboard players set #SortedItem glacier_players.condition 0

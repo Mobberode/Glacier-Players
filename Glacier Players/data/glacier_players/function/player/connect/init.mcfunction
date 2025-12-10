@@ -3,12 +3,12 @@ function glacier_players:technical/data/empty/all
 
 ##Assign ID
 function glacier_players:technical/pid/begin_id_assign
-#Get pid_num in scoreboard
-execute store result storage glacier_players:macro pid_num int 1 run scoreboard players operation #Saved glacier_players.pid = @s glacier_players.pid
+#Get num in scoreboard
+execute store result storage glacier_players:temp num int 1 run scoreboard players operation #Saved glacier_players.pid = @s glacier_players.pid
 
 ##Get and Store UUID + ID
 function glacier_players:technical/uuid/store
-data modify storage glacier_players:macro instance.id set from storage glacier_players:macro pid_num
+data modify storage glacier_players:macro instance.id set from storage glacier_players:temp num
 
 ##Set XP, Hunger, Saturation and other things
 function glacier_players:recurring_functions/set_player

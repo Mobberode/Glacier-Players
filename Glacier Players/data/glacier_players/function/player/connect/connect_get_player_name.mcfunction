@@ -3,4 +3,4 @@ data modify storage glacier_players:visual_macro_temp visual_storage set from st
 
 function glacier_players:player/speech/get_contents
 
-function glacier_players:player/connect/connect_set_player_name with storage glacier_players:extensions
+function glacier_players:player/connect/connect_set_player_name with storage glacier_players:temp

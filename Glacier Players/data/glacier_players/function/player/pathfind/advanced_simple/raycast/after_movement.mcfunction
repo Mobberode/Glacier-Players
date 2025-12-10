@@ -1,1 +1,1 @@
-summon marker ~ ~ ~ {Tags:["GP.DMarker_Place_Canidate"]}
+execute unless block ~ ~-1 ~ #glacier_players:non_solids run summon marker ~ ~ ~ {Tags:["GP.DMarker_Place_Canidate"]}

@@ -1,1 +1,1 @@
-$effect give @s $(sussteweffect) $(susstewduration)
+$effect give @s $(sussteweffect) $(num)
