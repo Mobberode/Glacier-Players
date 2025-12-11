@@ -1,8 +1,10 @@
 # Glacier Players
-Glacier Players are Mannequins designed to mimic real player behaviour in a typical survival server, optimized to have a dozen of glaciers active at all times.
 
-![Last Commit](https://img.shields.io/github/last-commit/Mobberode/Glacier-Players?style=plastic&logo=github&label=Last%20Commit&color=aqua)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Mobberode/Glacier-Players?style=plastic&logo=Github&color=aqua)
+![Last Commit](https://img.shields.io/github/last-commit/Mobberode/Glacier-Players?style=plastic&logo=github&label=Last%20Commit&color=blue)
+[![Commits](https://img.shields.io/github/commit-activity/t/Mobberode/Glacier-Players?style=plastic&logo=Github&color=blue)](https://github.com/Mobberode/Glacier-Players/commits/main/)
+[![Extensions Wiki](https://img.shields.io/badge/Extensions_Wiki-GitHub-blue?style=plastic&logo=Github)](https://github.com/Mobberode/Glacier-Players/wiki)
+
+Glacier Players are Mannequins designed to mimic real player behaviour in a typical survival server, optimized to have a dozen of glaciers active at all times.
 
 ## Features
 - Most of the player behaviour replicated.
@@ -17,15 +19,25 @@ Glacier Players are Mannequins designed to mimic real player behaviour in a typi
 - Toolsets to change glacier behaviour and settings.
 - Extension Support.
   - More info on Extensions at the [Glacier Players Extension Wiki](https://github.com/Mobberode/Glacier-Players/wiki)
-
+## Accuracy
+| Feature | Status | Overview |
+| - | - | - |
+| Connection | +100% | Connecting and disconnecting. |
+| Chatting | +100% | Chat messages + Extras. |
+| Death | 80% | Death and respawning. Totems included |
+| Hunger | 99% | Hunger system with exhaustion, saturation, eating and difficutly changes. |
+| Inventory | 99% | Inventory system with how items are handled. Used by Hunger and Placing. |
+| Mob Recognition | 0% | Be able to get recognized by mobs. |
+| Combat | 0% | Ability to fight other mobs and glaciers. |
+| Breaking and Tools | 1% | Ability to break blocks and use tools. |
+| Placing | 50% | How placing blocks are handled. Blocks more than 1x1x1 are unstable. Some data that determines how the block is rotated may not be supported. |
+| Gamemode Emulation | 50% | Survival, Creative and Adventure. |
 ## Credits
 - [Dahesor's NBT Transformer](https://github.com/Dahesor/DNT-Dahesor-NBT-Transformer)
 - [gu](https://github.com/gibbsly/gu)
-
 ## Inspirations
 - [Lambda Players](https://steamcommunity.com/sharedfiles/filedetails/?id=2947828836) | The main inspiration.
-
-## Code contribution guidelines
+## Contribution Guidelines
 - **Optimization and Efficiency**
 
 Code should use most available optimizations if possible like macro caching and uuid selectors to gain more performance. TPS matters when mods and other datapacks are being used.
@@ -39,8 +51,10 @@ Code of Glacier Players allow extensions to add onto existing systems like assig
 Glaciers aim to mimic players so try to add in any features or behaviours that makes them more accurate, with the limitations of datapacks in a vanilla client.
 
 # Experimental Mob AI
-[Experimental Mob AI](https://github.com/Mobberode/GP-Legacy-Experimental-AI) (EXPMAI or formerly EXPAI) originally created Glacier Players which was split into its own project. EXPAI changes behaviour of certain mobs.
+EXPMAI or formerly EXPAI. originally created Glacier Players which was split into its own project. EXPAI changes behaviour of certain mobs.
 
+[Modrinth](https://modrinth.com/project/expai)\
+[GitHub](https://github.com/Mobberode/GP-Legacy-Experimental-AI)
 # Release List
 | Release | Version | Summary |
 | - | - | - |
