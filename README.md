@@ -1,39 +1,42 @@
+# Glacier Players
+Glacier Players are Mannequins designed to mimic real player behaviour in a typical survival server, optimized to have a dozen of glaciers active at all times.
+
 ![Last Commit](https://img.shields.io/github/last-commit/Mobberode/Glacier-Players?style=plastic&logo=github&label=Last%20Commit&color=aqua)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Mobberode/Glacier-Players?style=plastic&logo=Github&color=aqua)
 
-# Glacier Players
-Minecraft Datapack that is based on having player bots which mimic player behaviour whilst being vanillia.\
-**Glacier Players is in an Alpha state and not everything will be present!**
-
-# Installation Guide
-## GitHub (Source)
-1. Press the green code button.
-2. Click the "Download ZIP" button at the bottom.
-3. Unzip the `.zip` file when downloaded.
-4. Go inside the recently unzipped folder and drag the "Glacier Players" folder into a world's "datapack" folder.
-
-## GitHub (Releases)
-1. Go to the releases page
-2. Pick a release to download
-3. Download the `.zip` file (if present) Otherwise, download the source and follow steps 3 and 4 of the Source tutorial.
+## Features
+- Most of the player behaviour replicated.
+  - Connecting and disconnecting.
+  - Death and respawning alongside being able to use totems.
+  - Ability to emulate hunger, armour, inventory, experience and the locator bar.
+  - Send messages in chat with additional features like polls.
+    - Chat Filters
+  - Load chunks and receive knockback.
+  - Ability to place blocks semi-accurately.
+  - Support for skins and gamemodes (Survival, Creative and Adventure)
+- Toolsets to change glacier behaviour and settings.
+- Extension Support.
+  - More info on Extensions at the [Glacier Players Extension Wiki](https://github.com/Mobberode/Glacier-Players/wiki)
 
 ## Credits
 - [Dahesor's NBT Transformer](https://github.com/Dahesor/DNT-Dahesor-NBT-Transformer)
 - [gu](https://github.com/gibbsly/gu)
 
+## Inspirations
+- [Lambda Players](https://steamcommunity.com/sharedfiles/filedetails/?id=2947828836) | The main inspiration.
+
 ## Code contribution guidelines
 - **Optimization and Efficiency**
 
-Glacier Players attempts to use the most optimizations that are possible like macro caching to reduce the amount of selectors. Tick performance matters when mods and other datapacks are being used so consider the performance of the code when contributing.
+Code should use most available optimizations if possible like macro caching and uuid selectors to gain more performance. TPS matters when mods and other datapacks are being used.
 
 - **Modular**
 
-Glacier Players allow extensions to build upon existing systems like the hunger system via allowing more food items to be recognised and eaten. Code should be for the most part modular for freedom with extensions if possible.
+Code of Glacier Players allow extensions to add onto existing systems like assigning a glacier a custom waypoint picture when connecting.
 
 - **Player Accuracy**
 
-Glacier Players aim to replicate the actions of a player and while it may be impossible to exactly replicate it perfectly with the limitations of data packs. Its essential that most details about real players are in Glacier Players. If you wish to make something more accurate. You can read the Minecraft Wiki or trustworthy sources on how everything works.
+Glaciers aim to mimic players so try to add in any features or behaviours that makes them more accurate, with the limitations of datapacks in a vanilla client.
 
-# Links
-- https://www.planetminecraft.com/data-pack/glacier-players/
-- https://trello.com/b/4oeiX5qQ/glacier-players
+# Experimental Mob AI
+[Experimental Mob AI](https://github.com/Mobberode/GP-Legacy-Experimental-AI) (EXPMAI or formerly EXPAI) originally created Glacier Players which was split into its own project. EXPAI changes behaviour of certain mobs.
