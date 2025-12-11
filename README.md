@@ -40,3 +40,12 @@ Glaciers aim to mimic players so try to add in any features or behaviours that m
 
 # Experimental Mob AI
 [Experimental Mob AI](https://github.com/Mobberode/GP-Legacy-Experimental-AI) (EXPMAI or formerly EXPAI) originally created Glacier Players which was split into its own project. EXPAI changes behaviour of certain mobs.
+
+# Release List
+| Release | Version | Summary |
+| - | - | - |
+| 11 - 17b | 24w21a - 1.21.1 | Hunger, Armour, Totems, New Configurations, UUID Cache, Absorption, Toolkits, Panic lines, Stability changes. Tons of fixes. Split between EXPAI and Glacier Players. |
+| 18 - 19 | 24w39a - 1.21.4| Building, Set Spawnpoints, Visual Storage rework, Optimizations and Cast changes. |
+| 20 | 25w09a - 1.21.5 | Additional Configurations and Optimizations. |
+| 21 - 23 | 1.21.5 - 25w23a | Sprays, System reworks and minor changes. |
+| 24 | 1.21.11﻿ | Mannequin Overhaul and heavy system reworks. |
