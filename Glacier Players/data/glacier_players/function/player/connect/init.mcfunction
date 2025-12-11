@@ -25,7 +25,7 @@ execute at @s run function glacier_players:player/connect/init_body
 function #glacier_players:extensions/behaviour/player_init/connect
 
 ##Apply all edits to data
-function glacier_players:technical/data/create with storage glacier_players:macro
+function glacier_players:technical/data/create with storage glacier_players:temp
 
 ##Indicate that the glacier has joined the game
 tellraw @a [{selector:"@s",color:yellow},{text:" joined the game",color:yellow}]
