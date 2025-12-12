@@ -24,9 +24,9 @@ scoreboard players set #Chat.Sprays glacier_players.config 0
 scoreboard players set #Chat.Mark_Messages glacier_players.config 0
 scoreboard players set #MaxSprays glacier_players.config 256
 
-scoreboard players set #Chat.Filter glacier_players.config 0
-scoreboard players set #Chat.Filter.Sexual glacier_players.config 0
-scoreboard players set #Chat.Filter.Swear glacier_players.config 0
-scoreboard players set #Chat.Filter.Racial glacier_players.config 0
+scoreboard players set #Chat.Filter glacier_players.config 1
+scoreboard players set #Chat.Filter.Sexual glacier_players.config 1
+scoreboard players set #Chat.Filter.Swear glacier_players.config 1
+scoreboard players set #Chat.Filter.Racial glacier_players.config 1
 
 scoreboard players set #Init glacier_players.config 1

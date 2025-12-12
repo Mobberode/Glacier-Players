@@ -1,9 +1,0 @@
-{
-  "type": "dialog_list",
-  "columns": 1,
-  "on_cancel":{
-    "action": "show_dialog",
-    "dialog": "glacier_players:menu"},
-  "dialogs": "#glacier_players:extension_additions",
-  "title": "Glacier Players Extensions"
-  }

@@ -1,42 +1,14 @@
-{"type":"multi_action",
-"title":"Glacier Players",
-"columns":1,
-"actions":
-[
-  {
-  "label":"Actions WIP",
-  "action":{
-    "type": "show_dialog",
-    "dialog": "glacier_players:actions"}},
-    
-  {
-  "label":"Config WIP",
-  "action":{
-    "type": "show_dialog",
-    "dialog": "glacier_players:configs"}},
-
-  {
-  "label":"Experimental WIP",
-  "action":{
-    "type": "show_dialog",
-    "dialog": "glacier_players:experimental"}},
-
-  {
-  "label":"Debug WIP",
-  "action":{
-    "type": "show_dialog",
-    "dialog": "glacier_players:debug"}},
-    
-  {
-  "label":"Extensions WIP",
-  "action":{
-    "type": "show_dialog",
-    "dialog": "glacier_players:extensions"}},
-
-  {
-  "label":"Links",
-  "action":{
-    "type": "show_dialog",
-    "dialog": "glacier_players:links"}}
-]
+{
+    "type": "multi_action",
+    "title": "Glacier Players",
+    "columns": 2,
+    "actions": [
+        {"label":"Discord [13+]","action":{"type":"open_url","url":"https://discord.gg/fvsvmavex8"}},
+        {"label":"GitHub","action":{"type":"open_url","url":"https://github.com/Mobberode/Glacier-Players"}},
+        {"label":"Trello","action":{"type":"open_url","url":"https://trello.com/b/4oeiX5qQ/expai-and-glacier-players"}},
+        {"label":"Planet Minecraft","action":{"type":"open_url","url":"https://www.planetminecraft.com/data-pack/glacier-players"}},
+        {"label":"Modrinth","action":{"type":"open_url","url":"https://modrinth.com/project/glacier-players"}},
+        {"label":"Extensions Wiki","action":{"type":"open_url","url":"https://github.com/Mobberode/Glacier-Players/wiki"}},
+        {"label":"Credits","action":{"type":"show_dialog","dialog":"glacier_players:credits"}}
+    ]
 }

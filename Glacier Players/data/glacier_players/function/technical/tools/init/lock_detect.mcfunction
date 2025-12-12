@@ -1,0 +1,2 @@
+execute if entity @s[tag=glacier_players.toolset_wielder] run return run function glacier_players:technical/tools/toolset
+tellraw @s {text:"[Glacier Players] No permissions for toolset. Give yourself the tag: glacier_players.toolset_wielder to gain permission.",color:red}

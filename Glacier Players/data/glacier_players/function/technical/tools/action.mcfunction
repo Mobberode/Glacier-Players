@@ -1,6 +1,14 @@
-##Actions
+##Advancement
 advancement revoke @s only glacier_players:toolkit/action
-data modify storage glacier_players:extensions tool_data set from entity @s SelectedItem.components.minecraft:custom_data
+
+##If these conditions, fail
+execute if score @s glacier_players.disable_toolset matches 1.. run return run function glacier_players:technical/tools/disabled
+execute if score #LockToolset glacier_players.config matches 1 if entity @s[tag=!glacier_players.toolset_wielder] run return run function glacier_players:technical/tools/restricted
+
+##Action
+setblock 0 0 0 chest replace
+item replace block 0 0 0 container.0 from entity @s weapon.mainhand
+data modify storage glacier_players:extensions tool_data set from block 0 0 0 Items[0].components.minecraft:custom_data
 
 #Clear condition
 function glacier_players:technical/tools/clear_condition

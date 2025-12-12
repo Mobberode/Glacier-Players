@@ -1,0 +1,10 @@
+{
+    "type": "multi_action",
+    "title": "Glacier Players",
+    "exit_action": {"label":"Return to Glacier Menu","action":{"type":"show_dialog","dialog":"glacier_players:menu"}},
+    "body": [
+        {"type":"plain_message","contents":[{"text":"- Mobberode -","color":"red"}],"width":384},
+        {"type":"plain_message","contents":[{"text":"= Project Creator and Sole Developer =\nIcement"}],"width":384}
+    ],
+    "actions": [{"label":"License [MIT]","action":{"type":"open_url","url":"https://mit-license.org/"}}]
+}

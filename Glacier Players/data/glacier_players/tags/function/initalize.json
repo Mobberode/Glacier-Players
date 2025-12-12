@@ -1,6 +1,5 @@
 {"values": [
-    "glacier_players:technical/tools/toolset",
-    "glacier_players:playerloop",
+    "glacier_players:glacier_loop",
     "glacier_players:counterloop"
 ]
 }

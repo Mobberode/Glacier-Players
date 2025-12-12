@@ -26,6 +26,8 @@ scoreboard objectives add glacier_players.ticks_till_force_destory_dmarker dummy
 scoreboard objectives add glacier_players.config dummy
 #scoreboard objectives add glacier_players.quality_level dummy
 scoreboard objectives add glacier_players.debug dummy
+scoreboard objectives add glacier_players.get_toolset trigger
+scoreboard objectives add glacier_players.disable_toolset trigger
 
 scoreboard objectives add glacier_players.mode dummy
 scoreboard objectives add glacier_players.sub_mode dummy
