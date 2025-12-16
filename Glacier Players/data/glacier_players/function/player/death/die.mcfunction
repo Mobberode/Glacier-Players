@@ -13,8 +13,8 @@ execute unless score #Drop glacier_players.experience_amount matches ..0 unless 
 
 ##Kill
 kill
-kill @e[x=0,limit=6,tag=GlacierPlayer.Abnormal_Selected]
-kill @e[x=0,limit=3,type=item,predicate=glacier_players:inventory/is_chest]
+kill @e[x=0,tag=GlacierPlayer.Abnormal_Selected]
+kill @e[x=0,type=item,predicate=glacier_players:inventory/is_chest]
 
 ##Respawn
 execute unless score #Permadeath glacier_players.config matches 1.. run return run function glacier_players:player/death/spawnpoint_detect

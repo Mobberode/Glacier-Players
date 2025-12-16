@@ -10,4 +10,5 @@ execute if score #Offhand glacier_players.inventory_slot_count matches 1.. run r
 #Else
 item replace entity @s horse.9 with air
 ##Check for if there are totems left
+function glacier_players:player/death/totem_check with storage glacier_players:macro
 execute store result score #HasAdditional glacier_players.has_undying_totem if items entity @e[x=0,type=donkey,tag=GlacierPlayer.Selected] horse.* *[death_protection]

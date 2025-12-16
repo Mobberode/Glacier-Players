@@ -1,5 +1,3 @@
-tag @s add GlacierPlayer.Selected
-
 execute unless score #Saved glacier_players.rule.invulnerable = @s glacier_players.rule.invulnerable run function glacier_players:rules/invulnerable
 
 data modify storage glacier_players:macro mannequin_data set from entity @s
