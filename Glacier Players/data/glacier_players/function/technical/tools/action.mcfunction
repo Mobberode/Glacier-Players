@@ -1,6 +1,3 @@
-##Advancement
-advancement revoke @s only glacier_players:toolkit/action
-
 ##If these conditions, fail
 execute if score @s glacier_players.disable_toolset matches 1.. run return run function glacier_players:technical/tools/disabled
 execute if score #LockToolset glacier_players.config matches 1 if entity @s[tag=!glacier_players.toolset_wielder] run return run function glacier_players:technical/tools/restricted
