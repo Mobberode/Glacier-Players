@@ -1,1 +1,1 @@
-$rotate @s ~ $(vertical_direct)
+$rotate @s ~ $(num)

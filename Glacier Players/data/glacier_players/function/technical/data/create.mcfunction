@@ -3,7 +3,7 @@ execute unless data storage glacier_players:macro instances[] run data modify st
 
 ##Remove instance that already exists
 #num = player id
-$data remove storage glacier_players:macro instances[{id:$(num)}]
+$data remove storage glacier_players:macro instances[{id:$(instance_id)}]
 
 ##Append
 data modify storage glacier_players:macro instances append from storage glacier_players:macro instance

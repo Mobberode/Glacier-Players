@@ -4,6 +4,8 @@ data remove storage glacier_players:visual_macro line.disconnect[{filters:{racia
 
 data remove storage glacier_players:visual_macro line.idle[{filters:{racial:true}}]
 
+data remove storage glacier_players:visual_macro line.panic[{filters:{racial:true}}]
+
 data remove storage glacier_players:visual_macro line.death[{filters:{racial:true}}]
 
 data remove storage glacier_players:visual_macro line.totem_popped[{filters:{racial:true}}]
@@ -11,3 +13,5 @@ data remove storage glacier_players:visual_macro line.totem_popped[{filters:{rac
 data remove storage glacier_players:visual_macro line.me[{filters:{racial:true}}]
 
 data remove storage glacier_players:visual_macro line.response[{filters:{racial:true}}]
+
+data remove storage glacier_players:visual_macro names[{filters:{racial:true}}]

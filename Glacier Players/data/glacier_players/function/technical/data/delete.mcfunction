@@ -1,1 +1,1 @@
-$data remove storage glacier_players:macro instances[{id:$(num)}]
+$data remove storage glacier_players:macro instances[{id:$(instance_id)}]
