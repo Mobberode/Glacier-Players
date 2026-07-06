@@ -2,7 +2,7 @@
 tellraw @a [{selector:"@s"},{text:" was killed"}]
 
 ##Chat Chat
-execute unless score #Talk glacier_players.config matches 0 run function glacier_players:player/death/chat
+execute unless score #Talk glacier_players.config matches 0 if data storage glacier_players:visual_macro line.death[-1] run function glacier_players:player/speech/types/death/get_chat_contents
 
 #If Force Killed
 scoreboard players set @s glacier_players.stop 1

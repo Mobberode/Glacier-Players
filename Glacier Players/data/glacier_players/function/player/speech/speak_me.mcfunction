@@ -1,1 +1,0 @@
-tellraw @a [{text:"* "},{selector:"@s"},{text:" "},{storage:"glacier_players:visual_macro",nbt:visual_contents.contents,interpret:true}]

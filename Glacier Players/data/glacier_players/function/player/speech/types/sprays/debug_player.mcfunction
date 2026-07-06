@@ -1,5 +1,6 @@
-function glacier_players:player/speech/types/sprays/select_spray
+data modify storage glacier_players:visual_macro_temp visual_storage set from storage glacier_players:visual_macro line.sprays
+function glacier_players:player/speech/get_contents
 
-tellraw @a [{text:"\\"},{selector:"@s"},{text:"/"},{text:" Sprayed!",color:gold}]
+execute anchored eyes positioned ^ ^ ^ rotated ~ ~ summon marker run function glacier_players:player/speech/sprays/cast/set
 
-function glacier_players:player/speech/sprays/start
+execute if score #Success glacier_players.temp matches 1 run tellraw @a ["\\",{selector:"@s"},"/ ",{text:"Sprayed!\n\n",color:gold},{storage:"glacier_players:visual_macro",nbt:visual_contents,interpret:true},"\n\n"]

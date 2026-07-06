@@ -9,6 +9,8 @@
         {"label":"Planet Minecraft","action":{"type":"open_url","url":"https://www.planetminecraft.com/data-pack/glacier-players"}},
         {"label":"Modrinth","action":{"type":"open_url","url":"https://modrinth.com/project/glacier-players"}},
         {"label":"Extensions Wiki","action":{"type":"open_url","url":"https://github.com/Mobberode/Glacier-Players/wiki"}},
-        {"label":"Credits","action":{"type":"show_dialog","dialog":"glacier_players:credits"}}
+        {"label":"Credits","action":{"type":"show_dialog","dialog":"glacier_players:credits"}},
+        {"label":"Extensions","action":{"type":"run_command","command":"/trigger glacier_players.extensions set -1"}},
+        {"label":"Final Message from the Creator","action":{"type":"show_dialog","dialog":"glacier_players:message"},"width":300}
     ]
 }

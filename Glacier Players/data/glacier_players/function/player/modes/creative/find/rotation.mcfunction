@@ -8,4 +8,4 @@ execute if items block 0 0 0 container.0 #glacier_players:blocks/requires_orient
 
 execute if items block 0 0 0 container.0 #glacier_players:blocks/requires_rotate run return run data modify storage glacier_players:build_macro rotation_type set value "glacier_players:player/modes/creative/block_border/rotation/get_data"
 
-function #glacier_players:extensions/creative/rotation_custom
+function glacier_players:technical/extensions/handler/run {type:"glacier_players:extensions/creative/rotation_custom"}

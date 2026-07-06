@@ -1,0 +1,8 @@
+{
+    "type": "notice",
+    "title": "My Final Message",
+    "action": {"label":"Return to Glacier Menu","action":{"type":"show_dialog","dialog":"glacier_players:menu"}},
+    "body": [
+        {"type":"plain_message","contents":["April 28th 2024, the day Glacier Players was born. 2 Years later, Glacier Players receives its final update. Its been a long journey, working on this and growing from it, but now, its time to let go.\n\nI started working on Glacier Players initally because of the GMod addon: Zeta Players and Lambda Players by Starfrost. It would've never existed without them. Ever since this datapack's creation, had alot of work been done as I strived to emulate the closest to real player behaviour as I could. However, this task at first simple, grew into a complex abomination where it was just becoming too hard to work on, the main reason why for Glacier Player's final update.\n\nAnother reason was that Plate Havoc, a roguelite, random-events game that I have been working on for a long time, using all of what I learned through Glacier Players and my other datapacks. Trying to update both Glacier Players and Plate Havoc was too much for a solo developer combined with the multiple burnouts I've had throughout development.\n\nThere is still good news, being that the glaciers will still get bits then and there through representation in other medias (Plate Havoc or through art) but there likely wont be an major update in a while.\n\nTo conclude, I want to thank people that have stayed throughout Glacier Player's development even if their presence weren't quite there. If you want to keep up with anything that may happen, join the Mobberode discord, see you!"],"width":384}
+    ]
+}

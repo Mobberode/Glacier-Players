@@ -1,0 +1,1 @@
+data modify storage glacier_players:extensions extensions.data append value {id:"glacier_players_optional",function:"gp_optional:load",meta:{name:"Glacier Players Optional Content",version:"R25-1",authors:"Mobberode",description:"Optional content for Glacier Players."}}

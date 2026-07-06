@@ -1,5 +1,5 @@
 ##Chat
-execute unless score #Talk glacier_players.config matches 0 run function glacier_players:player/disconnect/disconnect_speak
+execute unless score #Talk glacier_players.config matches 0 run function glacier_players:player/speech/types/disconnect/get_chat_contents
 
 ##Info
 scoreboard players set @s glacier_players.stop 1

@@ -1,8 +1,11 @@
 ##Loop
-function glacier_players:player/speech/poll/get_data with storage glacier_players:visual_macro
+data modify storage glacier_players:visual_macro output set value {text:"|||| "}
+
+data modify storage glacier_players:visual_macro output.extra prepend from storage glacier_players:visual_macro poll.temp[0]
 
 function glacier_players:player/speech/poll/visual_colour
-function glacier_players:player/speech/poll/visual_decisions
+tellraw @a {storage:"glacier_players:visual_macro",nbt:output,interpret:true}
 
-execute store result storage glacier_players:visual_macro decisions_processed int 1 run scoreboard players add #DecisionsProcessed glacier_players.number 1
-execute unless score #DecisionsProcessed glacier_players.number > #Decisions glacier_players.number run function glacier_players:player/speech/poll/prompt_decisions
+scoreboard players add #Temp glacier_players.temp 1
+data remove storage glacier_players:visual_macro poll.temp[0]
+execute if data storage glacier_players:visual_macro poll.temp[-1] run function glacier_players:player/speech/poll/prompt_decisions

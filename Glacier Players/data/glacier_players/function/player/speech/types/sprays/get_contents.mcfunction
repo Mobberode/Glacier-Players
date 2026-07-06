@@ -1,7 +1,11 @@
 function glacier_players:recurring_functions/randomize_vertical
 
-function glacier_players:player/speech/types/sprays/select_spray
+data modify storage glacier_players:visual_macro_temp visual_storage set from storage glacier_players:visual_macro line.sprays
+function glacier_players:player/speech/get_contents
 
-tellraw @a [{text:"\\"},{selector:"@s"},{text:"/"},{text:" Sprayed!",color:gold}]
+execute anchored eyes positioned ^ ^ ^ rotated ~ ~ summon marker run function glacier_players:player/speech/sprays/cast/set
 
-function glacier_players:player/speech/sprays/start
+execute unless score #Success glacier_players.temp matches 1 run return fail
+data modify storage glacier_players:visual_macro output set value ["\\",{selector:"@s",meta:self},"/ ",{text:"Sprayed!\n\n",color:gold},"\n\n"]
+data modify storage glacier_players:visual_macro output insert -2 from storage glacier_players:visual_macro visual_contents
+function glacier_players:player/speech/speak

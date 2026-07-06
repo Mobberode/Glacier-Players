@@ -2,4 +2,4 @@ execute store result score #InvertRot glacier_players.condition if items block 0
 
 execute store result score #HoriRot glacier_players.condition if items block 0 0 0 container.0 #glacier_players:blocks/horizont_rotation
 
-function #glacier_players:extensions/creative/modifiers_custom
+function glacier_players:technical/extensions/handler/run {type:"glacier_players:extensions/creative/modifiers_custom"}

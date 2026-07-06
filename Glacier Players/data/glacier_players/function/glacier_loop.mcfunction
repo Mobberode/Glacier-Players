@@ -1,4 +1,5 @@
 ##Loops important functions
+forceload add 0 0
 #Debug Function
 execute if score #Debug_DMarker glacier_players.config matches 1.. run function glacier_players:recurring_functions/reveal_dmarkers
 

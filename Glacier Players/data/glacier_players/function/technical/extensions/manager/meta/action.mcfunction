@@ -1,0 +1,1 @@
+$data modify storage glacier_players:temp temp.snbt.extra[{meta:name}].extra append value {meta:action,text:" ",extra:["[",{meta:action,text:"Toggle",click_event:{action:"run_command",command:"/trigger glacier_players.extensions set $(numerical_id)"}},"]"],color:yellow}

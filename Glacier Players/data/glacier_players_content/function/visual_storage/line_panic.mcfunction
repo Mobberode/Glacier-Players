@@ -1,0 +1,5 @@
+data modify storage glacier_players:temp temp set value [{text:"oh fuck, oh fuck, oh fuck",filters:[swearing]},"NO","i swear to god if i die to this","WHA","DONT KILL ME PLEASE!","dude chill","bro what are you doing","dare me","oml why me","what did i ever do to you?","lets chill out, im not your opp anymore","Not playing","What was that damage","im praying to god as we speak","aughhhhhh","nope nope, not going there","im getting ambushed","guess im dying","Hell no im dying with all this on me","im cooked","im fighting demons right now","vro ong its a joke",{text:"BITCH STOP",filters:[swearing]},"WAIT WAIT BEFORE YOU KILL ME, LET ME SAY SMTH REAL QUICK","wait wait we can talk this out","ok, ok you win","HELP","hol on","let me say my final words","LLLLLs","try it one more"]
+
+function glacier_players:technical/extensions/visual_storages/filter/apply
+
+data modify storage glacier_players:visual_macro line.panic append from storage glacier_players:temp temp[]

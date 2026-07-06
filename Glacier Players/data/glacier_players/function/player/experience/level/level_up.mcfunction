@@ -17,4 +17,4 @@ playsound minecraft:entity.player.levelup player @a ~ ~ ~
 tellraw @a [{selector:"@s"},{text:" Leveled up to "},{score:{name:"@s",objective: glacier_players.experience_level},color:green},{text:"!",color:green}]
 
 ##Extensions
-function #glacier_players:extensions/experience/leveled_up
+function glacier_players:technical/extensions/handler/run {type:"glacier_players:extensions/experience/leveled_up"}

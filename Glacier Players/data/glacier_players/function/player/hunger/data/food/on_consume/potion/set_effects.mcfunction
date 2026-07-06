@@ -65,4 +65,4 @@ execute if data storage glacier_players:inventory_macro {potioneffect:"minecraft
 execute if data storage glacier_players:inventory_macro {potioneffect:"minecraft:infested"} run function glacier_players:player/hunger/data/food/on_consume/potion/effects/infestation/infestation
 
 ##Extensions
-function #glacier_players:extensions/inventory/drinks
+function glacier_players:technical/extensions/handler/run {type:"glacier_players:extensions/inventory/drinks"}

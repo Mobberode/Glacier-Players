@@ -1,6 +1,3 @@
-data modify storage glacier_players:visual_macro_temp contents set value [{contents:{text:"Extension Totem Popped PlaceHolder 1"}},{contents:{text:"Extension Totem Popped PlaceHolder 2"}},{contents:{text:"Extension Totem Popped PlaceHolder 3"}},{contents:{text:"Extension Totem Popped PlaceHolder 4"}},{contents:{text:"Extension Totem Popped PlaceHolder 5"}},{contents:{text:"Extension Totem Popped PlaceHolder 6"}},{contents:{text:"Extension Totem Popped PlaceHolder 7"}},{contents:{text:"Extension Totem Popped PlaceHolder 8"}},{contents:{text:"Extension Totem Popped PlaceHolder 9"}},{contents:{text:"Extension Totem Popped PlaceHolder 10 Advanced!",color:red}}]
-
-##If 20+
-execute if score #Version glacier_players.release matches ..20 run return run data modify storage glacier_players.visual_macro line.totem_popped append from storage glacier_players:visual_macro_temp contents[]
+data modify storage glacier_players:visual_macro_temp contents set value ["Extension Totem Popped PlaceHolder 1","Extension Totem Popped PlaceHolder 2","Extension Totem Popped PlaceHolder 3","Extension Totem Popped PlaceHolder 4","Extension Totem Popped PlaceHolder 5","Extension Totem Popped PlaceHolder 6","Extension Totem Popped PlaceHolder 7","Extension Totem Popped PlaceHolder 8","Extension Totem Popped PlaceHolder 9",{text:"Extension Totem Popped PlaceHolder 10 Advanced!",color:red,filters:[example,example2]}]
 
 data modify storage glacier_players:visual_macro line.totem_popped append from storage glacier_players:visual_macro_temp contents[]

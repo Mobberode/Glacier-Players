@@ -1,5 +1,6 @@
 ##Makes scoreboards and other things for proper function
 scoreboard objectives add glacier_players.rng dummy
+scoreboard objectives add glacier_players.temp dummy
 
 scoreboard objectives add glacier_players.voice_timer dummy
 scoreboard objectives add glacier_players.poll_decision trigger
@@ -79,10 +80,15 @@ scoreboard objectives add glacier_players.knockbacked_timer dummy
 scoreboard objectives add glacier_players.difficulty dummy
 
 scoreboard objectives add glacier_players.number dummy
+scoreboard players set #PRNG.Multiply glacier_players.number 1562730893
+scoreboard players set #PRNG.Add glacier_players.number 67
+execute store result score #PRNG.Run glacier_players.number run time query gametime
+
 scoreboard objectives add glacier_players.condition dummy
 scoreboard objectives add glacier_players.rotation dummy
 
-scoreboard objectives add glacier_players.extensions dummy
+scoreboard objectives add glacier_players.extensions trigger
+scoreboard objectives add glacier_players.visual_counts trigger
 scoreboard objectives add glacier_players.extensions_toolset dummy
 scoreboard players set @a glacier_players.extensions_toolset 0
 
@@ -110,7 +116,7 @@ scoreboard objectives add glacier_players.rule.invulnerable dummy
 
 ##Ver
 scoreboard objectives add glacier_players.release dummy
-scoreboard players set #Version glacier_players.release 24
+scoreboard players set #Version glacier_players.release 25
 
 #Init Settings
 execute unless score #Init glacier_players.config matches 1.. run function glacier_players:init_config

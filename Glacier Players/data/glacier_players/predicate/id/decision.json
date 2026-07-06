@@ -7,17 +7,17 @@
         "type": "minecraft:score",
         "target": {
           "type": "minecraft:fixed",
-          "name": "#DecisionsProcessed"
+          "name": "#Temp"
         },
-        "score": "glacier_players.number"
+        "score": "glacier_players.temp"
       },
       "max": {
         "type": "minecraft:score",
         "target": {
           "type": "minecraft:fixed",
-          "name": "#DecisionsProcessed"
+          "name": "#Temp"
         },
-        "score": "glacier_players.number"
+        "score": "glacier_players.temp"
       }
     }
   }

@@ -3,7 +3,7 @@ execute if score @s glacier_players.disable_toolset matches 1.. run return run f
 execute if score #LockToolset glacier_players.config matches 1 if entity @s[tag=!glacier_players.toolset_wielder] run return run function glacier_players:technical/tools/restricted
 
 ##Action
-setblock 0 0 0 chest replace
+setblock 0 0 0 chest{} strict
 item replace block 0 0 0 container.0 from entity @s weapon.mainhand
 data modify storage glacier_players:extensions tool_data set from block 0 0 0 Items[0].components.minecraft:custom_data
 

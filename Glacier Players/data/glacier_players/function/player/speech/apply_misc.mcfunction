@@ -1,1 +1,1 @@
-execute if score #Chat.Mark_Messages glacier_players.config matches 1.. run function glacier_players:player/speech/config/mark
+execute if score #Chat.Mark_Messages glacier_players.config matches 1.. run data modify storage glacier_players:visual_macro output prepend value {text:"[ ! ]",color:aqua,hover_event:{action:show_text,value:"Sent from a Glacier Player!"}}

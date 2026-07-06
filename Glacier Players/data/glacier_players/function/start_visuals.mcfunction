@@ -2,3 +2,4 @@ tellraw @s [{text:"[>_] Glacier Players Initalized!\n",color:gold},{storage:"gla
 tellraw @s [{text:"[!] Additional Credits: ",color:blue},{storage:"glacier_players:visual_macro",nbt:"credits[]",interpret:true}]
 
 execute if data storage glacier_players:visual_macro startup{unstable:true} run tellraw @s [{text:"[!] Huge breaking changes may be present. Report issues to the Mobberode Discord, GitHub Issue Tracker or on Planet Minecraft.",color:"red"}]
+tellraw @s ["See the Creator's Final Message? ",{text:"[Read]",color:aqua,click_event:{action:"show_dialog",dialog:"glacier_players:message"}}]

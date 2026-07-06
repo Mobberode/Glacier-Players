@@ -221,7 +221,7 @@ execute if items block 0 0 0 container.0 #glacier_players:blocks/place_types/eff
 execute if items block 0 0 0 container.0 #glacier_players:blocks/place_types/crops run return run function glacier_players:technical/extensions/data/modes/creative/effects/crops
 
 #Extensions
-execute if items block 0 0 0 container.0 #glacier_players:blocks/place_types/effect_types/custom run return run function #glacier_players:extensions/creative/effects_custom
+execute if items block 0 0 0 container.0 #glacier_players:blocks/place_types/effect_types/custom run return run function glacier_players:technical/extensions/handler/run {type:"glacier_players:extensions/creative/effects_custom"}
 
 #Fallback
 function glacier_players:technical/extensions/data/modes/creative/effects/default

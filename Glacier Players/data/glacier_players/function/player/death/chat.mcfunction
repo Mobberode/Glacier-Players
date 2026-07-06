@@ -1,1 +1,0 @@
-function glacier_players:player/speech/types/death/get_chat_contents

@@ -1,11 +1,11 @@
 ##Speech Rarity
-execute store result storage glacier_players:temp num int 1 run scoreboard players get @s glacier_players.speech_rarity
+scoreboard players operation #Modulo glacier_players.number = @s glacier_players.speech_rarity
 
-#Chance
-execute store result score @s glacier_players.rng run function glacier_players:player/speech/rarity with storage glacier_players:temp
+function glacier_players:technical/prng/standard
+execute if score #Temp glacier_players.number matches 0 run function glacier_players:player/speech/start_speak
 
-##If rng = 1, succeed
-execute if score @s glacier_players.rng matches 1 run function glacier_players:player/speech/start_speak
+##Poll
+execute unless score @s glacier_players.poll_decision matches -1.. if score #Timer glacier_players.poll_decision matches 1.. run function glacier_players:player/speech/poll/acknowledge_condition
 
 #Debug
 #tellraw @a [{score:{name:"@s",objective:glacier_players.speech_rarity},color:gold},{score:{name:"@s",objective:glacier_players.rng},color:green}]

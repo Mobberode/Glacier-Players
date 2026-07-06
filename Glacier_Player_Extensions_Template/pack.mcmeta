@@ -1,7 +1,7 @@
 {
   "pack": {
-    "min_format": 94,
-    "max_format": 94,
-    "description": "Extension Template"
+    "min_format": 107,
+    "max_format": 107,
+    "description": "Glacier Players Extension Template"
   }
 }

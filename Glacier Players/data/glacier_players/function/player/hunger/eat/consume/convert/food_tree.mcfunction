@@ -7,4 +7,4 @@ execute if items block 0 0 0 container.* #glacier_players:converts_to/glass_bott
 execute if items block 0 0 0 container.* #glacier_players:converts_to/bucket run return run function glacier_players:player/hunger/eat/consume/convert/to/bucket
 
 ##Extensions
-function #glacier_players:extensions/inventory/food_convert
+function glacier_players:technical/extensions/handler/run {type:"glacier_players:extensions/inventory/food_convert"}

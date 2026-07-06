@@ -4,8 +4,10 @@
 ##Store tool info into glacier_players.extensions
 function ext_template:mount/mount_tool_info
 
+function ext_template:contents/add_lines
+
 ##Visuals on extension load (a pair of ' must be included at both start and end!)
 #Based on JSON text
-data modify storage glacier_players:extensions extension_visuals set value {"text": "[ext_template] I am the one who loads again","color": "green"}
+data modify storage glacier_players:extensions extension_visuals set value {text: "[ext_template] I am the one who loads again",color:green}
 
 function glacier_players:technical/extensions/loader/extensions_startup_visuals with storage glacier_players:extensions

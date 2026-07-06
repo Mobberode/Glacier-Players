@@ -9,4 +9,4 @@ $item replace entity $(uuid) horse.$(inv_slot) from block 0 0 0 container.0
 execute if score #Drop glacier_players.condition matches 1.. run function glacier_players:player/inventory/equipment/armour/process_drop
 
 ##Extensions
-function #glacier_players:extensions/inventory/equipment/wore
+function glacier_players:technical/extensions/handler/run {type:"glacier_players:extensions/inventory/equipment/wore"}

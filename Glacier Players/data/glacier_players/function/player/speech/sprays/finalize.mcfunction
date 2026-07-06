@@ -1,5 +1,5 @@
 data modify entity @s background set value 0
-data modify entity @s text set from storage glacier_players:visual_macro_temp spray_components
+data modify entity @s text set from storage glacier_players:visual_macro visual_contents
 
 rotate @s ~ ~
 #If vertical

@@ -1,0 +1,17 @@
+##Names
+function glacier_players_content:visual_storage/names
+##Lines
+function glacier_players_content:visual_storage/line_connect
+function glacier_players_content:visual_storage/line_death
+function glacier_players_content:visual_storage/line_disconnect
+function glacier_players_content:visual_storage/line_idle
+function glacier_players_content:visual_storage/line_me
+function glacier_players_content:visual_storage/line_panic
+function glacier_players_content:visual_storage/line_polls
+function glacier_players_content:visual_storage/line_response
+function glacier_players_content:visual_storage/line_totem_popped
+###Empty
+##Voices
+function glacier_players_content:visual_storage/line_voice
+##Sprays
+function glacier_players_content:visual_storage/sprays

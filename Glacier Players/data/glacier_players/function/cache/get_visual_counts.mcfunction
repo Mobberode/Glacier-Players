@@ -1,3 +1,5 @@
+scoreboard players set @s glacier_players.visual_counts 0
+
 tellraw @s [{text:""},{text:"Visual Storage Statistics",color:aqua},\
 {text:"\nNames:"},{score:{name:"#ExtNames",objective:glacier_players.number},color:gold},\
 {text:"\nConnect:"},{score:{name:"#ExtConnect",objective:glacier_players.number},color:gold},\
@@ -14,4 +16,4 @@ tellraw @s [{text:""},{text:"Visual Storage Statistics",color:aqua},\
 {text:"\nExtension Toolkits:"},{score:{name:"#ExtensionToolkitMost",objective:glacier_players.extensions},color:gold},\
 ]
 
-function #glacier_players:visual_counts
+function glacier_players:technical/extensions/handler/run {type:"glacier_players:visual_counts"}

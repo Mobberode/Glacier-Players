@@ -9,7 +9,7 @@ execute at @s run function glacier_players:player/death/resummon
 function glacier_players:technical/data/update
 
 #On respawn event for glaciers
-function #glacier_players:extensions/behaviour/player_init/respawn
+function glacier_players:technical/extensions/handler/run {type:"glacier_players:extensions/behaviour/player_init/respawn"}
 
 ##If Poll
 return run execute if score @s glacier_players.poll_decision matches 1..

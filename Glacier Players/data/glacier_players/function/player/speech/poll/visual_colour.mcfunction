@@ -1,8 +1,7 @@
-scoreboard players add #DecisionsColour glacier_players.number 1
-execute if score #DecisionsColour glacier_players.number matches 5.. run scoreboard players set #DecisionsColour glacier_players.number 1
+scoreboard players operation #Temp2 glacier_players.temp = #Temp glacier_players.temp
+scoreboard players operation #Temp2 glacier_players.temp %= #4 glacier_players.number
 
-data modify storage glacier_players:visual_macro decision_start set value {text:"|||| "}
-execute if score #DecisionsColour glacier_players.number matches 1 run return run data modify storage glacier_players:visual_macro decision_start.color set value red
-execute if score #DecisionsColour glacier_players.number matches 2 run return run data modify storage glacier_players:visual_macro decision_start.color set value blue
-execute if score #DecisionsColour glacier_players.number matches 3 run return run data modify storage glacier_players:visual_macro decision_start.color set value green
-data modify storage glacier_players:visual_macro decision_start.color set value yellow
+execute if score #Temp2 glacier_players.temp matches 0 run return run data modify storage glacier_players:visual_macro output.color set value red
+execute if score #Temp2 glacier_players.temp matches 1 run return run data modify storage glacier_players:visual_macro output.color set value blue
+execute if score #Temp2 glacier_players.temp matches 2 run return run data modify storage glacier_players:visual_macro output.color set value green
+data modify storage glacier_players:visual_macro output.color set value yellow

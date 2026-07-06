@@ -22,7 +22,7 @@ function glacier_players:technical/skin/update
 execute at @s run function glacier_players:player/connect/init_body
 
 #Run the on connect function for extensions
-function #glacier_players:extensions/behaviour/player_init/connect
+function glacier_players:technical/extensions/handler/run {type:"glacier_players:extensions/behaviour/player_init/connect"}
 
 ##Apply all edits to data
 function glacier_players:technical/data/create with storage glacier_players:temp
@@ -30,6 +30,6 @@ function glacier_players:technical/data/create with storage glacier_players:temp
 ##Indicate that the glacier has joined the game
 tellraw @a [{selector:"@s",color:yellow},{text:" joined the game",color:yellow}]
 #Chat
-execute unless score #Talk glacier_players.config matches 0 run function glacier_players:player/connect/connect_speak
+execute unless score #Talk glacier_players.config matches 0 run function glacier_players:player/speech/types/connect/get_chat_contents
 #If Poll
 execute if score #Timer glacier_players.poll_decision matches 1.. run function glacier_players:player/speech/poll/player_set

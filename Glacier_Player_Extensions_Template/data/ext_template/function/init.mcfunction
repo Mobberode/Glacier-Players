@@ -1,0 +1,1 @@
+data modify storage glacier_players:extensions extensions.data append value {id:"glacier_players_extensions_template",function:"ext_template:load",meta:{name:"Glacier Players Extensions Template",version:"R25-1",authors:"Mobberode",description:"Template for Glacier Player Extensions."}}

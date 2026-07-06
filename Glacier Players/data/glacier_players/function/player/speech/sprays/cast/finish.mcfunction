@@ -1,3 +1,7 @@
+scoreboard players set #Success glacier_players.temp 1
+
+rotate @s ~ ~
+data modify storage glacier_players:visual_macro spray_rot set from entity @s Rotation[0]
 data modify storage glacier_players:visual_macro spray_pos set from entity @s Pos
 function glacier_players:player/modes/creative/block_border/run
 

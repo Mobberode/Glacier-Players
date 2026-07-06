@@ -47,4 +47,5 @@ execute if items block 0 0 0 container.* milk_bucket run return run function gla
 execute if items block 0 0 0 container.* potion run return run function glacier_players:player/hunger/data/food/potions/get/potion_get
 execute if items block 0 0 0 container.* ominous_bottle run return run function glacier_players:player/hunger/data/food/potions/get/ominous_bottle_get
 ##Extensions
+function glacier_players:technical/extensions/handler/run {type:"glacier_players:extensions/inventory/foods",macro:"storage glacier_players:inventory_macro"}
 function #glacier_players:extensions/inventory/foods with storage glacier_players:inventory_macro

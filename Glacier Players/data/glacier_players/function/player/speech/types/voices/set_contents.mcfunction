@@ -1,5 +1,5 @@
 ##Store into temp storage
-data modify storage glacier_players:visual_macro_temp voice set from storage glacier_players:visual_macro visual_contents.contents
+data modify storage glacier_players:visual_macro_temp voice set from storage glacier_players:visual_macro visual_contents
 
 #Fallback data if no data essiental data present!
 data modify storage glacier_players:visual_macro maxvolume set value 1
