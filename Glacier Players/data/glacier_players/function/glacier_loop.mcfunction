@@ -13,10 +13,10 @@ execute store result score #Value glacier_players.difficulty run difficulty
 data modify storage glacier_players:macro active_instances set value []
 scoreboard players set #RanForceLoad glacier_players.condition 0
 
-execute as @e[type=marker,tag=GlacierPlayer] at @s run function glacier_players:player/start_player
+execute as @e[tag=GlacierPlayer,type=marker] at @s run function glacier_players:player/start_player
 
 #Connect
-execute unless score #AutomaticConnect glacier_players.config matches 0 run function glacier_players:player/connect/connect_init
+execute unless score #AutomaticConnect glacier_players.config matches 0 run function glacier_players:player/connect/check
 
 ##Players
 execute as @a run function glacier_players:player_loop

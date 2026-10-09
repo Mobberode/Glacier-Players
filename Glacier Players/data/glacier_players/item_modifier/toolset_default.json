@@ -1,4 +1,5 @@
 {
+    "type": "set_components",
     "function": "minecraft:set_components",
     "components": {
       "minecraft:consumable": {

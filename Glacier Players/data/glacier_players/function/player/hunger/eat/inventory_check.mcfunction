@@ -1,1 +1,1 @@
-execute if items entity @e[x=0,type=donkey,tag=GlacierPlayer.Selected] horse.* *[consumable] run function glacier_players:player/hunger/eat/proceed_inventory
+execute if items entity @e[x=0,tag=GlacierPlayer.Selected,type=donkey] horse.* *[consumable] run function glacier_players:player/hunger/eat/proceed_inventory

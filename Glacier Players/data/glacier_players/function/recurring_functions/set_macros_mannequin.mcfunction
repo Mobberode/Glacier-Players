@@ -10,5 +10,3 @@ execute store result score #Additional glacier_players.health run data get stora
 execute store result score #Condition glacier_players.has_undying_totem if items entity @s weapon.* *[death_protection]
 
 execute store result score #Condition glacier_players.equipment_wearing_armour if items entity @s armor.* #glacier_players:armour/global
-
-scoreboard players add #GPVillagersCounter glacier_players.number 1

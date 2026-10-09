@@ -1,4 +1,5 @@
 {
+  "type": "copy_custom_data",
   "function": "copy_custom_data",
   "source": {
     "type": "storage",

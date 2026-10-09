@@ -5,4 +5,4 @@ execute if score #MaxConnectedLimit glacier_players.config matches 1 if score #F
 ##Run RNG
 execute store result score #ConnectChance glacier_players.rng run random value 0..1000
 #If success
-execute if score #ConnectChance glacier_players.rng matches 998..1000 run function glacier_players:player/connect/connect_start
+execute if score #ConnectChance glacier_players.rng matches 998..1000 run function glacier_players:player/connect/start

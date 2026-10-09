@@ -1,8 +1,8 @@
 {
   "id": "gp",
   "pack": {
-    "min_format": 107,
-    "max_format": 107,
-    "description": [{"text":"Pack Format 107 - 26.2, Release 25"}]
+    "min_format": 121,
+    "max_format": 121,
+    "description": [{"text":"Pack Format 121 - 26.3, Release 25"}]
   }
 }

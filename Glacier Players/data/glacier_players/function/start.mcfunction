@@ -2,7 +2,7 @@
 function glacier_players:technical/extensions/start
 
 data modify storage glacier_players:visual_macro startup.release set value 25
-data modify storage glacier_players:visual_macro startup.version set value "26.2"
+data modify storage glacier_players:visual_macro startup.version set value "26.3"
 data modify storage glacier_players:visual_macro startup.unstable set value false
 
 data modify storage glacier_players:visual_macro credits set value ["Contributors",{text:gu,click_event:{action:"open_url",url:"https://github.com/gibbsly/gu"},underlined:true},{text:"Dahesor's NBT Transformer",click_event:{action:"open_url",url:"https://github.com/Dahesor/DNT-Dahesor-NBT-Transformer"},underlined:true}]

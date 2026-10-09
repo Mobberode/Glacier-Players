@@ -10,7 +10,7 @@ function glacier_players:technical/data/mark_edit
 function glacier_players:recurring_functions/dual_macros
 
 ##Get Pos (Minial Performance Cost!)
-function glacier_players:recurring_functions/get_pos
+#function glacier_players:recurring_functions/get_pos
 
 ##Hunger
 function glacier_players:player/brain/hunger
