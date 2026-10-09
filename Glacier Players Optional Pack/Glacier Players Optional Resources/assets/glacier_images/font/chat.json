@@ -1,0 +1,11 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "glacier_images:suggest_shutup.png",
+            "ascent": 8,
+            "height": 64,
+            "chars": ["1"]
+        }
+    ]
+}
