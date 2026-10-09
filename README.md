@@ -4,6 +4,8 @@
 [![Commits](https://img.shields.io/github/commit-activity/t/Mobberode/Glacier-Players?style=plastic&logo=Github&color=blue)](https://github.com/Mobberode/Glacier-Players/commits/main/)
 [![Extensions Wiki](https://img.shields.io/badge/Extensions_Wiki-GitHub-blue?style=plastic&logo=Github)](https://github.com/Mobberode/Glacier-Players/wiki)
 
+Glacier Players has received its final update and will only be updated to support newer versions.
+
 Glacier Players are Mannequins designed to mimic real player behaviour in a typical survival server, optimized to have a dozen of glaciers active at all times.
 
 ## Features
@@ -63,3 +65,4 @@ EXPMAI or formerly EXPAI. originally created Glacier Players which was split int
 | 20 | 25w09a - 1.21.5 | Additional Configurations and Optimizations. |
 | 21 - 23 | 1.21.5 - 25w23a | Sprays, System reworks and minor changes. |
 | 24 | 1.21.11﻿ | Mannequin Overhaul and heavy system reworks. |
+| 25 | 26.3 | Last Release.
